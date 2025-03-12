@@ -24,6 +24,7 @@ const config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'szemkoff', // Usually your GitHub org/user name.
   projectName: 'InstaForce', // Usually your repo name.
+  deploymentBranch: 'docs-deployment', // Use our custom branch for deployment
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
