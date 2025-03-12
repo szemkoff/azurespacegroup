@@ -81,9 +81,9 @@ const config = {
     // Replace with your project's social card
     image: 'img/logo.svg',
     navbar: {
-      title: 'IntstelForce Project',
+      title: 'InstaForce Technologies',
       logo: {
-        alt: 'IntstelForce Project Logo',
+        alt: 'InstaForce Technologies Logo',
         src: 'img/logo.svg',
       },
       items: [
@@ -96,7 +96,7 @@ const config = {
         {to: '/project-status', label: 'Project Status', position: 'left'},
         {to: '/blog', label: 'Project Updates', position: 'left'},
         {
-          href: 'https://github.com/your-github-username/instaforce-docs',
+          href: 'https://github.com/szemkoff/InstaForce',
           label: 'GitHub',
           position: 'right',
         },
@@ -156,16 +156,16 @@ const config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/your-github-username/instaforce-docs',
+              href: 'https://github.com/szemkoff/InstaForce',
             },
             {
               label: 'Contact Us',
-              href: 'mailto:stan.zemskoff@intstelforce.com',
+              href: 'mailto:stan.zemskoff@instaforce.com',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} IntstelForce Project. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} InstaForce Technologies. Built with Docusaurus.`,
     },
     prism: {
       theme: themes.github,
@@ -183,7 +183,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/your-github-username/instaforce-docs/tree/main/',
+            'https://github.com/szemkoff/InstaForce/tree/main/',
           rehypePlugins: [],
         },
         blog: {
@@ -191,7 +191,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/your-github-username/instaforce-docs/tree/main/',
+            'https://github.com/szemkoff/InstaForce/tree/main/',
           // Configure inline authors to be ignored to remove the warning
           onInlineAuthors: 'ignore',
         },
