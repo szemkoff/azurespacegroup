@@ -1,0 +1,71 @@
+---
+title: Neural Interface Command Center
+---
+flowchart TD
+    %% Define the main sections with custom styling
+    subgraph NA[Neural Acquisition]
+        direction TB
+        QNS[Quantum Neural Sensors]:::special
+        BPM[Brain Pattern Mapping]
+        IC[Intent Classification]
+    end
+    
+    subgraph PC[Processing Core]
+        direction TB
+        QSP[Quantum Signal Processing]
+        TI[Thought Interpretation]:::special
+        VC[Verification & Confirmation]
+    end
+    
+    subgraph SC[System Control]
+        direction TB
+        CC[Command Conversion]
+        SyC[System Control]:::special
+        FB[Neural Feedback]:::special
+    end
+    
+    subgraph SS[Ship Systems]
+        direction LR
+        PROP[Propulsion]
+        NAV[Navigation]
+    end
+    
+    %% Define the connections between components
+    QNS --> BPM
+    BPM --> IC
+    
+    IC -->|Command Intent| TI
+    
+    QNS -->|Neural Signals| QSP
+    QSP --> TI
+    TI --> VC
+    
+    VC -->|Verified Commands| CC
+    CC --> SyC
+    SyC --> FB
+    
+    %% Feedback loop
+    FB -.->|Sensory Feedback| QNS
+    
+    %% Connection to ship systems
+    SyC -->|Control Signals| SS
+    
+    %% Custom styling
+    classDef default fill:#fff,stroke:#333,stroke-width:1px
+    classDef special fill:#f9a,stroke:#333,stroke-width:2px
+    
+    classDef sectionNA fill:#ffe8e0,stroke:#d05a6e,stroke-width:2px
+    classDef sectionPC fill:#e0ffe0,stroke:#4caf50,stroke-width:2px
+    classDef sectionSC fill:#e0f0ff,stroke:#2196f3,stroke-width:2px
+    classDef sectionSS fill:#e8e8e8,stroke:#757575,stroke-width:2px
+    
+    class NA sectionNA
+    class PC sectionPC
+    class SC sectionSC
+    class SS sectionSS
+    
+    %% Override specific component styles
+    class QNS special
+    class TI fill:#af9,stroke:#333,stroke-width:2px
+    class SyC fill:#9df,stroke:#333,stroke-width:2px
+    class FB fill:#fd9,stroke:#333,stroke-width:2px 

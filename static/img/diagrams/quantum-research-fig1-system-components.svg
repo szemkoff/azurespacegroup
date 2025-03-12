@@ -1,0 +1,163 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <!-- Gradients for better visual appeal -->
+    <linearGradient id="spacecraftGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8e8e8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c0c0c0;stop-opacity:1" />
+    </linearGradient>
+    
+    <radialGradient id="qforceGradient" cx="50%" cy="50%" r="70%" fx="50%" fy="50%">
+      <stop offset="0%" style="stop-color:#7b68ee;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#4b0082;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2e0854;stop-opacity:1" />
+    </radialGradient>
+    
+    <linearGradient id="manipulatorGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#b0e0e6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4682b4;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="controlGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#98FB98;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3CB371;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="powerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#DAA520;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Filters for shadow effects -->
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" />
+      <feOffset dx="2" dy="2" result="offsetblur" />
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3" />
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    
+    <!-- Glow effect for the Q-Force -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <style>
+    text { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    .title { font-size: 28px; font-weight: bold; fill: #333; }
+    .subtitle { font-size: 18px; font-weight: bold; fill: #555; }
+    .component { font-size: 16px; font-weight: bold; fill: #333; }
+    .label { font-size: 14px; fill: #444; }
+    .note { font-size: 12px; font-style: italic; fill: #666; }
+  </style>
+  
+  <!-- Background with subtle gradient -->
+  <rect x="0" y="0" width="800" height="600" fill="#f9f9f9" />
+  
+  <!-- Title with shadow -->
+  <g filter="url(#dropShadow)">
+    <text x="400" y="40" text-anchor="middle" class="title">Quantum Propulsion System: Key Components</text>
+  </g>
+  <text x="400" y="65" text-anchor="middle" class="label">Cross-section view of a complete quantum propulsion system</text>
+  
+  <!-- Spacecraft with Components -->
+  <g transform="translate(400, 300)">
+    <!-- Spacecraft Hull with gradient and shadow -->
+    <ellipse cx="0" cy="0" rx="300" ry="140" fill="url(#spacecraftGradient)" stroke="#444" stroke-width="3" filter="url(#dropShadow)" />
+    <path d="M-300,0 C-320,-30 -320,30 -300,0" fill="#c0c0c0" stroke="#444" stroke-width="2" />
+    
+    <!-- Q-Force Generator with glow effect -->
+    <g transform="translate(0, 0)" filter="url(#glow)">
+      <circle cx="0" cy="0" r="80" fill="url(#qforceGradient)" stroke="#444" stroke-width="2" />
+      <circle cx="0" cy="0" r="50" fill="#6a5acd" stroke="#444" stroke-width="1.5" opacity="0.8" />
+      <circle cx="0" cy="0" r="25" fill="#483d8b" stroke="#444" stroke-width="1" opacity="0.9" />
+      
+      <!-- Q-Force aura animated pulse effect -->
+      <circle cx="0" cy="0" r="85" fill="none" stroke="#8a2be2" stroke-width="1.5" opacity="0.6">
+        <animate attributeName="r" values="85;90;85" dur="4s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0.6;0.2;0.6" dur="4s" repeatCount="indefinite" />
+      </circle>
+      
+      <!-- Move both text elements higher -->
+      <text x="0" y="-170" text-anchor="middle" class="component" fill="#333" stroke="#fff" stroke-width="0.5">Q-Force Generator</text>
+      <text x="0" y="-190" text-anchor="middle" class="note">Primary system component</text>
+      
+      <!-- Q-Force field lines with animation -->
+      <path d="M-80,0 C-100,100 -250,120 -280,0 C-250,-120 -100,-100 -80,0" fill="none" stroke="#00f" stroke-width="1.5" stroke-dasharray="5,5" opacity="0.7">
+        <animate attributeName="opacity" values="0.7;0.3;0.7" dur="5s" repeatCount="indefinite" />
+      </path>
+      <path d="M80,0 C100,100 250,120 280,0 C250,-120 100,-100 80,0" fill="none" stroke="#00f" stroke-width="1.5" stroke-dasharray="5,5" opacity="0.7">
+        <animate attributeName="opacity" values="0.7;0.3;0.7" dur="5s" repeatCount="indefinite" />
+      </path>
+    </g>
+    
+    <!-- Quantum Field Manipulators with gradient -->
+    <g transform="translate(-150, 0)" filter="url(#dropShadow)">
+      <rect x="-50" y="-40" width="100" height="80" fill="url(#manipulatorGradient)" stroke="#444" stroke-width="2" rx="15" ry="15" />
+      <text x="0" y="0" text-anchor="middle" class="component" fill="#fff">Field</text>
+      <text x="0" y="20" text-anchor="middle" class="component" fill="#fff">Manipulator</text>
+      <text x="0" y="-55" text-anchor="middle" class="label">Left Array</text>
+    </g>
+    
+    <g transform="translate(150, 0)" filter="url(#dropShadow)">
+      <rect x="-50" y="-40" width="100" height="80" fill="url(#manipulatorGradient)" stroke="#444" stroke-width="2" rx="15" ry="15" />
+      <text x="0" y="0" text-anchor="middle" class="component" fill="#fff">Field</text>
+      <text x="0" y="20" text-anchor="middle" class="component" fill="#fff">Manipulator</text>
+      <text x="0" y="-55" text-anchor="middle" class="label">Right Array</text>
+    </g>
+    
+    <!-- Control Systems with gradient -->
+    <g transform="translate(0, -95)" filter="url(#dropShadow)">
+      <rect x="-80" y="-25" width="160" height="50" fill="url(#controlGradient)" stroke="#444" stroke-width="2" rx="10" ry="10" />
+      <text x="0" y="5" text-anchor="middle" class="component">Control Systems</text>
+    </g>
+    
+    <!-- Power Core with gradient and glow -->
+    <g transform="translate(0, 75)" filter="url(#dropShadow)">
+      <rect x="-60" y="-20" width="120" height="40" fill="url(#powerGradient)" stroke="#444" stroke-width="2" rx="8" ry="8" />
+      <text x="0" y="5" text-anchor="middle" class="component">Power Core</text>
+      
+      <!-- Energy pulses -->
+      <circle cx="0" cy="0" r="15" fill="none" stroke="#ff8c00" stroke-width="1" opacity="0.6">
+        <animate attributeName="r" values="15;25;15" dur="3s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0.6;0.1;0.6" dur="3s" repeatCount="indefinite" />
+      </circle>
+    </g>
+    
+    <!-- Connection lines between components -->
+    <path d="M0,-30 L0,-70" stroke="#666" stroke-width="2" stroke-dasharray="4,2" />
+    <path d="M0,30 L0,55" stroke="#666" stroke-width="2" stroke-dasharray="4,2" />
+    <path d="M-50,0 L-100,0" stroke="#666" stroke-width="2" stroke-dasharray="4,2" />
+    <path d="M50,0 L100,0" stroke="#666" stroke-width="2" stroke-dasharray="4,2" />
+  </g>
+  
+  <!-- Legend with improved styling -->
+  <g transform="translate(400, 520)">
+    <rect x="-370" y="-50" width="740" height="130" fill="#f0f0f0" stroke="#444" stroke-width="1" rx="15" ry="15" filter="url(#dropShadow)" />
+    
+    <g transform="translate(-300, 0)">
+      <circle cx="0" cy="0" r="15" fill="url(#qforceGradient)" stroke="#444" stroke-width="1" />
+      <text x="30" y="5" text-anchor="start" class="label">Q-Force Generator: Creates quantum vacuum cocoon</text>
+    </g>
+    
+    <g transform="translate(180, 0)">
+      <rect x="-15" y="-15" width="30" height="30" fill="url(#manipulatorGradient)" stroke="#444" stroke-width="1" rx="5" ry="5" />
+      <text x="30" y="5" text-anchor="start" class="label">Field Manipulators: Direct and shape quantum fields</text>
+    </g>
+    
+    <g transform="translate(-300, 45)">
+      <rect x="-15" y="-15" width="30" height="30" fill="url(#controlGradient)" stroke="#444" stroke-width="1" rx="5" ry="5" />
+      <text x="30" y="5" text-anchor="start" class="label">Control Systems: Precision management of field properties</text>
+    </g>
+    
+    <g transform="translate(180, 45)">
+      <rect x="-15" y="-15" width="30" height="30" fill="url(#powerGradient)" stroke="#444" stroke-width="1" rx="5" ry="5" />
+      <text x="30" y="5" text-anchor="start" class="label">Power Core: Provides energy for all system components</text>
+    </g>
+  </g>
+</svg> 

@@ -1,0 +1,12 @@
+.features {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+  background-color: var(--ifm-color-primary-lightest);
+  color: var(--ifm-font-color-base);
+}
+
+[data-theme='dark'] .features {
+  background-color: var(--ifm-color-primary-darkest);
+} 

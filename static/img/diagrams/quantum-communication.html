@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Quantum Entanglement Communication System</title>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: transparent;
+    }
+    #diagram {
+      width: 100%;
+      text-align: center;
+    }
+    /* Bold text in diagram */
+    .mermaid .label {
+      font-weight: bold !important;
+      font-size: 18px !important;
+    }
+    /* Thicker lines */
+    .mermaid .flowchart-link {
+      stroke-width: 3px !important;
+    }
+    .mermaid g.node rect, 
+    .mermaid g.node circle, 
+    .mermaid g.node ellipse, 
+    .mermaid g.node polygon {
+      stroke-width: 3px !important;
+    }
+    .mermaid .cluster rect {
+      stroke-width: 3px !important;
+    }
+  </style>
+</head>
+<body>
+  <div id="diagram" class="mermaid">
+    flowchart TB
+      subgraph "Source System"
+        EPG[Entangled Particle Generator]
+        QEM[Quantum Encoder/Modulator]
+        EPR[Entanglement Preservation Reservoir]
+      end
+      
+      subgraph "Quantum Channel"
+        QT[Quantum Teleportation]
+        QKD[Quantum Key Distribution]
+        QERR[Quantum Error Correction]
+      end
+      
+      subgraph "Destination System"
+        EPD[Entangled Particle Detector]
+        QDM[Quantum Demodulator]
+        QV[Quantum Verification]
+      end
+      
+      EPG -->|Entangled Particle Pairs| EPR
+      EPR -->|Stable Entanglement| QEM
+      QEM -->|Encoded Quantum States| QT
+      
+      QT -->|Teleported States| EPD
+      QKD -->|Secure Keys| QT
+      QKD -->|Secure Keys| QDM
+      QERR -->|Error Detection| QT
+      QERR -->|Error Correction| EPD
+      
+      EPD -->|Detected States| QDM
+      QDM -->|Decoded Message| QV
+      QV -->|Verified Transmission| EPD
+      
+      style QT fill:#f9a,stroke:#333,stroke-width:3px
+      style QKD fill:#af9,stroke:#333,stroke-width:3px
+      style EPG fill:#9df,stroke:#333,stroke-width:3px
+      style EPD fill:#9df,stroke:#333,stroke-width:3px
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      mermaid.initialize({
+        startOnLoad: true,
+        theme: 'neutral',
+        flowchart: {
+          htmlLabels: true,
+          curve: 'basis',
+          nodeSpacing: 50,
+          rankSpacing: 100,
+        },
+        securityLevel: 'loose'
+      });
+    });
+  </script>
+</body>
+</html> 

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Insect Flight Animation</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f9f9f9;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+        
+        .animation-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            height: 350px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow: visible;
+        }
+        
+        .quantum-cocoon {
+            position: absolute;
+            width: 400px;
+            height: 300px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(65,105,225,0.1) 0%, rgba(0,0,205,0.2) 70%, rgba(0,0,139,0.3) 100%);
+            box-shadow: 0 0 15px rgba(0, 0, 255, 0.2);
+            z-index: 1;
+            animation: pulse 4s infinite ease-in-out;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); opacity: 0.7; }
+            50% { transform: scale(1.05); opacity: 0.9; }
+            100% { transform: scale(1); opacity: 0.7; }
+        }
+        
+        .electric-field {
+            position: absolute;
+            width: 380px;
+            height: 100px;
+            z-index: 2;
+            opacity: 0.7;
+            animation: flicker 2s infinite ease-in-out;
+        }
+        
+        @keyframes flicker {
+            0% { opacity: 0.7; }
+            50% { opacity: 0.4; }
+            100% { opacity: 0.7; }
+        }
+        
+        .bee-animation {
+            z-index: 3;
+            position: relative;
+            width: 120px;
+            height: auto;
+            animation: hover 3s infinite ease-in-out;
+        }
+        
+        @keyframes hover {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body>
+    <div class="animation-container">
+        <div class="quantum-cocoon"></div>
+        <svg class="electric-field" viewBox="0 0 380 100" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,50 C20,30 40,70 60,30 C80,70 100,30 120,70 C140,30 160,70 180,30 C200,70 220,30 240,70 C260,30 280,70 300,30 C320,70 340,30 360,70 C380,50" 
+                  fill="none" stroke="#f0f" stroke-width="2.5" />
+        </svg>
+        <img src="/instaforce-docs/img/animations/bee.gif" alt="Bee Animation" class="bee-animation">
+    </div>
+</body>
+</html> 

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quantum Propulsion System Components - 3D Visualization</title>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/controls/OrbitControls.js"></script>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+    }
+    
+    #info {
+      position: absolute;
+      top: 10px;
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+      text-align: center;
+      color: white;
+      background-color: rgba(0,0,0,0.5);
+      z-index: 100;
+    }
+    
+    #info h1 {
+      margin: 0 0 10px 0;
+      font-size: 24px;
+    }
+    
+    #info p {
+      margin: 0;
+      font-size: 14px;
+    }
+    
+    #legend {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      padding: 10px;
+      background-color: rgba(0,0,0,0.5);
+      color: white;
+      border-radius: 5px;
+      z-index: 100;
+    }
+    
+    .legend-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 5px;
+    }
+    
+    .legend-color {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+      border-radius: 3px;
+    }
+    
+    .component-label {
+      position: absolute;
+      color: white;
+      font-size: 12px;
+      background-color: rgba(0,0,0,0.5);
+      padding: 2px 6px;
+      border-radius: 3px;
+      pointer-events: none;
+      user-select: none;
+      z-index: 100;
+    }
+    
+    #instructions {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      padding: 10px;
+      background-color: rgba(0,0,0,0.5);
+      color: white;
+      border-radius: 5px;
+      font-size: 14px;
+      z-index: 100;
+    }
+  </style>
+</head>
+<body>
+  <div id="info">
+    <h1>Quantum Propulsion System Components - 3D Visualization</h1>
+    <p>Interactive 3D cross-section view of a complete quantum propulsion system</p>
+  </div>
+  
+  <div id="legend">
+    <div class="legend-item">
+      <div class="legend-color" style="background: linear-gradient(145deg, #7b68ee, #4b0082);"></div>
+      <span>Q-Force Generator</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-color" style="background: linear-gradient(145deg, #b0e0e6, #4682b4);"></div>
+      <span>Field Manipulators</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-color" style="background: linear-gradient(145deg, #98FB98, #3CB371);"></div>
+      <span>Control Systems</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-color" style="background: linear-gradient(145deg, #FFD700, #DAA520);"></div>
+      <span>Power Core</span>
+    </div>
+  </div>
+  
+  <div id="instructions">
+    Left-click + drag: Rotate<br>
+    Right-click + drag: Pan<br>
+    Scroll: Zoom
+  </div>
+  
+  <script>
+    // Scene setup
+    const scene = new THREE.Scene();
+    scene.background = new THREE.Color(0x121212);
+    
+    // Camera setup
+    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    camera.position.set(0, 150, 400);
+    
+    // Renderer setup
+    const renderer = new THREE.WebGLRenderer({ antialias: true });
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setPixelRatio(window.devicePixelRatio);
+    document.body.appendChild(renderer.domElement);
+    
+    // Orbit controls
+    const controls = new THREE.OrbitControls(camera, renderer.domElement);
+    controls.enableDamping = true;
+    controls.dampingFactor = 0.05;
+    
+    // Lights
+    const ambientLight = new THREE.AmbientLight(0x404040, 0.5);
+    scene.add(ambientLight);
+    
+    const directionalLight = new THREE.DirectionalLight(0xffffff, 0.8);
+    directionalLight.position.set(200, 300, 100);
+    scene.add(directionalLight);
+    
+    const directionalLight2 = new THREE.DirectionalLight(0xffffff, 0.5);
+    directionalLight2.position.set(-200, -300, -100);
+    scene.add(directionalLight2);
+    
+    // Materials
+    const hullMaterial = new THREE.MeshPhongMaterial({
+      color: 0xf0f0f0,
+      transparent: true,
+      opacity: 0.3,
+      side: THREE.DoubleSide
+    });
+    
+    const qforceMaterial = new THREE.MeshPhongMaterial({
+      color: 0x7b68ee,
+      specular: 0x8a2be2,
+      shininess: 30
+    });
+    
+    const qforceCoreMaterial = new THREE.MeshPhongMaterial({
+      color: 0x4b0082,
+      specular: 0x8a2be2,
+      shininess: 50
+    });
+    
+    const manipulatorMaterial = new THREE.MeshPhongMaterial({
+      color: 0x4682b4,
+      specular: 0xb0e0e6,
+      shininess: 30
+    });
+    
+    const controlMaterial = new THREE.MeshPhongMaterial({
+      color: 0x3CB371,
+      specular: 0x98FB98,
+      shininess: 30
+    });
+    
+    const powerMaterial = new THREE.MeshPhongMaterial({
+      color: 0xDAA520,
+      specular: 0xFFD700,
+      shininess: 50
+    });
+    
+    const connectionMaterial = new THREE.LineBasicMaterial({
+      color: 0x666666,
+      linewidth: 2
+    });
+    
+    // Components
+    
+    // Spacecraft hull
+    const hull = new THREE.Mesh(
+      new THREE.SphereGeometry(200, 32, 32, 0, Math.PI * 2, 0, Math.PI / 2),
+      hullMaterial
+    );
+    hull.rotation.x = Math.PI;
+    hull.position.y = 0;
+    scene.add(hull);
+    
+    // Q-Force Generator
+    const qforceGenerator = new THREE.Group();
+    
+    const qforceOuter = new THREE.Mesh(
+      new THREE.SphereGeometry(60, 32, 32),
+      qforceMaterial
+    );
+    
+    const qforceMiddle = new THREE.Mesh(
+      new THREE.SphereGeometry(40, 32, 32),
+      qforceMaterial
+    );
+    
+    const qforceCore = new THREE.Mesh(
+      new THREE.SphereGeometry(20, 32, 32),
+      qforceCoreMaterial
+    );
+    
+    // Energy field
+    const energyField = new THREE.Group();
+    const ringGeometry = new THREE.TorusGeometry(65, 2, 16, 100);
+    const ringMaterial = new THREE.MeshBasicMaterial({ 
+      color: 0x8a2be2,
+      transparent: true,
+      opacity: 0.6
+    });
+    
+    const ring1 = new THREE.Mesh(ringGeometry, ringMaterial);
+    const ring2 = new THREE.Mesh(ringGeometry, ringMaterial);
+    ring2.rotation.x = Math.PI / 2;
+    const ring3 = new THREE.Mesh(ringGeometry, ringMaterial);
+    ring3.rotation.z = Math.PI / 2;
+    
+    energyField.add(ring1);
+    energyField.add(ring2);
+    energyField.add(ring3);
+    
+    qforceGenerator.add(qforceOuter);
+    qforceGenerator.add(qforceMiddle);
+    qforceGenerator.add(qforceCore);
+    qforceGenerator.add(energyField);
+    qforceGenerator.position.set(0, 0, 0);
+    scene.add(qforceGenerator);
+    
+    // Field Manipulators
+    const leftManipulator = new THREE.Mesh(
+      new THREE.BoxGeometry(80, 40, 60),
+      manipulatorMaterial
+    );
+    leftManipulator.position.set(-150, 0, 0);
+    scene.add(leftManipulator);
+    
+    const rightManipulator = new THREE.Mesh(
+      new THREE.BoxGeometry(80, 40, 60),
+      manipulatorMaterial
+    );
+    rightManipulator.position.set(150, 0, 0);
+    scene.add(rightManipulator);
+    
+    // Control Systems
+    const controlSystem = new THREE.Mesh(
+      new THREE.BoxGeometry(140, 30, 50),
+      controlMaterial
+    );
+    controlSystem.position.set(0, 100, 0);
+    scene.add(controlSystem);
+    
+    // Power Core
+    const powerCore = new THREE.Mesh(
+      new THREE.CylinderGeometry(35, 35, 30, 32),
+      powerMaterial
+    );
+    powerCore.rotation.x = Math.PI / 2;
+    powerCore.position.set(0, -100, 0);
+    scene.add(powerCore);
+    
+    // Connections
+    function createConnection(from, to) {
+      const points = [];
+      points.push(new THREE.Vector3(from.x, from.y, from.z));
+      points.push(new THREE.Vector3(to.x, to.y, to.z));
+      
+      const geometry = new THREE.BufferGeometry().setFromPoints(points);
+      const line = new THREE.Line(geometry, connectionMaterial);
+      return line;
+    }
+    
+    const connections = [
+      createConnection(qforceGenerator.position, leftManipulator.position),
+      createConnection(qforceGenerator.position, rightManipulator.position),
+      createConnection(qforceGenerator.position, controlSystem.position),
+      createConnection(qforceGenerator.position, powerCore.position),
+      createConnection(leftManipulator.position, rightManipulator.position)
+    ];
+    
+    connections.forEach(connection => scene.add(connection));
+    
+    // Create HTML labels for components
+    function createLabel(text, position, color) {
+      const label = document.createElement('div');
+      label.className = 'component-label';
+      label.textContent = text;
+      label.style.backgroundColor = color || 'rgba(0,0,0,0.5)';
+      label.style.display = 'none'; // Hide initially
+      document.body.appendChild(label);
+      return { element: label, position: position };
+    }
+    
+    const labels = [
+      createLabel('Q-Force Generator', new THREE.Vector3(0, 0, 0), 'rgba(75, 0, 130, 0.8)'),
+      createLabel('Left Field Manipulator', new THREE.Vector3(-150, 0, 0), 'rgba(70, 130, 180, 0.8)'),
+      createLabel('Right Field Manipulator', new THREE.Vector3(150, 0, 0), 'rgba(70, 130, 180, 0.8)'),
+      createLabel('Control Systems', new THREE.Vector3(0, 100, 0), 'rgba(60, 179, 113, 0.8)'),
+      createLabel('Power Core', new THREE.Vector3(0, -100, 0), 'rgba(218, 165, 32, 0.8)')
+    ];
+    
+    // Animation loop
+    let time = 0;
+    function animate() {
+      requestAnimationFrame(animate);
+      
+      time += 0.01;
+      
+      // Animate energy field
+      energyField.rotation.x = time * 0.2;
+      energyField.rotation.y = time * 0.3;
+      
+      // Pulse the core
+      const pulseFactor = Math.sin(time * 2) * 0.1 + 1;
+      qforceCore.scale.set(pulseFactor, pulseFactor, pulseFactor);
+      
+      // Update the controls
+      controls.update();
+      
+      // Update labels
+      labels.forEach(label => {
+        const screenPosition = label.position.clone().project(camera);
+        
+        const x = (screenPosition.x * 0.5 + 0.5) * window.innerWidth;
+        const y = (-screenPosition.y * 0.5 + 0.5) * window.innerHeight;
+        
+        // Check if object is in front of camera
+        if (screenPosition.z < 1) {
+          label.element.style.display = 'block';
+          label.element.style.transform = `translate(-50%, -50%) translate(${x}px, ${y}px)`;
+        } else {
+          label.element.style.display = 'none';
+        }
+      });
+      
+      renderer.render(scene, camera);
+    }
+    
+    // Window resize handler
+    window.addEventListener('resize', () => {
+      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize(window.innerWidth, window.innerHeight);
+    });
+    
+    // Start animation
+    animate();
+  </script>
+</body>
+</html> 

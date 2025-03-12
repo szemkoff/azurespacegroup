@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SVG Debug Page</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; }
+        .image-container { margin-bottom: 30px; }
+        img { max-width: 500px; border: 1px solid #ccc; }
+    </style>
+</head>
+<body>
+    <h1>SVG Debug Page</h1>
+    
+    <div class="image-container">
+        <h2>Original Image</h2>
+        <img src="/instaforce-docs/img/diagrams/quantum-field-manipulator.svg" alt="Original SVG" />
+        <p>Path: /instaforce-docs/img/diagrams/quantum-field-manipulator.svg</p>
+    </div>
+    
+    <div class="image-container">
+        <h2>Top View</h2>
+        <img src="/instaforce-docs/img/diagrams/quantum-field-manipulator-top-view.svg" alt="Top View" />
+        <p>Path: /instaforce-docs/img/diagrams/quantum-field-manipulator-top-view.svg</p>
+    </div>
+    
+    <div class="image-container">
+        <h2>Side View</h2>
+        <img src="/instaforce-docs/img/diagrams/quantum-field-manipulator-side-view.svg" alt="Side View" />
+        <p>Path: /instaforce-docs/img/diagrams/quantum-field-manipulator-side-view.svg</p>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Log all image load errors
+            const images = document.querySelectorAll('img');
+            images.forEach(img => {
+                img.addEventListener('error', function() {
+                    console.error('Failed to load image:', this.src);
+                    this.style.border = '2px solid red';
+                    const errorMsg = document.createElement('p');
+                    errorMsg.style.color = 'red';
+                    errorMsg.textContent = 'Error loading this image!';
+                    this.after(errorMsg);
+                });
+                
+                img.addEventListener('load', function() {
+                    console.log('Successfully loaded image:', this.src);
+                    this.style.border = '2px solid green';
+                });
+            });
+        });
+    </script>
+</body>
+</html> 

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect x="10" y="10" width="180" height="180" fill="#f0f0f0" stroke="#333" stroke-width="2"/>
+  <circle cx="100" cy="100" r="80" fill="#9b59b6" stroke="#8e44ad" stroke-width="3"/>
+  <text x="100" y="110" font-family="Arial" font-size="16" text-anchor="middle" fill="#fff">Test Top View</text>
+</svg> 

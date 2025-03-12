@@ -1,0 +1,177 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #2e8555;
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Custom InstaForce Styles */
+.hero--primary {
+  background: linear-gradient(45deg, #1a237e, #0d47a1);
+  color: white;
+}
+
+.footer--dark {
+  --ifm-footer-background-color: #0a1929;
+}
+
+.navbar {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Make technical specifications tables more readable */
+table {
+  width: 100%;
+  display: table;
+  margin-bottom: 2rem;
+}
+
+table th {
+  background-color: var(--ifm-color-primary);
+  color: white;
+}
+
+[data-theme='dark'] table th {
+  background-color: var(--ifm-color-primary-darker);
+}
+
+/* Highlight important technical terms */
+.technical-term {
+  font-weight: bold;
+  color: var(--ifm-color-primary);
+}
+
+/* Add better spacing for lists */
+ul, ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* Style for important notes and warnings */
+.note {
+  background-color: rgba(46, 133, 85, 0.1);
+  border-left: 4px solid var(--ifm-color-primary);
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 0 4px 4px 0;
+}
+
+.warning {
+  background-color: rgba(255, 165, 0, 0.1);
+  border-left: 4px solid #ff9800;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 0 4px 4px 0;
+}
+
+/* Mermaid diagram styling - reduce vertical space */
+.mermaid {
+  margin: 0 auto;
+  overflow: hidden;
+  max-height: none !important;
+}
+
+.mermaid svg {
+  max-height: none !important;
+  height: auto !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: block;
+}
+
+/* Specific fixes for flowchart LR and graph TD layouts */
+.mermaid .flowchart-LR svg,
+.mermaid .graph-TD svg {
+  width: 100% !important;
+  height: auto !important;
+}
+
+/* Remove extra padding above and below diagrams */
+.markdown figure.mermaid {
+  padding: 0 !important;
+  margin: 20px 0 !important;
+}
+
+/* Remove default height constraints */
+.mermaid > svg {
+  height: auto !important;
+  min-height: 0 !important;
+}
+
+.mermaid g.node rect, 
+.mermaid g.node circle, 
+.mermaid g.node ellipse, 
+.mermaid g.node polygon {
+  stroke-width: 2px;
+}
+
+.mermaid .label {
+  font-family: var(--ifm-font-family-base);
+  font-size: 14px;
+}
+
+/* Make sure arrows are visible */
+.mermaid .arrowheadPath {
+  fill: #666;
+}
+
+.mermaid .flowchart-link {
+  stroke: #666;
+  stroke-width: 2px;
+}
+
+.mermaid .cluster rect {
+  fill: #f5f5f5;
+  stroke: #ddd;
+}
+
+[data-theme='dark'] .mermaid .cluster rect {
+  fill: #333;
+  stroke: #444;
+}
+
+/* Improve visibility in dark mode */
+[data-theme='dark'] .mermaid .label {
+  color: #e0e0e0;
+  fill: #e0e0e0;
+}
+
+[data-theme='dark'] .mermaid .edgeLabel {
+  background-color: #333;
+}
+
+/* Ensure diagrams print properly */
+@media print {
+  .mermaid {
+    max-width: 100%;
+    page-break-inside: avoid;
+  }
+} 

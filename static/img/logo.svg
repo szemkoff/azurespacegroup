@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200" fill="none">
+  <!-- Aged bronze medallion background -->
+  <circle cx="100" cy="100" r="95" fill="#8C7853" />
+  <circle cx="100" cy="100" r="90" fill="#8C7853" stroke="#6D5D41" stroke-width="2" />
+  
+  <!-- Triangle with eye -->
+  <path d="M100 35 L160 140 L40 140 Z" stroke="#5D4E35" stroke-width="4" fill="none" />
+  <circle cx="100" cy="100" r="25" fill="#8C7853" stroke="#5D4E35" stroke-width="2" />
+  <ellipse cx="100" cy="100" rx="15" ry="8" fill="#5D4E35" />
+  <circle cx="100" cy="100" r="5" fill="#2E2A22" />
+  
+  <!-- Stars around the triangle -->
+  <path d="M50 50 L53 58 L46 53 L54 53 L47 58 Z" fill="#5D4E35" />
+  <path d="M150 50 L153 58 L146 53 L154 53 L147 58 Z" fill="#5D4E35" />
+  <path d="M30 100 L33 108 L26 103 L34 103 L27 108 Z" fill="#5D4E35" />
+  <path d="M170 100 L173 108 L166 103 L174 103 L167 108 Z" fill="#5D4E35" />
+  <path d="M50 150 L53 158 L46 153 L54 153 L47 158 Z" fill="#5D4E35" />
+  <path d="M150 150 L153 158 L146 153 L154 153 L147 158 Z" fill="#5D4E35" />
+  <path d="M100 170 L103 178 L96 173 L104 173 L97 178 Z" fill="#5D4E35" />
+  
+  <!-- Circle around triangle -->
+  <circle cx="100" cy="100" r="60" stroke="#5D4E35" stroke-width="3" fill="none" />
+</svg> 

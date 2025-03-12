@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="800" height="500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8f9fa" />
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold">Quantum Communication System Architecture</text>
+  
+  <!-- Left Station: Entanglement Generation Array -->
+  <rect x="50" y="100" width="200" height="120" rx="10" fill="#d5e8d4" stroke="#82b366" stroke-width="2" />
+  <text x="150" y="130" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Entanglement</text>
+  <text x="150" y="150" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Generation Array</text>
+  <text x="150" y="180" font-family="Arial" font-size="12" text-anchor="middle">Creates entangled</text>
+  <text x="150" y="200" font-family="Arial" font-size="12" text-anchor="middle">particle pairs</text>
+  
+  <!-- Center: Quantum Channel -->
+  <rect x="300" y="150" width="200" height="200" rx="10" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2" />
+  <text x="400" y="180" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Quantum Channel</text>
+  <text x="400" y="210" font-family="Arial" font-size="12" text-anchor="middle">Entangled particle</text>
+  <text x="400" y="230" font-family="Arial" font-size="12" text-anchor="middle">transmission</text>
+  <text x="400" y="250" font-family="Arial" font-size="12" text-anchor="middle">Zero latency</text>
+  <text x="400" y="270" font-family="Arial" font-size="12" text-anchor="middle">Unlimited distance</text>
+  <text x="400" y="290" font-family="Arial" font-size="12" text-anchor="middle">Secure transmission</text>
+  <text x="400" y="310" font-family="Arial" font-size="12" text-anchor="middle">Quantum encryption</text>
+  
+  <!-- Right Station: Receiver Unit -->
+  <rect x="550" y="100" width="200" height="120" rx="10" fill="#ffe6cc" stroke="#d79b00" stroke-width="2" />
+  <text x="650" y="130" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Receiver Unit</text>
+  <text x="650" y="180" font-family="Arial" font-size="12" text-anchor="middle">Detects quantum state</text>
+  <text x="650" y="200" font-family="Arial" font-size="12" text-anchor="middle">changes instantly</text>
+  
+  <!-- Bottom Left: Quantum State Encoder -->
+  <rect x="50" y="300" width="200" height="120" rx="10" fill="#e1d5e7" stroke="#9673a6" stroke-width="2" />
+  <text x="150" y="330" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Quantum State</text>
+  <text x="150" y="350" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Encoder</text>
+  <text x="150" y="380" font-family="Arial" font-size="12" text-anchor="middle">Modulates quantum states</text>
+  <text x="150" y="400" font-family="Arial" font-size="12" text-anchor="middle">to encode information</text>
+  
+  <!-- Bottom Right: Error Correction -->
+  <rect x="550" y="300" width="200" height="120" rx="10" fill="#f8cecc" stroke="#b85450" stroke-width="2" />
+  <text x="650" y="330" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Quantum Error</text>
+  <text x="650" y="350" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Correction</text>
+  <text x="650" y="380" font-family="Arial" font-size="12" text-anchor="middle">Maintains data integrity</text>
+  <text x="650" y="400" font-family="Arial" font-size="12" text-anchor="middle">across spacetime</text>
+  
+  <!-- Arrows -->
+  <!-- EGA to Quantum Channel -->
+  <path d="M 250 150 L 300 200" stroke="#000000" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+  
+  <!-- Quantum Channel to Receiver -->
+  <path d="M 500 200 L 550 150" stroke="#000000" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+  
+  <!-- Encoder to Quantum Channel -->
+  <path d="M 250 350 L 300 300" stroke="#000000" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+  
+  <!-- Quantum Channel to Error Correction -->
+  <path d="M 500 300 L 550 350" stroke="#000000" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+  
+  <!-- Entangled Particles -->
+  <circle cx="275" cy="175" r="5" fill="#ff0000" />
+  <circle cx="525" cy="175" r="5" fill="#ff0000" />
+  <path d="M 275 175 Q 400 140 525 175" stroke="#ff0000" stroke-width="1" stroke-dasharray="5,5" fill="none" />
+  
+  <!-- Definitions -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#000000" />
+    </marker>
+  </defs>
+</svg> 
