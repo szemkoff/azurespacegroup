@@ -10,20 +10,20 @@ const __dirname = path.dirname(__filename);
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'IntstelForce Project',
-  tagline: 'We Are Building A New World',
+  title: 'InstaForce Technologies',
+  tagline: 'Revolutionary Quantum Propulsion Systems',
   favicon: 'img/favicon.svg',
 
   // Set the production url of your site here
-  url: 'https://yourname.github.io',
+  url: 'https://szemkoff.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/instaforce-docs/',
+  baseUrl: '/InstaForce/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'your-github-username', // Usually your GitHub org/user name.
-  projectName: 'instaforce-docs', // Usually your repo name.
+  organizationName: 'szemkoff', // Usually your GitHub org/user name.
+  projectName: 'InstaForce', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
