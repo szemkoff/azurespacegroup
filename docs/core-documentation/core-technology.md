@@ -88,7 +88,7 @@ Quantum tunneling allows particles to pass through energy barriers that would be
 <div className="row">
   <div className="col col--6">
     <div style={{marginBottom: "20px"}}>
-      <img src="/static/img/photos/Quantum%20Field%20Manipulator_TopView.jpg" alt="Quantum Field Manipulator Top View" style={{maxWidth: "100%", marginBottom: "10px"}} />
+      <img src="/img/photos/Quantum-Field-Manipulator_TopView.jpg" alt="Quantum Field Manipulator Top View" style={{maxWidth: "100%", marginBottom: "10px"}} />
       <div style={{backgroundColor: "white", padding: "8px", borderRadius: "4px"}}>
         <p style={{textAlign: "center", margin: 0}}><em>Figure 2A: Quantum Field Manipulator - Top view</em></p>
       </div>
@@ -96,8 +96,7 @@ Quantum tunneling allows particles to pass through energy barriers that would be
   </div>
   <div className="col col--6">
     <div style={{marginBottom: "20px"}}>
-        ![Quantum Spacecraft - InstaForce Prototype](/img/photos/quantum-research-fig9-quantum-spacecraft.png)
-      <img src="/static/img/photos/Quantum%20Field%20Manipulator_CrossSection.jpg" alt="Quantum Field Manipulator Side View" style={{maxWidth: "100%", marginBottom: "10px"}} />
+      <img src="/img/photos/Quantum-Field-Manipulator_CrossSection.jpg" alt="Quantum Field Manipulator Side View" style={{maxWidth: "100%", marginBottom: "10px"}} />
       <div style={{backgroundColor: "white", padding: "8px", borderRadius: "4px"}}>
         <p style={{textAlign: "center", margin: 0}}><em>Figure 2B: Quantum Field Manipulator - Cross-section view</em></p>
       </div>
