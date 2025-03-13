@@ -85,6 +85,7 @@ Quantum tunneling allows particles to pass through energy barriers that would be
 - Inducing mass-tunneling effects that generate directional momentum
 - Employing nanoscale precision engineering to maintain optimal tunneling conditions
 
+![Quantum Spacecraft - InstaForce Prototype](/img/photos/quantum-research-fig9-quantum-spacecraft.png)
 <div className="row">
   <div className="col col--6">
     <div style={{marginBottom: "20px"}}>
