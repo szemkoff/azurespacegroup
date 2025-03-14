@@ -25,89 +25,85 @@ The game-based research platform is built on three fundamental principles:
 ### Platform Architecture
 
 ```mermaid
-%%{init: { 'theme': 'base', 'themeVariables': { 'primaryColor': '#2a76d2', 'primaryTextColor': '#ffffff', 'primaryBorderColor': '#1d5cad', 'lineColor': '#333333', 'secondaryColor': '#f5f5f5', 'tertiaryColor': '#f5f5f5' } } }%%
-flowchart TD
-    title["InstaForce Game-Based Research Platform Architecture V2"]
+stateDiagram-v2
+    direction TB
     
-    subgraph UILayer["User Interface Layer"]
-        direction LR
-        UI1["Quantum Simulator<br><small>3D quantum field visualization</small>"]
-        UI2["Virtual Laboratory<br><small>Component engineering & testing</small>"]
-        UI3["Research Network<br><small>Collaboration & resource allocation</small>"]
+    state "User Interface Layer" as UILayer {
+        QS: Quantum Simulator
+        VL: Virtual Laboratory
+        RN: Research Network
         
-        UI1 --- UI2
-        UI2 --- UI3
-    end
+        QS --> VL: Simulation data
+        VL --> RN: Experimental results
+    }
     
-    subgraph ResearchLayer["Research Tasks Layer"]
-        direction LR
-        RT1["Challenge Design<br><small>Problem formulation & structuring</small>"]
-        RT2["Solution Verification<br><small>Validation & quality assessment</small>"]
-        RT3["Progress Tracking<br><small>Milestone monitoring & reporting</small>"]
+    state "Research Tasks Layer" as ResearchLayer {
+        CD: Challenge Design
+        SV: Solution Verification
+        PT: Progress Tracking
         
-        RT1 --> RT2 --> RT3 -.-> RT1
-    end
+        CD --> SV: Research problems
+        SV --> PT: Validated solutions
+        PT --> CD: Feedback loop
+    }
     
-    subgraph DataLayer["Data Processing Layer"]
-        direction LR
-        DP1["Pattern Recognition<br><small>Solution clustering & analysis</small>"]
-        DP2["Solution Aggregation<br><small>Combining multiple approaches</small>"]
-        DP3["Breakthrough Detection<br><small>Identifying novel discoveries</small>"]
+    state "Data Processing Layer" as DataLayer {
+        PR: Pattern Recognition
+        SA: Solution Aggregation
+        BD: Breakthrough Detection
         
-        DP1 --> DP2 --> DP3
-    end
+        PR --> SA: Identified patterns
+        SA --> BD: Combined solutions
+    }
     
-    subgraph KnowledgeLayer["Knowledge Base Layer"]
-        direction LR
-        KB1["Research Outcomes<br><small>Verified findings & publications</small>"]
-        KB2["Simulation Results<br><small>Validated model behaviors</small>"]
-        KB3["Theoretical Models<br><small>Mathematical frameworks</small>"]
+    state "Knowledge Base Layer" as KnowledgeLayer {
+        RO: Research Outcomes
+        SR: Simulation Results
+        TM: Theoretical Models
         
-        KB1 <--> KB2 <--> KB3
-    end
+        RO --> SR: Informs simulations
+        SR --> TM: Validates models
+        TM --> RO: Guides research
+    }
     
-    %% Main flow connections with feedback loops
-    UILayer <---> ResearchLayer
-    ResearchLayer ---> DataLayer
-    DataLayer ---> KnowledgeLayer
-    KnowledgeLayer -.-> |"Research Evolution"| ResearchLayer
+    UILayer --> ResearchLayer: User contributions
+    ResearchLayer --> DataLayer: Research data
+    DataLayer --> KnowledgeLayer: Processed insights
+    KnowledgeLayer --> ResearchLayer: Knowledge evolution
     
-    %% External System Connections with details
-    User["Users<br><small>Researchers, Contributors,<br>Community Members</small>"] ====> UILayer
-    TokenSystem["Tokenization System<br><small>Incentives & Rewards</small>"] <===> UILayer
-    AI["AI Analysis System<br><small>Machine Learning &<br>Pattern Recognition</small>"] <===> DataLayer
-    Research["Traditional Research<br><small>Lab Work & Academic Papers</small>"] <===> KnowledgeLayer
+    USERS: User Community
+    TOKENSYS: Tokenization System
+    AISYS: AI Analysis System
+    TRADITIONAL: Traditional Research
     
-    %% Systems Integration
-    subgraph Integration["Systems Integration"]
-        direction TB
-        API["API Gateway"]
-        ETL["ETL Pipeline"]
-        Security["Security Layer"]
-    end
+    USERS --> UILayer: Engagement
+    TOKENSYS --> UILayer: Incentives
+    DataLayer --> AISYS: Advanced analysis
+    KnowledgeLayer --> TRADITIONAL: Academic integration
     
-    Integration -.-> UILayer
-    Integration -.-> DataLayer
+    note right of UILayer
+        Interactive environments for
+        research participation
+    end note
     
-    %% Styling classes
-    classDef uiClass fill:#8cb3d9,stroke:#3a75c4,color:#333,rounded
-    classDef researchClass fill:#f8c471,stroke:#e67e22,color:#333,rounded
-    classDef dataClass fill:#aed581,stroke:#7cb342,color:#333,rounded
-    classDef knowledgeClass fill:#ce93d8,stroke:#ab47bc,color:#333,rounded
-    classDef externalClass fill:#ffb74d,stroke:#fb8c00,color:#333,rounded
-    classDef integrationClass fill:#b39ddb,stroke:#7e57c2,color:#333,rounded
-    classDef titleClass font-size:18px,fill:none,stroke:none
+    note right of ResearchLayer
+        Framework for converting research
+        challenges into solvable problems
+    end note
     
-    class title titleClass
-    class UILayer,UI1,UI2,UI3 uiClass
-    class ResearchLayer,RT1,RT2,RT3 researchClass
-    class DataLayer,DP1,DP2,DP3 dataClass
-    class KnowledgeLayer,KB1,KB2,KB3 knowledgeClass
-    class TokenSystem,AI,Research,User externalClass
-    class Integration,API,ETL,Security integrationClass
+    note right of DataLayer
+        Analytical systems for extracting
+        value from user contributions
+    end note
+    
+    note right of KnowledgeLayer
+        Structured repository of
+        research findings and models
+    end note
 ```
+*Figure: InstaForce Game-Based Research Platform Architecture - Multi-layered approach to distributed scientific problem-solving*
 
-The platform architecture consists of four primary layers with bidirectional information flow, allowing for continuous improvement through feedback loops:
+The platform architecture consists of four primary layers that work together to transform complex research challenges into interactive experiences:
 
 | Layer | Function | Components |
 |-------|----------|------------|
