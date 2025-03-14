@@ -45,6 +45,7 @@ const sidebars = {
       label: 'Research & Compliance',
       items: [
         'research-documentation/research-development',
+        'research-documentation/quantum-battery-prototype',
         'research-documentation/time-tacking',
         'research-documentation/advanced-materials-research',
         'research-documentation/quantum-communications',

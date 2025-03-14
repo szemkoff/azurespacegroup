@@ -88,10 +88,10 @@ Quantum tunneling allows particles to pass through energy barriers that would be
 ![Quantum Spacecraft - InstaForce Prototype](/img/photos/quantum-research-fig9-quantum-spacecraft.png)
 *Quantum Spacecraft Prototype - The culmination of our integrated systems approach*
 
-![Quantum Field Manipulator - Top View](/img/photos/Quantum%20Field%20Manipulator_TopView.jpg)
+![Quantum Field Manipulator - Top View](/img/photos/Quantum-Field-Manipulator_TopView.jpg)
 *Figure 2A: Quantum Field Manipulator - Top view*
 
-![Quantum Field Manipulator - Cross-section View](/img/photos/Quantum%20Field%20Manipulator_CrossSection.jpg)
+![Quantum Field Manipulator - Cross-section View](/img/photos/Quantum-Field-Manipulator_CrossSection.jpg)
 *Figure 2B: Quantum Field Manipulator - Cross-section view*
 
 ```mermaid
