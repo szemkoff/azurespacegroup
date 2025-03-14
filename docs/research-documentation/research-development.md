@@ -219,11 +219,11 @@ This interface allows global teams to work together as if occupying the same phy
 
 | Facility | Capability | Current Status |
 |----------|------------|----------------|
-| Vacuum Test Chamber | 10^-12 torr, 100m³ volume | Under Construction |
-| Micro-Gravity Lab | 10^-6 g residual gravity | Operational |
-| Atomic Fabricators | 10^-12m precision | Prototype Testing |
-| Quantum Simulator | 10^100 quantum states | Partially Operational |
-| Test Range | 100km isolation corridor | Planning Phase |
+| Vacuum Test Chamber | 10^-12 torr, 100m³ volume | Initial Planning |
+| Micro-Gravity Lab | 10^-6 g residual gravity | Research Proposal |
+| Atomic Fabricators | 10^-12m precision | Theoretical Research |
+| Quantum Simulator | 10^100 quantum states | Computer Modeling |
+| Test Range | 100km isolation corridor | Pre-Feasibility Study |
 
 ## Development Challenges
 

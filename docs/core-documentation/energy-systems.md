@@ -531,12 +531,12 @@ These protocols ensure that critical systems remain operational even under catas
 
 | Component | Specification | Current Status |
 |-----------|---------------|----------------|
-| Quantum Vacuum Battery | 10^12 J/cm³ energy density | Theoretical Model |
-| Antimatter Reactor | 10^18 W peak output | Conceptual Design |
-| Power Network Efficiency | 99.9997% transmission efficiency | Simulation Verified |
-| Conversion Efficiency | 99.8% quantum-to-classical energy conversion | Laboratory Testing |
-| Total System Output | Sustained 10^15 W, peak 10^18 W | Design Phase |
-| Operational Duration | Functionally unlimited during vacuum operation | Theoretical |
+| Quantum Vacuum Battery | 10^12 J/cm³ energy density | Conceptual Research |
+| Antimatter Reactor | 10^18 W peak output | Academic Paper |
+| Power Network Efficiency | 99.9997% transmission efficiency | Computer Simulation |
+| Conversion Efficiency | 99.8% quantum-to-classical energy conversion | Early Calculations |
+| Total System Output | Sustained 10^15 W, peak 10^18 W | Grant Proposal |
+| Operational Duration | Functionally unlimited during vacuum operation | Thought Experiment |
 
 ## Development Challenges
 

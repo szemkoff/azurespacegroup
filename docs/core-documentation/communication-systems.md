@@ -158,11 +158,11 @@ Though experimental, this system provides a redundant communication method if qu
 
 | System | Capability | Current Status |
 |--------|------------|----------------|
-| Quantum Entanglement Communicator | Unlimited distance, 10^18 bits/second | Theoretical Design |
-| Neural Interface | 99.97% thought recognition accuracy | Early Prototype |
-| Quantum Beacon | Effective range of 100 light-years | Mathematical Modeling |
-| Holographic Environment | Full sensory resolution at 10^12 voxels | Laboratory Testing |
-| Subspace Communication | Theoretical latency of 1ms per light-year | Conceptual Only |
+| Quantum Entanglement Communicator | Unlimited distance, 10^18 bits/second | Research Proposal |
+| Neural Interface | 99.97% thought recognition accuracy | Concept Paper |
+| Quantum Beacon | Effective range of 100 light-years | Theoretical Model |
+| Holographic Environment | Full sensory resolution at 10^12 voxels | Early Research |
+| Subspace Communication | Theoretical latency of 1ms per light-year | Speculative Theory |
 
 ## Development Challenges
 

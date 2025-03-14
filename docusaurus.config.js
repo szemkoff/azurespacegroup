@@ -161,7 +161,7 @@ const config = {
             },
             {
               label: 'Contact Us',
-              href: 'mailto:stan.zemskoff@instaforce.com',
+              href: 'mailto:irnbrue@gmail.com',
             },
           ],
         },

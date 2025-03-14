@@ -154,11 +154,11 @@ This structure provides stable, long-term governance for quantum propulsion tech
 
 | Framework Component | Implementation Timeline | Current Status |
 |--------------------|--------------------------|----------------|
-| Space Treaty Amendments | Draft proposal within 12 months | Early Discussion |
-| Licensing Framework | Implementation within 24 months | Conceptual Phase |
-| Patent Framework | Operational within 18 months | Draft Development |
-| Ethics Commission | Establishment within 6 months | Member Selection |
-| Incident Response | Protocols finalized within 12 months | Framework Design |
+| Space Treaty Amendments | Draft proposal within 12 months | Issue Identification |
+| Licensing Framework | Implementation within 24 months | Exploratory Phase |
+| Patent Framework | Initial filing within 18 months | Research Survey |
+| Ethics Commission | Stakeholder discussion within 6 months | Preliminary Planning |
+| Incident Response | Protocol research within 12 months | Literature Review |
 
 ## Implementation Challenges
 

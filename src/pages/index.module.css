@@ -8,6 +8,7 @@
   text-align: center;
   position: relative;
   overflow: hidden;
+  background: linear-gradient(135deg, #0d47a1 0%, #1a237e 100%);
 }
 
 @media screen and (max-width: 996px) {
@@ -22,4 +23,202 @@
   justify-content: center;
   gap: 1rem;
   margin-top: 2rem;
+}
+
+.leadParagraph {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: var(--ifm-color-emphasis-700);
+  margin-bottom: 2rem;
+}
+
+.featureCallout {
+  background-color: var(--ifm-color-primary-lightest);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.featureCallout h3 {
+  margin-top: 0;
+  color: var(--ifm-color-primary-dark);
+}
+
+.technologyGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.technologyCard {
+  background-color: var(--ifm-color-emphasis-0);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.technologyCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.technologyCard h4 {
+  margin-top: 0;
+  color: var(--ifm-color-primary);
+}
+
+.technologyLink {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  background-color: var(--ifm-color-primary-lightest);
+  color: var(--ifm-color-primary-dark);
+  border-radius: 4px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.technologyLink:hover {
+  background-color: var(--ifm-color-primary-light);
+  color: white;
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+
+.researchHighlight {
+  background-color: var(--ifm-color-emphasis-100);
+  border-radius: 8px;
+  padding: 2rem;
+  margin: 3rem 0;
+  border-left: 4px solid var(--ifm-color-primary);
+}
+
+.researchHighlight h3 {
+  margin-top: 0;
+  color: var(--ifm-color-primary-dark);
+}
+
+.researchHighlight h4 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.ctaSection {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .technologyGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .featureCallout,
+  .researchHighlight {
+    padding: 1.25rem;
+  }
+}
+
+/* Project Status Page Styles */
+.statusLegendContainer {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: #f6f8fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.statusLegendContainer h4 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  color: var(--ifm-color-primary-dark);
+  font-size: 1rem;
+}
+
+.statusLegendGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.legendDivider {
+  width: 100%;
+  height: 1px;
+  margin: 1rem 0;
+  background-color: #ddd;
+}
+
+.sectionTitle {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--ifm-color-primary-dark);
+  font-size: 1.5rem;
+}
+
+.tableContainer {
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.statusTable {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.statusTable thead {
+  background-color: #f6f8fa;
+}
+
+.statusTable th {
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+  text-align: left;
+  border-bottom: 2px solid #ddd;
+}
+
+.statusTable td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.statusTable tr:last-child td {
+  border-bottom: none;
+}
+
+.statusTable tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+.milestonesList {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.milestonesList li {
+  margin-bottom: 0.25rem;
+}
+
+@media screen and (max-width: 768px) {
+  .statusLegendGrid {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .statusTable {
+    font-size: 0.9rem;
+  }
+  
+  .statusTable th,
+  .statusTable td {
+    padding: 0.5rem 0.75rem;
+  }
 } 

@@ -272,12 +272,12 @@ This technology maintains optimal temperature for both crew comfort and the extr
 
 | System | Capability | Current Status |
 |--------|------------|----------------|
-| Self-Healing Protocols | Restoration rate of 10^12 atoms/second | Theoretical Model |
-| Predictive Diagnostics | 99.9997% failure prevention rate | Simulation Verified |
-| Quantum Shielding | Effective protection against impacts up to 10^15 joules | Mathematical Framework |
-| Radiation Protection | Reduction to 0.001 mSv/year within habitable areas | Design Phase |
-| Atmospheric Control | Precision of 1 molecule per 10^12 | Conceptual Design |
-| Gravity Generation | 0.0001g to 10g range with 0.00001g precision | Theoretical Model |
+| Self-Healing Protocols | Restoration rate of 10^12 atoms/second | Review Article |
+| Predictive Diagnostics | 99.9997% failure prevention rate | Initial Research |
+| Quantum Shielding | Effective protection against impacts up to 10^15 joules | Funding Proposal |
+| Radiation Protection | Reduction to 0.001 mSv/year within habitable areas | Research Question |
+| Atmospheric Control | Precision of 1 molecule per 10^12 | Literature Search |
+| Gravity Generation | 0.0001g to 10g range with 0.00001g precision | Theoretical Discussion |
 
 ## Integration Challenges
 

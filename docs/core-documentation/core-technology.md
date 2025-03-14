@@ -533,12 +533,12 @@ These systems form the core of our propulsion technology, enabling unprecedented
 
 | Component | Specification | Current Status |
 |-----------|---------------|----------------|
-| Quantum Tunneling Matrix | 10^12 channels per cm³ | Prototype Testing |
-| Superposition Stability | 99.7% coherence for 10⁸ seconds | Laboratory Verified |
-| Entanglement Network | 10⁵ entangled pairs with 99.99% fidelity | Theoretical Modeling |
-| Quantum Processor | 12,500 topological qubits | Early Development |
-| Vacuum Energy Output | 10^16 joules/m³/second theoretical maximum | Conceptual Design |
-| Field Generator Power | Sufficient for 10⁻⁵ spacetime curvature | Mathematical Modeling |
+| Quantum Tunneling Matrix | 10^12 channels per cm³ | Speculative Theory |
+| Superposition Stability | 99.7% coherence for 10⁸ seconds | Literature Analysis |
+| Entanglement Network | 10⁵ entangled pairs with 99.99% fidelity | Faculty Discussion |
+| Quantum Processor | 12,500 topological qubits | Concept Stage |
+| Vacuum Energy Output | 10^16 joules/m³/second theoretical maximum | Paper Proposal |
+| Field Generator Power | Sufficient for 10⁻⁵ spacetime curvature | Preliminary Math |
 
 ## Development Roadmap
 
