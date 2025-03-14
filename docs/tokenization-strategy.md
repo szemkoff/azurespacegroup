@@ -24,9 +24,17 @@ Our tokenization model implements three interconnected token types, each serving
 
 ### Token Distribution Model
 
-![Token Distribution](/img/diagrams/token-distribution.svg)
+```mermaid
+pie title InstaForce Token Distribution Model
+    "Research & Development" : 40
+    "Community Research Pool" : 20
+    "Founding Team & Advisors" : 15
+    "Private Sale" : 10
+    "Public Sale" : 10
+    "Treasury & Ecosystem" : 5
+```
 
-The initial token distribution is designed to balance research funding, community growth, and long-term sustainability:
+#### Token Allocation and Vesting
 
 | Allocation Category | Percentage | Vesting Period | Notes |
 |---------------------|------------|----------------|-------|

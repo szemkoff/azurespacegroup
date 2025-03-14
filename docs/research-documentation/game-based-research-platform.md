@@ -24,7 +24,55 @@ The game-based research platform is built on three fundamental principles:
 
 ### Platform Architecture
 
-![Research Game Platform Architecture](/img/diagrams/game-platform-architecture.svg)
+```mermaid
+flowchart TD
+    title["InstaForce Game-Based Research Platform Architecture"]
+    
+    subgraph UILayer["User Interface Layer"]
+        UI1["Quantum Simulator"]
+        UI2["Virtual Laboratory"]
+        UI3["Research Network"]
+    end
+    
+    subgraph ResearchLayer["Research Tasks Layer"]
+        RT1["Challenge Design"]
+        RT2["Solution Verification"]
+        RT3["Progress Tracking"]
+    end
+    
+    subgraph DataLayer["Data Processing Layer"]
+        DP1["Pattern Recognition"]
+        DP2["Solution Aggregation"]
+        DP3["Breakthrough Detection"]
+    end
+    
+    subgraph KnowledgeLayer["Knowledge Base Layer"]
+        KB1["Research Outcomes"]
+        KB2["Simulation Results"]
+        KB3["Theoretical Models"]
+    end
+    
+    UILayer --> ResearchLayer
+    ResearchLayer --> DataLayer
+    DataLayer --> KnowledgeLayer
+    
+    %% External System Connections
+    TokenSystem["Tokenization System"] --- UILayer
+    AI["AI Analysis System"] --- DataLayer
+    Research["Traditional Research"] --- KnowledgeLayer
+    
+    classDef uiClass fill:#8cb3d9,stroke:#3a75c4,color:#333
+    classDef researchClass fill:#f8c471,stroke:#e67e22,color:#333
+    classDef dataClass fill:#aed581,stroke:#7cb342,color:#333
+    classDef knowledgeClass fill:#ce93d8,stroke:#ab47bc,color:#333
+    classDef externalClass fill:#ffb74d,stroke:#fb8c00,color:#333
+    
+    class UILayer,UI1,UI2,UI3 uiClass
+    class ResearchLayer,RT1,RT2,RT3 researchClass
+    class DataLayer,DP1,DP2,DP3 dataClass
+    class KnowledgeLayer,KB1,KB2,KB3 knowledgeClass
+    class TokenSystem,AI,Research externalClass
+```
 
 The platform consists of four integrated layers:
 
