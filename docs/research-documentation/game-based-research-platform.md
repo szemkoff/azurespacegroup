@@ -25,56 +25,89 @@ The game-based research platform is built on three fundamental principles:
 ### Platform Architecture
 
 ```mermaid
+%%{init: { 'theme': 'base', 'themeVariables': { 'primaryColor': '#2a76d2', 'primaryTextColor': '#ffffff', 'primaryBorderColor': '#1d5cad', 'lineColor': '#333333', 'secondaryColor': '#f5f5f5', 'tertiaryColor': '#f5f5f5' } } }%%
 flowchart TD
-    title["InstaForce Game-Based Research Platform Architecture"]
+    title["InstaForce Game-Based Research Platform Architecture V2"]
     
     subgraph UILayer["User Interface Layer"]
-        UI1["Quantum Simulator"]
-        UI2["Virtual Laboratory"]
-        UI3["Research Network"]
+        direction LR
+        UI1["Quantum Simulator<br><small>3D quantum field visualization</small>"]
+        UI2["Virtual Laboratory<br><small>Component engineering & testing</small>"]
+        UI3["Research Network<br><small>Collaboration & resource allocation</small>"]
+        
+        UI1 --- UI2
+        UI2 --- UI3
     end
     
     subgraph ResearchLayer["Research Tasks Layer"]
-        RT1["Challenge Design"]
-        RT2["Solution Verification"]
-        RT3["Progress Tracking"]
+        direction LR
+        RT1["Challenge Design<br><small>Problem formulation & structuring</small>"]
+        RT2["Solution Verification<br><small>Validation & quality assessment</small>"]
+        RT3["Progress Tracking<br><small>Milestone monitoring & reporting</small>"]
+        
+        RT1 --> RT2 --> RT3 -.-> RT1
     end
     
     subgraph DataLayer["Data Processing Layer"]
-        DP1["Pattern Recognition"]
-        DP2["Solution Aggregation"]
-        DP3["Breakthrough Detection"]
+        direction LR
+        DP1["Pattern Recognition<br><small>Solution clustering & analysis</small>"]
+        DP2["Solution Aggregation<br><small>Combining multiple approaches</small>"]
+        DP3["Breakthrough Detection<br><small>Identifying novel discoveries</small>"]
+        
+        DP1 --> DP2 --> DP3
     end
     
     subgraph KnowledgeLayer["Knowledge Base Layer"]
-        KB1["Research Outcomes"]
-        KB2["Simulation Results"]
-        KB3["Theoretical Models"]
+        direction LR
+        KB1["Research Outcomes<br><small>Verified findings & publications</small>"]
+        KB2["Simulation Results<br><small>Validated model behaviors</small>"]
+        KB3["Theoretical Models<br><small>Mathematical frameworks</small>"]
+        
+        KB1 <--> KB2 <--> KB3
     end
     
-    UILayer --> ResearchLayer
-    ResearchLayer --> DataLayer
-    DataLayer --> KnowledgeLayer
+    %% Main flow connections with feedback loops
+    UILayer <---> ResearchLayer
+    ResearchLayer ---> DataLayer
+    DataLayer ---> KnowledgeLayer
+    KnowledgeLayer -.-> |"Research Evolution"| ResearchLayer
     
-    %% External System Connections
-    TokenSystem["Tokenization System"] --- UILayer
-    AI["AI Analysis System"] --- DataLayer
-    Research["Traditional Research"] --- KnowledgeLayer
+    %% External System Connections with details
+    User["Users<br><small>Researchers, Contributors,<br>Community Members</small>"] ====> UILayer
+    TokenSystem["Tokenization System<br><small>Incentives & Rewards</small>"] <===> UILayer
+    AI["AI Analysis System<br><small>Machine Learning &<br>Pattern Recognition</small>"] <===> DataLayer
+    Research["Traditional Research<br><small>Lab Work & Academic Papers</small>"] <===> KnowledgeLayer
     
-    classDef uiClass fill:#8cb3d9,stroke:#3a75c4,color:#333
-    classDef researchClass fill:#f8c471,stroke:#e67e22,color:#333
-    classDef dataClass fill:#aed581,stroke:#7cb342,color:#333
-    classDef knowledgeClass fill:#ce93d8,stroke:#ab47bc,color:#333
-    classDef externalClass fill:#ffb74d,stroke:#fb8c00,color:#333
+    %% Systems Integration
+    subgraph Integration["Systems Integration"]
+        direction TB
+        API["API Gateway"]
+        ETL["ETL Pipeline"]
+        Security["Security Layer"]
+    end
     
+    Integration -.-> UILayer
+    Integration -.-> DataLayer
+    
+    %% Styling classes
+    classDef uiClass fill:#8cb3d9,stroke:#3a75c4,color:#333,rounded
+    classDef researchClass fill:#f8c471,stroke:#e67e22,color:#333,rounded
+    classDef dataClass fill:#aed581,stroke:#7cb342,color:#333,rounded
+    classDef knowledgeClass fill:#ce93d8,stroke:#ab47bc,color:#333,rounded
+    classDef externalClass fill:#ffb74d,stroke:#fb8c00,color:#333,rounded
+    classDef integrationClass fill:#b39ddb,stroke:#7e57c2,color:#333,rounded
+    classDef titleClass font-size:18px,fill:none,stroke:none
+    
+    class title titleClass
     class UILayer,UI1,UI2,UI3 uiClass
     class ResearchLayer,RT1,RT2,RT3 researchClass
     class DataLayer,DP1,DP2,DP3 dataClass
     class KnowledgeLayer,KB1,KB2,KB3 knowledgeClass
-    class TokenSystem,AI,Research externalClass
+    class TokenSystem,AI,Research,User externalClass
+    class Integration,API,ETL,Security integrationClass
 ```
 
-The platform consists of four integrated layers:
+The platform architecture consists of four primary layers with bidirectional information flow, allowing for continuous improvement through feedback loops:
 
 | Layer | Function | Components |
 |-------|----------|------------|
