@@ -46,6 +46,7 @@ const sidebars = {
       items: [
         'research-documentation/research-development',
         'research-documentation/quantum-battery-prototype',
+        'research-documentation/game-based-research-platform',
         'research-documentation/time-tacking',
         'research-documentation/advanced-materials-research',
         'research-documentation/quantum-communications',
@@ -64,6 +65,7 @@ const sidebars = {
       items: [
         'investment',
         'pitch-deck',
+        'tokenization-strategy',
       ],
     },
     {
