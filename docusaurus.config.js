@@ -26,8 +26,31 @@ const config = {
   projectName: 'InstaForce', // Usually your repo name.
   deploymentBranch: 'docs-deployment', // Use our custom branch for deployment
 
-  onBrokenLinks: 'ignore',
+  // Restore normal behavior for broken links after we've fixed the diagram URLs
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
+
+  // Enable static directory to be properly copied to build directory
+  staticDirectories: ['static', 'public'],
+  
+  // Configure custom rewrites to fix diagram URLs
+  plugins: [
+    function (context, options) {
+      return {
+        name: 'resolve-html-diagrams',
+        configureWebpack(config, isServer, utils) {
+          return {
+            resolve: {
+              alias: {
+                // Rewrite /InstaForce/img/diagrams/xxx.html to /img/diagrams/xxx.html
+                '/InstaForce/img/diagrams': path.resolve(__dirname, 'static/img/diagrams'),
+              },
+            },
+          };
+        },
+      };
+    },
+  ],
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
