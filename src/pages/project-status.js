@@ -4,6 +4,7 @@ import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
+import MermaidChart from '@site/src/components/MermaidChart';
 
 // Define custom CSS for the status icons
 const statusStyles = {
@@ -202,6 +203,8 @@ function ProjectStatusHeader() {
 
 export default function ProjectStatus() {
   const {siteConfig} = useDocusaurusContext();
+
+
   return (
     <Layout
       title="Project Status"
@@ -469,8 +472,144 @@ export default function ProjectStatus() {
                         </ul>
                       </td>
                     </tr>
+                    <tr>
+                      <td>Phase 3: Prototype Development</td>
+                      <td>Full-scale prototype development and initial testing</td>
+                      <td><StatusPlanned /></td>
+                      <td>
+                        <ul className={styles.milestonesList}>
+                          <li>Full-scale prototype construction</li>
+                          <li>Initial testing and performance evaluation</li>
+                          <li>Prototype documentation</li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Phase 4: Field Testing</td>
+                      <td>Large-scale field testing and performance validation</td>
+                      <td><StatusPlanned /></td>
+                      <td>
+                        <ul className={styles.milestonesList}>
+                          <li>Field testing infrastructure setup</li>
+                          <li>Performance validation against theoretical predictions</li>
+                          <li>Data collection and analysis</li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Phase 5: Commercial Applications</td>
+                      <td>Development of high-capacity transport and industrial applications</td>
+                      <td><StatusPlanned /></td>
+                      <td>
+                        <ul className={styles.milestonesList}>
+                          <li>Satellite launch systems</li>
+                          <li>Space tourism infrastructure</li>
+                          <li>Asteroid mining operations</li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Phase 6: Interstellar Exploration</td>
+                      <td>Development of long-range interstellar transport vehicles for deep space exploration</td>
+                      <td><StatusPlanned /></td>
+                      <td>
+                        <ul className={styles.milestonesList}>
+                          <li>Interstellar navigation systems</li>
+                          <li>Long-term life support</li>
+                          <li>Planetary colonization technology</li>
+                        </ul>
+                      </td>
+                    </tr>
                   </tbody>
                 </table>
+              </div>
+
+              <h3 className={styles.sectionTitle}>R&D Phase</h3>
+              <div className={styles.tableContainer}>
+                <table className={styles.statusTable}>
+                  <thead>
+                    <tr>
+                      <th>Phase</th>
+                      <th>Description</th>
+                      <th>Status</th>
+                      <th>Start Date</th>
+                      <th>Duration</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Theoretical Validation</td>
+                      <td>Rigorous mathematical modeling of quantum field manipulation and completion of theoretical framework</td>
+                      <td><StatusDone /></td>
+                      <td>2023</td>
+                      <td>2 years</td>
+                    </tr>
+                    <tr>
+                      <td>Quantum Field Modeling</td>
+                      <td>Development of mathematical models and simulations for quantum field manipulation</td>
+                      <td><StatusInProgress /></td>
+                      <td>2024</td>
+                      <td>3 years</td>
+                    </tr>
+                    <tr>
+                      <td>Prototype Development</td>
+                      <td>Full-scale prototype development and initial testing</td>
+                      <td><StatusPlanned /></td>
+                      <td>2025</td>
+                      <td>5 years</td>
+                    </tr>
+                    <tr>
+                      <td>Commercial Drone Adaptation</td>
+                      <td>Development of high-capacity transport and industrial applications</td>
+                      <td><StatusPlanned /></td>
+                      <td>2028</td>
+                      <td>5 years</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <h3 className={styles.sectionTitle}>Development Roadmap</h3>
+              <p>
+                The following Gantt chart outlines our long-term development timeline, 
+                showing how various project components will progress from research 
+                through prototyping and into full implementation.
+              </p>
+
+              <div className={styles.mermaidVisualization}>
+                <MermaidChart chart={`
+gantt
+  title Quantum Propulsion Technology Development Roadmap
+  dateFormat YYYY
+  axisFormat %Y
+  
+  section R&D Phase
+  Theoretical Validation :crit, active, 2023, 2y
+  Quantum Field Modeling :active, 2024, 3y
+  Prototype Development :2025, 5y
+  Commercial Drone Adaptation :2028, 5y
+  
+  section Vehicle Development
+  Small-Scale Test Vehicles :2026, 4y
+  Four-Seater Manned Vehicle :2028, 5y
+  High-Capacity Transport :2033, 5y
+  Interstellar Transport :2038, 5y
+  
+  section Commercialization
+  Strategic Partnerships :active, 2024, 6y
+  Satellite Launch Operations :2028, 10y
+  Space Tourism :2033, 10y
+  Industrial Mining :2033, 10y
+  Interstellar Exploration :2038, 10y
+                `}/>
+              </div>
+
+
+              <div className={styles.roadmapDisclaimer}>
+                <p>
+                  <strong>Note:</strong> Timeline projections are based on current research progress and funding projections. 
+                  Actual implementation dates may vary based on technological breakthroughs and investment milestones.
+                </p>
               </div>
             </div>
           </div>
