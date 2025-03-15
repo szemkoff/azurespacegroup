@@ -48,6 +48,27 @@ const config = {
             },
           };
         },
+        // Copy diagrams to both locations to ensure they're accessible
+        async postBuild({ outDir }) {
+          const fs = require('fs-extra');
+          const path = require('path');
+          
+          // Create the target directory if it doesn't exist
+          const targetDir = path.join(outDir, 'InstaForce', 'img', 'diagrams');
+          await fs.ensureDir(targetDir);
+          
+          // Copy all HTML diagrams to the target directory
+          const sourceDir = path.join(outDir, 'img', 'diagrams');
+          const files = await fs.readdir(sourceDir);
+          for (const file of files) {
+            if (file.endsWith('.html')) {
+              await fs.copy(
+                path.join(sourceDir, file),
+                path.join(targetDir, file)
+              );
+            }
+          }
+        },
       };
     },
   ],
@@ -239,6 +260,7 @@ const config = {
             'https://github.com/szemkoff/InstaForce/tree/main/',
           // Configure inline authors to be ignored to remove the warning
           onInlineAuthors: 'ignore',
+          onUntruncatedBlogPosts: 'ignore',
         },
         theme: {
           customCss: './src/css/custom.css',
