@@ -22,8 +22,13 @@ function HomepageHeader() {
           </Link>
           <Link
             className="button button--secondary button--lg"
-            to="/project-status">
-            Project Status
+            to="/docs/tokenization-strategy">
+            Tokenization Strategy
+          </Link>
+          <Link
+            className="button button--secondary button--lg"
+            to="/docs/research-documentation/game-based-research-platform">
+            Game-Based Research
           </Link>
         </div>
       </div>
@@ -80,6 +85,30 @@ export default function Home() {
                   <h4>Vacuum Energy Harvesting</h4>
                   <p>Drawing power directly from quantum vacuum fluctuations</p>
                   <Link className={styles.technologyLink} to="/docs/core-documentation/energy-systems">Learn more →</Link>
+                </div>
+              </div>
+              
+              <h3>Innovative Research Approaches</h3>
+              <div className={styles.technologyGrid}>
+                <div className={styles.technologyCard}>
+                  <h4>Game-Based Research Platform</h4>
+                  <p>Solving complex problems through interactive experiences</p>
+                  <Link className={styles.technologyLink} to="/docs/research-documentation/game-based-research-platform">Learn more →</Link>
+                </div>
+                <div className={styles.technologyCard}>
+                  <h4>Tokenization Strategy</h4>
+                  <p>Token-based incentives for community research contributions</p>
+                  <Link className={styles.technologyLink} to="/docs/tokenization-strategy">Learn more →</Link>
+                </div>
+                <div className={styles.technologyCard}>
+                  <h4>Community Research Pool</h4>
+                  <p>Rewarding valuable research from diverse contributors</p>
+                  <Link className={styles.technologyLink} to="/docs/contributing">Learn more →</Link>
+                </div>
+                <div className={styles.technologyCard}>
+                  <h4>Investment Opportunities</h4>
+                  <p>Hybrid funding model combining equity and tokens</p>
+                  <Link className={styles.technologyLink} to="/docs/investment">Learn more →</Link>
                 </div>
               </div>
               

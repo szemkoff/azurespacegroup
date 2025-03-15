@@ -14,6 +14,8 @@ The Quantum Engine Project encompasses multiple domains:
 - **Human Factors**: Crew systems, psychological support, habitat design
 - **Legal/Regulatory**: Space law, ethics, international policy
 - **Project Management**: Resource allocation, timeline planning, risk management
+- **Game Design**: Game mechanics, UI/UX for research games, player engagement
+- **Blockchain/Tokenomics**: Smart contract development, token economy modeling
 
 Please identify where your expertise best aligns with our needs.
 
@@ -25,6 +27,7 @@ To become a contributor:
 2. Submit credentials for verification (academic, professional, security clearance)
 3. Sign the Quantum Contributor Agreement (includes confidentiality provisions)
 4. Complete the required security briefing for your clearance level
+5. Set up your Research Token Wallet (for token-based contributions and rewards)
 
 ### 3. Contribution Process
 
@@ -35,6 +38,8 @@ Once approved, you can contribute through several channels:
 - **Engineering Solutions**: Propose designs for components or subsystems
 - **Testing Protocols**: Develop validation methodologies for quantum systems
 - **Interdisciplinary Integration**: Help bridge gaps between specialized teams
+- **Game-Based Research**: Participate in our [Game-Based Research Platform](/docs/research-documentation/game-based-research-platform) to solve complex research challenges
+- **Community Research Pool**: Contribute to bounty-based research problems for token rewards
 
 ## Contribution Guidelines
 
@@ -114,5 +119,53 @@ For questions about contributing, please contact:
 - **General Inquiries**: [contribute@quantum-engine.org](mailto:contribute@quantum-engine.org)
 - **Technical Questions**: [technical-lead@quantum-engine.org](mailto:technical-lead@quantum-engine.org)
 - **Security Concerns**: [security@quantum-engine.org](mailto:security@quantum-engine.org)
+
+## Token-Based Contribution System
+
+InstaForce uses a token-based incentive system to reward valuable community contributions. This system operates through our [Tokenization Strategy](/docs/tokenization-strategy) with the following key components:
+
+### Community Research Pool
+
+The Community Research Pool (CRP) allocates 20% of our token supply specifically to reward research contributions:
+
+| Contribution Type | Typical Reward Range | Examples |
+|-------------------|----------------------|----------|
+| Solving Research Challenges | 100-10,000 RAT | Solutions to specific physics or engineering problems |
+| Game Achievements | 10-1,000 RAT | Reaching significant milestones in research games |
+| Bug Reports | 5-500 RAT | Identifying issues in simulations or documentation |
+| Documentation Improvements | 10-200 RAT | Enhancing clarity or accuracy of technical documents |
+
+### Reward Process
+
+1. Submit your contribution through the appropriate channel
+2. Community review and validation of your contribution
+3. Contribution evaluation by InstaForce research team
+4. Token rewards distributed to your registered wallet
+
+### Token Utility
+
+Research Access Tokens (RAT) provide various benefits:
+- Access to advanced research data and simulations
+- Participation in governance decisions
+- Priority access to new research games and challenges
+
+For more information, see our complete [Tokenization Strategy](/docs/tokenization-strategy).
+
+## Game-Based Research Participation
+
+Our [Game-Based Research Platform](/docs/research-documentation/game-based-research-platform) transforms complex research challenges into engaging games. Here's how to participate:
+
+1. **Register**: Create an account on our research platform
+2. **Select a Game Environment**:
+   - Quantum Simulator for visualizing quantum interactions
+   - Virtual Laboratory for component design and testing
+   - Research Network for collaborative research
+3. **Build Your Skills**: Start with tutorial challenges to learn the system
+4. **Join Research Campaigns**: Participate in active research challenges
+5. **Earn Rewards**: Receive tokens for valuable contributions
+
+Different game environments are suited to different skills, from theoretical physics to engineering design to systems optimization.
+
+## Benefits of Contributing
 
 Thank you for your interest in advancing humanity's future in space through quantum propulsion technology. 

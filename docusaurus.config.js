@@ -82,9 +82,9 @@ const config = {
     // Replace with your project's social card
     image: 'img/logo.svg',
     navbar: {
-      title: 'InstaForce Technologies',
+      title: 'InstaForce',
       logo: {
-        alt: 'InstaForce Technologies Logo',
+        alt: 'InstaForce Logo',
         src: 'img/logo.svg',
       },
       items: [
@@ -94,8 +94,7 @@ const config = {
           position: 'left',
           label: 'Documentation',
         },
-        {to: '/project-status', label: 'Project Status', position: 'left'},
-        {to: '/blog', label: 'Project Updates', position: 'left'},
+        {to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/szemkoff/InstaForce',
           label: 'GitHub',
@@ -145,6 +144,27 @@ const config = {
             {
               label: 'Legal Framework',
               to: '/docs/research-documentation/legal-regulatory',
+            },
+          ],
+        },
+        {
+          title: 'Community & Funding',
+          items: [
+            {
+              label: 'Contributing',
+              to: '/docs/contributing',
+            },
+            {
+              label: 'Tokenization Strategy',
+              to: '/docs/tokenization-strategy',
+            },
+            {
+              label: 'Game-Based Research',
+              to: '/docs/research-documentation/game-based-research-platform',
+            },
+            {
+              label: 'Investment',
+              to: '/docs/investment',
             },
           ],
         },

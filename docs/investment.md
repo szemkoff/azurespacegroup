@@ -24,6 +24,17 @@ Our quantum propulsion technology operates by generating a quantum cocoon around
 
 This technology is inspired by nature - flying insects have used similar principles for hundreds of millions of years, generating electromagnetic fields through high-frequency wing vibration. InstaForce is reverse-engineering and scaling these natural mechanisms to create revolutionary spacecraft propulsion.
 
+### Innovative Funding Approach
+
+InstaForce employs a hybrid funding model that combines traditional equity investments with an innovative tokenization strategy:
+
+| Approach | Key Features | Benefits |
+|----------|-------------|----------|
+| Traditional Equity | Staged investment rounds from seed to pre-IPO | Institutional backing, traditional governance |
+| [Tokenization Strategy](/docs/tokenization-strategy) | Multi-token system with research, quantum, and governance tokens | Community engagement, decentralized research funding |
+
+Our tokenization approach creates a powerful ecosystem that accelerates R&D through community involvement while providing unique opportunities for investors to participate in both the equity and token economies. For detailed information, see our [Tokenization Strategy](/docs/tokenization-strategy).
+
 ### Market Opportunity
 
 The quantum propulsion market opportunity spans multiple sectors:
@@ -109,42 +120,49 @@ Our leadership team combines expertise in quantum physics, aerospace engineering
 
 From project inception through 2024, InstaForce Technologies has been funded exclusively through personal investments from the founding team, amounting to approximately $38 million. This personal commitment has enabled:
 
-- Development of core theoretical frameworks
-- Initial proof-of-concept experiments
-- Filing of foundational patents
+- Development of working prototypes
+- Validation of core theoretical principles
 - Assembly of a world-class research team
-- Construction of preliminary laboratory facilities
+- Establishment of preliminary patent portfolio
 
 The company is now entering a new phase requiring significant capital investment to accelerate development and move toward commercial implementation.
 
-**Current Opportunity - Seed Round**
+**Current Round - Seed Funding**
 
 We are currently raising our first external investment round - a $5 million seed round in Q1 2025 - to fund critical initial development work. This investment will fund:
 
 1. **Specialized Research Equipment** ($2.5M)
-   - Quantum field measurement apparatus
-   - Initial materials testing equipment
-   - Laboratory enhancements
+   - Quantum field generators
+   - Specialized measuring apparatus
+   - Containment systems
+   - High-precision fabrication tools
 
 2. **Core Research Activities** ($1.5M)
-   - Theoretical model validation
-   - Initial component design
-   - Quantum field simulation software development
-
-3. **Team Development** ($1M)
+   - Validation experiments
+   - Simulation environment development
+   - Prototype refinement
    - Key researcher recruitment
-   - Specialized consultant engagements
-   - Initial engineering assessments
+
+3. **Tokenization Platform Development** ($1M)
+   - Multi-token system implementation
+   - Research contribution platform
+   - Community engagement infrastructure
+   - Token marketplace development
 
 **Future Funding Roadmap**
 
-| Round | Projected Date | Target Amount | Purpose |
-|-------|---------------|--------------|---------|
-| Series A | Q4 2025 | $170M | Laboratory expansion and first integrated propulsion prototype |
-| Series B | Q3 2026 | $350M | Full-scale field generator and system integration |
-| Series C | Q4 2027 | $500M | First field tests and regulatory preparation |
-| Series D | Q2 2029 | $750M | Advanced testing program and regulatory approvals |
-| Pre-IPO | Q1 2030 | $1.2B | Manufacturing scale-up and commercial implementation |
+Our staged investment approach aligns capital requirements with technical milestones:
+
+| Round | Timing | Amount | Primary Focus | Token Component |
+|-------|--------|--------|---------------|----------------|
+| Seed | Q1 2025 | $5M | Initial research equipment and validation | Platform development |
+| Series A | Q3 2026 | $170M | Quantum tunneling demonstration, team expansion | $20M token sale for research access |
+| Series B | Q2 2027 | $350M | System integration, advanced prototyping | $50M token marketplace launch |
+| Series C | Q4 2027 | $500M | Commercial prototype, testing infrastructure | $100M token economy expansion |
+| Series D | Q2 2028 | $750M | Manufacturing preparation, regulatory approvals | $200M ecosystem integration |
+| Pre-IPO | Q1 2029 | $1.2B | Production scaling, commercial operations | $500M decentralized research system |
+
+This hybrid funding approach enables us to leverage both traditional investment capital and community-driven funding mechanisms, creating a powerful ecosystem for accelerated technological development.
 
 ### Exit Strategy
 

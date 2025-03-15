@@ -12,10 +12,12 @@ This section provides a centralized reference for all technical schematics, diag
 - [Quantum Tunneling Propulsion](core-documentation/core-technology#quantum-tunneling-propulsion) - Figure 2: Particles passing through energy barriers
 - [Quantum State Transitions](core-documentation/core-technology#quantum-state-transitions) - Figure 3: Progression of quantum states
 
-## Propulsion & Navigation Diagrams
+## Propulsion & Navigation
 
-- [Quantum Tunneling Propulsion](core-documentation/propulsion-navigation#quantum-tunneling-propulsion-mechanism) - Detailed mechanism (also referenced as Figure 2 in Core Technology)
-- [Navigation Logic Flow](core-documentation/propulsion-navigation#navigation-logic-flow) - Decision processes and information flow
+### Flowcharts and Sequence Diagrams
+- [Quantum Tunneling Propulsion](core-documentation/propulsion-navigation) - Detailed mechanism (also referenced as Figure 2 in Core Technology)
+- [Navigation Logic Flow](core-documentation/propulsion-navigation) - Decision processes and information flow
+- [Quantum State Transition](/img/diagrams/quantum-state-transition.html) - Photon-electron interactions
 
 ## Energy Systems Diagrams
 
@@ -30,10 +32,12 @@ This section provides a centralized reference for all technical schematics, diag
 - [Neural Interface Command Center](infrastructure-documentation/human-centric-design#neural-interface-command-center) - Neural signals flow
 - [Bio-Resonance Habitat System](infrastructure-documentation/human-centric-design#bio-resonance-habitat-systems) - Living environment optimization
 
-## Research & Development Diagrams
+## Research & Development
 
-- [R&D Workflow](research-documentation/research-development#rd-workflow) - Process from research to deployment
-- [Quantum Test Laboratory](research-documentation/research-development#test-labs-and-prototyping-facilities) - State-of-the-art testing facility with specialized shielding and monitoring equipment
+### Diagrams and Workflows
+- [R&D Workflow](research-documentation/research-development) - Process from research to deployment
+- [Test Labs and Facilities](research-documentation/research-development) - Physical infrastructure
+- [Neural Interface Design](/img/diagrams/neural-interface.html) - Brain-computer connection
 
 ## Research Paper Diagrams
 
