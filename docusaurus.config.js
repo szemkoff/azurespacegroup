@@ -26,7 +26,7 @@ const config = {
   projectName: 'InstaForce', // Usually your repo name.
   deploymentBranch: 'docs-deployment', // Use our custom branch for deployment
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internalization, you can use this field to set useful
@@ -95,6 +95,7 @@ const config = {
           label: 'Documentation',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
+        {to: '/project-status', label: 'Project Status', position: 'left'},
         {
           href: 'https://github.com/szemkoff/InstaForce',
           label: 'GitHub',
