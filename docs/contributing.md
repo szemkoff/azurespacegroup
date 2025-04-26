@@ -122,7 +122,7 @@ For questions about contributing, please contact:
 
 ## Token-Based Contribution System
 
-InstaForce uses a token-based incentive system to reward valuable community contributions. This system operates through our [Tokenization Strategy](/docs/tokenization-strategy) with the following key components:
+Azure Space Group uses a token-based incentive system to reward valuable community contributions. This system operates through our [Tokenization Strategy](/docs/tokenization-strategy) with the following key components:
 
 ### Community Research Pool
 
@@ -139,7 +139,7 @@ The Community Research Pool (CRP) allocates 20% of our token supply specifically
 
 1. Submit your contribution through the appropriate channel
 2. Community review and validation of your contribution
-3. Contribution evaluation by InstaForce research team
+3. Contribution evaluation by Azure Space Group research team
 4. Token rewards distributed to your registered wallet
 
 ### Token Utility

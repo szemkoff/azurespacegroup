@@ -11,7 +11,7 @@ tags: [website, design, documentation, updates]
 
 # Website Design Enhancement and Documentation Updates
 
-We're excited to announce comprehensive design improvements to the InstaForce website, enhancing both aesthetics and usability. These changes are part of our ongoing commitment to providing a seamless, intuitive experience for all users exploring our quantum propulsion technology documentation.
+We're excited to announce comprehensive design improvements to the Azure Space Group website, enhancing both aesthetics and usability. These changes are part of our ongoing commitment to providing a seamless, intuitive experience for all users exploring our quantum propulsion technology documentation.
 
 <!-- truncate -->
 
@@ -19,7 +19,7 @@ We're excited to announce comprehensive design improvements to the InstaForce we
 
 ### Main Page Redesign
 
-The InstaForce main page has been completely redesigned with a modern, cohesive design language. Key improvements include:
+The Azure Space Group main page has been completely redesigned with a modern, cohesive design language. Key improvements include:
 
 - **Improved Visual Hierarchy**: New gradient hero banner and clearer content organization
 - **Enhanced Navigation**: Direct links to key documentation sections from the main page
@@ -84,4 +84,4 @@ These design and documentation enhancements are just the beginning. We're workin
 2. **Search Enhancements**: Improving search functionality to quickly find specific information
 3. **Documentation Versioning**: Better tracking of changes and updates to our research
 
-We appreciate your continued interest in the InstaForce project and welcome any feedback on these enhancements. Stay tuned for more updates as our research continues to progress! 
+We appreciate your continued interest in the Azure Space Group project and welcome any feedback on these enhancements. Stay tuned for more updates as our research continues to progress! 

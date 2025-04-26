@@ -1,6 +1,6 @@
 {
-  "name": "instaforce-docs",
-  "version": "0.1.0",
+  "name": "azure-space-group-docs",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",

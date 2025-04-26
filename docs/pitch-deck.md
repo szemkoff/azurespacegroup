@@ -2,16 +2,16 @@
 sidebar_position: 11
 ---
 
-# InstaForce Technologies | Investor Pitch Deck
+# Azure Space Group Technologies | Investor Pitch Deck
 
-![InstaForce Technologies](/img/photos/quantum-research-fig9-quantum-spacecraft.png)
+![Azure Space Group Technologies](/img/photos/quantum-research-fig9-quantum-spacecraft.png)
 *Revolutionary quantum propulsion for the future of space exploration*
 
-This pitch deck provides a slide-by-slide presentation of the InstaForce Technologies investment opportunity.
+This pitch deck provides a slide-by-slide presentation of the Azure Space Group Technologies investment opportunity.
 
 ## Slide 1: Title | The Future of Space Exploration
 
-**InstaForce Technologies**
+**Azure Space Group Technologies**
 * **Revolutionary Quantum Propulsion Systems**
 * **Near-Light Speed Travel with Zero Conventional Fuel**
 * **Website**: [https://intstelforce.com](https://intstelforce.com)
@@ -58,7 +58,7 @@ This pitch deck provides a slide-by-slide presentation of the InstaForce Technol
 
 ## Slide 6: Competitive Advantages | Insurmountable Lead
 
-| Feature | InstaForce Technology | Competitor Technologies |
+| Feature | Azure Space Group Technology | Competitor Technologies |
 |---------|----------------------|------------------------|
 | Propellant Requirements | Zero propellant mass needed | Requires reaction mass or energy source |
 | Maximum Velocity | Near or exceeding light speed | Limited to &lt;50 km/s |

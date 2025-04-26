@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import clsx from 'clsx';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
@@ -195,7 +195,7 @@ function ProjectStatusHeader() {
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
         <h1 className="hero__title">Project Status</h1>
-        <p className="hero__subtitle">Current development status of Azure Space Group components</p>
+        <p className="hero__subtitle">Current development status of InstaForce components</p>
       </div>
     </header>
   );
@@ -203,12 +203,26 @@ function ProjectStatusHeader() {
 
 export default function ProjectStatus() {
   const {siteConfig} = useDocusaurusContext();
+  const [modalVisible, setModalVisible] = useState(false);
+  const [selectedTask, setSelectedTask] = useState({title: '', description: ''});
 
+  useEffect(() => {
+    // Define global function for Mermaid click callback
+    window.clickTask = (title, description) => {
+      setSelectedTask({title, description});
+      setModalVisible(true);
+    };
+
+    return () => {
+      // Cleanup
+      delete window.clickTask;
+    };
+  }, []);
 
   return (
     <Layout
       title="Project Status"
-      description="Azure Space Group Project Status - Current development progress and roadmap">
+      description="InstaForce Project Status - Current development progress and roadmap">
       <ProjectStatusHeader />
       <main>
         <div className="container margin-top--lg">
@@ -217,7 +231,7 @@ export default function ProjectStatus() {
               <h2>Current Project Status</h2>
               <p className={styles.leadParagraph}>
                 This page provides a comprehensive overview of the current development status 
-                of all Azure Space Group Project components and research initiatives.
+                of all InstaForce Project components and research initiatives.
               </p>
               
               <div className={styles.featureCallout}>
@@ -584,26 +598,81 @@ gantt
   axisFormat %Y
   
   section R&D Phase
-  Theoretical Validation :crit, active, 2023, 2y
-  Quantum Field Modeling :active, 2024, 3y
-  Prototype Development :2025, 5y
-  Commercial Drone Adaptation :2028, 5y
+  Theoretical Validation :crit, active, task-Theoretical_Validation-Rigorous mathematical modeling of quantum field manipulation and completion of theoretical framework. This phase was completed in 2024 and established the mathematical foundation for our quantum propulsion technology., 2023, 2y
+  
+  Quantum Field Modeling :active, task-Quantum_Field_Modeling-Development of complex models that simulate quantum field manipulation effects at various scales. This involves creating algorithm-based representations of how our technology interacts with spacetime., 2024, 3y
+  
+  Prototype Development :task-Prototype_Development-Construction and testing of the first full-scale quantum propulsion prototype, integrating all theoretical components into a functional system. This phase will include multiple testing iterations and refinements., 2025, 5y
+  
+  Commercial Drone Adaptation :task-Commercial_Drone_Adaptation-Adaptation of the quantum propulsion technology for use in commercial drone applications, creating the first practical application of our technology in the marketplace., 2028, 5y
   
   section Vehicle Development
-  Small-Scale Test Vehicles :2026, 4y
-  Four-Seater Manned Vehicle :2028, 5y
-  High-Capacity Transport :2033, 5y
-  Interstellar Transport :2038, 5y
+  Small-Scale Test Vehicles :task-Small-Scale_Test_Vehicles-Development of small-scale test vehicles that can demonstrate the practical applications of quantum propulsion in controlled environments., 2026, 4y
+  
+  Four-Seater Manned Vehicle :task-Four-Seater_Manned_Vehicle-Development of the first human-rated quantum propulsion vehicle capable of carrying four passengers for short-duration flights., 2028, 5y
+  
+  High-Capacity Transport :task-High-Capacity_Transport-Creation of larger quantum propulsion vehicles capable of transporting significant cargo or larger groups of passengers for commercial applications., 2033, 5y
+  
+  Interstellar Transport :task-Interstellar_Transport-Development of advanced quantum propulsion systems capable of interstellar travel, representing the ultimate goal of our technology development., 2038, 5y
   
   section Commercialization
-  Strategic Partnerships :active, 2024, 6y
-  Satellite Launch Operations :2028, 10y
-  Space Tourism :2033, 10y
-  Industrial Mining :2033, 10y
-  Interstellar Exploration :2038, 10y
+  Strategic Partnerships :active, task-Strategic_Partnerships-Formation of key strategic partnerships with aerospace companies, research institutions, and government agencies to accelerate development and adoption., 2024, 6y
+  
+  Satellite Launch Operations :task-Satellite_Launch_Operations-Commercial deployment of quantum propulsion for satellite launch services, dramatically reducing the cost of placing objects in orbit., 2028, 10y
+  
+  Space Tourism :task-Space_Tourism-Development of space tourism services using quantum propulsion vessels, opening up unprecedented access to space for civilians., 2033, 10y
+  
+  Industrial Mining :task-Industrial_Mining-Application of quantum propulsion technology to asteroid mining operations, enabling efficient resource extraction from space., 2033, 10y
+  
+  Interstellar Exploration :task-Interstellar_Exploration-Commercial services for interstellar exploration missions, creating new opportunities for scientific discovery and human expansion., 2038, 10y
                 `}/>
               </div>
 
+              {/* Task detail modal with React state management */}
+              {modalVisible && (
+                <div 
+                  style={{
+                    position: 'fixed', 
+                    zIndex: 1000, 
+                    left: 0, 
+                    top: 0, 
+                    width: '100%', 
+                    height: '100%', 
+                    overflow: 'auto', 
+                    backgroundColor: 'rgba(0,0,0,0.4)'
+                  }}
+                  onClick={() => setModalVisible(false)}
+                >
+                  <div 
+                    style={{
+                      backgroundColor: '#fefefe', 
+                      margin: '15% auto', 
+                      padding: '20px', 
+                      border: '1px solid #888', 
+                      width: '80%', 
+                      maxWidth: '600px', 
+                      borderRadius: '8px', 
+                      boxShadow: '0 4px 8px rgba(0,0,0,0.1)'
+                    }}
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    <span 
+                      style={{
+                        color: '#aaa', 
+                        float: 'right', 
+                        fontSize: '28px', 
+                        fontWeight: 'bold', 
+                        cursor: 'pointer'
+                      }}
+                      onClick={() => setModalVisible(false)}
+                    >
+                      &times;
+                    </span>
+                    <h3 style={{marginTop: '0', color: '#4b0082'}}>{selectedTask.title}</h3>
+                    <p>{selectedTask.description}</p>
+                  </div>
+                </div>
+              )}
 
               <div className={styles.roadmapDisclaimer}>
                 <p>

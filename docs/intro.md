@@ -2,16 +2,16 @@
 sidebar_position: 1
 ---
 
-# InstaForce Project Overview
+# Azure Space Group Project Overview
 
-![Quantum Spacecraft - InstaForce Prototype](/img/photos/quantum-research-fig9-quantum-spacecraft.png)
+![Quantum Spacecraft - Azure Space Group Prototype](/img/photos/quantum-research-fig9-quantum-spacecraft.png)
 *Quantum Spacecraft Prototype - The culmination of our integrated systems approach*
 
-The InstaForce Project represents a revolutionary approach to space propulsion technology, leveraging quantum mechanics principles to enable advanced space travel capabilities that surpass conventional propulsion methods. This project aims to harness quantum phenomena such as tunneling, superposition, and entanglement to create a propulsion system that could potentially enable faster-than-light travel and drastically reduce resource consumption.
+The Azure Space Group Project represents a revolutionary approach to space propulsion technology, leveraging quantum mechanics principles to enable advanced space travel capabilities that surpass conventional propulsion methods. This project aims to harness quantum phenomena such as tunneling, superposition, and entanglement to create a propulsion system that could potentially enable faster-than-light travel and drastically reduce resource consumption.
 
 ## Integrated Systems Architecture
 
-The InstaForce technology is built upon a sophisticated integration of multiple interdependent systems working in harmony. At its core, the quantum propulsion engine connects with and depends on several key systems:
+The Azure Space Group technology is built upon a sophisticated integration of multiple interdependent systems working in harmony. At its core, the quantum propulsion engine connects with and depends on several key systems:
 
 1. **Quantum Core** - The central quantum field generator creates the fundamental field manipulations that enable propulsion
 2. **Energy Systems** - Vacuum energy harvesting provides the massive power requirements for quantum field generation
@@ -27,7 +27,7 @@ Our research has focused on not just the individual components, but on optimizin
 
 ## Revolutionary Quantum Propulsion
 
-Our approach to quantum propulsion transcends traditional rocket technology by manipulating fundamental forces of nature at the quantum level. Instead of expelling reaction mass, the InstaForce system creates asymmetric quantum fields that generate thrust without traditional propellant expulsion.
+Our approach to quantum propulsion transcends traditional rocket technology by manipulating fundamental forces of nature at the quantum level. Instead of expelling reaction mass, the Azure Space Group system creates asymmetric quantum fields that generate thrust without traditional propellant expulsion.
 
 Key technologies include:
 - **Quantum tunneling propulsion** that allows matter to pass through energy barriers
@@ -37,7 +37,7 @@ Key technologies include:
 
 ## Documentation Structure
 
-This repository contains comprehensive documentation for the InstaForce Project infrastructure:
+This repository contains comprehensive documentation for the Azure Space Group Project infrastructure:
 
 ### Core Systems
 - [Core Technology and Components](core-documentation/core-technology)
@@ -61,7 +61,7 @@ This repository contains comprehensive documentation for the InstaForce Project 
 
 ## Recent Updates
 
-The InstaForce documentation has undergone significant improvements to enhance navigation and comprehension:
+The Azure Space Group documentation has undergone significant improvements to enhance navigation and comprehension:
 
 - **Cross-referenced documentation**: All technical documents are now interconnected with relevant reference links to provide a seamless research experience.
 - **Advanced Materials Research**: New documentation on specialized quantum-responsive materials required for the propulsion systems.
@@ -70,7 +70,7 @@ The InstaForce documentation has undergone significant improvements to enhance n
 
 ## Project Status
 
-The InstaForce Project is currently in the theoretical development and early design phase. The documentation contained in this repository represents the infrastructure blueprint for the project's advancement. For the most up-to-date experimental results and theoretical models, please refer to our [Quantum Propulsion Research Paper](research-documentation/quantum-research-paper).
+The Azure Space Group Project is currently in the theoretical development and early design phase. The documentation contained in this repository represents the infrastructure blueprint for the project's advancement. For the most up-to-date experimental results and theoretical models, please refer to our [Quantum Propulsion Research Paper](research-documentation/quantum-research-paper).
 
 ## Development Timeline
 

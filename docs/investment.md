@@ -2,11 +2,11 @@
 sidebar_position: 10
 ---
 
-# Investment Summary | InstaForce Technologies
+# Investment Summary | Azure Space Group Technologies
 
 ## Executive Summary
 
-InstaForce Technologies is developing revolutionary quantum propulsion systems that will transform space travel by enabling:
+Azure Space Group Technologies is developing revolutionary quantum propulsion systems that will transform space travel by enabling:
 - Near-instantaneous travel between distant points
 - 95% reduction in energy requirements compared to conventional propulsion
 - Elimination of traditional propellant needs
@@ -22,11 +22,11 @@ For comprehensive details on our technology, research progress, and vision, visi
 
 Our quantum propulsion technology operates by generating a quantum cocoon around spacecraft that distorts all physical and quantum connections with the surrounding environment. This gives the vehicle absolute freedom of speed and maneuverability, with immunity from environmental resistance.
 
-This technology is inspired by nature - flying insects have used similar principles for hundreds of millions of years, generating electromagnetic fields through high-frequency wing vibration. InstaForce is reverse-engineering and scaling these natural mechanisms to create revolutionary spacecraft propulsion.
+This technology is inspired by nature - flying insects have used similar principles for hundreds of millions of years, generating electromagnetic fields through high-frequency wing vibration. Azure Space Group is reverse-engineering and scaling these natural mechanisms to create revolutionary spacecraft propulsion.
 
 ### Innovative Funding Approach
 
-InstaForce employs a hybrid funding model that combines traditional equity investments with an innovative tokenization strategy:
+Azure Space Group employs a hybrid funding model that combines traditional equity investments with an innovative tokenization strategy:
 
 | Approach | Key Features | Benefits |
 |----------|-------------|----------|
@@ -39,7 +39,7 @@ Our tokenization approach creates a powerful ecosystem that accelerates R&D thro
 
 The quantum propulsion market opportunity spans multiple sectors:
 
-| Sector | Market Size (2032) | InstaForce Target Share | Applications |
+| Sector | Market Size (2032) | Azure Space Group Target Share | Applications |
 |--------|-------------------|------------------------|--------------|
 | Space Transportation | $380B | 15% | Interplanetary transport, satellite deployment |
 | Defense & Security | $215B | 12% | Strategic mobility, rapid deployment systems |
@@ -49,7 +49,7 @@ The quantum propulsion market opportunity spans multiple sectors:
 
 ### Competitive Advantages
 
-InstaForce maintains significant advantages over both traditional propulsion technologies and emerging competitors:
+Azure Space Group maintains significant advantages over both traditional propulsion technologies and emerging competitors:
 
 1. **Zero Propellant Requirement** vs. conventional systems requiring 70% fuel weight
 2. **Near-light speed potential** vs. &lt;50 km/s maximum for chemical propulsion
@@ -118,7 +118,7 @@ Our leadership team combines expertise in quantum physics, aerospace engineering
 
 **Funding History & Current Status**
 
-From project inception through 2024, InstaForce Technologies has been funded exclusively through personal investments from the founding team, amounting to approximately $38 million. This personal commitment has enabled:
+From project inception through 2024, Azure Space Group Technologies has been funded exclusively through personal investments from the founding team, amounting to approximately $38 million. This personal commitment has enabled:
 
 - Development of working prototypes
 - Validation of core theoretical principles
@@ -197,6 +197,6 @@ The company has multiple potential exit pathways:
 
 **Company Information**
 - Website: [https://intstelforce.com/](https://intstelforce.com/)
-- LinkedIn: [Quantum Propulsion Technologies Ltd](https://www.linkedin.com/company/quantum-propulsion-technologies-ltd/) (operating as InstaForce Technologies)
+- LinkedIn: [Quantum Propulsion Technologies Ltd](https://www.linkedin.com/company/quantum-propulsion-technologies-ltd/) (operating as Azure Space Group Technologies)
 
 All investment discussions are subject to appropriate non-disclosure agreements and accredited investor verification. 

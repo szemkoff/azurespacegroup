@@ -9,9 +9,9 @@ authors:
 tags: [rebranding, azure space group, prototype designs, quantum navigation, updates]
 ---
 
-# InstaForce is now Azure Space Group: A New Era Begins
+# Azure Space Group is now Azure Space Group: A New Era Begins
 
-We're excited to announce a significant milestone in our journey: **InstaForce is now Azure Space Group**. This rebranding reflects our evolution and growing ambitions in the quantum navigation and propulsion space. Along with our new identity, we're proud to share our latest technological advancements.
+We're excited to announce a significant milestone in our journey: **Azure Space Group is now Azure Space Group**. This rebranding reflects our evolution and growing ambitions in the quantum navigation and propulsion space. Along with our new identity, we're proud to share our latest technological advancements.
 
 ![Azure Space Group Logo](/img/logo.svg)
 *Our new identity: Azure Space Group*
@@ -101,4 +101,4 @@ For those interested in the technical details of our latest advancements:
 
 ---
 
-*Azure Space Group (formerly InstaForce) remains committed to pioneering the future of quantum navigation and propulsion technologies. Our new identity reflects not just who we are today, but who we're becoming as we work to transform humanity's relationship with space travel.* 
+*Azure Space Group (formerly Azure Space Group) remains committed to pioneering the future of quantum navigation and propulsion technologies. Our new identity reflects not just who we are today, but who we're becoming as we work to transform humanity's relationship with space travel.* 

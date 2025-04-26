@@ -1,17 +1,17 @@
 ---
 id: rebranding-plan
-title: Rebranding from InstaForce to Azure Space Group
+title: Rebranding from Azure Space Group to Azure Space Group
 sidebar_label: Rebranding Plan
-description: Comprehensive plan for transitioning from InstaForce to Azure Space Group brand
+description: Comprehensive plan for transitioning from Azure Space Group to Azure Space Group brand
 ---
 
-# Rebranding Plan: InstaForce to Azure Space Group
+# Rebranding Plan: Azure Space Group to Azure Space Group
 
-This document outlines our comprehensive plan for rebranding from InstaForce to Azure Space Group, including all technical changes required, content modifications, visual asset updates, and implementation steps.
+This document outlines our comprehensive plan for rebranding from Azure Space Group to Azure Space Group, including all technical changes required, content modifications, visual asset updates, and implementation steps.
 
 ## Executive Summary
 
-The rebranding from InstaForce to Azure Space Group represents a strategic repositioning of our organization to better align with our focus on advanced space technologies and quantum navigation systems. This document provides a detailed implementation plan to ensure a smooth transition with minimal disruption to our users, collaborators, and stakeholders.
+The rebranding from Azure Space Group to Azure Space Group represents a strategic repositioning of our organization to better align with our focus on advanced space technologies and quantum navigation systems. This document provides a detailed implementation plan to ensure a smooth transition with minimal disruption to our users, collaborators, and stakeholders.
 
 ## 1. Technical Configuration Changes
 
@@ -21,13 +21,13 @@ The rebranding from InstaForce to Azure Space Group represents a strategic repos
 
 ```js
 // FROM
-title: 'InstaForce Technologies',
+title: 'Azure Space Group Technologies',
 tagline: 'Revolutionary Quantum Propulsion Systems',
 favicon: 'img/favicon.svg',
 url: 'https://szemkoff.github.io',
-baseUrl: '/InstaForce/',
+baseUrl: '/Azure Space Group/',
 organizationName: 'szemkoff',
-projectName: 'InstaForce',
+projectName: 'Azure Space Group',
 
 // TO
 title: 'Azure Space Group',
@@ -49,7 +49,7 @@ Additional changes required in this file:
 
 ```json
 // FROM
-"name": "instaforce-docs",
+"name": "azure-space-group-docs",
 "version": "0.1.0",
 
 // TO
@@ -65,7 +65,7 @@ No structural changes needed, but verify that all document IDs remain valid afte
 
 ### GitHub Configuration
 
-- Rename GitHub repository from "InstaForce" to "AzureSpaceGroup"
+- Rename GitHub repository from "Azure Space Group" to "AzureSpaceGroup"
 - Update repository description and topics
 - Update GitHub Pages deployment branch configuration
 
@@ -77,10 +77,10 @@ A systematic search and replace operation will be performed across all content f
 
 | From | To |
 |------|-----|
-| InstaForce | Azure Space Group |
-| instaforce | azure-space-group |
-| INSTAFORCE | AZURE SPACE GROUP |
-| /InstaForce/ | /AzureSpaceGroup/ |
+| Azure Space Group | Azure Space Group |
+| azure-space-group | azure-space-group |
+| AZURE SPACE GROUP | AZURE SPACE GROUP |
+| /Azure Space Group/ | /AzureSpaceGroup/ |
 
 ### Priority Content Files
 
@@ -100,10 +100,10 @@ These files require careful review beyond simple search and replace:
 
 ### Content Requiring Special Attention
 
-- All code examples that include InstaForce as part of variable names or paths
-- API endpoints or URLs that incorporate the InstaForce name
+- All code examples that include Azure Space Group as part of variable names or paths
+- API endpoints or URLs that incorporate the Azure Space Group name
 - Configuration examples that reference the old brand name
-- Historical references that should maintain the InstaForce name with clarification about the rebranding
+- Historical references that should maintain the Azure Space Group name with clarification about the rebranding
 
 ## 3. Visual Asset Updates
 
@@ -113,11 +113,11 @@ These files require careful review beyond simple search and replace:
 |-------|-----------------|-----------------|
 | Primary Logo | static/img/logo.svg | Replace with Azure Space Group logo |
 | Favicon | static/img/favicon.svg | Replace with Azure Space Group favicon |
-| Social Card | static/img/instaforce-social-card.jpg | Replace and rename to azure-space-group-social-card.jpg |
+| Social Card | static/img/azure-space-group-social-card.jpg | Replace and rename to azure-space-group-social-card.jpg |
 
 ### Diagrams and Technical Illustrations
 
-Review and update all diagrams that contain the InstaForce name or logo:
+Review and update all diagrams that contain the Azure Space Group name or logo:
 
 - quantum-propulsion-concept.svg
 - system-architecture.svg
@@ -127,14 +127,14 @@ Review and update all diagrams that contain the InstaForce name or logo:
 ### CSS and Theme Updates
 
 - Review src/css/custom.css for brand-specific color definitions
-- Update primary and secondary colors if they are tied to InstaForce branding
+- Update primary and secondary colors if they are tied to Azure Space Group branding
 - Modify any custom component styles that reference the old brand
 
 ## 4. URL Structure and Routing
 
 ### Base URL Changes
 
-- Update all internal links from `/InstaForce/` to `/AzureSpaceGroup/`
+- Update all internal links from `/Azure Space Group/` to `/AzureSpaceGroup/`
 - Implement redirects from old URLs to new URLs
 - Update canonical URLs in page metadata
 
@@ -160,7 +160,7 @@ Develop a strategy for external links pointing to our documentation:
    - Set up test deployment environment
 
 3. **Audit Content**
-   - Generate complete list of files containing "InstaForce"
+   - Generate complete list of files containing "Azure Space Group"
    - Identify complex changes requiring manual intervention
    - Document external dependencies that need updating
 
@@ -253,7 +253,7 @@ Below is a comprehensive list of files requiring updates:
 ### Assets
 - [x] static/img/logo.svg
 - [x] static/img/favicon.svg
-- [x] static/img/instaforce-social-card.jpg
+- [x] static/img/azure-space-group-social-card.jpg
 
 ## 7. Risk Assessment and Mitigation
 
@@ -286,29 +286,29 @@ We will measure the success of the rebranding through:
 
 ## Conclusion
 
-This rebranding plan provides a structured approach to transitioning from InstaForce to Azure Space Group. By following this detailed plan, we aim to ensure a smooth transition that preserves our technical content while enhancing our brand identity. The rebranding represents not just a name change, but a strategic evolution that better positions us in the quantum navigation and advanced space technology sectors.
+This rebranding plan provides a structured approach to transitioning from Azure Space Group to Azure Space Group. By following this detailed plan, we aim to ensure a smooth transition that preserves our technical content while enhancing our brand identity. The rebranding represents not just a name change, but a strategic evolution that better positions us in the quantum navigation and advanced space technology sectors.
 
 ## Appendix: Command Reference
 
-### Finding InstaForce References
+### Finding Azure Space Group References
 
 ```bash
-# Find all instances of InstaForce in code files
-grep -r "InstaForce" --include="*.js" --include="*.md" --include="*.html" . > rename_occurrences.txt
+# Find all instances of Azure Space Group in code files
+grep -r "Azure Space Group" --include="*.js" --include="*.md" --include="*.html" . > rename_occurrences.txt
 
-# Find all instances of lowercase instaforce
-grep -r "instaforce" --include="*.js" --include="*.md" --include="*.html" . > rename_occurrences_lowercase.txt
+# Find all instances of lowercase azure-space-group
+grep -r "azure-space-group" --include="*.js" --include="*.md" --include="*.html" . > rename_occurrences_lowercase.txt
 ```
 
 ### Batch Replacement Examples
 
 ```bash
 # Replace in JavaScript files
-find . -name "*.js" -type f -exec sed -i 's/InstaForce/Azure Space Group/g' {} \;
+find . -name "*.js" -type f -exec sed -i 's/Azure Space Group/Azure Space Group/g' {} \;
 
 # Replace in Markdown files
-find . -name "*.md" -type f -exec sed -i 's/InstaForce/Azure Space Group/g' {} \;
+find . -name "*.md" -type f -exec sed -i 's/Azure Space Group/Azure Space Group/g' {} \;
 
 # Replace URLs in all files
-find . -type f -exec sed -i 's/\/InstaForce\//\/AzureSpaceGroup\//g' {} \;
+find . -type f -exec sed -i 's/\/Azure Space Group\//\/AzureSpaceGroup\//g' {} \;
 ``` 

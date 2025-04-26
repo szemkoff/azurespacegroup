@@ -8,7 +8,7 @@ Our research approach integrates traditional laboratory work with innovative dis
 
 ### Traditional R&D Infrastructure
 
-Flow chart showing the research and development workflow for InstaForce technology:
+Flow chart showing the research and development workflow for Azure Space Group technology:
 
 ```mermaid
 flowchart TB
@@ -187,7 +187,7 @@ These facilities allow for the development of components that remain stable acro
 
 ## Global Research Network
 
-InstaForce's research infrastructure extends beyond our core facilities through strategic partnerships and collaborative frameworks.
+Azure Space Group's research infrastructure extends beyond our core facilities through strategic partnerships and collaborative frameworks.
 
 ### Research Collaboration Network
 

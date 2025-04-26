@@ -4,7 +4,7 @@ sidebar_position: 9
 
 # Technical Schematics & Diagrams
 
-This section provides a centralized reference for all technical schematics, diagrams, and logical flow charts related to the InstaForce Project. Each diagram is now integrated into its relevant documentation section for better context, but this page serves as a convenient index.
+This section provides a centralized reference for all technical schematics, diagrams, and logical flow charts related to the Azure Space Group Project. Each diagram is now integrated into its relevant documentation section for better context, but this page serves as a convenient index.
 
 ## Core Technology Diagrams
 
@@ -17,7 +17,7 @@ This section provides a centralized reference for all technical schematics, diag
 ### Flowcharts and Sequence Diagrams
 - [Quantum Tunneling Propulsion](core-documentation/propulsion-navigation) - Detailed mechanism (also referenced as Figure 2 in Core Technology)
 - [Navigation Logic Flow](core-documentation/propulsion-navigation) - Decision processes and information flow
-- [Quantum State Transition](/img/diagrams/quantum-state-transition.html) - Photon-electron interactions
+- [Quantum State Transition](core-documentation/core-technology#quantum-state-transitions) - Photon-electron interactions
 
 ## Energy Systems Diagrams
 
@@ -37,7 +37,7 @@ This section provides a centralized reference for all technical schematics, diag
 ### Diagrams and Workflows
 - [R&D Workflow](research-documentation/research-development) - Process from research to deployment
 - [Test Labs and Facilities](research-documentation/research-development) - Physical infrastructure
-- [Neural Interface Design](/img/diagrams/neural-interface.html) - Brain-computer connection
+- [Neural Interface Design](infrastructure-documentation/human-centric-design#neural-interface-command-center) - Brain-computer connection
 
 ## Research Paper Diagrams
 
@@ -57,6 +57,6 @@ These technical diagrams are intended for reference by qualified personnel with 
 1. Always include the complete caption and technical specifications
 2. Do not modify the diagrams without authorization from the Engineering Division
 3. Ensure that any reproduction maintains sufficient resolution to read all technical details
-4. When discussing these systems, always refer to their official designation in the InstaForce documentation
+4. When discussing these systems, always refer to their official designation in the Azure Space Group documentation
 
 For higher-resolution versions or customized views of these diagrams, please contact the Documentation Team. 

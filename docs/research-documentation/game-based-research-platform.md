@@ -6,7 +6,7 @@ sidebar_position: 6
 
 ## Executive Summary
 
-The InstaForce Game-Based Research Platform represents a revolutionary approach to accelerating scientific breakthroughs in quantum propulsion technology through distributed problem-solving, gamification, and collective intelligence. This platform transforms complex research challenges into interactive experiences that can be tackled by contributors with diverse backgrounds and expertise levels.
+The Azure Space Group Game-Based Research Platform represents a revolutionary approach to accelerating scientific breakthroughs in quantum propulsion technology through distributed problem-solving, gamification, and collective intelligence. This platform transforms complex research challenges into interactive experiences that can be tackled by contributors with diverse backgrounds and expertise levels.
 
 By harnessing the cognitive power of thousands of participants through carefully designed gaming mechanics, we aim to overcome critical research obstacles while building a community of engaged stakeholders who contribute directly to the advancement of quantum propulsion technology.
 
@@ -101,7 +101,7 @@ stateDiagram-v2
         research findings and models
     end note
 ```
-*Figure: InstaForce Game-Based Research Platform Architecture - Multi-layered approach to distributed scientific problem-solving*
+*Figure: Azure Space Group Game-Based Research Platform Architecture - Multi-layered approach to distributed scientific problem-solving*
 
 The platform architecture consists of four primary layers that work together to transform complex research challenges into interactive experiences:
 
@@ -206,7 +206,7 @@ The platform employs a multi-layered incentive system:
 1. **Intrinsic Rewards**: Achievement, mastery, discovery, and recognition
 2. **Community Recognition**: Reputation systems, leadership boards, and attribution
 3. **Knowledge Access**: Privileged insights into research developments and findings
-4. **Token Rewards**: Integration with the InstaForce tokenization system (see [Tokenization Strategy](/docs/tokenization-strategy))
+4. **Token Rewards**: Integration with the Azure Space Group tokenization system (see [Tokenization Strategy](/docs/tokenization-strategy))
 5. **Career Development**: Pathways to formal research roles for top contributors
 
 ## Development Roadmap
@@ -245,7 +245,7 @@ The game-based research platform will leverage several cutting-edge technologies
 - **Simulation Backend**: Custom quantum physics simulation framework
 - **AI Layer**: TensorFlow or PyTorch for contribution analysis
 - **Distributed Computing**: Kubernetes for scalable processing of player contributions
-- **Blockchain Integration**: Connection to the InstaForce tokenization infrastructure
+- **Blockchain Integration**: Connection to the Azure Space Group tokenization infrastructure
 
 ### Security and Intellectual Property
 
@@ -280,7 +280,7 @@ Beyond direct research outcomes, the platform will foster a vibrant community:
 
 ## Integration with Overall Strategy
 
-The game-based research platform is deeply integrated with other aspects of the InstaForce strategy:
+The game-based research platform is deeply integrated with other aspects of the Azure Space Group strategy:
 
 - **Tokenization**: Direct connection to the token incentive system (see [Tokenization Strategy](/docs/tokenization-strategy))
 - **Traditional Research**: Complementary approach to formal laboratory and theoretical work
@@ -290,6 +290,6 @@ The game-based research platform is deeply integrated with other aspects of the 
 
 ## Conclusion
 
-The InstaForce Game-Based Research Platform represents a bold reimagining of how cutting-edge scientific research can be conducted in the 21st century. By combining the power of gamification, collective intelligence, and advanced data analytics, we aim to dramatically accelerate the development of quantum propulsion technology while building a global community of contributors invested in our success.
+The Azure Space Group Game-Based Research Platform represents a bold reimagining of how cutting-edge scientific research can be conducted in the 21st century. By combining the power of gamification, collective intelligence, and advanced data analytics, we aim to dramatically accelerate the development of quantum propulsion technology while building a global community of contributors invested in our success.
 
 For more information on participating in our game-based research initiatives or to discuss potential partnerships, please contact our research team at [irnbrue@gmail.com](mailto:irnbrue@gmail.com). 

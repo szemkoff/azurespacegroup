@@ -206,6 +206,20 @@
   margin-bottom: 0.25rem;
 }
 
+.roadmapDisclaimer {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: #fff8e1;
+  border-left: 4px solid #ffb300;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.roadmapDisclaimer p {
+  margin: 0;
+  color: #775500;
+}
+
 @media screen and (max-width: 768px) {
   .statusLegendGrid {
     flex-direction: column;

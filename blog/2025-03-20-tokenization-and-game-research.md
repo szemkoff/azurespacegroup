@@ -11,11 +11,13 @@ tags: [tokenization, game-based research, blockchain, community]
 
 # Introducing Tokenization & Game-Based Research Documentation
 
-We're excited to announce the addition of two major new documentation sections to the InstaForce knowledge base: our comprehensive **Tokenization Strategy** and innovative **Game-Based Research Platform**.
+We're excited to announce the addition of two major new documentation sections to the Azure Space Group knowledge base: our comprehensive **Tokenization Strategy** and innovative **Game-Based Research Platform**.
+
+<!-- truncate -->
 
 ## Tokenization Strategy
 
-Our new tokenization documentation outlines InstaForce's approach to leveraging blockchain technology and token economics to accelerate the development of quantum propulsion technology. This strategy introduces a multi-token system that supports our research objectives, investment goals, and community-building initiatives.
+Our new tokenization documentation outlines Azure Space Group's approach to leveraging blockchain technology and token economics to accelerate the development of quantum propulsion technology. This strategy introduces a multi-token system that supports our research objectives, investment goals, and community-building initiatives.
 
 The documentation covers:
 
@@ -59,4 +61,4 @@ Stay tuned for upcoming announcements about early access opportunities for both 
 
 ---
 
-*The InstaForce team is committed to open innovation and community collaboration. These new initiatives represent our dedication to finding novel approaches to solving the complex challenges of quantum propulsion technology development.* 
+*The Azure Space Group team is committed to open innovation and community collaboration. These new initiatives represent our dedication to finding novel approaches to solving the complex challenges of quantum propulsion technology development.* 

@@ -12,7 +12,7 @@ Our power generation and storage systems leverage quantum states to provide cons
 
 ### Quantum Vacuum Energy Harvesting
 
-Diagram of the process for extracting zero-point energy from the quantum vacuum to power the InstaForce systems:
+Diagram of the process for extracting zero-point energy from the quantum vacuum to power the Azure Space Group systems:
 
 ```mermaid
 stateDiagram-v2

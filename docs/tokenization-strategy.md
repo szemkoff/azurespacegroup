@@ -2,11 +2,11 @@
 sidebar_position: 3
 ---
 
-# InstaForce Tokenization Strategy
+# Azure Space Group Tokenization Strategy
 
 ## Executive Summary
 
-The InstaForce Tokenization Strategy represents an innovative approach to research funding, community engagement, and technology commercialization. By leveraging blockchain technology and token economics, we aim to accelerate the development of quantum propulsion technology while creating a decentralized ecosystem of researchers, investors, and technology enthusiasts.
+The Azure Space Group Tokenization Strategy represents an innovative approach to research funding, community engagement, and technology commercialization. By leveraging blockchain technology and token economics, we aim to accelerate the development of quantum propulsion technology while creating a decentralized ecosystem of researchers, investors, and technology enthusiasts.
 
 This document outlines our comprehensive plan for implementing a multi-token system that supports our research objectives, investment goals, and community-building initiatives.
 
@@ -14,18 +14,18 @@ This document outlines our comprehensive plan for implementing a multi-token sys
 
 ### Primary Token Types
 
-Our tokenization model implements three interconnected token types, each serving a specific function within the InstaForce ecosystem:
+Our tokenization model implements three interconnected token types, each serving a specific function within the Azure Space Group ecosystem:
 
 | Token Type | Symbol | Primary Function | Target Audience |
 |------------|--------|------------------|----------------|
 | Research Access Tokens | RAT | Access to technical data, simulation results, and proprietary research | Scientists, researchers, academic institutions |
 | Quantum Propulsion Credits | QPC | Future right to propulsion services, technology licensing, and commercial applications | Commercial partners, aerospace companies, defense contractors |
-| InstaForce Governance Tokens | IFG | Voting rights on research directions and resource allocation | Community members, long-term stakeholders, strategic partners |
+| Azure Space Group Governance Tokens | IFG | Voting rights on research directions and resource allocation | Community members, long-term stakeholders, strategic partners |
 
 ### Token Distribution Model
 
 ```mermaid
-pie title InstaForce Token Distribution Model
+pie title Azure Space Group Token Distribution Model
     "Research & Development" : 40
     "Community Research Pool" : 20
     "Founding Team & Advisors" : 15
@@ -49,7 +49,7 @@ pie title InstaForce Token Distribution Model
 
 ### Blockchain Architecture
 
-The InstaForce token ecosystem will be built on a hybrid blockchain architecture:
+The Azure Space Group token ecosystem will be built on a hybrid blockchain architecture:
 
 1. **Base Layer**: Ethereum for primary token contracts and governance mechanisms
    - Benefits: Established security, widespread adoption, robust DeFi integrations
@@ -65,7 +65,7 @@ Our smart contract architecture is designed with modularity and security as prim
 
 ```solidity
 // Simplified example of core token structure
-contract InstaForceToken is ERC20, AccessControl {
+contract Azure Space GroupToken is ERC20, AccessControl {
     bytes32 public constant RESEARCH_ROLE = keccak256("RESEARCH_ROLE");
     bytes32 public constant GOVERNANCE_ROLE = keccak256("GOVERNANCE_ROLE");
     
@@ -122,7 +122,7 @@ A key innovation in our model is the Community Research Pool (CRP), which alloca
 All contributions undergo a hybrid validation process:
 1. Initial AI-driven quality and relevance screening
 2. Peer review by qualified community members (token-weighted)
-3. Final validation by InstaForce research team
+3. Final validation by Azure Space Group research team
 
 Validated contributions are recorded on-chain with appropriate attribution, creating a permanent record of intellectual contribution.
 
@@ -130,7 +130,7 @@ Validated contributions are recorded on-chain with appropriate attribution, crea
 
 ### Research Access Tokens (RAT)
 
-RATs provide tiered access to InstaForce research assets:
+RATs provide tiered access to Azure Space Group research assets:
 
 | Tier | Token Requirement | Access Level |
 |------|-------------------|--------------|
@@ -148,7 +148,7 @@ QPCs represent future rights to quantum propulsion technology:
 - **Priority Access**: Determines allocation priority during initial technology rollout
 - **Commercial Applications**: Tradable rights for specific commercial applications
 
-### InstaForce Governance Tokens (IFG)
+### Azure Space Group Governance Tokens (IFG)
 
 IFGs enable community participation in key decisions:
 
@@ -195,6 +195,6 @@ Our tokenization strategy is designed with regulatory compliance as a foundation
 
 ## Conclusion
 
-The InstaForce tokenization strategy represents a novel approach to funding and accelerating cutting-edge scientific research. By aligning the incentives of researchers, investors, and technology users, we aim to create an ecosystem that dramatically accelerates the development and commercialization of quantum propulsion technology.
+The Azure Space Group tokenization strategy represents a novel approach to funding and accelerating cutting-edge scientific research. By aligning the incentives of researchers, investors, and technology users, we aim to create an ecosystem that dramatically accelerates the development and commercialization of quantum propulsion technology.
 
-For more information or to express interest in participating in our token ecosystem, please contact the InstaForce investment team at [irnbrue@gmail.com](mailto:irnbrue@gmail.com). 
+For more information or to express interest in participating in our token ecosystem, please contact the Azure Space Group investment team at [irnbrue@gmail.com](mailto:irnbrue@gmail.com). 

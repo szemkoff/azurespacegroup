@@ -10,20 +10,20 @@ const __dirname = path.dirname(__filename);
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'InstaForce Technologies',
-  tagline: 'Revolutionary Quantum Propulsion Systems',
+  title: 'Azure Space Group',
+  tagline: 'Advanced Quantum Navigation & Propulsion',
   favicon: 'img/favicon.svg',
 
   // Set the production url of your site here
   url: 'https://szemkoff.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/InstaForce/',
+  baseUrl: '/AzureSpaceGroup/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'szemkoff', // Usually your GitHub org/user name.
-  projectName: 'InstaForce', // Usually your repo name.
+  projectName: 'AzureSpaceGroup', // Usually your repo name.
   deploymentBranch: 'docs-deployment', // Use our custom branch for deployment
 
   // Restore normal behavior for broken links after we've fixed the diagram URLs
@@ -42,8 +42,8 @@ const config = {
           return {
             resolve: {
               alias: {
-                // Rewrite /InstaForce/img/diagrams/xxx.html to /img/diagrams/xxx.html
-                '/InstaForce/img/diagrams': path.resolve(__dirname, 'static/img/diagrams'),
+                // Rewrite /Azure Space Group/img/diagrams/xxx.html to /img/diagrams/xxx.html
+                '/Azure Space Group/img/diagrams': path.resolve(__dirname, 'static/img/diagrams'),
               },
             },
           };
@@ -54,7 +54,7 @@ const config = {
           const path = require('path');
           
           // Create the target directory if it doesn't exist
-          const targetDir = path.join(outDir, 'InstaForce', 'img', 'diagrams');
+          const targetDir = path.join(outDir, 'Azure Space Group', 'img', 'diagrams');
           await fs.ensureDir(targetDir);
           
           // Copy all HTML diagrams to the target directory
@@ -126,9 +126,9 @@ const config = {
     // Replace with your project's social card
     image: 'img/logo.svg',
     navbar: {
-      title: 'InstaForce',
+      title: 'Azure Space Group',
       logo: {
-        alt: 'InstaForce Logo',
+        alt: 'Azure Space Group Logo',
         src: 'img/logo.svg',
       },
       items: [
@@ -141,7 +141,7 @@ const config = {
         {to: '/blog', label: 'Blog', position: 'left'},
         {to: '/project-status', label: 'Project Status', position: 'left'},
         {
-          href: 'https://github.com/szemkoff/InstaForce',
+          href: 'https://github.com/szemkoff/Azure Space Group',
           label: 'GitHub',
           position: 'right',
         },
@@ -222,7 +222,7 @@ const config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/szemkoff/InstaForce',
+              href: 'https://github.com/szemkoff/Azure Space Group',
             },
             {
               label: 'Contact Us',
@@ -231,7 +231,7 @@ const config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} InstaForce Technologies. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Azure Space Group. Built with Docusaurus.`,
     },
     prism: {
       theme: themes.github,
@@ -249,7 +249,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/szemkoff/InstaForce/tree/main/',
+            'https://github.com/szemkoff/Azure Space Group/tree/main/',
           rehypePlugins: [],
         },
         blog: {
@@ -257,7 +257,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/szemkoff/InstaForce/tree/main/',
+            'https://github.com/szemkoff/Azure Space Group/tree/main/',
           // Configure inline authors to be ignored to remove the warning
           onInlineAuthors: 'ignore',
           onUntruncatedBlogPosts: 'ignore',

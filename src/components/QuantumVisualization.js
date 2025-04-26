@@ -28,7 +28,7 @@ export function QuantumVisualization() {
         padding: '10px'
       }}>
         <iframe 
-          src="/InstaForce/img/diagrams/quantum-research-fig1-system-components.svg" 
+          src="/Azure Space Group/img/diagrams/quantum-research-fig1-system-components.svg" 
           width="100%" 
           height="650px" 
           frameBorder="0"

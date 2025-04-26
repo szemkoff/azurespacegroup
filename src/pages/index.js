@@ -41,7 +41,7 @@ export default function Home() {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="InstaForce Project Documentation - Advanced Quantum Propulsion Research">
+      description="Azure Space Group Project Documentation - Advanced Quantum Propulsion Research">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
@@ -50,7 +50,7 @@ export default function Home() {
             <div className="col col--8 col--offset-2">
               <h2>Transforming Space Travel Through Quantum Technology</h2>
               <p className={styles.leadParagraph}>
-                The InstaForce Project represents a revolutionary approach to space propulsion technology, 
+                The Azure Space Group Project represents a revolutionary approach to space propulsion technology, 
                 leveraging quantum mechanics principles to enable advanced space travel capabilities that 
                 surpass conventional propulsion methods.
               </p>
@@ -130,7 +130,7 @@ export default function Home() {
               
               <h3>Development Status</h3>
               <p>
-                The InstaForce Project is actively developing multiple technology tracks simultaneously.
+                The Azure Space Group Project is actively developing multiple technology tracks simultaneously.
                 Many core components are in the theoretical research and mathematical modeling stages,
                 with several proof-of-concept prototypes under development.
               </p>

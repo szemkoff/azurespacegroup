@@ -1,10 +1,10 @@
-# InstaForce Project Documentation
+# Azure Space Group Project Documentation
 
-This repository contains the comprehensive documentation for the InstaForce Project, a revolutionary approach to space propulsion technology leveraging quantum mechanics principles.
+This repository contains the comprehensive documentation for the Azure Space Group Project, a revolutionary approach to space propulsion technology leveraging quantum mechanics principles.
 
 ## Documentation Website
 
-The documentation is available at: [https://your-github-username.github.io/instaforce-docs/](https://your-github-username.github.io/instaforce-docs/)
+The documentation is available at: [https://your-github-username.github.io/azure-space-group-docs/](https://your-github-username.github.io/azure-space-group-docs/)
 
 ## Local Development
 
@@ -54,7 +54,7 @@ The documentation is organized into the following sections:
 
 ## Contributing
 
-This is a collaborative effort requiring expertise across multiple disciplines. Please refer to our [contribution guidelines](https://your-github-username.github.io/instaforce-docs/docs/contributing) for more information.
+This is a collaborative effort requiring expertise across multiple disciplines. Please refer to our [contribution guidelines](https://your-github-username.github.io/azure-space-group-docs/docs/contributing) for more information.
 
 ## License
 
@@ -62,4 +62,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Contact
 
-For inquiries related to the InstaForce Project, please contact the project coordinator at [project-coordinator@instaforce.org](mailto:project-coordinator@instaforce.org). 
+For inquiries related to the Azure Space Group Project, please contact the project coordinator at [project-coordinator@azure-space-group.org](mailto:project-coordinator@azure-space-group.org). 

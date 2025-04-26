@@ -62,7 +62,7 @@ stateDiagram-v2
     
     note right of PCS
         Core quantum technologies that
-        enable InstaForce propulsion
+        enable Azure Space Group propulsion
     end note
     
     note right of CS
@@ -75,7 +75,7 @@ stateDiagram-v2
         quantum operations
     end note
 ```
-*Figure 1: InstaForce Quantum Propulsion System Architecture - High-level systems overview*
+*Figure 1: Azure Space Group Quantum Propulsion System Architecture - High-level systems overview*
 
 ### Quantum Tunneling Propulsion
 
@@ -85,7 +85,7 @@ Quantum tunneling allows particles to pass through energy barriers that would be
 - Inducing mass-tunneling effects that generate directional momentum
 - Employing nanoscale precision engineering to maintain optimal tunneling conditions
 
-![Quantum Spacecraft - InstaForce Prototype](/img/photos/quantum-research-fig9-quantum-spacecraft.png)
+![Quantum Spacecraft - Azure Space Group Prototype](/img/photos/quantum-research-fig9-quantum-spacecraft.png)
 *Quantum Spacecraft Prototype - The culmination of our integrated systems approach*
 
 ![Quantum Field Manipulator - Top View](/img/photos/Quantum-Field-Manipulator_TopView.jpg)
@@ -193,7 +193,7 @@ stateDiagram-v2
 
 #### Quantum Tunneling at Multiple Scales
 
-The InstaForce propulsion system implements quantum tunneling across multiple scales, from the subatomic to the macroscopic:
+The Azure Space Group propulsion system implements quantum tunneling across multiple scales, from the subatomic to the macroscopic:
 
 ```mermaid
 stateDiagram-v2
@@ -383,18 +383,18 @@ stateDiagram-v2
     end note
     
     note right of Final
-        InstaForce technology
+        Azure Space Group technology
         achieves near-perfect
         efficiency
     end note
 ```
-*Figure 6: Efficiency Comparison - InstaForce quantum tunneling vs conventional approaches*
+*Figure 6: Efficiency Comparison - Azure Space Group quantum tunneling vs conventional approaches*
 
 These innovations in quantum tunneling propulsion represent a fundamental leap beyond conventional propulsion technologies, enabling spacecraft capabilities previously confined to theoretical physics and science fiction.
 
 ### Quantum State Transitions
 
-Detailed state diagram showing the quantum state transitions underlying InstaForce technology:
+Detailed state diagram showing the quantum state transitions underlying Azure Space Group technology:
 
 ```mermaid
 stateDiagram-v2
@@ -613,7 +613,7 @@ stateDiagram-v2
 
 ## Quantum Propulsion Development
 
-The InstaForce quantum propulsion system has evolved through several key development phases, each building on the previous discoveries and incorporating new techniques and materials.
+The Azure Space Group quantum propulsion system has evolved through several key development phases, each building on the previous discoveries and incorporating new techniques and materials.
 
 ### Research Acceleration Through Community Engagement
 

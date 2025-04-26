@@ -2,16 +2,16 @@
 id: prototype-designs
 title: Prototype Designs & Concept Improvements
 sidebar_label: Prototype Designs
-description: Practical prototypes and concept enhancements for InstaForce technologies
+description: Practical prototypes and concept enhancements for Azure Space Group technologies
 ---
 
 # Prototype Designs and Concept Improvements
 
-This document outlines our practical approach to transforming InstaForce's theoretical foundations into tangible prototypes and improved concepts. These prototypes represent critical stepping stones toward demonstrating the viability of quantum navigation and propulsion technologies.
+This document outlines our practical approach to transforming Azure Space Group's theoretical foundations into tangible prototypes and improved concepts. These prototypes represent critical stepping stones toward demonstrating the viability of quantum navigation and propulsion technologies.
 
 ## Concept Enhancements
 
-Based on our theoretical research and recent advancements in quantum navigation technology, we've identified several opportunities to enhance the core InstaForce concepts.
+Based on our theoretical research and recent advancements in quantum navigation technology, we've identified several opportunities to enhance the core Azure Space Group concepts.
 
 ### Hybrid Propulsion Architecture
 

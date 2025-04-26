@@ -79,4 +79,4 @@ With these documentation improvements in place, we're focusing on the following 
 2. **Propulsion System Integration**: Documenting the integration points between propulsion and communication systems
 3. **Testing Protocols**: Adding detailed testing procedures for quantum components
 
-These updates represent our ongoing commitment to comprehensive and accessible documentation for the InstaForce project. Stay tuned for more improvements! 
+These updates represent our ongoing commitment to comprehensive and accessible documentation for the Azure Space Group project. Stay tuned for more improvements! 
