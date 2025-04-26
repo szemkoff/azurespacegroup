@@ -4,9 +4,6 @@ sidebar_position: 1
 
 # Azure Space Group Project Overview
 
-![Quantum Spacecraft - Azure Space Group Prototype](/img/photos/quantum-research-fig9-quantum-spacecraft.png)
-*Quantum Spacecraft Prototype - The culmination of our integrated systems approach*
-
 The Azure Space Group Project represents a revolutionary approach to space propulsion technology, leveraging quantum mechanics principles to enable advanced space travel capabilities that surpass conventional propulsion methods. This project aims to harness quantum phenomena such as tunneling, superposition, and entanglement to create a propulsion system that could potentially enable faster-than-light travel and drastically reduce resource consumption.
 
 ## Integrated Systems Architecture
