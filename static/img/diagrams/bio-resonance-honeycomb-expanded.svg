@@ -180,29 +180,29 @@
   
   <!-- Field generator nodes -->
   <g transform="translate(400, 300)" filter="url(#glow)">
-    <circle cx="0" cy="0" r="10" fill="#aaffaa" opacity="0.8" />
-    <circle cx="0" cy="-75" r="6" fill="#aaffaa" opacity="0.7" />
-    <circle cx="65" cy="-37.5" r="6" fill="#aaffaa" opacity="0.7" />
-    <circle cx="65" cy="37.5" r="6" fill="#aaffaa" opacity="0.7" />
-    <circle cx="0" cy="75" r="6" fill="#aaffaa" opacity="0.7" />
-    <circle cx="-65" cy="37.5" r="6" fill="#aaffaa" opacity="0.7" />
-    <circle cx="-65" cy="-37.5" r="6" fill="#aaffaa" opacity="0.7" />
+    <circle cx="0" cy="0" r="10" fill="#7aaddb" opacity="0.8" />
+    <circle cx="0" cy="-75" r="6" fill="#7aaddb" opacity="0.7" />
+    <circle cx="65" cy="-37.5" r="6" fill="#7aaddb" opacity="0.7" />
+    <circle cx="65" cy="37.5" r="6" fill="#7aaddb" opacity="0.7" />
+    <circle cx="0" cy="75" r="6" fill="#7aaddb" opacity="0.7" />
+    <circle cx="-65" cy="37.5" r="6" fill="#7aaddb" opacity="0.7" />
+    <circle cx="-65" cy="-37.5" r="6" fill="#7aaddb" opacity="0.7" />
     
     <!-- Phase 2 field nodes -->
-    <circle cx="0" cy="-150" r="4" fill="#aaffaa" opacity="0.5" />
-    <circle cx="65" cy="-112.5" r="4" fill="#aaffaa" opacity="0.5" />
-    <circle cx="130" cy="-75" r="4" fill="#aaffaa" opacity="0.5" />
-    <circle cx="130" cy="0" r="4" fill="#aaffaa" opacity="0.5" />
-    <circle cx="130" cy="75" r="4" fill="#aaffaa" opacity="0.5" />
-    <circle cx="65" cy="112.5" r="4" fill="#aaffaa" opacity="0.5" />
+    <circle cx="0" cy="-150" r="4" fill="#7aaddb" opacity="0.5" />
+    <circle cx="65" cy="-112.5" r="4" fill="#7aaddb" opacity="0.5" />
+    <circle cx="130" cy="-75" r="4" fill="#7aaddb" opacity="0.5" />
+    <circle cx="130" cy="0" r="4" fill="#7aaddb" opacity="0.5" />
+    <circle cx="130" cy="75" r="4" fill="#7aaddb" opacity="0.5" />
+    <circle cx="65" cy="112.5" r="4" fill="#7aaddb" opacity="0.5" />
   </g>
   
   <!-- Quantum field connection lines between nodes -->
   <g transform="translate(400, 300)" opacity="0.3">
-    <path d="M0,0 L0,-75 L65,-37.5 L65,37.5 L0,75 L-65,37.5 L-65,-37.5 Z" fill="none" stroke="#aaffaa" stroke-width="2" />
+    <path d="M0,0 L0,-75 L65,-37.5 L65,37.5 L0,75 L-65,37.5 L-65,-37.5 Z" fill="none" stroke="#7aaddb" stroke-width="2" />
     
     <!-- Phase 2 field connections -->
-    <path d="M0,-75 L0,-150 L65,-112.5 L130,-75 L130,0 L130,75 L65,112.5 L0,75" fill="none" stroke="#aaffaa" stroke-width="1.5" stroke-dasharray="5,3" />
+    <path d="M0,-75 L0,-150 L65,-112.5 L130,-75 L130,0 L130,75 L65,112.5 L0,75" fill="none" stroke="#7aaddb" stroke-width="1.5" stroke-dasharray="5,3" />
   </g>
   
   <!-- Legend -->
@@ -225,7 +225,7 @@
     <rect x="115" y="25" width="15" height="15" fill="url(#researchPattern)" stroke="#333" stroke-width="0.5" />
     <text x="135" y="37" text-anchor="start" font-family="Arial" font-size="10" fill="#333">Research Modules</text>
     
-    <circle cx="210" cy="32" r="7" fill="#aaffaa" opacity="0.6" />
+    <circle cx="210" cy="32" r="7" fill="#7aaddb" opacity="0.6" />
     <text x="230" y="37" text-anchor="start" font-family="Arial" font-size="10" fill="#333">Field Generator</text>
   </g>
   
@@ -252,4 +252,38 @@
     <text x="10" y="100" text-anchor="start" font-family="Arial" font-size="10" fill="#333">• Energy efficiency optimization</text>
     <text x="10" y="115" text-anchor="start" font-family="Arial" font-size="9" fill="#333" font-style="italic">Coherent field for all connected modules</text>
   </g>
+  
+  <!-- Small Bio Cells -->
+  <g>
+    <circle cx="170" cy="206" r="15" fill="#7aaddb" stroke="#555" stroke-width="1" />
+    <circle cx="170" cy="266" r="15" fill="#7aaddb" stroke="#555" stroke-width="1" />
+    <circle cx="170" cy="326" r="15" fill="#7aaddb" stroke="#555" stroke-width="1" />
+    
+    <circle cx="235" cy="176" r="15" fill="#7aaddb" stroke="#555" stroke-width="1" />
+    <circle cx="235" cy="236" r="15" fill="#7aaddb" stroke="#555" stroke-width="1" />
+    <circle cx="235" cy="296" r="15" fill="#7aaddb" stroke="#555" stroke-width="1" />
+    <circle cx="235" cy="356" r="15" fill="#7aaddb" stroke="#555" stroke-width="1" />
+    
+    <circle cx="300" cy="146" r="15" fill="#7aaddb" stroke="#555" stroke-width="1" />
+    <circle cx="300" cy="206" r="15" fill="#7aaddb" stroke="#555" stroke-width="1" />
+    <circle cx="300" cy="266" r="15" fill="#7aaddb" stroke="#555" stroke-width="1" />
+    <circle cx="300" cy="326" r="15" fill="#7aaddb" stroke="#555" stroke-width="1" />
+    <circle cx="300" cy="386" r="15" fill="#7aaddb" stroke="#555" stroke-width="1" />
+    
+    <circle cx="365" cy="176" r="15" fill="#7aaddb" stroke="#555" stroke-width="1" />
+    <circle cx="365" cy="236" r="15" fill="#7aaddb" stroke="#555" stroke-width="1" />
+    <circle cx="365" cy="296" r="15" fill="#7aaddb" stroke="#555" stroke-width="1" />
+    <circle cx="365" cy="356" r="15" fill="#7aaddb" stroke="#555" stroke-width="1" />
+    
+    <circle cx="430" cy="206" r="15" fill="#7aaddb" stroke="#555" stroke-width="1" />
+    <circle cx="430" cy="266" r="15" fill="#7aaddb" stroke="#555" stroke-width="1" />
+    <circle cx="430" cy="326" r="15" fill="#7aaddb" stroke="#555" stroke-width="1" />
+  </g>
+  
+  <!-- Bio Resonance Connections -->
+  <path d="M170,206 L235,176 L300,146 L365,176 L430,206" stroke="#7aaddb" stroke-width="1.5" fill="none" />
+  <path d="M170,266 L235,236 L300,206 L365,236 L430,266" stroke="#7aaddb" stroke-width="1.5" fill="none" />
+  <path d="M170,326 L235,296 L300,266 L365,296 L430,326" stroke="#7aaddb" stroke-width="1.5" fill="none" />
+  <path d="M235,356 L300,326 L365,356" stroke="#7aaddb" stroke-width="1.5" fill="none" />
+  <path d="M300,386 L365,356" stroke="#7aaddb" stroke-width="1.5" fill="none" />
 </svg> 
