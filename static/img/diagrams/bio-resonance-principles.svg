@@ -12,8 +12,8 @@
     
     <!-- Interior ground gradient -->
     <linearGradient id="groundGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#8dd28d;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#70b570;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#8dc1d8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7095b5;stop-opacity:1" />
     </linearGradient>
     
     <!-- Bio-signature aura -->
@@ -25,9 +25,9 @@
     
     <!-- Field generator glow -->
     <radialGradient id="fieldGlow" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
-      <stop offset="0%" style="stop-color:rgba(170,255,170,0.9)" />
-      <stop offset="70%" style="stop-color:rgba(170,255,170,0.3)" />
-      <stop offset="100%" style="stop-color:rgba(170,255,170,0)" />
+      <stop offset="0%" style="stop-color:rgba(170,170,255,0.9)" />
+      <stop offset="70%" style="stop-color:rgba(170,170,255,0.3)" />
+      <stop offset="100%" style="stop-color:rgba(170,170,255,0)" />
     </radialGradient>
     
     <!-- External radiation pattern -->
@@ -37,7 +37,7 @@
     
     <!-- Quantum wave pattern -->
     <pattern id="quantumPattern" patternUnits="userSpaceOnUse" width="20" height="10" patternTransform="rotate(45)">
-      <path d="M0,5 Q5,0 10,5 Q15,10 20,5" fill="none" stroke="#aaffaa" stroke-width="1" />
+      <path d="M0,5 Q5,0 10,5 Q15,10 20,5" fill="none" stroke="#aaaaff" stroke-width="1" />
     </pattern>
     
     <!-- Glowing filter -->
@@ -59,10 +59,10 @@
   <path d="M150,400 A350,350 0 0,1 650,400" fill="url(#domeGradient)" stroke="#6495ED" stroke-width="3" />
   
   <!-- Quantum Field Effect - Dome Shield -->
-  <path d="M150,400 A350,350 0 0,1 650,400" fill="none" stroke="#aaffaa" stroke-width="5" stroke-dasharray="1,15" filter="url(#glow)" />
+  <path d="M150,400 A350,350 0 0,1 650,400" fill="none" stroke="#aaaaff" stroke-width="5" stroke-dasharray="1,15" filter="url(#glow)" />
   
   <!-- Ground Level -->
-  <rect x="150" y="400" width="500" height="100" fill="url(#groundGradient)" stroke="#5a8f5a" stroke-width="1" />
+  <rect x="150" y="400" width="500" height="100" fill="url(#groundGradient)" stroke="#5a8f8f" stroke-width="1" />
   
   <!-- Quantum Field Generators (positioned around dome) -->
   <g>
@@ -95,12 +95,12 @@
     <path d="M350,386 L350,430 M335,400 L365,400 M350,430 L335,460 M350,430 L365,460" fill="none" stroke="#333" stroke-width="1.5" />
     
     <!-- Plant 1 -->
-    <path d="M450,440 C450,415 435,410 420,420 C430,390 450,400 455,380 C460,400 480,390 490,420 C475,410 460,415 460,440 Z" fill="#8dd28d" stroke="#2e8b57" stroke-width="1" />
+    <path d="M450,440 C450,415 435,410 420,420 C430,390 450,400 455,380 C460,400 480,390 490,420 C475,410 460,415 460,440 Z" fill="#8db8d2" stroke="#2e6b8b" stroke-width="1" />
     <rect x="445" y="440" width="20" height="20" fill="#b5651d" stroke="#333" stroke-width="0.5" />
     <circle cx="455" cy="410" r="40" fill="url(#bioAura)" opacity="0.4" />
     
     <!-- Plant 2 -->
-    <path d="M525,440 C525,420 510,410 500,415 C505,395 520,405 525,390 C530,405 545,395 550,415 C540,410 525,420 525,440 Z" fill="#8dd28d" stroke="#2e8b57" stroke-width="1" />
+    <path d="M525,440 C525,420 510,410 500,415 C505,395 520,405 525,390 C530,405 545,395 550,415 C540,410 525,420 525,440 Z" fill="#8db8d2" stroke="#2e6b8b" stroke-width="1" />
     <rect x="520" y="440" width="10" height="15" fill="#b5651d" stroke="#333" stroke-width="0.5" />
     <circle cx="525" cy="415" r="30" fill="url(#bioAura)" opacity="0.4" />
     
@@ -117,24 +117,24 @@
   <!-- Quantum Resonance Field Waves -->
   <g opacity="0.5">
     <!-- Wave from Human 1 to Field Generator -->
-    <path d="M320,350 Q350,310 385,170" fill="none" stroke="#aaffaa" stroke-width="1.5" stroke-dasharray="5,5" />
-    <path d="M320,350 Q180,320 175,380" fill="none" stroke="#aaffaa" stroke-width="1.5" stroke-dasharray="5,5" />
+    <path d="M320,350 Q350,310 385,170" fill="none" stroke="#aaaaff" stroke-width="1.5" stroke-dasharray="5,5" />
+    <path d="M320,350 Q180,320 175,380" fill="none" stroke="#aaaaff" stroke-width="1.5" stroke-dasharray="5,5" />
     
     <!-- Wave from Human 2 to Field Generator -->
-    <path d="M365,360 Q400,300 410,170" fill="none" stroke="#aaffaa" stroke-width="1.5" stroke-dasharray="5,5" />
+    <path d="M365,360 Q400,300 410,170" fill="none" stroke="#aaaaff" stroke-width="1.5" stroke-dasharray="5,5" />
     
     <!-- Wave from Plant to Field Generator -->
-    <path d="M455,390 Q440,260 405,165" fill="none" stroke="#aaffaa" stroke-width="1.5" stroke-dasharray="5,5" />
-    <path d="M525,400 Q585,370 620,380" fill="none" stroke="#aaffaa" stroke-width="1.5" stroke-dasharray="5,5" />
+    <path d="M455,390 Q440,260 405,165" fill="none" stroke="#aaaaff" stroke-width="1.5" stroke-dasharray="5,5" />
+    <path d="M525,400 Q585,370 620,380" fill="none" stroke="#aaaaff" stroke-width="1.5" stroke-dasharray="5,5" />
     
     <!-- Dome field waves -->
-    <path d="M175,380 Q400,80 625,380" fill="none" stroke="#aaffaa" stroke-width="1" stroke-dasharray="3,7" />
-    <path d="M175,380 Q400,100 625,380" fill="none" stroke="#aaffaa" stroke-width="1" stroke-dasharray="3,7" />
-    <path d="M175,380 Q400,120 625,380" fill="none" stroke="#aaffaa" stroke-width="1" stroke-dasharray="3,7" />
-    <path d="M175,380 Q400,140 625,380" fill="none" stroke="#aaffaa" stroke-width="1" stroke-dasharray="3,7" />
-    <path d="M175,380 Q400,160 625,380" fill="none" stroke="#aaffaa" stroke-width="1" stroke-dasharray="3,7" />
-    <path d="M175,380 Q400,180 625,380" fill="none" stroke="#aaffaa" stroke-width="1" stroke-dasharray="3,7" />
-    <path d="M175,380 Q400,200 625,380" fill="none" stroke="#aaffaa" stroke-width="1" stroke-dasharray="3,7" />
+    <path d="M175,380 Q400,80 625,380" fill="none" stroke="#aaaaff" stroke-width="1" stroke-dasharray="3,7" />
+    <path d="M175,380 Q400,100 625,380" fill="none" stroke="#aaaaff" stroke-width="1" stroke-dasharray="3,7" />
+    <path d="M175,380 Q400,120 625,380" fill="none" stroke="#aaaaff" stroke-width="1" stroke-dasharray="3,7" />
+    <path d="M175,380 Q400,140 625,380" fill="none" stroke="#aaaaff" stroke-width="1" stroke-dasharray="3,7" />
+    <path d="M175,380 Q400,160 625,380" fill="none" stroke="#aaaaff" stroke-width="1" stroke-dasharray="3,7" />
+    <path d="M175,380 Q400,180 625,380" fill="none" stroke="#aaaaff" stroke-width="1" stroke-dasharray="3,7" />
+    <path d="M175,380 Q400,200 625,380" fill="none" stroke="#aaaaff" stroke-width="1" stroke-dasharray="3,7" />
   </g>
   
   <!-- Radiation Particles Deflecting off Shield -->
@@ -182,10 +182,10 @@
     <circle cx="20" cy="65" r="8" fill="url(#bioAura)" />
     <text x="35" y="68" text-anchor="start" font-family="Arial" font-size="10" fill="#333">Bio-Signature</text>
     
-    <line x1="10" y1="90" x2="30" y2="90" stroke="#aaffaa" stroke-width="1.5" stroke-dasharray="5,5" />
+    <line x1="10" y1="90" x2="30" y2="90" stroke="#aaaaff" stroke-width="1.5" stroke-dasharray="5,5" />
     <text x="35" y="93" text-anchor="start" font-family="Arial" font-size="10" fill="#333">Resonance Wave</text>
     
-    <line x1="10" y1="115" x2="30" y2="115" stroke="#aaffaa" stroke-width="5" stroke-dasharray="1,8" />
+    <line x1="10" y1="115" x2="30" y2="115" stroke="#aaaaff" stroke-width="5" stroke-dasharray="1,8" />
     <text x="35" y="118" text-anchor="start" font-family="Arial" font-size="10" fill="#333">Shield Field</text>
     
     <line x1="10" y1="140" x2="30" y2="140" stroke="#ff5555" stroke-width="2" stroke-dasharray="3,2" />

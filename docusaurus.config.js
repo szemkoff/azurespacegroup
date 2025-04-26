@@ -12,7 +12,7 @@ const __dirname = path.dirname(__filename);
 const config = {
   title: 'Azure Space Group',
   tagline: 'Advanced Quantum Navigation & Propulsion',
-  favicon: 'img/favicon.svg',
+  favicon: 'img/azure_corp_mark_black.svg',
 
   // Set the production url of your site here
   url: 'https://szemkoff.github.io',
@@ -124,12 +124,12 @@ const config = {
       },
     },
     // Replace with your project's social card
-    image: 'img/logo.svg',
+    image: 'img/azure_corp_mark_black.svg',
     navbar: {
       title: 'Azure Space Group',
       logo: {
-        alt: 'Azure Space Group Logo',
-        src: 'img/logo.svg',
+        alt: 'Azure Corp Logo',
+        src: 'img/azure_corp_mark_black.svg',
       },
       items: [
         {
@@ -231,7 +231,7 @@ const config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Azure Space Group. Built with Docusaurus.`,
+      copyright: `Copyright © 2025 Azure Space Group. Built with Docusaurus.`,
     },
     prism: {
       theme: themes.github,

@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="700" height="500" viewBox="0 0 700 500">
-  <rect width="700" height="500" fill="#f0f0f0" />
+  <rect width="700" height="500" fill="white" />
   
   <!-- Habitat Structure - Dome -->
   <ellipse cx="350" cy="250" rx="250" ry="100" fill="#d5e5f9" stroke="#333" stroke-width="2" opacity="0.8" />
@@ -8,7 +8,7 @@
   <!-- Internal Living Areas -->
   <g>
     <!-- Central Area -->
-    <circle cx="350" cy="250" r="60" fill="#aaffaa" stroke="#333" stroke-width="1.5" opacity="0.8" />
+    <circle cx="350" cy="250" r="60" fill="#7aaddb" stroke="#333" stroke-width="1.5" opacity="0.8" />
     <text x="350" y="250" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Common Area</text>
     
     <!-- Living Pods -->
@@ -65,9 +65,9 @@
   
   <!-- Bio-Resonance Fields -->
   <g stroke-dasharray="5,3" fill="none" opacity="0.4">
-    <ellipse cx="350" cy="250" rx="270" ry="120" stroke="#aaffaa" stroke-width="1" />
-    <ellipse cx="350" cy="250" rx="280" ry="130" stroke="#aaffaa" stroke-width="1" />
-    <ellipse cx="350" cy="250" rx="290" ry="140" stroke="#aaffaa" stroke-width="1" />
+    <ellipse cx="350" cy="250" rx="270" ry="120" stroke="#7aaddb" stroke-width="1" />
+    <ellipse cx="350" cy="250" rx="280" ry="130" stroke="#7aaddb" stroke-width="1" />
+    <ellipse cx="350" cy="250" rx="290" ry="140" stroke="#7aaddb" stroke-width="1" />
   </g>
   
   <!-- External Environment -->
@@ -87,7 +87,7 @@
     <rect x="10" y="30" width="15" height="15" fill="#d5e5f9" opacity="0.8" />
     <text x="35" y="42" text-anchor="start" font-family="Arial" font-size="10" fill="#333">Habitat Structure</text>
     
-    <rect x="10" y="50" width="15" height="15" fill="#aaffaa" opacity="0.8" />
+    <rect x="10" y="50" width="15" height="15" fill="#7aaddb" opacity="0.8" />
     <text x="35" y="62" text-anchor="start" font-family="Arial" font-size="10" fill="#333">Common Areas</text>
     
     <rect x="10" y="70" width="15" height="15" fill="#f9d5e5" opacity="0.8" />

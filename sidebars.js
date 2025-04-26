@@ -21,6 +21,11 @@ const sidebars = {
       label: 'Project Overview',
     },
     {
+      type: 'doc',
+      id: 'about',
+      label: 'About Us',
+    },
+    {
       type: 'category',
       label: 'Core Systems',
       items: [
@@ -49,6 +54,7 @@ const sidebars = {
         'research-documentation/quantum-battery-prototype',
         'research-documentation/game-based-research-platform',
         'research-documentation/time-tacking',
+        'research-documentation/quantum-propulsion-theoretical-revision',
         'research-documentation/advanced-materials-research',
         'research-documentation/quantum-communications',
         'research-documentation/legal-regulatory',
@@ -78,6 +84,11 @@ const sidebars = {
       type: 'doc',
       id: 'rebranding-plan',
       label: 'Rebranding Plan',
+    },
+    {
+      type: 'doc',
+      id: 'careers',
+      label: 'Careers',
     },
   ],
 };
