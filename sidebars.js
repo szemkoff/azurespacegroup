@@ -74,6 +74,11 @@ const sidebars = {
       id: 'contributing',
       label: 'Contributing Guidelines',
     },
+    {
+      type: 'doc',
+      id: 'rebranding-plan',
+      label: 'Rebranding Plan',
+    },
   ],
 };
 
