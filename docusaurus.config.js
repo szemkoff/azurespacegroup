@@ -18,13 +18,13 @@ const config = {
   url: 'https://szemkoff.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/AzureSpaceGroup/',
+  baseUrl: '/azurespacegroup/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'szemkoff', // Usually your GitHub org/user name.
-  projectName: 'AzureSpaceGroup', // Usually your repo name.
-  deploymentBranch: 'docs-deployment', // Use our custom branch for deployment
+  projectName: 'azurespacegroup', // Usually your repo name.
+  deploymentBranch: 'gh-pages', // Use gh-pages branch for deployment
 
   // Restore normal behavior for broken links after we've fixed the diagram URLs
   onBrokenLinks: 'warn',
