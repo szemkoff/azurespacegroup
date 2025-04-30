@@ -18,13 +18,14 @@ const config = {
   url: 'https://szemkoff.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/azurespacegroup/',
+  baseUrl: '/AzureSpaceGroup/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'szemkoff', // Usually your GitHub org/user name.
-  projectName: 'azurespacegroup', // Usually your repo name.
+  projectName: 'AzureSpaceGroup', // Usually your repo name.
   deploymentBranch: 'gh-pages', // Use gh-pages branch for deployment
+  trailingSlash: false,
 
   // Restore normal behavior for broken links after we've fixed the diagram URLs
   onBrokenLinks: 'warn',
@@ -42,8 +43,7 @@ const config = {
           return {
             resolve: {
               alias: {
-                // Rewrite /Azure Space Group/img/diagrams/xxx.html to /img/diagrams/xxx.html
-                '/Azure Space Group/img/diagrams': path.resolve(__dirname, 'static/img/diagrams'),
+                '/AzureSpaceGroup/img/diagrams': path.resolve(__dirname, 'static/img/diagrams'),
               },
             },
           };
@@ -54,7 +54,7 @@ const config = {
           const path = require('path');
           
           // Create the target directory if it doesn't exist
-          const targetDir = path.join(outDir, 'Azure Space Group', 'img', 'diagrams');
+          const targetDir = path.join(outDir, 'AzureSpaceGroup', 'img', 'diagrams');
           await fs.ensureDir(targetDir);
           
           // Copy all HTML diagrams to the target directory
@@ -141,7 +141,7 @@ const config = {
         {to: '/blog', label: 'Blog', position: 'left'},
         {to: '/project-status', label: 'Project Status', position: 'left'},
         {
-          href: 'https://github.com/szemkoff/Azure Space Group',
+          href: 'https://github.com/szemkoff/AzureSpaceGroup',
           label: 'GitHub',
           position: 'right',
         },
@@ -222,7 +222,7 @@ const config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/szemkoff/Azure Space Group',
+              href: 'https://github.com/szemkoff/AzureSpaceGroup',
             },
             {
               label: 'Contact Us',
@@ -248,22 +248,16 @@ const config = {
           sidebarPath: path.resolve(__dirname, './sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/szemkoff/Azure Space Group/tree/main/',
-          rehypePlugins: [],
+          editUrl: 'https://github.com/szemkoff/AzureSpaceGroup/tree/main/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/szemkoff/Azure Space Group/tree/main/',
-          // Configure inline authors to be ignored to remove the warning
-          onInlineAuthors: 'ignore',
-          onUntruncatedBlogPosts: 'ignore',
+          editUrl: 'https://github.com/szemkoff/AzureSpaceGroup/tree/main/',
         },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: require.resolve('./src/css/custom.css'),
         },
       }),
     ],
