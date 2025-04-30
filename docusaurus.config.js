@@ -72,11 +72,17 @@ const config = {
             }
           }
 
-          // Copy the logo
-          await fs.copy(
-            path.join(__dirname, 'static/img/azure_corp_mark_black.svg'),
-            path.join(imgTargetDir, 'azure_corp_mark_black.svg')
-          );
+          // Copy all static images including the logo
+          const staticImgDir = path.join(__dirname, 'static/img');
+          const staticFiles = await fs.readdir(staticImgDir);
+          for (const file of staticFiles) {
+            if (file.endsWith('.svg') || file.endsWith('.png') || file.endsWith('.jpg')) {
+              await fs.copy(
+                path.join(staticImgDir, file),
+                path.join(imgTargetDir, file)
+              );
+            }
+          }
         },
       };
     },
@@ -139,6 +145,7 @@ const config = {
       logo: {
         alt: 'Azure Corp Logo',
         src: 'img/azure_corp_mark_black.svg',
+        srcDark: 'img/azure_corp_mark_black.svg',
       },
       items: [
         {
