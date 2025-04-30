@@ -12,7 +12,7 @@ const __dirname = path.dirname(__filename);
 const config = {
   title: 'Azure Space Group',
   tagline: 'Advanced Quantum Navigation & Propulsion',
-  favicon: 'img/azure_corp_mark_black.svg',
+  favicon: 'img/azure_corp_mark_black.png',
 
   // Set the production url of your site here
   url: 'https://szemkoff.github.io',
@@ -53,7 +53,7 @@ const config = {
           await fs.ensureDir(path.join(outDir, 'AzureSpaceGroup', 'img'));
           
           // Copy logo files to all possible locations
-          const logoFiles = ['azure_corp_mark_black.svg', 'logo.svg'];
+          const logoFiles = ['azure_corp_mark_black.png'];
           for (const file of logoFiles) {
             const sourcePath = path.join(__dirname, 'static', 'img', file);
             
@@ -127,13 +127,13 @@ const config = {
       },
     },
     // Replace with your project's social card
-    image: 'img/azure_corp_mark_black.svg',
+    image: 'img/azure_corp_mark_black.png',
     navbar: {
       title: 'Azure Space Group',
       logo: {
         alt: 'Azure Corp Logo',
-        src: 'img/azure_corp_mark_black.svg',
-        srcDark: 'img/azure_corp_mark_black.svg',
+        src: 'img/azure_corp_mark_black.png',
+        srcDark: 'img/azure_corp_mark_black.png',
       },
       items: [
         {
