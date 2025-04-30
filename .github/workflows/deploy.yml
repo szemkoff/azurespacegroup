@@ -31,6 +31,9 @@ jobs:
         run: npm ci
       - name: Build with Docusaurus
         run: npm run build
+      - name: Verify build output
+        run: |
+          ls -la build/AzureSpaceGroup/img/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
