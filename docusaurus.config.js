@@ -12,7 +12,7 @@ const __dirname = path.dirname(__filename);
 const config = {
   title: 'Azure Space Group',
   tagline: 'Advanced Quantum Navigation & Propulsion',
-  favicon: '/AzureSpaceGroup/img/azure_corp_mark_black.svg',
+  favicon: 'img/azure_corp_mark_black.svg',
 
   // Set the production url of your site here
   url: 'https://szemkoff.github.io',
@@ -34,55 +34,43 @@ const config = {
   // Enable static directory to be properly copied to build directory
   staticDirectories: ['static', 'public'],
   
-  // Configure custom rewrites to fix diagram URLs and ensure logo is copied
+  // Custom plugin to handle logo files
   plugins: [
     function (context, options) {
       return {
-        name: 'resolve-html-diagrams',
-        configureWebpack(config, isServer, utils) {
-          return {
-            resolve: {
-              alias: {
-                '/AzureSpaceGroup/img/diagrams': path.resolve(__dirname, 'static/img/diagrams'),
-                '/AzureSpaceGroup/img': path.resolve(__dirname, 'static/img'),
-              },
-            },
-          };
+        name: 'copy-logo-files',
+        async loadContent() {
+          return null;
         },
-        // Copy diagrams and logo to both locations to ensure they're accessible
-        async postBuild({ outDir }) {
+        async contentLoaded({content, actions}) {
+          // No additional processing needed
+        },
+        async postBuild({siteConfig, routesPaths, outDir}) {
           const fs = require('fs-extra');
-          const path = require('path');
           
-          // Create the target directories if they don't exist
-          const diagramsTargetDir = path.join(outDir, 'AzureSpaceGroup', 'img', 'diagrams');
-          const imgTargetDir = path.join(outDir, 'AzureSpaceGroup', 'img');
-          await fs.ensureDir(diagramsTargetDir);
-          await fs.ensureDir(imgTargetDir);
+          // Create all possible img directories
+          await fs.ensureDir(path.join(outDir, 'img'));
+          await fs.ensureDir(path.join(outDir, 'AzureSpaceGroup', 'img'));
           
-          // Copy all HTML diagrams to the target directory
-          const sourceDir = path.join(outDir, 'img', 'diagrams');
-          const files = await fs.readdir(sourceDir);
-          for (const file of files) {
-            if (file.endsWith('.html')) {
-              await fs.copy(
-                path.join(sourceDir, file),
-                path.join(diagramsTargetDir, file)
-              );
-            }
+          // Copy logo files to all possible locations
+          const logoFiles = ['azure_corp_mark_black.svg', 'logo.svg'];
+          for (const file of logoFiles) {
+            const sourcePath = path.join(__dirname, 'static', 'img', file);
+            
+            // Copy to /img/
+            await fs.copy(
+              sourcePath,
+              path.join(outDir, 'img', file)
+            );
+            
+            // Copy to /AzureSpaceGroup/img/
+            await fs.copy(
+              sourcePath,
+              path.join(outDir, 'AzureSpaceGroup', 'img', file)
+            );
           }
-
-          // Copy all static images including the logo
-          const staticImgDir = path.join(__dirname, 'static/img');
-          const staticFiles = await fs.readdir(staticImgDir);
-          for (const file of staticFiles) {
-            if (file.endsWith('.svg') || file.endsWith('.png') || file.endsWith('.jpg')) {
-              await fs.copy(
-                path.join(staticImgDir, file),
-                path.join(imgTargetDir, file)
-              );
-            }
-          }
+          
+          console.log('Logo files copied to all possible locations');
         },
       };
     },
@@ -139,13 +127,13 @@ const config = {
       },
     },
     // Replace with your project's social card
-    image: '/AzureSpaceGroup/img/azure_corp_mark_black.svg',
+    image: 'img/azure_corp_mark_black.svg',
     navbar: {
       title: 'Azure Space Group',
       logo: {
         alt: 'Azure Corp Logo',
-        src: '/AzureSpaceGroup/img/azure_corp_mark_black.svg',
-        srcDark: '/AzureSpaceGroup/img/azure_corp_mark_black.svg',
+        src: 'img/azure_corp_mark_black.svg',
+        srcDark: 'img/azure_corp_mark_black.svg',
       },
       items: [
         {
