@@ -1,0 +1,27 @@
+.navbarLogoLink {
+  display: flex;
+  margin-right: 0.5rem;
+  height: 2rem;
+  align-items: center;
+}
+
+.navbarLogoContainer {
+  display: flex;
+  align-items: center;
+}
+
+.navbarLogo {
+  height: 2rem;
+  margin-right: 0.5rem;
+}
+
+.navbarTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* Ensure the SVG displays even without styles */
+img.navbarLogo {
+  display: inline-block !important;
+  visibility: visible !important;
+} 
