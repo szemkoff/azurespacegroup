@@ -34,7 +34,7 @@ const config = {
   // Enable static directory to be properly copied to build directory
   staticDirectories: ['static', 'public'],
   
-  // Configure custom rewrites to fix diagram URLs
+  // Configure custom rewrites to fix diagram URLs and ensure logo is copied
   plugins: [
     function (context, options) {
       return {
@@ -44,18 +44,21 @@ const config = {
             resolve: {
               alias: {
                 '/AzureSpaceGroup/img/diagrams': path.resolve(__dirname, 'static/img/diagrams'),
+                '/AzureSpaceGroup/img': path.resolve(__dirname, 'static/img'),
               },
             },
           };
         },
-        // Copy diagrams to both locations to ensure they're accessible
+        // Copy diagrams and logo to both locations to ensure they're accessible
         async postBuild({ outDir }) {
           const fs = require('fs-extra');
           const path = require('path');
           
-          // Create the target directory if it doesn't exist
-          const targetDir = path.join(outDir, 'AzureSpaceGroup', 'img', 'diagrams');
-          await fs.ensureDir(targetDir);
+          // Create the target directories if they don't exist
+          const diagramsTargetDir = path.join(outDir, 'AzureSpaceGroup', 'img', 'diagrams');
+          const imgTargetDir = path.join(outDir, 'AzureSpaceGroup', 'img');
+          await fs.ensureDir(diagramsTargetDir);
+          await fs.ensureDir(imgTargetDir);
           
           // Copy all HTML diagrams to the target directory
           const sourceDir = path.join(outDir, 'img', 'diagrams');
@@ -64,10 +67,16 @@ const config = {
             if (file.endsWith('.html')) {
               await fs.copy(
                 path.join(sourceDir, file),
-                path.join(targetDir, file)
+                path.join(diagramsTargetDir, file)
               );
             }
           }
+
+          // Copy the logo
+          await fs.copy(
+            path.join(__dirname, 'static/img/azure_corp_mark_black.svg'),
+            path.join(imgTargetDir, 'azure_corp_mark_black.svg')
+          );
         },
       };
     },
