@@ -6,13 +6,13 @@ npm run build
 
 echo "Ensuring logo files are available in all locations..."
 mkdir -p build/img/ build/AzureSpaceGroup/img/
-cp -f static/img/azure_corp_mark_black.svg build/img/
-cp -f static/img/azure_corp_mark_black.svg build/AzureSpaceGroup/img/
-cp -f static/img/logo.svg build/img/
-cp -f static/img/logo.svg build/AzureSpaceGroup/img/
+cp -f static/img/azure_corp_mark_black.png build/img/
+cp -f static/img/azure_corp_mark_black.png build/AzureSpaceGroup/img/
+cp -f static/img/logo.svg build/img/ 2>/dev/null || true
+cp -f static/img/logo.svg build/AzureSpaceGroup/img/ 2>/dev/null || true
 
 echo "Verifying logo files:"
-find build -name "*.svg" | grep -i logo
+find build -name "*.png" | grep -i azure || echo "No PNG logo found"
 
 echo "Creating direct deploy to gh-pages branch without using GitHub Actions..."
 cd build
@@ -29,8 +29,8 @@ git checkout -b gh-pages
 git add -A
 git commit -m "Deploy website - direct commit"
 
-# Force push to the gh-pages branch
-git push -f https://github.com/szemkoff/AzureSpaceGroup.git gh-pages
+# Force push to the gh-pages branch of azurespacegroup repository
+git push -f https://github.com/szemkoff/azurespacegroup.git gh-pages
 
 cd ..
 echo "Deployment complete! Check https://szemkoff.github.io/AzureSpaceGroup/" 
