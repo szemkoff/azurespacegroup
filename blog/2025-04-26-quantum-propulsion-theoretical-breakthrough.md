@@ -1,11 +1,7 @@
 ---
 slug: quantum-propulsion-theoretical-breakthrough
 title: Theoretical Breakthrough in Quantum Propulsion Models
-authors:
-  name: Stanley Zemskoff
-  title: Azure Space Group Lead Researcher
-  url: https://www.linkedin.com/in/stan-zemskoff-55a55221/
-  image_url: https://github.com/szemkoff.png
+authors: [stanley]
 tags: [research, quantum, propulsion, breakthrough]
 date: 2025-04-26T10:00
 ---
@@ -13,6 +9,8 @@ date: 2025-04-26T10:00
 # Theoretical Breakthrough in Quantum Propulsion Models
 
 We are pleased to announce a significant theoretical advancement in our understanding of quantum propulsion systems. After extensive review of the original Time Tacking propulsion framework developed by the Quantum Propulsion Research Institute, our research team has developed critical theoretical revisions that address several fundamental physics challenges while preserving the innovative core of the original theory.
+
+<!-- truncate -->
 
 ## Addressing Key Challenges
 

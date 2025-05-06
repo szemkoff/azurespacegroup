@@ -30,6 +30,7 @@ const sidebars = {
       label: 'Core Systems',
       items: [
         'core-documentation/core-technology',
+        'core-documentation/system-dissection',
         'core-documentation/energy-systems',
         'core-documentation/propulsion-navigation',
         'core-documentation/quantum-position-determination',

@@ -2,4 +2,10 @@ stanzem:
   name: Stan Zemskoff
   title: Principal Quantum Engineer
   url: https://github.com/stanzem
-  image_url: https://github.com/stanzem.png 
+  image_url: https://github.com/stanzem.png
+
+stanley:
+  name: Stanley Zemskoff
+  title: Azure Space Group Lead Researcher
+  url: https://www.linkedin.com/in/stan-zemskoff-55a55221/
+  image_url: https://github.com/szemkoff.png 

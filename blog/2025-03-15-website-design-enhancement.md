@@ -1,11 +1,7 @@
 ---
 slug: website-design-enhancement
 title: Website Design Enhancement and Documentation Updates
-authors: 
-  - name: Stan Zemskoff
-    title: Principal Quantum Engineer
-    url: https://github.com/stanzem
-    image_url: https://github.com/stanzem.png
+authors: [stanley]
 tags: [website, design, documentation, updates]
 ---
 

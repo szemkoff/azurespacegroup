@@ -1,11 +1,7 @@
 ---
 slug: research-infrastructure-update
 title: Research Infrastructure Documentation Updates
-authors: 
-  - name: Stan Zemskoff
-    title: Principal Quantum Engineer
-    url: https://github.com/stanzem
-    image_url: https://github.com/stanzem.png
+authors: [stanley]
 tags: [documentation, research, infrastructure, diagrams]
 ---
 

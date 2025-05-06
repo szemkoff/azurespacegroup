@@ -1,11 +1,7 @@
 ---
 slug: prototype-designs-implementation-path
 title: Introducing Prototype Designs and Practical Implementation Path for Quantum Navigation
-authors: 
-  - name: Stan Zemskoff
-    title: Principal Quantum Engineer
-    url: https://github.com/stanzem
-    image_url: https://github.com/stanzem.png
+authors: [stanley]
 tags: [prototypes, quantum navigation, implementation, QPDS, development]
 ---
 
