@@ -18,12 +18,12 @@ const config = {
   url: 'https://szemkoff.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/AzureSpaceGroup/',
+  baseUrl: '/azurespacegroup/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'szemkoff', // Usually your GitHub org/user name.
-  projectName: 'AzureSpaceGroup', // Usually your repo name.
+  projectName: 'azurespacegroup', // Usually your repo name.
   deploymentBranch: 'gh-pages', // Use gh-pages branch for deployment
   trailingSlash: false,
 
@@ -50,7 +50,7 @@ const config = {
           
           // Create all possible img directories
           await fs.ensureDir(path.join(outDir, 'img'));
-          await fs.ensureDir(path.join(outDir, 'AzureSpaceGroup', 'img'));
+          await fs.ensureDir(path.join(outDir, 'azurespacegroup', 'img'));
           
           // Copy logo files to all possible locations
           const logoFiles = ['azure_corp_mark_black.png'];
@@ -63,10 +63,10 @@ const config = {
               path.join(outDir, 'img', file)
             );
             
-            // Copy to /AzureSpaceGroup/img/
+            // Copy to /azurespacegroup/img/
             await fs.copy(
               sourcePath,
-              path.join(outDir, 'AzureSpaceGroup', 'img', file)
+              path.join(outDir, 'azurespacegroup', 'img', file)
             );
           }
           
@@ -145,7 +145,7 @@ const config = {
         {to: '/blog', label: 'Blog', position: 'left'},
         {to: '/project-status', label: 'Project Status', position: 'left'},
         {
-          href: 'https://github.com/szemkoff/AzureSpaceGroup',
+          href: 'https://github.com/szemkoff/azurespacegroup',
           label: 'GitHub',
           position: 'right',
         },
@@ -226,7 +226,7 @@ const config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/szemkoff/AzureSpaceGroup',
+              href: 'https://github.com/szemkoff/azurespacegroup',
             },
             {
               label: 'Contact Us',
@@ -252,7 +252,7 @@ const config = {
           sidebarPath: path.resolve(__dirname, './sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: 'https://github.com/szemkoff/AzureSpaceGroup/tree/main/',
+          editUrl: 'https://github.com/szemkoff/azurespacegroup/tree/main/',
         },
         blog: {
           onInlineAuthors: 'ignore',
@@ -260,7 +260,7 @@ const config = {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: 'https://github.com/szemkoff/AzureSpaceGroup/tree/main/',
+          editUrl: 'https://github.com/szemkoff/azurespacegroup/tree/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
