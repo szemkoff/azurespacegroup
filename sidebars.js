@@ -68,12 +68,30 @@ const sidebars = {
       label: 'Technical Schematics & Diagrams',
     },
     {
+      type: 'doc',
+      id: 'development-roadmap',
+      label: 'Development Roadmap',
+    },
+    {
       type: 'category',
       label: 'Investment Opportunities',
       items: [
         'investment',
         'pitch-deck',
         'tokenization-strategy',
+        {
+          type: 'category',
+          label: 'Grant Programs',
+          items: [
+            'investment-opportunities/quantum-sci',
+            'investment-opportunities/uconn-quantum',
+            'investment-opportunities/nsf-expand',
+            'investment-opportunities/arpae-open',
+            'investment-opportunities/doe-quantum',
+            'investment-opportunities/nasa-niac',
+            'investment-opportunities/afosr-basic',
+          ],
+        },
       ],
     },
     {

@@ -199,4 +199,56 @@ The company has multiple potential exit pathways:
 - Website: [https://intstelforce.com/](https://intstelforce.com/)
 - LinkedIn: [Quantum Propulsion Technologies Ltd](https://www.linkedin.com/company/quantum-propulsion-technologies-ltd/) (operating as Azure Space Group Technologies)
 
-All investment discussions are subject to appropriate non-disclosure agreements and accredited investor verification. 
+All investment discussions are subject to appropriate non-disclosure agreements and accredited investor verification.
+
+# Investment Plan & Grant Program Guide
+
+## Grant Program Overview
+
+Below are the major grant programs targeted by Azure Space Group. Click each for detailed eligibility, application requirements, and success strategies:
+
+- [Quantum Sci Grant Program (Stanford University)](investment-opportunities/quantum-sci)
+- [UConn Quantum Grant Program (University of Connecticut)](investment-opportunities/uconn-quantum)
+- [NSF Expand Grant Program (National Science Foundation)](investment-opportunities/nsf-expand)
+- [ARPA-E OPEN Grant Program (DOE ARPA-E)](investment-opportunities/arpae-open)
+- [DOE Quantum Grant Program (Department of Energy)](investment-opportunities/doe-quantum)
+- [NASA NIAC Grant Program (NASA)](investment-opportunities/nasa-niac)
+- [AFOSR Basic Grant Program (Air Force Office of Scientific Research)](investment-opportunities/afosr-basic)
+
+---
+
+## Funding Strategy Overview
+
+- **Objective:** Secure a mix of grant funding and private investment to support all phases of R&D, prototyping, and deployment for Azure Space Group.
+- **Approach:** Target grants with varying difficulty and deadlines, align project milestones with funding cycles, and leverage early wins to attract larger investments.
+
+---
+
+## Action Plan & Timeline
+
+| Phase                | Actions                                                                 | Timeline         |
+|----------------------|-------------------------------------------------------------------------|------------------|
+| Short-Term           | Apply to easy/rolling grants, develop pilot data                        | 0–6 months       |
+| Mid-Term             | Prepare/submit to medium/hard grants, build partnerships                | 6–12 months      |
+| Long-Term            | Pursue large-scale, multi-year funding, expand to private/international | 12+ months       |
+
+---
+
+## General Best Practices for Grant Success
+
+- **Start Early:** Allow 2–3 months for large proposals.
+- **Read the Solicitation Carefully:** Follow all formatting and submission rules.
+- **Engage Program Officers:** Ask questions and get feedback before submitting.
+- **Build a Strong Team:** Include diverse expertise and clear roles.
+- **Show Preliminary Results:** Even small pilot data can help.
+- **Use Clear, Concise Language:** Avoid jargon; make your proposal accessible.
+- **Include Letters of Support:** From partners, stakeholders, or end-users.
+- **Plan for Reporting:** Outline how you'll track progress and report outcomes.
+
+---
+
+## Monitoring & Reporting
+
+- **Track deadlines and submissions** in a shared calendar or project management tool.
+- **Assign team leads** for each grant.
+- **Prepare regular progress reports** for funders and stakeholders. 
