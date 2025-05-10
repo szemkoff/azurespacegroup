@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Quantum Tunneling Mechanism</title>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: transparent;
+    }
+    #diagram {
+      width: 100%;
+      text-align: center;
+    }
+    /* Bold text in diagram */
+    .mermaid .label {
+      font-weight: bold !important;
+      font-size: 18px !important;
+    }
+    /* Thicker lines */
+    .mermaid .flowchart-link {
+      stroke-width: 3px !important;
+    }
+    .mermaid g.node rect, 
+    .mermaid g.node circle, 
+    .mermaid g.node ellipse, 
+    .mermaid g.node polygon {
+      stroke-width: 3px !important;
+    }
+    .mermaid .cluster rect {
+      stroke-width: 3px !important;
+    }
+  </style>
+</head>
+<body>
+  <div id="diagram" class="mermaid">
+    flowchart TB
+      subgraph "Wave Function Enhancement"
+          QWCL[Quantum Wave Coherence Loop]
+          QWA[Quantum Wave Amplifier]
+          PBS[Probability Bias System]
+      end
+      
+      subgraph "Energy Barrier"
+          IP[Injection Point]
+          B1[Barrier Region 1]
+          B2[Barrier Region 2]
+          B3[Barrier Region 3]
+          EP[Emergence Point]
+      end
+      
+      subgraph "Thrust Generation"
+          MR[Momentum Rectifier]
+          DPDC[Direction-Probability Distribution Chamber]
+          TM[Thrust Manifold]
+      end
+      
+      QWCL -->|Enhanced Wave Function| QWA
+      QWA -->|Amplified Wave Function| PBS
+      PBS -->|Biased Probability Distribution| IP
+      
+      IP -->|Tunneling Particles| B1
+      B1 -->|Quantum Tunneling| B2
+      B2 -->|Quantum Tunneling| B3
+      B3 -->|Quantum Tunneling| EP
+      
+      EP -->|Emerged Particles| MR
+      MR -->|Rectified Momentum| DPDC
+      DPDC -->|Directional Thrust| TM
+      
+      style IP fill:#f96,stroke:#333,stroke-width:3px
+      style EP fill:#9f9,stroke:#333,stroke-width:3px
+      style TM fill:#9cf,stroke:#333,stroke-width:3px
+      style B1 fill:#eee,stroke:#333,stroke-width:4px
+      style B2 fill:#ddd,stroke:#333,stroke-width:4px
+      style B3 fill:#ccc,stroke:#333,stroke-width:4px
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      mermaid.initialize({
+        startOnLoad: true,
+        theme: 'neutral',
+        flowchart: {
+          htmlLabels: true,
+          curve: 'basis',
+          nodeSpacing: 50,
+          rankSpacing: 100,
+        },
+        securityLevel: 'loose'
+      });
+    });
+  </script>
+</body>
+</html> 

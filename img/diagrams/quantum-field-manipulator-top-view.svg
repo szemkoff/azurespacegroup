@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="white" />
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle">Quantum Field Manipulator</text>
+  <text x="400" y="70" font-family="Arial" font-size="18" text-anchor="middle">Top View</text>
+  
+  <!-- Main circular housing -->
+  <circle cx="400" cy="300" r="250" fill="#f0f0f0" stroke="black" stroke-width="2" />
+  
+  <!-- Central core -->
+  <circle cx="400" cy="300" r="80" fill="purple" stroke="darkblue" stroke-width="2" />
+  <text x="400" y="300" font-family="Arial" font-size="16" fill="white" text-anchor="middle">Core</text>
+  
+  <!-- Field emitters -->
+  <circle cx="400" cy="150" r="30" fill="blue" stroke="darkblue" stroke-width="2" />
+  <circle cx="400" cy="450" r="30" fill="blue" stroke="darkblue" stroke-width="2" />
+  <circle cx="250" cy="300" r="30" fill="blue" stroke="darkblue" stroke-width="2" />
+  <circle cx="550" cy="300" r="30" fill="blue" stroke="darkblue" stroke-width="2" />
+  
+  <!-- Labels -->
+  <text x="400" y="130" font-family="Arial" font-size="12" text-anchor="middle">North Emitter</text>
+  <text x="400" y="470" font-family="Arial" font-size="12" text-anchor="middle">South Emitter</text>
+  <text x="230" y="300" font-family="Arial" font-size="12" text-anchor="end">West Emitter</text>
+  <text x="570" y="300" font-family="Arial" font-size="12" text-anchor="start">East Emitter</text>
+</svg> 

@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f5f6f7" />
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle">InstaForce Quantum Propulsion System Architecture</text>
+  
+  <!-- Main Systems -->
+  <g id="quantum-core">
+    <rect x="300" y="100" width="200" height="100" rx="10" fill="#0D47A1" stroke="#000" stroke-width="2" />
+    <text x="400" y="150" font-family="Arial" font-size="16" font-weight="bold" fill="white" text-anchor="middle">Quantum Core</text>
+    <text x="400" y="170" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Tunneling, Superposition, Entanglement</text>
+  </g>
+  
+  <!-- Connected Systems -->
+  <g id="energy-system">
+    <rect x="100" y="250" width="180" height="80" rx="10" fill="#1976D2" stroke="#000" stroke-width="1.5" />
+    <text x="190" y="290" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle">Energy Systems</text>
+    <text x="190" y="310" font-family="Arial" font-size="11" fill="white" text-anchor="middle">Quantum Vacuum Batteries</text>
+  </g>
+  
+  <g id="propulsion-system">
+    <rect x="520" y="250" width="180" height="80" rx="10" fill="#1976D2" stroke="#000" stroke-width="1.5" />
+    <text x="610" y="290" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle">Propulsion Systems</text>
+    <text x="610" y="310" font-family="Arial" font-size="11" fill="white" text-anchor="middle">Spacetime Manipulation</text>
+  </g>
+  
+  <g id="navigation-system">
+    <rect x="520" y="380" width="180" height="80" rx="10" fill="#29B6F6" stroke="#000" stroke-width="1.5" />
+    <text x="610" y="420" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle">Navigation Systems</text>
+    <text x="610" y="440" font-family="Arial" font-size="11" fill="white" text-anchor="middle">Quantum Field Sensors</text>
+  </g>
+  
+  <g id="control-system">
+    <rect x="310" y="380" width="180" height="80" rx="10" fill="#29B6F6" stroke="#000" stroke-width="1.5" />
+    <text x="400" y="420" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle">Control Systems</text>
+    <text x="400" y="440" font-family="Arial" font-size="11" fill="white" text-anchor="middle">Neural Interface Command</text>
+  </g>
+  
+  <g id="communication-system">
+    <rect x="100" y="380" width="180" height="80" rx="10" fill="#29B6F6" stroke="#000" stroke-width="1.5" />
+    <text x="190" y="420" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle">Communication Systems</text>
+    <text x="190" y="440" font-family="Arial" font-size="11" fill="white" text-anchor="middle">Quantum Entanglement</text>
+  </g>
+  
+  <g id="safety-system">
+    <rect x="310" y="510" width="180" height="80" rx="10" fill="#4FC3F7" stroke="#000" stroke-width="1.5" />
+    <text x="400" y="550" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle">Safety Systems</text>
+    <text x="400" y="570" font-family="Arial" font-size="11" fill="white" text-anchor="middle">Quantum Shielding</text>
+  </g>
+  
+  <!-- Connector Lines -->
+  <!-- Core to Systems -->
+  <line x1="400" y1="200" x2="400" y2="250" stroke="#000" stroke-width="2" />
+  <line x1="400" y1="200" x2="190" y2="250" stroke="#000" stroke-width="2" />
+  <line x1="400" y1="200" x2="610" y2="250" stroke="#000" stroke-width="2" />
+  
+  <!-- Energy to Communication -->
+  <line x1="190" y1="330" x2="190" y2="380" stroke="#000" stroke-width="1.5" />
+  
+  <!-- Propulsion to Navigation -->
+  <line x1="610" y1="330" x2="610" y2="380" stroke="#000" stroke-width="1.5" />
+  
+  <!-- Control Connections -->
+  <line x1="400" y1="250" x2="400" y2="380" stroke="#000" stroke-width="1.5" />
+  <line x1="400" y1="460" x2="400" y2="510" stroke="#000" stroke-width="1.5" />
+  <line x1="280" y1="420" x2="310" y2="420" stroke="#000" stroke-width="1.5" />
+  <line x1="490" y1="420" x2="520" y2="420" stroke="#000" stroke-width="1.5" />
+  
+  <!-- Data Flow Arrows -->
+  <polygon points="400,245 395,235 405,235" fill="#000" />
+  <polygon points="190,245 185,235 195,235" fill="#000" />
+  <polygon points="610,245 605,235 615,235" fill="#000" />
+  <polygon points="190,375 185,365 195,365" fill="#000" />
+  <polygon points="610,375 605,365 615,365" fill="#000" />
+  <polygon points="400,375 395,365 405,365" fill="#000" />
+  <polygon points="400,505 395,495 405,495" fill="#000" />
+  <polygon points="305,420 295,415 295,425" fill="#000" />
+  <polygon points="515,420 505,415 505,425" fill="#000" />
+  
+  <!-- Legend -->
+  <rect x="620" y="100" width="150" height="100" fill="white" stroke="#000" stroke-width="1" />
+  <text x="695" y="120" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle">Legend</text>
+  
+  <rect x="630" y="130" width="15" height="15" fill="#0D47A1" />
+  <text x="650" y="143" font-family="Arial" font-size="10" text-anchor="start">Core System</text>
+  
+  <rect x="630" y="150" width="15" height="15" fill="#1976D2" />
+  <text x="650" y="163" font-family="Arial" font-size="10" text-anchor="start">Primary Systems</text>
+  
+  <rect x="630" y="170" width="15" height="15" fill="#29B6F6" />
+  <text x="650" y="183" font-family="Arial" font-size="10" text-anchor="start">Secondary Systems</text>
+</svg> 

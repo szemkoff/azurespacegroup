@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quantum Propulsion System Components - D3 Visualization</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 20px;
+    }
+    
+    h1 {
+      font-size: 24px;
+      text-align: center;
+      color: #333;
+    }
+    
+    .container {
+      width: 800px;
+      height: 600px;
+      margin: 0 auto;
+      position: relative;
+    }
+    
+    .node {
+      stroke: #333;
+      stroke-width: 1.5px;
+    }
+    
+    .link {
+      stroke: #666;
+      stroke-width: 1.5px;
+      stroke-dasharray: 4, 2;
+      fill: none;
+    }
+    
+    .label {
+      font-size: 12px;
+      text-anchor: middle;
+      pointer-events: none;
+    }
+    
+    .title-label {
+      font-size: 14px;
+      font-weight: bold;
+      text-anchor: middle;
+      pointer-events: none;
+    }
+    
+    .link-label {
+      font-size: 10px;
+      text-anchor: middle;
+      fill: #666;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Quantum Propulsion System Components - Interactive Visualization</h1>
+  <div class="container">
+    <svg id="visualization" width="800" height="600"></svg>
+  </div>
+  
+  <script>
+    const svg = d3.select("#visualization");
+    const width = 800;
+    const height = 600;
+    
+    // Define gradients
+    const defs = svg.append("defs");
+    
+    // Q-Force Generator gradient
+    const qforceGradient = defs.append("radialGradient")
+      .attr("id", "qforceGradient")
+      .attr("cx", "50%")
+      .attr("cy", "50%")
+      .attr("r", "70%");
+      
+    qforceGradient.append("stop")
+      .attr("offset", "0%")
+      .attr("stop-color", "#7b68ee")
+      .attr("stop-opacity", 1);
+      
+    qforceGradient.append("stop")
+      .attr("offset", "70%")
+      .attr("stop-color", "#4b0082")
+      .attr("stop-opacity", 1);
+      
+    qforceGradient.append("stop")
+      .attr("offset", "100%")
+      .attr("stop-color", "#2e0854")
+      .attr("stop-opacity", 1);
+      
+    // Field Manipulator gradient
+    const manipulatorGradient = defs.append("linearGradient")
+      .attr("id", "manipulatorGradient")
+      .attr("x1", "0%")
+      .attr("y1", "0%")
+      .attr("x2", "100%")
+      .attr("y2", "100%");
+      
+    manipulatorGradient.append("stop")
+      .attr("offset", "0%")
+      .attr("stop-color", "#b0e0e6")
+      .attr("stop-opacity", 1);
+    
+    manipulatorGradient.append("stop")
+      .attr("offset", "100%")
+      .attr("stop-color", "#4682b4")
+      .attr("stop-opacity", 1);
+      
+    // Control Systems gradient
+    const controlGradient = defs.append("linearGradient")
+      .attr("id", "controlGradient")
+      .attr("x1", "0%")
+      .attr("y1", "0%")
+      .attr("x2", "100%")
+      .attr("y2", "100%");
+      
+    controlGradient.append("stop")
+      .attr("offset", "0%")
+      .attr("stop-color", "#98FB98")
+      .attr("stop-opacity", 1);
+    
+    controlGradient.append("stop")
+      .attr("offset", "100%")
+      .attr("stop-color", "#3CB371")
+      .attr("stop-opacity", 1);
+      
+    // Power Core gradient
+    const powerGradient = defs.append("linearGradient")
+      .attr("id", "powerGradient")
+      .attr("x1", "0%")
+      .attr("y1", "0%")
+      .attr("x2", "100%")
+      .attr("y2", "100%");
+      
+    powerGradient.append("stop")
+      .attr("offset", "0%")
+      .attr("stop-color", "#FFD700")
+      .attr("stop-opacity", 1);
+    
+    powerGradient.append("stop")
+      .attr("offset", "100%")
+      .attr("stop-color", "#DAA520")
+      .attr("stop-opacity", 1);
+    
+    // Define component data
+    const nodes = [
+      { id: "qforce", name: "Q-Force Generator", type: "central", x: width/2, y: height/2, r: 60, fill: "url(#qforceGradient)" },
+      { id: "leftfield", name: "Left Field\nManipulator", type: "manipulator", x: width/2 - 150, y: height/2, width: 80, height: 60, fill: "url(#manipulatorGradient)" },
+      { id: "rightfield", name: "Right Field\nManipulator", type: "manipulator", x: width/2 + 150, y: height/2, width: 80, height: 60, fill: "url(#manipulatorGradient)" },
+      { id: "control", name: "Control Systems", type: "control", x: width/2, y: height/2 - 120, width: 140, height: 40, fill: "url(#controlGradient)" },
+      { id: "power", name: "Power Core", type: "power", x: width/2, y: height/2 + 120, width: 100, height: 40, fill: "url(#powerGradient)" }
+    ];
+    
+    const links = [
+      { source: "qforce", target: "leftfield", type: "connection", name: "Field Shaping" },
+      { source: "qforce", target: "rightfield", type: "connection", name: "Field Shaping" },
+      { source: "qforce", target: "control", type: "connection", name: "Control Signals" },
+      { source: "qforce", target: "power", type: "connection", name: "Energy Supply" },
+      { source: "leftfield", target: "rightfield", type: "sync", name: "Synchronization" }
+    ];
+    
+    // Draw spacecraft hull
+    svg.append("ellipse")
+      .attr("cx", width/2)
+      .attr("cy", height/2)
+      .attr("rx", 300)
+      .attr("ry", 200)
+      .attr("fill", "#f0f0f0")
+      .attr("stroke", "#444")
+      .attr("stroke-width", 2)
+      .attr("opacity", 0.5);
+    
+    // Draw links
+    const linkElements = svg.selectAll(".link")
+      .data(links)
+      .enter()
+      .append("path")
+      .attr("class", "link")
+      .attr("d", d => {
+        const source = nodes.find(node => node.id === d.source);
+        const target = nodes.find(node => node.id === d.target);
+        return `M${source.x},${source.y} L${target.x},${target.y}`;
+      });
+    
+    // Draw link labels
+    svg.selectAll(".link-label")
+      .data(links)
+      .enter()
+      .append("text")
+      .attr("class", "link-label")
+      .attr("x", d => {
+        const source = nodes.find(node => node.id === d.source);
+        const target = nodes.find(node => node.id === d.target);
+        return (source.x + target.x) / 2;
+      })
+      .attr("y", d => {
+        const source = nodes.find(node => node.id === d.source);
+        const target = nodes.find(node => node.id === d.target);
+        return (source.y + target.y) / 2 - 5;
+      })
+      .text(d => d.name);
+      
+    // Draw nodes
+    const nodeGroups = svg.selectAll(".node")
+      .data(nodes)
+      .enter()
+      .append("g")
+      .attr("class", "node")
+      .attr("transform", d => `translate(${d.x}, ${d.y})`);
+      
+    // Circles for central node
+    nodeGroups.filter(d => d.type === "central")
+      .append("circle")
+      .attr("r", d => d.r)
+      .attr("fill", d => d.fill)
+      .attr("stroke", "#444")
+      .attr("stroke-width", 2);
+      
+    // Add pulsing effect to central node
+    nodeGroups.filter(d => d.type === "central")
+      .append("circle")
+      .attr("r", d => d.r + 5)
+      .attr("fill", "none")
+      .attr("stroke", "#8a2be2")
+      .attr("stroke-width", 1.5)
+      .attr("opacity", 0.6)
+      .append("animate")
+      .attr("attributeName", "r")
+      .attr("values", (d) => `${d.r + 5};${d.r + 10};${d.r + 5}`)
+      .attr("dur", "4s")
+      .attr("repeatCount", "indefinite");
+      
+    // Add smaller circles for central node
+    nodeGroups.filter(d => d.type === "central")
+      .append("circle")
+      .attr("r", d => d.r * 0.6)
+      .attr("fill", "#6a5acd")
+      .attr("stroke", "#444")
+      .attr("stroke-width", 1.5)
+      .attr("opacity", 0.8);
+      
+    nodeGroups.filter(d => d.type === "central")
+      .append("circle")
+      .attr("r", d => d.r * 0.3)
+      .attr("fill", "#483d8b")
+      .attr("stroke", "#444")
+      .attr("stroke-width", 1)
+      .attr("opacity", 0.9);
+      
+    // Rectangles for other nodes
+    nodeGroups.filter(d => d.type === "manipulator" || d.type === "control" || d.type === "power")
+      .append("rect")
+      .attr("x", d => -d.width/2)
+      .attr("y", d => -d.height/2)
+      .attr("width", d => d.width)
+      .attr("height", d => d.height)
+      .attr("fill", d => d.fill)
+      .attr("stroke", "#444")
+      .attr("stroke-width", 2)
+      .attr("rx", 10)
+      .attr("ry", 10);
+      
+    // Labels for nodes
+    nodeGroups.append("text")
+      .attr("class", "title-label")
+      .attr("y", d => d.type === "central" ? -d.r - 15 : 0)
+      .text(d => d.name.split('\n')[0]);
+      
+    nodeGroups.filter(d => d.name.includes('\n'))
+      .append("text")
+      .attr("class", "title-label")
+      .attr("y", 15)
+      .text(d => d.name.split('\n')[1]);
+    
+    // Title
+    svg.append("text")
+      .attr("x", width/2)
+      .attr("y", 30)
+      .attr("text-anchor", "middle")
+      .attr("font-size", 20)
+      .attr("font-weight", "bold")
+      .text("Quantum Propulsion System: Key Components");
+      
+    svg.append("text")
+      .attr("x", width/2)
+      .attr("y", 50)
+      .attr("text-anchor", "middle")
+      .attr("font-size", 14)
+      .text("Cross-section view of a complete quantum propulsion system");
+      
+    // Add legend
+    const legendX = 50;
+    const legendY = height - 100;
+    const legendSpacing = 25;
+    
+    const legendItems = [
+      { name: "Q-Force Generator", fill: "url(#qforceGradient)" },
+      { name: "Field Manipulators", fill: "url(#manipulatorGradient)" },
+      { name: "Control Systems", fill: "url(#controlGradient)" },
+      { name: "Power Core", fill: "url(#powerGradient)" }
+    ];
+    
+    const legend = svg.selectAll(".legend")
+      .data(legendItems)
+      .enter()
+      .append("g")
+      .attr("class", "legend")
+      .attr("transform", (d, i) => `translate(${legendX}, ${legendY + i * legendSpacing})`);
+      
+    legend.append("rect")
+      .attr("width", 20)
+      .attr("height", 20)
+      .attr("fill", d => d.fill)
+      .attr("stroke", "#444")
+      .attr("stroke-width", 1);
+      
+    legend.append("text")
+      .attr("x", 30)
+      .attr("y", 15)
+      .text(d => d.name);
+      
+    // Add interactivity
+    nodeGroups.on("mouseover", function(event, d) {
+      d3.select(this).select("circle, rect")
+        .transition()
+        .duration(200)
+        .attr("stroke-width", 3)
+        .attr("stroke", "#ff6600");
+        
+      // Highlight connected links
+      linkElements.filter(link => link.source === d.id || link.target === d.id)
+        .transition()
+        .duration(200)
+        .attr("stroke", "#ff6600")
+        .attr("stroke-width", 2.5);
+    })
+    .on("mouseout", function(event, d) {
+      d3.select(this).select("circle, rect")
+        .transition()
+        .duration(200)
+        .attr("stroke-width", 2)
+        .attr("stroke", "#444");
+        
+      // Reset links
+      linkElements.filter(link => link.source === d.id || link.target === d.id)
+        .transition()
+        .duration(200)
+        .attr("stroke", "#666")
+        .attr("stroke-width", 1.5);
+    });
+  </script>
+</body>
+</html> 

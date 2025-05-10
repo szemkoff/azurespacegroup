@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Navigation Logic Flow</title>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: transparent;
+    }
+    #diagram {
+      width: 100%;
+      text-align: center;
+    }
+    /* Bold text in diagram */
+    .mermaid .label {
+      font-weight: bold !important;
+      font-size: 18px !important;
+    }
+    /* Thicker lines */
+    .mermaid .flowchart-link {
+      stroke-width: 3px !important;
+    }
+    .mermaid g.node rect, 
+    .mermaid g.node circle, 
+    .mermaid g.node ellipse, 
+    .mermaid g.node polygon {
+      stroke-width: 3px !important;
+    }
+    .mermaid .cluster rect {
+      stroke-width: 3px !important;
+    }
+    /* Diamond shape for decision nodes */
+    .mermaid .rhombus {
+      stroke-width: 3px !important;
+    }
+  </style>
+</head>
+<body>
+  <div id="diagram" class="mermaid">
+    flowchart TD
+      A[Initiate Navigation] --> B[Quantum Position Sensing]
+      B --> C[Calculate Current Position in Spacetime]
+      C --> D[Map Surrounding Spacetime]
+      D --> E{Obstacle Detected?}
+      
+      E -->|Yes| F[Calculate Quantum Probability Matrix]
+      E -->|No| G[Calculate Optimal Trajectory]
+      
+      F --> H[Generate Avoidance Trajectories]
+      H --> I[Select Highest Probability Trajectory]
+      I --> G
+      
+      G --> J[Calculate Required Quantum States]
+      J --> K[Generate Tunneling Parameters]
+      K --> L[Configure Tunneling Drive]
+      L --> M[Execute Propulsion Command]
+      M --> N[Monitor Position Change]
+      N --> B
+      
+      style A fill:#f96,stroke:#333,stroke-width:3px
+      style E fill:#ff9,stroke:#333,stroke-width:3px,stroke-dasharray: 5 5
+      style M fill:#9f9,stroke:#333,stroke-width:3px
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      mermaid.initialize({
+        startOnLoad: true,
+        theme: 'neutral',
+        flowchart: {
+          htmlLabels: true,
+          curve: 'basis',
+          nodeSpacing: 60,
+          rankSpacing: 100,
+        },
+        securityLevel: 'loose'
+      });
+    });
+  </script>
+</body>
+</html> 

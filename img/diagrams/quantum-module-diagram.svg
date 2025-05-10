@@ -1,0 +1,131 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="white" />
+  
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold" fill="#333333">Quantum Module Architecture</text>
+  
+  <!-- Main Quantum Processing Unit -->
+  <g transform="translate(400, 300)">
+    <circle cx="0" cy="0" r="100" fill="#f0f0f0" stroke="#333333" stroke-width="2.5" />
+    <circle cx="0" cy="0" r="80" fill="#7aaddb" opacity="0.7" />
+    <text x="0" y="-15" text-anchor="middle" dominant-baseline="middle" font-family="Arial" font-size="18" font-weight="bold" fill="#333333">Quantum</text>
+    <text x="0" y="15" text-anchor="middle" dominant-baseline="middle" font-family="Arial" font-size="18" font-weight="bold" fill="#333333">Processing Unit</text>
+    
+    <!-- Qubit array -->
+    <g transform="translate(0, 0)">
+      <circle cx="-30" cy="-30" r="7" fill="#5090c8" stroke="#333333" stroke-width="1" />
+      <circle cx="-10" cy="-30" r="7" fill="#5090c8" stroke="#333333" stroke-width="1" />
+      <circle cx="10" cy="-30" r="7" fill="#5090c8" stroke="#333333" stroke-width="1" />
+      <circle cx="30" cy="-30" r="7" fill="#5090c8" stroke="#333333" stroke-width="1" />
+      
+      <circle cx="-30" cy="-10" r="7" fill="#5090c8" stroke="#333333" stroke-width="1" />
+      <circle cx="-10" cy="-10" r="7" fill="#5090c8" stroke="#333333" stroke-width="1" />
+      <circle cx="10" cy="-10" r="7" fill="#5090c8" stroke="#333333" stroke-width="1" />
+      <circle cx="30" cy="-10" r="7" fill="#5090c8" stroke="#333333" stroke-width="1" />
+      
+      <circle cx="-30" cy="10" r="7" fill="#5090c8" stroke="#333333" stroke-width="1" />
+      <circle cx="-10" cy="10" r="7" fill="#5090c8" stroke="#333333" stroke-width="1" />
+      <circle cx="10" cy="10" r="7" fill="#5090c8" stroke="#333333" stroke-width="1" />
+      <circle cx="30" cy="10" r="7" fill="#5090c8" stroke="#333333" stroke-width="1" />
+      
+      <circle cx="-30" cy="30" r="7" fill="#5090c8" stroke="#333333" stroke-width="1" />
+      <circle cx="-10" cy="30" r="7" fill="#5090c8" stroke="#333333" stroke-width="1" />
+      <circle cx="10" cy="30" r="7" fill="#5090c8" stroke="#333333" stroke-width="1" />
+      <circle cx="30" cy="30" r="7" fill="#5090c8" stroke="#333333" stroke-width="1" />
+    </g>
+  </g>
+  
+  <!-- Quantum State Preparation -->
+  <g transform="translate(175, 175)">
+    <rect x="-75" y="-40" width="150" height="80" rx="15" ry="15" fill="#7aaddb" stroke="#333333" stroke-width="2" />
+    <text x="0" y="-10" text-anchor="middle" dominant-baseline="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#333333">Quantum State</text>
+    <text x="0" y="10" text-anchor="middle" dominant-baseline="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#333333">Preparation</text>
+    
+    <!-- Connection to QPU -->
+    <path d="M75,0 L180,80" stroke="#7aaddb" stroke-width="2.5" fill="none" stroke-dasharray="5,3" />
+  </g>
+  
+  <!-- Quantum Error Correction -->
+  <g transform="translate(175, 425)">
+    <rect x="-75" y="-40" width="150" height="80" rx="15" ry="15" fill="#7aaddb" stroke="#333333" stroke-width="2" />
+    <text x="0" y="-10" text-anchor="middle" dominant-baseline="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#333333">Quantum Error</text>
+    <text x="0" y="10" text-anchor="middle" dominant-baseline="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#333333">Correction</text>
+    
+    <!-- Connection to QPU -->
+    <path d="M75,0 L180,-80" stroke="#7aaddb" stroke-width="2.5" fill="none" stroke-dasharray="5,3" />
+  </g>
+  
+  <!-- Quantum Algorithm Library -->
+  <g transform="translate(625, 175)">
+    <rect x="-75" y="-40" width="150" height="80" rx="15" ry="15" fill="#7aaddb" stroke="#333333" stroke-width="2" />
+    <text x="0" y="-10" text-anchor="middle" dominant-baseline="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#333333">Quantum Algorithm</text>
+    <text x="0" y="10" text-anchor="middle" dominant-baseline="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#333333">Library</text>
+    
+    <!-- Connection to QPU -->
+    <path d="M-75,0 L-180,80" stroke="#7aaddb" stroke-width="2.5" fill="none" stroke-dasharray="5,3" />
+  </g>
+  
+  <!-- Quantum-Classical Interface -->
+  <g transform="translate(625, 425)">
+    <rect x="-75" y="-40" width="150" height="80" rx="15" ry="15" fill="#7aaddb" stroke="#333333" stroke-width="2" />
+    <text x="0" y="-10" text-anchor="middle" dominant-baseline="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#333333">Quantum-Classical</text>
+    <text x="0" y="10" text-anchor="middle" dominant-baseline="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#333333">Interface</text>
+    
+    <!-- Connection to QPU -->
+    <path d="M-75,0 L-180,-80" stroke="#7aaddb" stroke-width="2.5" fill="none" stroke-dasharray="5,3" />
+  </g>
+  
+  <!-- Quantum Control Systems -->
+  <g transform="translate(400, 120)">
+    <rect x="-100" y="-30" width="200" height="60" rx="10" ry="10" fill="#5090c8" stroke="#333333" stroke-width="1.5" />
+    <text x="0" y="0" text-anchor="middle" dominant-baseline="middle" font-family="Arial" font-size="14" fill="#333333">Quantum Control Systems</text>
+    
+    <!-- Connection to QPU -->
+    <path d="M0,30 L0,70" stroke="#5090c8" stroke-width="2" fill="none" />
+  </g>
+  
+  <!-- Coherence Management -->
+  <g transform="translate(400, 480)">
+    <rect x="-100" y="-30" width="200" height="60" rx="10" ry="10" fill="#5090c8" stroke="#333333" stroke-width="1.5" />
+    <text x="0" y="0" text-anchor="middle" dominant-baseline="middle" font-family="Arial" font-size="14" fill="#333333">Coherence Management</text>
+    
+    <!-- Connection to QPU -->
+    <path d="M0,-30 L0,-70" stroke="#5090c8" stroke-width="2" fill="none" />
+  </g>
+  
+  <!-- Small Subsystems -->
+  <!-- Entanglement Generator -->
+  <g transform="translate(250, 300)">
+    <rect x="-60" y="-25" width="120" height="50" rx="8" ry="8" fill="#7aaddb" stroke="#333333" stroke-width="1.5" opacity="0.8" />
+    <text x="0" y="0" text-anchor="middle" dominant-baseline="middle" font-family="Arial" font-size="12" fill="#333333">Entanglement</text>
+    <text x="0" y="16" text-anchor="middle" dominant-baseline="middle" font-family="Arial" font-size="12" fill="#333333">Generator</text>
+    
+    <!-- Connection to QPU -->
+    <path d="M60,0 L90,0" stroke="#7aaddb" stroke-width="1.5" fill="none" />
+  </g>
+  
+  <!-- Quantum Memory -->
+  <g transform="translate(550, 300)">
+    <rect x="-60" y="-25" width="120" height="50" rx="8" ry="8" fill="#7aaddb" stroke="#333333" stroke-width="1.5" opacity="0.8" />
+    <text x="0" y="0" text-anchor="middle" dominant-baseline="middle" font-family="Arial" font-size="12" fill="#333333">Quantum</text>
+    <text x="0" y="16" text-anchor="middle" dominant-baseline="middle" font-family="Arial" font-size="12" fill="#333333">Memory</text>
+    
+    <!-- Connection to QPU -->
+    <path d="M-60,0 L-90,0" stroke="#7aaddb" stroke-width="1.5" fill="none" />
+  </g>
+  
+  <!-- Legend -->
+  <g transform="translate(700, 80)">
+    <rect x="0" y="0" width="150" height="100" rx="5" ry="5" fill="white" stroke="#333333" stroke-width="1" opacity="0.7" />
+    <text x="10" y="20" font-family="Arial" font-size="12" font-weight="bold" fill="#333333">Legend</text>
+    
+    <circle cx="20" cy="40" r="10" fill="#7aaddb" opacity="0.7" />
+    <text x="40" y="44" font-family="Arial" font-size="10" fill="#333333">Primary Components</text>
+    
+    <rect x="10" y="60" width="20" height="10" rx="3" ry="3" fill="#5090c8" stroke="#333333" stroke-width="1" />
+    <text x="40" y="67" font-family="Arial" font-size="10" fill="#333333">Control Systems</text>
+    
+    <circle cx="20" cy="85" r="6" fill="#5090c8" stroke="#333333" stroke-width="1" />
+    <text x="40" y="88" font-family="Arial" font-size="10" fill="#333333">Qubit</text>
+  </g>
+</svg> 

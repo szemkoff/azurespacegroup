@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Research & Development Workflow</title>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: transparent;
+    }
+    #diagram {
+      width: 100%;
+      text-align: center;
+    }
+    /* Bold text in diagram */
+    .mermaid .label {
+      font-weight: bold !important;
+      font-size: 18px !important;
+    }
+    /* Thicker lines */
+    .mermaid .flowchart-link {
+      stroke-width: 3px !important;
+    }
+    .mermaid g.node rect, 
+    .mermaid g.node circle, 
+    .mermaid g.node ellipse, 
+    .mermaid g.node polygon {
+      stroke-width: 3px !important;
+    }
+    .mermaid .cluster rect {
+      stroke-width: 3px !important;
+    }
+  </style>
+</head>
+<body>
+  <div id="diagram" class="mermaid">
+    flowchart TB
+      subgraph "Theoretical Research"
+        QT[Quantum Theory]
+        M[Mathematical Modeling]
+        CS[Computer Simulation]
+      end
+      
+      subgraph "Experimental Phase"
+        LP[Laboratory Prototype]
+        QV[Quantum Verification]
+        SA[Safety Assessment]
+      end
+      
+      subgraph "Development Phase"
+        FS[Full-Scale Implementation]
+        PI[Performance Improvement]
+        SC[System Certification]
+      end
+      
+      subgraph "Deployment Phase"
+        TT[Training & Testing]
+        OP[Operational Deployment]
+        FB[Feedback Collection]
+      end
+      
+      QT -->|Theoretical Framework| M
+      M -->|Mathematical Model| CS
+      CS -->|Simulation Results| LP
+      
+      LP -->|Prototype Data| QV
+      QV -->|Verification Results| SA
+      SA -->|Safety Parameters| FS
+      
+      FS -->|Implementation Metrics| PI
+      PI -->|Improved Performance| SC
+      
+      SC -->|Certified System| TT
+      TT -->|Trained Operators| OP
+      OP -->|Operational Data| FB
+      FB -->|Improvement Insights| CS
+      FB -->|New Requirements| QT
+      
+      style QT fill:#f9a,stroke:#333,stroke-width:3px
+      style LP fill:#af9,stroke:#333,stroke-width:3px
+      style FS fill:#9df,stroke:#333,stroke-width:3px
+      style OP fill:#fd9,stroke:#333,stroke-width:3px
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      mermaid.initialize({
+        startOnLoad: true,
+        theme: 'neutral',
+        flowchart: {
+          htmlLabels: true,
+          curve: 'basis',
+          nodeSpacing: 50,
+          rankSpacing: 100,
+        },
+        securityLevel: 'loose'
+      });
+    });
+  </script>
+</body>
+</html> 
