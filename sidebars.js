@@ -101,11 +101,6 @@ const sidebars = {
     },
     {
       type: 'doc',
-      id: 'rebranding-plan',
-      label: 'Rebranding Plan',
-    },
-    {
-      type: 'doc',
       id: 'careers',
       label: 'Careers',
     },
