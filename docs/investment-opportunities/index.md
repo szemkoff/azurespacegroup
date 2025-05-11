@@ -9,14 +9,14 @@ This section provides detailed information about various grant programs that ali
 
 ## Available Grant Programs
 
-- [Quantum for Science Initiative (QUANTUM-SCI)](./quantum-sci.md)
-- [UConn Quantum Technologies Initiative](./uconn-quantum.md)
-- [NSF Expand Quantum Leap Initiative](./nsf-expand.md)
-- [ARPA-E OPEN Program](./arpae-open.md)
-- [Department of Energy Quantum Information Science Initiative](./doe-quantum.md)
-- [NASA Innovative Advanced Concepts (NIAC)](./nasa-niac.md)
-- [Air Force Office of Scientific Research (AFOSR) Basic Research Initiative](./afosr-basic.md)
+- [Quantum for Science Initiative (QUANTUM-SCI)](/docs/investment-opportunities/quantum-sci)
+- [UConn Quantum Technologies Initiative](/docs/investment-opportunities/uconn-quantum)
+- [NSF Expand Quantum Leap Initiative](/docs/investment-opportunities/nsf-expand)
+- [ARPA-E OPEN Program](/docs/investment-opportunities/arpae-open)
+- [Department of Energy Quantum Information Science Initiative](/docs/investment-opportunities/doe-quantum)
+- [NASA Innovative Advanced Concepts (NIAC)](/docs/investment-opportunities/nasa-niac)
+- [Air Force Office of Scientific Research (AFOSR) Basic Research Initiative](/docs/investment-opportunities/afosr-basic)
 
 Each grant program includes eligibility criteria, application components, evaluation criteria, and tips for a successful application.
 
-For a strategic overview of our investment approach, please refer to the [Investment Strategy](../investment.md) page. 
+For a strategic overview of our investment approach, please refer to the [Investment Strategy](/docs/investment) page. 
