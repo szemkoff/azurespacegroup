@@ -219,15 +219,20 @@ Below are the major grant programs targeted by Azure Space Group. Click each for
 
 For detailed information on specific grant programs, please visit the following pages:
 
-- [Quantum for Science Initiative (QUANTUM-SCI)](/docs/investment-opportunities/quantum-sci/)
-- [UConn Quantum Technologies Initiative](/docs/investment-opportunities/uconn-quantum/)
-- [NSF Expand Quantum Leap Initiative](/docs/investment-opportunities/nsf-expand/)
-- [ARPA-E OPEN Program](/docs/investment-opportunities/arpae-open/)
-- [Department of Energy Quantum Information Science Initiative](/docs/investment-opportunities/doe-quantum/)
-- [NASA Innovative Advanced Concepts (NIAC)](/docs/investment-opportunities/nasa-niac/)
-- [Air Force Office of Scientific Research (AFOSR) Basic Research Initiative](/docs/investment-opportunities/afosr-basic/)
+### Grant Programs Directory
+- 🔬 [Quantum for Science Initiative (QUANTUM-SCI)](./investment-opportunities/quantum-sci.md)
+- 🎓 [UConn Quantum Technologies Initiative](./investment-opportunities/uconn-quantum.md)
+- 🚀 [NSF Expand Quantum Leap Initiative](./investment-opportunities/nsf-expand.md)
+- 💡 [ARPA-E OPEN Program](./investment-opportunities/arpae-open.md)
+- ⚛️ [Department of Energy Quantum Information Science Initiative](./investment-opportunities/doe-quantum.md)
+- 🛰️ [NASA Innovative Advanced Concepts (NIAC)](./investment-opportunities/nasa-niac.md)
+- 🔭 [Air Force Office of Scientific Research (AFOSR) Basic Research Initiative](./investment-opportunities/afosr-basic.md)
 
-Or access all programs on our [Grant Programs](/docs/investment-opportunities/) page.
+Or access all programs on our [Grant Programs](./investment-opportunities/index.md) page.
+
+## Investment Framework
+
+Our investment framework is designed to support both early-stage research and commercial development:
 
 ---
 
