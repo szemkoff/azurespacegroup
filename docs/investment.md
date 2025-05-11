@@ -215,6 +215,20 @@ Below are the major grant programs targeted by Azure Space Group. Click each for
 - [NASA NIAC Grant Program (NASA)](investment-opportunities/nasa-niac)
 - [AFOSR Basic Grant Program (Air Force Office of Scientific Research)](investment-opportunities/afosr-basic)
 
+## Grant Investment Programs
+
+For detailed information on specific grant programs, please visit the following pages:
+
+- [Quantum for Science Initiative (QUANTUM-SCI)](/docs/investment-opportunities/quantum-sci/)
+- [UConn Quantum Technologies Initiative](/docs/investment-opportunities/uconn-quantum/)
+- [NSF Expand Quantum Leap Initiative](/docs/investment-opportunities/nsf-expand/)
+- [ARPA-E OPEN Program](/docs/investment-opportunities/arpae-open/)
+- [Department of Energy Quantum Information Science Initiative](/docs/investment-opportunities/doe-quantum/)
+- [NASA Innovative Advanced Concepts (NIAC)](/docs/investment-opportunities/nasa-niac/)
+- [Air Force Office of Scientific Research (AFOSR) Basic Research Initiative](/docs/investment-opportunities/afosr-basic/)
+
+Or access all programs on our [Grant Programs](/docs/investment-opportunities/) page.
+
 ---
 
 ## Funding Strategy Overview

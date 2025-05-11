@@ -25,7 +25,7 @@ const config = {
   organizationName: 'szemkoff', // Usually your GitHub org/user name.
   projectName: 'azurespacegroup', // Usually your repo name.
   deploymentBranch: 'gh-pages', // Use gh-pages branch for deployment
-  trailingSlash: false,
+  trailingSlash: true,
 
   // Restore normal behavior for broken links after we've fixed the diagram URLs
   onBrokenLinks: 'warn',
@@ -141,6 +141,16 @@ const config = {
           sidebarId: 'tutorialSidebar',
           position: 'left',
           label: 'Documentation',
+        },
+        {
+          to: '/docs/investment/',
+          position: 'left',
+          label: 'Investment',
+        },
+        {
+          to: '/docs/investment-opportunities/',
+          position: 'left',
+          label: 'Grant Programs',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {to: '/project-status', label: 'Project Status', position: 'left'},

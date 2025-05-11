@@ -83,6 +83,7 @@ const sidebars = {
           type: 'category',
           label: 'Grant Programs',
           items: [
+            'investment-opportunities/index',
             'investment-opportunities/quantum-sci',
             'investment-opportunities/uconn-quantum',
             'investment-opportunities/nsf-expand',
