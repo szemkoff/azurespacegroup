@@ -1,9 +1,9 @@
 ---
 slug: grant-investment-roadmap-updates
-title: Major Updates: Grant Program Pages, Investment Plan, and Roadmap
+title: "Major Updates: Grant Program Pages, Investment Plan, and Roadmap"
 authors: [szemkoff]
 tags: [updates, investment, grants, roadmap]
-date: 2025-05-07
+date: "2025-05-07"
 ---
 
 We are excited to announce several major additions to the Azure Space Group documentation and project resources!
