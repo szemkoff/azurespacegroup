@@ -148,9 +148,43 @@ const config = {
           label: 'Investment',
         },
         {
-          to: '/docs/investment-opportunities/',
-          position: 'left',
+          type: 'dropdown',
           label: 'Grant Programs',
+          position: 'left',
+          items: [
+            {
+              label: 'Grant Programs Directory',
+              to: '/docs/investment-opportunities/',
+            },
+            {
+              label: 'Quantum-SCI',
+              to: '/docs/investment-opportunities/quantum-sci/',
+            },
+            {
+              label: 'UConn Quantum',
+              to: '/docs/investment-opportunities/uconn-quantum/',
+            },
+            {
+              label: 'NSF Expand',
+              to: '/docs/investment-opportunities/nsf-expand/',
+            },
+            {
+              label: 'ARPA-E OPEN',
+              to: '/docs/investment-opportunities/arpae-open/',
+            },
+            {
+              label: 'DOE Quantum',
+              to: '/docs/investment-opportunities/doe-quantum/',
+            },
+            {
+              label: 'NASA NIAC',
+              to: '/docs/investment-opportunities/nasa-niac/',
+            },
+            {
+              label: 'AFOSR Basic',
+              to: '/docs/investment-opportunities/afosr-basic/',
+            },
+          ],
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {to: '/project-status', label: 'Project Status', position: 'left'},
