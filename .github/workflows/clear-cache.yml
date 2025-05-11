@@ -1,20 +1,47 @@
-name: Clear GitHub Pages Cache
+name: Clear GitHub Actions Cache
 
 on:
   workflow_dispatch:
+    inputs:
+      key:
+        description: 'Cache key to delete (leave empty to delete all caches)'
+        required: false
+        type: string
+      confirm:
+        description: 'Type "yes" to confirm clearing the cache'
+        required: true
+        type: string
+        default: 'no'
 
 jobs:
   clear-cache:
     runs-on: ubuntu-latest
+    permissions:
+      actions: write
+    if: github.event.inputs.confirm == 'yes'
     steps:
-      - name: Checkout repository
+      - name: Check out code
         uses: actions/checkout@v3
-        
-      - name: Push empty commit to gh-pages
+
+      - name: List all caches
         run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "actions@github.com"
-          git fetch origin gh-pages
-          git checkout gh-pages
-          git commit --allow-empty -m "Force rebuild to clear cache"
-          git push origin gh-pages 
+          echo "Listing all GitHub Actions caches..."
+          gh cache list
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Clear cache by key
+        if: github.event.inputs.key != ''
+        run: |
+          echo "Clearing cache with key: ${{ github.event.inputs.key }}"
+          gh cache delete --key "${{ github.event.inputs.key }}"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Clear all caches
+        if: github.event.inputs.key == ''
+        run: |
+          echo "Clearing all caches..."
+          gh cache list --limit 100 --json id --jq '.[].id' | xargs -I {} gh cache delete {}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }} 

@@ -27,8 +27,25 @@ jobs:
       - name: Install dependencies
         run: npm ci
       
+      - name: Clean build directories
+        run: |
+          rm -rf build .docusaurus
+          echo "Cleaned build directories"
+          
+      - name: Verify investment pages exist
+        run: |
+          echo "Checking investment pages structure..."
+          ls -la docs/investment-opportunities/
+          
       - name: Build website
         run: npm run build
+        
+      - name: Verify build output
+        run: |
+          echo "Checking build output for investment pages..."
+          find build -path "*investment-opportunities*" -type d
+          echo "Listing available pages in build:"
+          find build -name "*.html" | grep -i investment
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
@@ -38,4 +55,4 @@ jobs:
           force_orphan: true
           user_name: 'github-actions[bot]'
           user_email: 'github-actions[bot]@users.noreply.github.com'
-          commit_message: 'Deploy website' 
+          commit_message: 'Deploy website with investment pages' 
