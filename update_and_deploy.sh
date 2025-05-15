@@ -1,6 +1,8 @@
 #!/bin/bash
 set -e
 
+echo "Starting deployment process..."
+
 echo "Building site with logos..."
 npm run build
 
@@ -13,6 +15,9 @@ cp -f static/img/logo.svg build/azurespacegroup/img/ 2>/dev/null || true
 
 echo "Verifying logo files:"
 find build -name "*.png" | grep -i azure || echo "No PNG logo found"
+
+echo "Checking investment opportunity pages:"
+ls -la build/docs/investment-opportunities
 
 echo "Creating direct deploy to gh-pages branch without using GitHub Actions..."
 cd build
@@ -30,7 +35,8 @@ git add -A
 git commit -m "Deploy website - direct commit"
 
 # Force push to the gh-pages branch of azurespacegroup repository
-git push -f https://github.com/szemkoff/azurespacegroup.git gh-pages
+git remote add origin https://github.com/szemkoff/azurespacegroup.git
+git push -f origin gh-pages
 
 cd ..
 echo "Deployment complete! Check https://szemkoff.github.io/azurespacegroup/" 
