@@ -46,6 +46,30 @@ jobs:
           find build -path "*investment-opportunities*" -type d
           echo "Listing available pages in build:"
           find build -name "*.html" | grep -i investment
+          
+      - name: Ensure correct investment pages structure
+        run: |
+          echo "Ensuring investment pages have correct directory structure..."
+          for page in quantum-sci uconn-quantum nsf-expand arpae-open doe-quantum nasa-niac afosr-basic; do
+            echo "Checking $page directory structure..."
+            # Create directory if it doesn't exist
+            mkdir -p build/docs/investment-opportunities/$page
+            
+            # If HTML file exists but not in directory structure, move it
+            if [ -f "build/docs/investment-opportunities/$page.html" ] && [ ! -f "build/docs/investment-opportunities/$page/index.html" ]; then
+              echo "Moving $page.html to directory structure..."
+              mv "build/docs/investment-opportunities/$page.html" "build/docs/investment-opportunities/$page/index.html"
+              echo "✅ Fixed $page structure"
+            elif [ -f "build/docs/investment-opportunities/$page/index.html" ]; then
+              echo "✅ $page directory structure already correct"
+            else
+              echo "⚠️ Could not find $page.html to fix structure!"
+            fi
+          done
+          
+          # Verify final structure
+          echo "Final investment pages structure:"
+          find build/docs/investment-opportunities -type f | sort
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
