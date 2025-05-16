@@ -25,11 +25,11 @@ const config = {
   organizationName: 'szemkoff', // Usually your GitHub org/user name.
   projectName: 'azurespacegroup', // Usually your repo name.
   deploymentBranch: 'gh-pages', // Use gh-pages branch for deployment
-  trailingSlash: true,
+  trailingSlash: false,
 
-  // Restore normal behavior for broken links after we've fixed the diagram URLs
-  onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'warn',
+  // Improved error handling for broken links 
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'throw',
 
   // Enable static directory to be properly copied to build directory
   staticDirectories: ['static', 'public'],
@@ -154,35 +154,35 @@ const config = {
           items: [
             {
               label: 'Grant Programs Directory',
-              to: '/docs/investment-opportunities/',
+              to: '/docs/investment-opportunities',
             },
             {
               label: 'Quantum-SCI',
-              to: '/docs/investment-opportunities/quantum-sci/',
+              to: '/docs/investment-opportunities/quantum-sci',
             },
             {
               label: 'UConn Quantum',
-              to: '/docs/investment-opportunities/uconn-quantum/',
+              to: '/docs/investment-opportunities/uconn-quantum',
             },
             {
               label: 'NSF Expand',
-              to: '/docs/investment-opportunities/nsf-expand/',
+              to: '/docs/investment-opportunities/nsf-expand',
             },
             {
               label: 'ARPA-E OPEN',
-              to: '/docs/investment-opportunities/arpae-open/',
+              to: '/docs/investment-opportunities/arpae-open',
             },
             {
               label: 'DOE Quantum',
-              to: '/docs/investment-opportunities/doe-quantum/',
+              to: '/docs/investment-opportunities/doe-quantum',
             },
             {
               label: 'NASA NIAC',
-              to: '/docs/investment-opportunities/nasa-niac/',
+              to: '/docs/investment-opportunities/nasa-niac',
             },
             {
               label: 'AFOSR Basic',
-              to: '/docs/investment-opportunities/afosr-basic/',
+              to: '/docs/investment-opportunities/afosr-basic',
             },
           ],
         },
