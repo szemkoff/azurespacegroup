@@ -50,21 +50,32 @@ grep -A 1 "investment-opportunities" build/sitemap.xml
 echo "Creating direct deploy to gh-pages branch without using GitHub Actions..."
 cd build
 
+# Add .nojekyll file explicitly
+touch .nojekyll
+
 # Initialize git in the build directory
 git init
 git config --global user.email "$(git config user.email)"
 git config --global user.name "$(git config user.name)"
 
-# Create a new branch (to avoid any conflicts with master)
+# Add remote and fetch current gh-pages history first
+git remote add origin https://github.com/szemkoff/azurespacegroup.git
+git fetch origin gh-pages || echo "No existing gh-pages branch found, will create a new one"
+
+# Create a new local gh-pages branch
 git checkout -b gh-pages
 
 # Add all files and commit
 git add -A
 git commit -m "Deploy website with fixed URL structure for investment pages"
 
-# Force push to the gh-pages branch of azurespacegroup repository
-git remote add origin https://github.com/szemkoff/azurespacegroup.git
-git push -f origin gh-pages
+# Force push with lease to avoid conflicts with others (safer than normal force push)
+echo "Pushing to gh-pages branch with force-with-lease to avoid conflicts..."
+git push -f --force-with-lease=gh-pages:refs/heads/gh-pages origin gh-pages || {
+  echo "Force with lease failed, attempting fallback force push..."
+  # If force with lease fails, use a regular force push as a fallback
+  git push -f origin gh-pages
+}
 
 cd ..
 echo "Deployment complete! Check https://szemkoff.github.io/azurespacegroup/docs/investment-opportunities" 

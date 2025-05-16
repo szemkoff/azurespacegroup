@@ -79,4 +79,13 @@ jobs:
           force_orphan: true
           user_name: 'github-actions[bot]'
           user_email: 'github-actions[bot]@users.noreply.github.com'
-          commit_message: 'Deploy website with investment pages and fix URL structure' 
+          commit_message: 'Deploy website with investment pages and fix URL structure'
+          disable_nojekyll: false
+          keep_files: false
+          full_commit_message: |
+            Deploy website with investment pages and fix URL structure
+            
+            This commit includes the following changes:
+            - Fixed directory structure for investment opportunity pages
+            - Ensured proper URL handling with trailing slashes
+            - Added .nojekyll file to prevent Jekyll processing 
