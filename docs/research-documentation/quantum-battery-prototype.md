@@ -243,7 +243,7 @@ While the quantum battery concept remains highly speculative, this revised appro
 ## Related Research
 
 For additional context and theoretical foundations, please refer to:
-- [Advanced Materials Research](./advanced-materials-research)
+ - [Advanced Materials Research](../materials/advanced-materials-research)
 - [Quantum Research Paper](./quantum-research-paper)
 - [Energy Systems Documentation](../core-documentation/energy-systems)
 

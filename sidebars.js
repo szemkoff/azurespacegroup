@@ -48,6 +48,14 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: 'Materials & Manufacturing',
+      items: [
+        'materials/quasicrystal-aluminum',
+        'materials/advanced-materials-research',
+      ],
+    },
+    {
+      type: 'category',
       label: 'Research & Compliance',
       items: [
         'research-documentation/research-development',
@@ -56,7 +64,6 @@ const sidebars = {
         'research-documentation/game-based-research-platform',
         'research-documentation/time-tacking',
         'research-documentation/quantum-propulsion-theoretical-revision',
-        'research-documentation/advanced-materials-research',
         'research-documentation/quantum-communications',
         'research-documentation/legal-regulatory',
         'research-documentation/quantum-research-paper',

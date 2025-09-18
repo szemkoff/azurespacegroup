@@ -49,7 +49,7 @@ This repository contains comprehensive documentation for the Azure Space Group P
 ### Research & Compliance
 - [Research and Development Infrastructure](research-documentation/research-development)
 - [Quantum Propulsion Research Paper](research-documentation/quantum-research-paper)
-- [Advanced Materials Research](research-documentation/advanced-materials-research)
+- [Advanced Materials Research](materials/advanced-materials-research)
 - [Quantum Communications](research-documentation/quantum-communications)
 - [Legal and Regulatory Framework](research-documentation/legal-regulatory)
 

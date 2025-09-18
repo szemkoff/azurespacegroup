@@ -120,4 +120,4 @@ The development of quantum-responsive materials represents a critical advancemen
 1. Sorokin, E. et al. (2024). "Quantum-Responsive Material Matrices for Aerospace Applications." *Journal of Advanced Materials*, 56(3), 203-217.
 2. Chen, J. & Lindgren, S. (2023). "Theoretical Foundations of Materials with Quantum Field Integration Properties." *Quantum Materials Research*, 12(1), 34-52.
 3. Okafor, A. et al. (2024). "Manufacturing Techniques for Quantum-Entangled Composites." *Advanced Manufacturing Technology*, 38(2), 89-105.
-4. Hernandez, M. et al. (2024). "Field Testing Results of Prototype Quantum Spacecraft Hull Segments." *Aerospace Engineering Journal*, 23(4), 312-328. 
+4. Hernandez, M. et al. (2024). "Field Testing Results of Prototype Quantum Spacecraft Hull Segments." *Aerospace Engineering Journal*, 23(4), 312-328.

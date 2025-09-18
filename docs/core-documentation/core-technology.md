@@ -6,7 +6,7 @@ The foundation of our propulsion technology relies on three fundamental quantum 
 
 ### Material Requirements
 
-The unique quantum mechanical principles utilized in our propulsion system require specially engineered materials that can withstand and interact with quantum fields. For detailed information on the advanced materials developed for our spacecraft, refer to our [Advanced Materials Research Paper](../research-documentation/advanced-materials-research).
+The unique quantum mechanical principles utilized in our propulsion system require specially engineered materials that can withstand and interact with quantum fields. For detailed information on the advanced materials developed for our spacecraft, refer to our [Advanced Materials Research Paper](../materials/advanced-materials-research).
 
 ```mermaid
 stateDiagram-v2
