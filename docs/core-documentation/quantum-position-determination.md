@@ -12,20 +12,79 @@ The Quantum Position Determination System (QPDS) represents a revolutionary adva
 
 By utilizing quantum entanglement, Planck-scale spacetime mapping, vacuum fluctuation patterns, and multi-dimensional reference frames, QPDS provides consistent sub-atomic positioning accuracy regardless of distance traveled or environmental conditions. This technology forms the backbone of the Azure Space Group navigation infrastructure, enabling precise deployment, coordination, and operations across both terrestrial and extraterrestrial environments.
 
-## Near-Term Product Anchor: QGN v0.1
+## QGN v0.1 Product Requirements Document
 
-**Our immediate, shippable focus** is the Quantum Geophysical Navigation (QGN) system—a GPS-denied navigation solution deployable in 90-180 days. This section serves as the **product requirements anchor** for all stakeholders.
+**Product**: Quantum Geophysical Navigation (QGN) System v0.1  
+**Status**: Prototype Development (TRL 3-4 → 5)  
+**Target Delivery**: Q2 2025 (90-180 days)  
+**Owner**: Azure Space Group  
 
-### Target Performance (QGN v0.1)
+### Executive Product Summary
 
-| Specification | Target | Full QPDS Vision |
-|--------------|--------|------------------|
-| **Position Accuracy** | 10 meters CEP | 10⁻²¹ meters |
-| **Update Rate** | 10 Hz | 10⁹ Hz |
-| **Power Consumption** | 50W nominal / 100W peak | 35 MW (lab only) |
-| **Form Factor** | 30 × 30 × 15 cm (shoebox) | Full vehicle integration |
-| **Operating Environments** | GPS-denied (urban, tunnel, underwater, cave) | Universal |
+QGN v0.1 is a **passive GPS-denied navigation kit** providing absolute position fixes in environments where GPS is jammed, denied, or unavailable. The system fuses quantum magnetometry (SQUID), gravitational gradiometry, and inertial sensing with geophysical map-matching to deliver continuous 10 Hz position updates without RF emissions.
+
+**Form Factor**: ≤30 × 30 × 15 cm | **Power**: ≤100W peak | **Mass**: ≤10 kg  
+**Environments**: Surface/port, open water (≤50m depth), tunnel/culvert, underground
+
+---
+
+### Acceptance Criteria & KPIs
+
+#### Position Accuracy (Circular Error Probable)
+
+| Environment | P50 (CEP) | P95 | Conditions |
+|-------------|-----------|-----|------------|
+| **Urban Canyon** | ≤10 m | ≤20 m | Building density >50%, GNSS C/N₀ &lt;25 dB-Hz |
+| **Industrial Zone** | ≤15 m | ≤30 m | High ferrous clutter, EM interference >10 V/m |
+| **Subsea (Open Water)** | ≤25 m | ≤50 m | Depth ≤50m, weak geo-signatures |
+| **Subsea (Harbor)** | ≤10 m | ≤20 m | Magnetic anomalies from infrastructure |
+| **Tunnel/Culvert** | ≤10 m | ≤15 m | Confined space, strong mag/grav gradients |
+| **Cave/Underground** | ≤20 m | ≤40 m | Variable geo-signatures, no DVL |
+
+#### Drift Performance
+
+| Configuration | Drift Rate (Position) | Test Duration |
+|---------------|----------------------|---------------|
+| **QGN-only (no DVL)** | ≤2.0 m/min | 30 min continuous |
+| **QGN + DVL fusion** | ≤0.5 m/min | 30 min continuous |
+| **INS-only (baseline)** | 10-50 m/min | 30 min (reference) |
+
+#### Reacquisition Performance
+
+- **Cold Start** (no prior position): ≤90 seconds to CEP ≤15m
+- **Warm Start** (prior position &lt;1 hr old): ≤30 seconds to CEP ≤10m
+- **Signal Outage Recovery**: ≤30 seconds to restore CEP after geo-signature dropout
+
+#### Power Budget & Thermal Limits
+
+| Operating Mode | Power Consumption | Duty Cycle | Thermal Constraint |
+|----------------|-------------------|------------|---------------------|
+| **Idle/Standby** | ≤20W | Sensors off, compute sleep | Maintain SQUID temp ±2°C |
+| **Sense** | 50-60W | Sensors active, no fusion | SQUID ΔT ≤±0.01°C over 30 min |
+| **Sense + Fuse** | 70-80W | Full operation @ 10 Hz | Orin ≤60W sustained, Tjunc ≤85°C |
+| **Peak (with DVL)** | ≤100W | All sensors + logging | Ambient 0-40°C; forced convection |
+
+#### Availability & Reliability
+
+- **Mission Availability**: ≥99% over 2-hour continuous mission
+- **Mean Time Between Failures (MTBF)**: ≥1000 hours (TBD from field data)
+- **Sensor Health Monitoring**: Real-time fault detection with &lt;1 second latency
+
+---
+
+### Target Performance vs. Vision
+
+| Specification | QGN v0.1 (Deliverable) | Full QPDS (Research Track, TRL 1-2) |
+|--------------|------------------------|-------------------------------------|
+| **Position Accuracy** | 10 meters CEP | 10⁻²¹ meters (theoretical) |
+| **Update Rate** | 10 Hz | 10⁹ Hz (theoretical) |
+| **Power Consumption** | 50W nominal / 100W peak | 35 MW (lab-only, incompatible with mobile) |
+| **Form Factor** | 30 × 30 × 15 cm | Full vehicle integration |
+| **Operating Environments** | GPS-denied (urban, tunnel, underwater ≤50m, cave) | Universal (including deep space) |
 | **Technology Stack** | SQUID magnetometers, grav-gradiometers, IMU, edge ML | 4 quantum subsystems (QERA, PSSM, VFPA, MDRI) |
+| **TRL** | 3-4 → 5 (prototype → pilot) | 1-2 (research tracks; 2035+ horizon) |
+
+---
 
 ### Key Product Advantages
 
@@ -34,20 +93,40 @@ By utilizing quantum entanglement, Planck-scale spacetime mapping, vacuum fluctu
 3. **Infrastructure-Independent**: No satellites, beacons, or external references required
 4. **Multi-Domain**: Works underground, underwater, indoors, and in urban canyons
 5. **Continuous Position Fix**: No signal outages; no cumulative drift with geo-signature fusion
+6. **Plug-and-Play Integration**: ROS2 interfaces, NMEA output, seamless INS/DVL fusion
 
-### Primary Target Markets
+---
 
-- **Defense & Security**: Special operations, signal-denied environments, covert navigation
-- **Maritime & Underwater**: Submarine ops, AUV navigation, harbor approach without GNSS (see [Maritime Applications](#maritime-and-underwater-operations))
-- **Underground & Industrial**: Mining, tunnel construction, cave rescue, emergency response
+### Primary Target Markets & Use Cases
+
+#### Defense & Security
+- Special operations in GPS-denied environments
+- Covert insertion and exfiltration navigation
+- Signal-denied urban operations (MOUT)
+- Counter-UAS navigation without RF emissions
+
+#### Maritime & Underwater
+- Submarine covert transit and harbor approach
+- AUV pipeline inspection, seafloor mapping, mine countermeasures
+- Harbor security and intrusion detection
+- Offshore energy: ROV positioning, subsea construction
+- **Reference Demo**: [Harbor-to-Tunnel Pattern](#harbor-to-tunnel-demonstration-pattern)
+
+#### Underground & Industrial
+- Mining navigation and personnel tracking
+- Tunnel boring machine (TBM) guidance
+- Cave rescue and emergency response
+- Underground infrastructure inspection
+
+---
 
 ### Engineering Hand-Off
 
-For detailed prototype specifications, sensor integration, and implementation roadmap, see [Prototype Designs and Concept Improvements](../research-documentation/prototype-designs) which outlines:
-- **Quantum-Enhanced Inertial Navigation Unit (QEINU)** specifications
-- **Spatial Frequency Mapping Device (SFMD)** architecture
-- Integration with existing INS/DVL systems
-- Field test protocols and acceptance criteria
+For detailed prototype specifications, sensor integration, and implementation roadmap, see:
+- **[Prototype Designs and Concept Improvements](../research-documentation/prototype-designs)**: QEINU & SFMD specs
+- **[90-180 Day Action Plan](#90-180-day-action-plan)**: Phase-gated deliverables
+- **[Sensor BoM & Procurement](#sensor-shortlist--bill-of-materials-bom)**: Vendor shortlist, lead times, costs
+- **[Field Test Protocol](#harbor-to-tunnel-success-checklist)**: Acceptance tests, pass/fail criteria
 
 ---
 
@@ -370,7 +449,7 @@ Our reference demonstration scenario validates QGN across the full maritime oper
 - AUV/submarine departs pier with GPS + INS initialization
 - QGN runs in parallel, building confidence scores against GPS ground truth
 - Geophysical signatures: Harbor magnetic anomalies (piers, pilings, vessels), bathymetry gradients
-- **Transition Criterion**: QGN position error <5m vs. GPS for 10 consecutive minutes
+- **Transition Criterion**: QGN position error &lt;5m vs. GPS for 10 consecutive minutes
 
 **Phase 2: Shallow Submergence** (GPS-denied)
 - Vehicle submerges; GPS unavailable
@@ -435,7 +514,7 @@ Our reference demonstration scenario validates QGN across the full maritime oper
 6. **Covariance Management**: Track uncertainty growth during QGN outages; increase INS weight
 
 **Demonstrated Capabilities**:
-- **GPS-Denied Transit**: 10+ km underwater navigation with <50m total drift
+- **GPS-Denied Transit**: 10+ km underwater navigation with &lt;50m total drift
 - **Tunnel Precision**: 5m CEP positioning for docking/inspection tasks
 - **INS Drift Arrest**: 10× reduction in position error vs. INS-only after 30 min
 - **Multi-Domain**: Surface → submerged → tunnel → return without external references

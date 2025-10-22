@@ -40,7 +40,7 @@ QGN v0.1 is a **passive GPS-denied navigation kit** providing absolute position 
 
 | Environment | P50 (CEP) | P95 | Test Conditions |
 |-------------|-----------|-----|-----------------|
-| **Urban Canyon** | ≤10 m | ≤20 m | Building density >50%; GNSS C/N₀ <25 dB-Hz |
+| **Urban Canyon** | ≤10 m | ≤20 m | Building density >50%; GNSS C/N₀ &lt;25 dB-Hz |
 | **Industrial Zone** | ≤15 m | ≤30 m | Ferrous clutter; EM interference >10 V/m @ 1 kHz |
 | **Subsea (Open Water)** | ≤25 m | ≤50 m | Depth 10-50m; weak geo-signatures |
 | **Subsea (Harbor)** | ≤10 m | ≤20 m | Magnetic anomalies from piers/infrastructure |
@@ -66,7 +66,7 @@ QGN v0.1 is a **passive GPS-denied navigation kit** providing absolute position 
 ### 3. Reacquisition Performance
 
 - **Cold Start** (no prior position): ≤90 sec to CEP ≤15m
-- **Warm Start** (prior <1 hr old): ≤30 sec to CEP ≤10m
+- **Warm Start** (prior &lt;1 hr old): ≤30 sec to CEP ≤10m
 - **Outage Recovery**: ≤30 sec after geo-signature dropout
 
 **Measurement**: Time from system power-on (or outage end) to first valid position fix with confidence >0.7
@@ -117,10 +117,10 @@ QGN v0.1 is a **passive GPS-denied navigation kit** providing absolute position 
 
 - **Mission Availability**: ≥99% over 2-hour continuous mission
 - **Mean Time Between Failures (MTBF)**: TBD from field data (target >1000 hrs)
-- **Sensor Health Monitoring**: Real-time fault detection; <1 sec latency
+- **Sensor Health Monitoring**: Real-time fault detection; &lt;1 sec latency
 - **Graceful Degradation**: System continues with reduced accuracy if 1 sensor fails
 
-**Test**: 10 × 2-hour missions with <1% downtime (excluding planned maintenance)
+**Test**: 10 × 2-hour missions with &lt;1% downtime (excluding planned maintenance)
 
 ---
 
@@ -351,7 +351,7 @@ QGN v0.1 is a **passive GPS-denied navigation kit** providing absolute position 
   - **Mitigation**: Use commercial-grade sensors (QuSpin QZFM) with public specifications
   
 - **Gravitational Gradiometers**: ECCN 6A006.b or 6A006.c (depending on sensitivity)
-  - **Mitigation**: Scintrex CG-6 is commercial; <1 mGal → EAR99 likely
+  - **Mitigation**: Scintrex CG-6 is commercial; &lt;1 mGal → EAR99 likely
 
 - **Overall System**: Likely ECCN 7A003 (navigation equipment) or EAR99
   - **Intended Use**: Commercial/defense dual-use for GPS-denied navigation
@@ -425,7 +425,7 @@ QGN v0.1 is a **passive GPS-denied navigation kit** providing absolute position 
 
 ### Phase 3 Gate (Day 90)
 - [ ] Integrated prototype operational
-- [ ] Bench test CEP <20m in HITL simulation
+- [ ] Bench test CEP &lt;20m in HITL simulation
 - [ ] Power draw ≤100W measured
 
 ### Phase 4 Gate (Day 180)
