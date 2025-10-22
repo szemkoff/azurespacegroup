@@ -1,0 +1,331 @@
+{
+  "product_metafield_definitions": [
+    {
+      "ownerType": "PRODUCT",
+      "namespace": "specs",
+      "key": "brand",
+      "name": "Brand",
+      "description": "Manufacturer brand, e.g., Harley-Davidson or Rick\u2019s Motorcycles.",
+      "type": "single_line_text_field",
+      "validations": [],
+      "useAsFilter": true,
+      "useInSmartCollections": true,
+      "storefrontApiAccess": true
+    },
+    {
+      "ownerType": "PRODUCT",
+      "namespace": "specs",
+      "key": "mpn",
+      "name": "MPN",
+      "description": "Manufacturer Part Number (or master SKU used on marketplaces).",
+      "type": "single_line_text_field",
+      "validations": [
+        {
+          "name": "unique"
+        }
+      ],
+      "useAsFilter": false,
+      "useInSmartCollections": false,
+      "storefrontApiAccess": true
+    },
+    {
+      "ownerType": "PRODUCT",
+      "namespace": "specs",
+      "key": "upc",
+      "name": "UPC / EAN / GTIN",
+      "description": "Barcode if available (12\u201314 digits).",
+      "type": "single_line_text_field",
+      "validations": [
+        {
+          "name": "regex",
+          "value": "^[0-9]{12,14}$",
+          "message": "Must be 12\u201314 digits"
+        }
+      ],
+      "useAsFilter": false,
+      "useInSmartCollections": false,
+      "storefrontApiAccess": false
+    },
+    {
+      "ownerType": "PRODUCT",
+      "namespace": "specs",
+      "key": "gtin_exemption",
+      "name": "GTIN Exemption",
+      "description": "If true, use Brand + MPN instead of UPC/EAN on marketplaces.",
+      "type": "boolean",
+      "validations": [],
+      "useAsFilter": false,
+      "useInSmartCollections": false,
+      "storefrontApiAccess": false
+    },
+    {
+      "ownerType": "PRODUCT",
+      "namespace": "fitment",
+      "key": "model_code",
+      "name": "Model Code",
+      "description": "Internal Harley model code (e.g., FLHX, RA1250).",
+      "type": "single_line_text_field",
+      "validations": [],
+      "useAsFilter": true,
+      "useInSmartCollections": true,
+      "storefrontApiAccess": true
+    },
+    {
+      "ownerType": "PRODUCT",
+      "namespace": "fitment",
+      "key": "model_name",
+      "name": "Model Name",
+      "description": "Marketing name (e.g., Street Glide, Pan America 1250).",
+      "type": "single_line_text_field",
+      "validations": [],
+      "useAsFilter": true,
+      "useInSmartCollections": true,
+      "storefrontApiAccess": true
+    },
+    {
+      "ownerType": "PRODUCT",
+      "namespace": "fitment",
+      "key": "platform",
+      "name": "Platform",
+      "description": "Harley platform (e.g., FL3, FL4, RA1).",
+      "type": "single_line_text_field",
+      "validations": [],
+      "useAsFilter": true,
+      "useInSmartCollections": true,
+      "storefrontApiAccess": true
+    },
+    {
+      "ownerType": "PRODUCT",
+      "namespace": "fitment",
+      "key": "year",
+      "name": "Year",
+      "description": "Fitment year.",
+      "type": "number_integer",
+      "validations": [
+        {
+          "name": "min",
+          "value": "2000"
+        },
+        {
+          "name": "max",
+          "value": "2030"
+        }
+      ],
+      "useAsFilter": true,
+      "useInSmartCollections": true,
+      "storefrontApiAccess": true
+    },
+    {
+      "ownerType": "PRODUCT",
+      "namespace": "fitment",
+      "key": "position",
+      "name": "Brake Position",
+      "description": "Front or Rear.",
+      "type": "single_line_text_field",
+      "validations": [
+        {
+          "name": "in",
+          "value": "Front,Rear"
+        }
+      ],
+      "useAsFilter": true,
+      "useInSmartCollections": true,
+      "storefrontApiAccess": true
+    },
+    {
+      "ownerType": "PRODUCT",
+      "namespace": "fitment",
+      "key": "diameter_mm",
+      "name": "Rotor Diameter (mm)",
+      "description": "Rotor diameter in millimeters.",
+      "type": "number_integer",
+      "validations": [
+        {
+          "name": "min",
+          "value": "250"
+        },
+        {
+          "name": "max",
+          "value": "400"
+        }
+      ],
+      "useAsFilter": true,
+      "useInSmartCollections": true,
+      "storefrontApiAccess": true
+    },
+    {
+      "ownerType": "PRODUCT",
+      "namespace": "fitment",
+      "key": "is_oem_size",
+      "name": "OEM Size",
+      "description": "True if rotor is OEM size for the platform; false if aftermarket size.",
+      "type": "boolean",
+      "validations": [],
+      "useAsFilter": true,
+      "useInSmartCollections": true,
+      "storefrontApiAccess": true
+    },
+    {
+      "ownerType": "PRODUCT",
+      "namespace": "fitment",
+      "key": "compatibility_json",
+      "name": "Compatibility JSON",
+      "description": "JSON array of fitment (Year/Model/Platform) for marketplaces.",
+      "type": "single_line_text_field",
+      "validations": [],
+      "useAsFilter": false,
+      "useInSmartCollections": false,
+      "storefrontApiAccess": false
+    },
+    {
+      "ownerType": "PRODUCT",
+      "namespace": "tech",
+      "key": "material",
+      "name": "Material",
+      "description": "Material (e.g., Stainless Steel, Billet Aluminum).",
+      "type": "single_line_text_field",
+      "validations": [
+        {
+          "name": "in",
+          "value": "Stainless Steel,Billet Aluminum"
+        }
+      ],
+      "useAsFilter": true,
+      "useInSmartCollections": false,
+      "storefrontApiAccess": true
+    },
+    {
+      "ownerType": "PRODUCT",
+      "namespace": "tech",
+      "key": "mounting_holes",
+      "name": "Mounting Holes",
+      "description": "Number of mounting holes (bolt pattern).",
+      "type": "number_integer",
+      "validations": [
+        {
+          "name": "min",
+          "value": "3"
+        },
+        {
+          "name": "max",
+          "value": "6"
+        }
+      ],
+      "useAsFilter": false,
+      "useInSmartCollections": false,
+      "storefrontApiAccess": true
+    },
+    {
+      "ownerType": "PRODUCT",
+      "namespace": "tech",
+      "key": "floating",
+      "name": "Floating Rotor",
+      "description": "True if rotor is floating style.",
+      "type": "boolean",
+      "validations": [],
+      "useAsFilter": false,
+      "useInSmartCollections": false,
+      "storefrontApiAccess": true
+    },
+    {
+      "ownerType": "PRODUCT",
+      "namespace": "tech",
+      "key": "min_thickness_mm",
+      "name": "Min Thickness (mm)",
+      "description": "Minimum service thickness per approval sheet.",
+      "type": "number_decimal",
+      "validations": [
+        {
+          "name": "min",
+          "value": "3.0"
+        },
+        {
+          "name": "max",
+          "value": "10.0"
+        }
+      ],
+      "useAsFilter": false,
+      "useInSmartCollections": false,
+      "storefrontApiAccess": true
+    },
+    {
+      "ownerType": "PRODUCT",
+      "namespace": "docs",
+      "key": "gtu_url",
+      "name": "GT\u00dc Approval URL",
+      "description": "Link to GT\u00dc approval PDF.",
+      "type": "url",
+      "validations": [
+        {
+          "name": "regex",
+          "value": "^https://",
+          "message": "Must start with https://"
+        }
+      ],
+      "useAsFilter": false,
+      "useInSmartCollections": false,
+      "storefrontApiAccess": true
+    },
+    {
+      "ownerType": "PRODUCT",
+      "namespace": "docs",
+      "key": "install_url",
+      "name": "Install Guide URL",
+      "description": "Link to installation PDF or video.",
+      "type": "url",
+      "validations": [
+        {
+          "name": "regex",
+          "value": "^https://",
+          "message": "Must start with https://"
+        }
+      ],
+      "useAsFilter": false,
+      "useInSmartCollections": false,
+      "storefrontApiAccess": true
+    }
+  ],
+  "variant_metafield_definitions": [
+    {
+      "ownerType": "PRODUCT_VARIANT",
+      "namespace": "specs",
+      "key": "is_kit",
+      "name": "Is Kit",
+      "description": "True for Rotor + Adapter kit variants; false for Rotor Only.",
+      "type": "boolean",
+      "validations": [],
+      "useAsFilter": false,
+      "useInSmartCollections": false,
+      "storefrontApiAccess": true
+    },
+    {
+      "ownerType": "PRODUCT_VARIANT",
+      "namespace": "specs",
+      "key": "kit_components",
+      "name": "Kit Components (JSON)",
+      "description": "JSON array of component SKUs (e.g., [\"20-W41500158A-330\",\"65-8031241-0\"]).",
+      "type": "single_line_text_field",
+      "validations": [],
+      "useAsFilter": false,
+      "useInSmartCollections": false,
+      "storefrontApiAccess": true
+    },
+    {
+      "ownerType": "PRODUCT_VARIANT",
+      "namespace": "specs",
+      "key": "adapter_side",
+      "name": "Adapter Side",
+      "description": "Left / Right / Single (for adapter products).",
+      "type": "single_line_text_field",
+      "validations": [
+        {
+          "name": "in",
+          "value": "Left,Right,Single"
+        }
+      ],
+      "useAsFilter": false,
+      "useInSmartCollections": false,
+      "storefrontApiAccess": true
+    }
+  ]
+}

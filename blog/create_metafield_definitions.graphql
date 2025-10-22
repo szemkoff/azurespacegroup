@@ -1,0 +1,254 @@
+mutation metafieldSetup {
+  metafieldDefinitionCreate(input: {
+  name: "Brand"
+  namespace: "specs"
+  key: "brand"
+  type: "single_line_text_field"
+  description: "Manufacturer brand, e.g., Harley-Davidson or Rick’s Motorcycles."
+  ownerType: PRODUCT
+  visibleToStorefrontApi: true
+}) {
+  createdDefinition { id name namespace key ownerType type }
+  userErrors { field message }
+}
+  metafieldDefinitionCreate(input: {
+  name: "MPN"
+  namespace: "specs"
+  key: "mpn"
+  type: "single_line_text_field"
+  description: "Manufacturer Part Number (or master SKU used on marketplaces)."
+  ownerType: PRODUCT
+  visibleToStorefrontApi: true
+}) {
+  createdDefinition { id name namespace key ownerType type }
+  userErrors { field message }
+}
+  metafieldDefinitionCreate(input: {
+  name: "UPC / EAN / GTIN"
+  namespace: "specs"
+  key: "upc"
+  type: "single_line_text_field"
+  description: "Barcode if available (12–14 digits)."
+  ownerType: PRODUCT
+  visibleToStorefrontApi: false
+}) {
+  createdDefinition { id name namespace key ownerType type }
+  userErrors { field message }
+}
+  metafieldDefinitionCreate(input: {
+  name: "GTIN Exemption"
+  namespace: "specs"
+  key: "gtin_exemption"
+  type: "boolean"
+  description: "If true, use Brand + MPN instead of UPC/EAN on marketplaces."
+  ownerType: PRODUCT
+  visibleToStorefrontApi: false
+}) {
+  createdDefinition { id name namespace key ownerType type }
+  userErrors { field message }
+}
+  metafieldDefinitionCreate(input: {
+  name: "Model Code"
+  namespace: "fitment"
+  key: "model_code"
+  type: "single_line_text_field"
+  description: "Internal Harley model code (e.g., FLHX, RA1250)."
+  ownerType: PRODUCT
+  visibleToStorefrontApi: true
+}) {
+  createdDefinition { id name namespace key ownerType type }
+  userErrors { field message }
+}
+  metafieldDefinitionCreate(input: {
+  name: "Model Name"
+  namespace: "fitment"
+  key: "model_name"
+  type: "single_line_text_field"
+  description: "Marketing name (e.g., Street Glide, Pan America 1250)."
+  ownerType: PRODUCT
+  visibleToStorefrontApi: true
+}) {
+  createdDefinition { id name namespace key ownerType type }
+  userErrors { field message }
+}
+  metafieldDefinitionCreate(input: {
+  name: "Platform"
+  namespace: "fitment"
+  key: "platform"
+  type: "single_line_text_field"
+  description: "Harley platform (e.g., FL3, FL4, RA1)."
+  ownerType: PRODUCT
+  visibleToStorefrontApi: true
+}) {
+  createdDefinition { id name namespace key ownerType type }
+  userErrors { field message }
+}
+  metafieldDefinitionCreate(input: {
+  name: "Year"
+  namespace: "fitment"
+  key: "year"
+  type: "number_integer"
+  description: "Fitment year."
+  ownerType: PRODUCT
+  visibleToStorefrontApi: true
+}) {
+  createdDefinition { id name namespace key ownerType type }
+  userErrors { field message }
+}
+  metafieldDefinitionCreate(input: {
+  name: "Brake Position"
+  namespace: "fitment"
+  key: "position"
+  type: "single_line_text_field"
+  description: "Front or Rear."
+  ownerType: PRODUCT
+  visibleToStorefrontApi: true
+}) {
+  createdDefinition { id name namespace key ownerType type }
+  userErrors { field message }
+}
+  metafieldDefinitionCreate(input: {
+  name: "Rotor Diameter (mm)"
+  namespace: "fitment"
+  key: "diameter_mm"
+  type: "number_integer"
+  description: "Rotor diameter in millimeters."
+  ownerType: PRODUCT
+  visibleToStorefrontApi: true
+}) {
+  createdDefinition { id name namespace key ownerType type }
+  userErrors { field message }
+}
+  metafieldDefinitionCreate(input: {
+  name: "OEM Size"
+  namespace: "fitment"
+  key: "is_oem_size"
+  type: "boolean"
+  description: "True if rotor is OEM size for the platform; false if aftermarket size."
+  ownerType: PRODUCT
+  visibleToStorefrontApi: true
+}) {
+  createdDefinition { id name namespace key ownerType type }
+  userErrors { field message }
+}
+  metafieldDefinitionCreate(input: {
+  name: "Compatibility JSON"
+  namespace: "fitment"
+  key: "compatibility_json"
+  type: "single_line_text_field"
+  description: "JSON array of fitment (Year/Model/Platform) for marketplaces."
+  ownerType: PRODUCT
+  visibleToStorefrontApi: false
+}) {
+  createdDefinition { id name namespace key ownerType type }
+  userErrors { field message }
+}
+  metafieldDefinitionCreate(input: {
+  name: "Material"
+  namespace: "tech"
+  key: "material"
+  type: "single_line_text_field"
+  description: "Material (e.g., Stainless Steel, Billet Aluminum)."
+  ownerType: PRODUCT
+  visibleToStorefrontApi: true
+}) {
+  createdDefinition { id name namespace key ownerType type }
+  userErrors { field message }
+}
+  metafieldDefinitionCreate(input: {
+  name: "Mounting Holes"
+  namespace: "tech"
+  key: "mounting_holes"
+  type: "number_integer"
+  description: "Number of mounting holes (bolt pattern)."
+  ownerType: PRODUCT
+  visibleToStorefrontApi: true
+}) {
+  createdDefinition { id name namespace key ownerType type }
+  userErrors { field message }
+}
+  metafieldDefinitionCreate(input: {
+  name: "Floating Rotor"
+  namespace: "tech"
+  key: "floating"
+  type: "boolean"
+  description: "True if rotor is floating style."
+  ownerType: PRODUCT
+  visibleToStorefrontApi: true
+}) {
+  createdDefinition { id name namespace key ownerType type }
+  userErrors { field message }
+}
+  metafieldDefinitionCreate(input: {
+  name: "Min Thickness (mm)"
+  namespace: "tech"
+  key: "min_thickness_mm"
+  type: "number_decimal"
+  description: "Minimum service thickness per approval sheet."
+  ownerType: PRODUCT
+  visibleToStorefrontApi: true
+}) {
+  createdDefinition { id name namespace key ownerType type }
+  userErrors { field message }
+}
+  metafieldDefinitionCreate(input: {
+  name: "GTÜ Approval URL"
+  namespace: "docs"
+  key: "gtu_url"
+  type: "url"
+  description: "Link to GTÜ approval PDF."
+  ownerType: PRODUCT
+  visibleToStorefrontApi: true
+}) {
+  createdDefinition { id name namespace key ownerType type }
+  userErrors { field message }
+}
+  metafieldDefinitionCreate(input: {
+  name: "Install Guide URL"
+  namespace: "docs"
+  key: "install_url"
+  type: "url"
+  description: "Link to installation PDF or video."
+  ownerType: PRODUCT
+  visibleToStorefrontApi: true
+}) {
+  createdDefinition { id name namespace key ownerType type }
+  userErrors { field message }
+}
+  metafieldDefinitionCreate(input: {
+  name: "Is Kit"
+  namespace: "specs"
+  key: "is_kit"
+  type: "boolean"
+  description: "True for Rotor + Adapter kit variants; false for Rotor Only."
+  ownerType: PRODUCT_VARIANT
+  visibleToStorefrontApi: true
+}) {
+  createdDefinition { id name namespace key ownerType type }
+  userErrors { field message }
+}
+  metafieldDefinitionCreate(input: {
+  name: "Kit Components (JSON)"
+  namespace: "specs"
+  key: "kit_components"
+  type: "single_line_text_field"
+  description: "JSON array of component SKUs (e.g., ["20-W41500158A-330","65-8031241-0"])."
+  ownerType: PRODUCT_VARIANT
+  visibleToStorefrontApi: true
+}) {
+  createdDefinition { id name namespace key ownerType type }
+  userErrors { field message }
+}
+  metafieldDefinitionCreate(input: {
+  name: "Adapter Side"
+  namespace: "specs"
+  key: "adapter_side"
+  type: "single_line_text_field"
+  description: "Left / Right / Single (for adapter products)."
+  ownerType: PRODUCT_VARIANT
+  visibleToStorefrontApi: true
+}) {
+  createdDefinition { id name namespace key ownerType type }
+  userErrors { field message }
+}
+}
