@@ -46,6 +46,7 @@ const sidebars = {
             'qpds/field-test-protocol',
             'qpds/partner-deck-outline',
             'qpds/funding-alignment',
+            'qpds/release-milestone-v02',
           ],
         },
         'core-documentation/communication-systems',
