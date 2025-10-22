@@ -33,7 +33,17 @@ const sidebars = {
         'core-documentation/system-dissection',
         'core-documentation/energy-systems',
         'core-documentation/propulsion-navigation',
-        'core-documentation/quantum-position-determination',
+        {
+          type: 'category',
+          label: 'Quantum Position Determination (QPDS)',
+          link: {
+            type: 'doc',
+            id: 'qpds/index',
+          },
+          items: [
+            'qpds/qgn-v01-prd',
+          ],
+        },
         'core-documentation/communication-systems',
       ],
     },
