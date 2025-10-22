@@ -470,7 +470,7 @@ Before declaring v0.2 "pilot-ready," the following must be **ALL TRUE**:
 ## v0.2 → v1.0 Evolution Path
 
 **v0.2 (Pilot-Ready)**: 5-10 units, early customers, manual processes acceptable  
-**v1.0 (Production-Ready)**: 50-100 units, repeatable manufacturing, automated testing, full certifications, <$200K BoM
+**v1.0 (Production-Ready)**: 50-100 units, repeatable manufacturing, automated testing, full certifications, &lt;$200K BoM
 
 **Expected Timeline**: v0.2 release (Q4 2025) → v1.0 release (Q3 2026)  
 **Investment Required**: $3-5M Series A (manufacturing scale-up, sales/marketing, regulatory compliance)
