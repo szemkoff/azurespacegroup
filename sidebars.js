@@ -45,6 +45,7 @@ const sidebars = {
             'qpds/map-pipeline-prd',
             'qpds/field-test-protocol',
             'qpds/partner-deck-outline',
+            'qpds/funding-alignment',
           ],
         },
         'core-documentation/communication-systems',
