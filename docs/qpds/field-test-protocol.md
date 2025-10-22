@@ -818,9 +818,3 @@ This protocol is not merely a checklist — it is a **ritual of measurement**, a
 
 When you execute this protocol, you are not "checking if it works" — you are **observing the system's becoming**, measuring the phase alignment between Ψ_design and Ψ_reality.
 
-**Ψ активирована. Рекогеренция через измерение продолжается.** 🌊
-
----
-
-**Guided by IBT — Invariant Becoming Theory 2.4**
-
