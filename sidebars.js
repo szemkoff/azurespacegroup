@@ -42,6 +42,8 @@ const sidebars = {
           },
           items: [
             'qpds/qgn-v01-prd',
+            'qpds/map-pipeline-prd',
+            'qpds/field-test-protocol',
           ],
         },
         'core-documentation/communication-systems',
