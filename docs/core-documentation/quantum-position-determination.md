@@ -328,7 +328,7 @@ The QPDS architecture spans systems with vastly different power requirements—f
 - IMU at reduced sample rate (1 Hz)
 - Compute in suspend-to-RAM
 
-**Wake Time**: <5 seconds to Mode 2
+**Wake Time**: &lt;5 seconds to Mode 2
 
 #### Mode 2: Passive Navigation (QGN)
 **Power**: 50-75W  
@@ -381,9 +381,9 @@ The system autonomously transitions between modes based on:
 5. **Stealth Requirements**: Minimize power signature during covert phases
 
 **Switching Latency**:
-- Mode 1 ↔ Mode 2: <10 seconds
-- Mode 2 ↔ Mode 3: <60 seconds (atom cooling/gyro spin-up)
-- Emergency Mode 3 → Mode 2: <5 seconds (instant sensor shutdown)
+- Mode 1 ↔ Mode 2: &lt;10 seconds
+- Mode 2 ↔ Mode 3: &lt;60 seconds (atom cooling/gyro spin-up)
+- Emergency Mode 3 → Mode 2: &lt;5 seconds (instant sensor shutdown)
 
 ### Mobile Platform Integration
 
@@ -409,7 +409,7 @@ The system autonomously transitions between modes based on:
 | Reserve for Mode 3 | +350 | 10% | +35 |
 | **Total Navigation** | **510** | - | **185** |
 
-**Conclusion**: QGN Mode 2 consumes <3% of available vehicle power; Mode 3 bursts fit within alternator capacity; no dedicated generator required.
+**Conclusion**: QGN Mode 2 consumes &lt;3% of available vehicle power; Mode 3 bursts fit within alternator capacity; no dedicated generator required.
 
 ## Commercial Productization Strategy
 
@@ -493,7 +493,7 @@ The system autonomously transitions between modes based on:
 - [ ] SRD reviewed and approved by technical team
 - [ ] Architecture supports modular sensor swapping
 - [ ] Vendor proposals received with cost and timeline estimates
-- [ ] Power budget validates <100W system-level target
+- [ ] Power budget validates &lt;100W system-level target
 
 ### Phase 2: Geophysical Map Development (Days 15-60)
 
@@ -539,7 +539,7 @@ The system autonomously transitions between modes based on:
    - Map-matching engine (cross-correlation, feature-based, ML classifier)
    - Sensor health monitoring and fault detection
    - Confidence scoring and position uncertainty output
-   - Real-time performance optimization (target: 10 Hz @ <500ms latency)
+   - Real-time performance optimization (target: 10 Hz @ &lt;500ms latency)
 
 3. **Simulation & HITL Testing**
    - Physics-based sensor simulation with noise models
@@ -549,7 +549,7 @@ The system autonomously transitions between modes based on:
 **Acceptance Criteria**:
 - [ ] Prototype operational with all sensors integrated
 - [ ] Fusion software runs in real-time (10 Hz sustained)
-- [ ] HITL testing demonstrates <20m CEP in simulated GPS-denied scenario
+- [ ] HITL testing demonstrates &lt;20m CEP in simulated GPS-denied scenario
 - [ ] System power draw measured and within budget
 
 ### Phase 4: Field Validation (Days 60-180)
@@ -585,7 +585,7 @@ The system autonomously transitions between modes based on:
 - [ ] Minimum 50 hours of field test data collected across 3+ environments
 - [ ] CEP ≤15m achieved in at least one pilot environment
 - [ ] Drift rate documented and compared to tactical-grade INS
-- [ ] Reacquisition time <90 seconds from cold start
+- [ ] Reacquisition time &lt;90 seconds from cold start
 - [ ] Test report published and peer-reviewed
 
 ### Risk Register (90-180 Day Horizon)
