@@ -48,15 +48,62 @@ table {
   width: 100%;
   display: table;
   margin-bottom: 2rem;
+  border-collapse: collapse;
 }
 
 table th {
   background-color: var(--ifm-color-primary);
   color: white;
+  padding: 0.75rem;
+  text-align: left;
+  font-weight: 600;
+}
+
+table td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+[data-theme='dark'] table td {
+  border-bottom: 1px solid #333;
 }
 
 [data-theme='dark'] table th {
   background-color: var(--ifm-color-primary-darker);
+}
+
+/* Responsive table scrolling container */
+@media (max-width: 996px) {
+  .markdown {
+    overflow-x: auto;
+  }
+  
+  .markdown > table {
+    min-width: 100%;
+    display: block;
+    overflow-x: auto;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+  }
+  
+  [data-theme='dark'] .markdown > table {
+    border-color: #333;
+  }
+  
+  .markdown table tbody {
+    display: table;
+    width: 100%;
+  }
+  
+  .markdown table tr {
+    display: table-row;
+  }
+  
+  .markdown table td,
+  .markdown table th {
+    min-width: 120px;
+    word-break: break-word;
+  }
 }
 
 /* Highlight important technical terms */
