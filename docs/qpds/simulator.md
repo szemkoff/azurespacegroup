@@ -23,7 +23,6 @@ The **QPDS Simulator** is a production-ready Python framework for validating and
 
 ```bash
 pip install numpy
-cd /Users/stantheman/AndroidStudioProjects/NewEarthOrder
 python3 qpds_simulator.py
 ```
 
