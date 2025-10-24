@@ -346,7 +346,7 @@ export default function QPDSSimulator() {
                 </option>
               ))}
             </select>
-            <small className={styles.hint}>{environments[environment].description}</small>
+            <small className={styles.hint}>{environments[environment]?.description || 'Environment description'}</small>
           </div>
 
           <div className={styles.control}>
