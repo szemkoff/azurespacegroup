@@ -451,3 +451,4 @@ QGN v0.1 is a **passive GPS-denied navigation kit** providing absolute position 
 
 **Next Review**: 2025-11-01 (or upon Phase 1 gate)
 
+

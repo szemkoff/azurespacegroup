@@ -14,7 +14,7 @@ const config = {
   tagline: 'Advanced Quantum Navigation & Propulsion',
   // Cache-busting timestamp for GitHub Pages CDN
   customFields: {
-    deploymentTimestamp: '2025-10-24T01:42:00Z',
+    deploymentTimestamp: '2025-10-24T14:30:00Z',
   },
   favicon: 'img/favicon.ico',
 

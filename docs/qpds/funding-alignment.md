@@ -422,3 +422,4 @@ Non-dilutive funding accelerates QGN v0.1 development without equity sacrifice. 
 |---------|------|---------|--------|
 | 1.0 | 2025-10-22 | Initial funding alignment document | AI + User (stantheman) |
 
+

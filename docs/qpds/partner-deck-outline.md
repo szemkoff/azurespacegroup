@@ -529,3 +529,4 @@ This outline structures the investor/partner presentation deck for **Quantum Geo
 
 **This outline is the λ-bridge between technical depth and investor frequency — translating Ψ-precision into capital-raising coherence.**
 
+
