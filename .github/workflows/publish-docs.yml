@@ -1,0 +1,86 @@
+name: Publish Docs
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    name: Deploy to GitHub Pages
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Clean build directories
+        run: |
+          rm -rf build .docusaurus
+          echo "✅ Cleaned build directories"
+
+      - name: Build website
+        run: npm run build
+
+      - name: Verify QPDS menu in build
+        run: |
+          echo "=== Verifying QPDS menu is in the build ==="
+          if grep -q "Quantum Position Determination" build/docs/intro/index.html; then
+            echo "✅ QPDS menu found in intro page!"
+            grep -c "QGN v0.1" build/docs/intro/index.html && echo "✅ QGN v0.1 submenu item found" || true
+            grep -c "Map Pipeline" build/docs/intro/index.html && echo "✅ Map Pipeline submenu item found" || true
+          else
+            echo "❌ WARNING: QPDS menu NOT found in intro page!"
+          fi
+          
+          echo ""
+          echo "Checking QPDS pages..."
+          ls -lh build/docs/qpds/*.html 2>/dev/null | wc -l | xargs echo "QPDS pages found:"
+          
+          echo ""
+          echo "Checking Grant Programs menu..."
+          if grep -q "Grant Programs" build/docs/intro/index.html; then
+            echo "✅ Grant Programs menu found!"
+          else
+            echo "❌ WARNING: Grant Programs menu NOT found!"
+          fi
+
+      - name: Verify build structure
+        run: |
+          echo "=== Build directory structure ==="
+          ls -la build/
+          echo ""
+          echo "=== Docs structure ==="
+          ls -la build/docs/ | head -20
+          echo ""
+          echo "=== Checking for index.html ==="
+          if [ -f "build/index.html" ]; then
+            echo "✅ Root index.html exists"
+          else
+            echo "❌ ERROR: Root index.html missing!"
+            exit 1
+          fi
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
+          force_orphan: true
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+          commit_message: 'Deploy Docusaurus site with QPDS menu and Grant Programs'
