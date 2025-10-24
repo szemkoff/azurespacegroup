@@ -6,6 +6,28 @@
 
 ---
 
+## Quick Claims Summary (TL;DR for Reviewers)
+
+| Category | Position |
+|----------|----------|
+| **Entanglement** | Causality-preserving distributed sensing + classical control (no FTL comms per no-communication theorem) |
+| **Vacuum/Casimir Energy** | TRL 1–2 fundamental physics research; thermodynamic null test planned; no practical power claim |
+| **Quantum Hardware** | 10–100 logical qubits via cloud services (AWS Braket, IonQ); topological qubits are horizon item (2029+) |
+| **Thrust Hypothesis** | Testable via torsion pendulum (sensitivity `<10 µN`); sham controls and null tests defined; reproducibility gate: `>10 µN p<0.01` |
+| **Timeline** | Phase I (2025–26): Rig commissioning, methods paper; Phase II (2027–28): Conditional subsystem scaling; Phase III–V (2029+): Integration TBD |
+
+---
+
+## Data & Replication
+
+**Committed to open science & reproducibility:**
+- **Preregistration**: Hypotheses, methods, and analysis gates logged on [Open Science Framework](https://osf.io/) (link coming)
+- **Raw Data & Apparatus**: Lab notebooks, sensor calibration files, apparatus photographs (publish post-Phase I)
+- **Code & Protocols**: GitHub repository with analysis scripts, control code, and measurement protocols (link: [github.com/szemkoff/azurespacegroup-experiments](https://github.com/szemkoff/azurespacegroup-experiments))
+- **Independent Replication**: Encourage external labs to replicate. Contact: [research@azurespacegroup.org](mailto:research@azurespacegroup.org)
+
+---
+
 ## Scope & Claims Discipline
 
 ### What We Claim (Measured & Demonstrated)
@@ -43,7 +65,7 @@ Our research program investigates three candidate mechanisms for quantum-assiste
 2. **Superposition-Assisted Momentum Transfer** (TRL 2): Investigates whether quantum coherence of drive coils could enhance force transduction.
 3. **Entanglement-Assisted Sensing & Synchronization** (TRL 2-3): Develops entanglement-based distributed sensing for engine synchronization while respecting causality constraints.
 
-Each subsystem includes testable milestones and explicit assumptions. For peer-reviewed theoretical foundations, see our [Quantum Propulsion Research Paper](../research-documentation/quantum-research-paper).
+Each subsystem includes testable milestones and explicit assumptions. For theoretical foundations and extended discussion, see our [Quantum Propulsion Research Paper](../research-documentation/quantum-research-paper) (peer review in progress).
 
 ---
 
@@ -113,7 +135,7 @@ stateDiagram-v2
         with sham controls
     end note
 ```
-*Figure 1: Azure Space Group Research System Architecture*
+*Figure 1: Azure Space Group Quantum Propulsion Research Architecture (TRL 1–3). Core propulsion systems (TRL 1–2: tunneling, superposition, entanglement sensing), control & measurement subsystems (TRL 2–3: hybrid QPU/HPC, engine management, metrology), and safety/compliance monitoring loops. All subsystems use classical feedback; entanglement used for distributed sensing only (no FTL signaling). Sham controls and null tests built into measurement and safety pathways.*
 
 ---
 
