@@ -17,8 +17,8 @@ export default function NavbarLogo() {
   }
 
   // Force the logo path to be absolute with the baseUrl
-  const logoSrc = '/AzureSpaceGroup/img/azure_corp_mark_black.png';
-  const logoSrcDark = '/AzureSpaceGroup/img/azure_corp_mark_black.png';
+  const logoSrc = '/azurespacegroup/img/logo.svg';
+  const logoSrcDark = '/azurespacegroup/img/logo.svg';
 
   return (
     <Link
