@@ -5,7 +5,15 @@ sidebar_label: Simulator & Testing
 description: Python-based simulation framework for testing QPDS in GPS-denied environments
 ---
 
+import QPDSSimulator from '@site/src/components/QPDSSimulator';
+
 # QPDS Simulator & Testing Framework
+
+## Interactive Simulator
+
+**Try it now!** Adjust parameters and run simulations directly in your browser:
+
+<QPDSSimulator />
 
 ## Overview
 
