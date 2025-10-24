@@ -233,20 +233,37 @@ The no-communication theorem (Bell, 1964; Eberhard, 1978) proves that entangleme
 
 #### Implementation: Entanglement-Assisted Synchronization Loop
 
-```
-[Node A] <--entangled probe state--> [Node B]
-    |                                   |
-    +-- measure local field state ------+
-    |                                   |
-    +-- send result via classical link--+
-    |                                   |
-[Master Control] receives both, computes phase correction
-    |
-    +-- broadcast correction pulse to all nodes (speed-of-light limited)
+```mermaid
+sequenceDiagram
+    participant NodeA as Node A<br/>(Entangled Probe)
+    participant NodeB as Node B<br/>(Entangled Probe)
+    participant MasterCtrl as Master Control<br/>(Phase Correction)
     
-Cycle time: ~1 μs (classical light transit + electronics)
-Advantage over classical: Lower statistical noise in sensing, ~√N reduction for N entangled pairs
+    Note over NodeA,NodeB: Initialization: Entangled probe pair distributed
+    
+    NodeA->>NodeA: Measure local field state
+    NodeB->>NodeB: Measure local field state
+    
+    Note over NodeA,NodeB: Classical channels transmit results
+    NodeA->>MasterCtrl: Send measurement result (μs latency)
+    NodeB->>MasterCtrl: Send measurement result (μs latency)
+    
+    rect rgb(200, 220, 255)
+        Note over MasterCtrl: Compute phase difference<br/>Variance reduction: ~√N
+    end
+    
+    MasterCtrl->>NodeA: Broadcast phase correction pulse
+    MasterCtrl->>NodeB: Broadcast phase correction pulse
+    
+    Note over NodeA,NodeB: Speed-of-light limited (~1 μs cycle)
+    Note over NodeA,NodeB: Advantage: Lower jitter vs classical sensing
 ```
+
+**Key Points**:
+- **Entanglement**: Used for distributed sensing only (no information encoded/transmitted via entanglement)
+- **Classical Channels**: All control signals travel at light speed (not FTL)
+- **Cycle Time**: ~1 μs (electronic latency + electromagnetic propagation)
+- **Advantage**: Statistical noise reduction by `~√N` for `N` entangled pairs
 
 ### Measurement & Validation
 
