@@ -330,17 +330,50 @@ We prototype field generator topologies aimed at:
 
 ## Technical Specifications & Technology Readiness Levels
 
-### Master Specifications Table
+### Subsystem TRL & Milestones at a Glance
 
-| Subsystem | Component | Near-Term Target | Speculative Horizon | TRL (Now) | TRL (2027) | Test Gate | Status |
-|-----------|-----------|-----------------|-------------------|-----------|-----------|-----------|--------|
-| **Tunneling** | Metamaterial channels | 10 × 10 mm active area, 100 channels | 1 meter × 1 meter panel | 1–2 | 2–3 | Force `>10 µN`, `p<0.01` | Rig construction |
-| **Tunneling** | Drive field uniformity | ±5% field variation over active area | ±1% uniformity | 2 | 2–3 | Bench measurement Q1 2026 | Design phase |
-| **Superposition** | Coherence time | 10 μs (hybrid system) | 1 ms (cryogenic subsystem) | 1 | 2 | Spectroscopy validation | Theoretical |
-| **Entanglement** | Synchronization error | 1 rad RMS (3 nodes) | 0.1 rad RMS (10 nodes) | 2–3 | 3 | Bell-parameter test | In progress |
-| **Computing** | Hybrid QPU + HPC | Cloud quantum service + local GPU | On-board 100-qubit QPU (if feasible) | 2–3 | 3 | Benchmark optimization task | Deployed |
-| **Vacuum Research** | Casimir force measurement | 1 pN sensitivity | 0.1 pN sensitivity | 1–2 | 2–3 | Thermodynamic null test | Setup phase |
-| **Field Generator** | Gradient uniformity | ±5% over 10 cm × 10 cm | ±2% over 50 cm × 50 cm | 2 | 2–3 | Bench validation Q1 2026 | Prototype I |
+| Subsystem | Component | Near-Term Target | TRL Now | TRL 2027 | Test Gate |
+|-----------|-----------|-----------------|---------|----------|-----------|
+| **Tunneling** | Metamaterial channels | 10 × 10 mm, 100 channels | 1–2 | 2–3 | Force `>10 µN`, `p<0.01` |
+| **Superposition** | Coherence time | 10 μs (hybrid) | 1 | 2 | Spectroscopy validation |
+| **Entanglement** | Sync error | 1 rad RMS (3 nodes) | 2–3 | 3 | Bell-parameter test |
+| **Computing** | Hybrid QPU + HPC | Cloud service + GPU | 2–3 | 3 | Optimization benchmark |
+| **Vacuum Research** | Casimir measurement | 1 pN sensitivity | 1–2 | 2–3 | Thermodynamic null test |
+| **Field Generator** | Gradient uniformity | ±5% (10×10 cm) | 2 | 2–3 | Bench validation Q1 2026 |
+
+### Detailed Specifications by Subsystem
+
+#### Quantum Tunneling (TRL 1–2)
+
+| Aspect | Target | Horizon (2027+) | Status |
+|--------|--------|-----------------|--------|
+| Active area | 10 × 10 mm | 1 meter × 1 meter panel | Rig construction |
+| Field uniformity | ±5% variation | ±1% uniformity | Design phase |
+| Reproducibility gate | Force `>10 µN` above null | Scaling to larger arrays | Baseline TBD |
+
+#### Quantum Computing & Control (TRL 2–3)
+
+| Aspect | Target | Horizon (2027+) | Status |
+|--------|--------|-----------------|--------|
+| Logical qubits | 10–100 (cloud service) | On-board 100-qubit QPU (if feasible) | Deployed via AWS Braket |
+| Coherence time | 10–100 μs | 1 ms+ (cryogenic) | Classical baseline set |
+| Error correction | Classical ECC on hybrid | Surface codes (1000+ phys. → 1 logical) | Cloud service path |
+
+#### Entanglement-Assisted Sensing (TRL 2–3)
+
+| Aspect | Target | Horizon (2027+) | Status |
+|--------|--------|-----------------|--------|
+| Nodes | 3 distributed nodes | 10 nodes | Bell-parameter setup |
+| Sync error | 1 rad RMS | 0.1 rad RMS | Interferometry baseline |
+| Advantage | `>√2` vs. classical | `>3` improvement factor | In progress |
+
+#### Vacuum & Casimir Research (TRL 1–2)
+
+| Aspect | Target | Horizon (2027+) | Status |
+|--------|--------|-----------------|--------|
+| Force sensitivity | 1 pN | 0.1 pN | Setup phase |
+| Measurement gap | Plate spacing variation | Frequency-dependent effects | Theory phase |
+| Energy extraction | Null test (expect zero) | Thermodynamic limits | Planned fall 2025 |
 
 ### Clarification: What "Speculative" Means
 

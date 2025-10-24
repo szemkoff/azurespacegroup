@@ -82,12 +82,27 @@ table td {
     min-width: 100%;
     display: block;
     overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
     border: 1px solid #e0e0e0;
     border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Add visual indicator that table scrolls */
+  .markdown > table::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 20px;
+    height: 100%;
+    background: linear-gradient(to left, rgba(0,0,0,0.1), transparent);
+    pointer-events: none;
   }
   
   [data-theme='dark'] .markdown > table {
     border-color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   }
   
   .markdown table tbody {
@@ -101,8 +116,24 @@ table td {
   
   .markdown table td,
   .markdown table th {
-    min-width: 120px;
+    min-width: 100px;
     word-break: break-word;
+    padding: 0.6rem 0.4rem;
+    font-size: 0.9rem;
+  }
+  
+  /* Sticky first column for readability on wide tables */
+  .markdown table th:first-child,
+  .markdown table td:first-child {
+    position: sticky;
+    left: 0;
+    background-color: var(--ifm-color-primary-light);
+    z-index: 1;
+  }
+  
+  [data-theme='dark'] .markdown table th:first-child,
+  [data-theme='dark'] .markdown table td:first-child {
+    background-color: var(--ifm-color-primary-darker);
   }
 }
 
