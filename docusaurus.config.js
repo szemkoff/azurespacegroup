@@ -12,6 +12,10 @@ const __dirname = path.dirname(__filename);
 const config = {
   title: 'Azure Space Group',
   tagline: 'Advanced Quantum Navigation & Propulsion',
+  // Cache-busting timestamp for GitHub Pages CDN
+  customFields: {
+    deploymentTimestamp: '2025-10-24T01:10:00Z',
+  },
   favicon: 'img/azure_corp_mark_black.png',
 
   // Set the production url of your site here
