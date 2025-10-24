@@ -14,9 +14,9 @@ const config = {
   tagline: 'Advanced Quantum Navigation & Propulsion',
   // Cache-busting timestamp for GitHub Pages CDN
   customFields: {
-    deploymentTimestamp: '2025-10-24T01:10:00Z',
+    deploymentTimestamp: '2025-10-24T01:42:00Z',
   },
-  favicon: 'img/azure_corp_mark_black.png',
+  favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
   url: 'https://szemkoff.github.io',
@@ -57,7 +57,7 @@ const config = {
           await fs.ensureDir(path.join(outDir, 'azurespacegroup', 'img'));
           
           // Copy logo files to all possible locations
-          const logoFiles = ['azure_corp_mark_black.png'];
+          const logoFiles = ['logo.svg', 'favicon.ico'];
           for (const file of logoFiles) {
             const sourcePath = path.join(__dirname, 'static', 'img', file);
             
@@ -135,9 +135,8 @@ const config = {
     navbar: {
       title: 'Azure Space Group',
       logo: {
-        alt: 'Azure Corp Logo',
-        src: 'img/azure_corp_mark_black.png',
-        srcDark: 'img/azure_corp_mark_black.png',
+        alt: 'Azure Space Group Logo',
+        src: '/azurespacegroup/img/logo.svg',
       },
       items: [
         {
