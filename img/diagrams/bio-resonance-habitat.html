@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Bio-Resonance Habitat System</title>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: transparent;
+    }
+    #diagram {
+      width: 100%;
+      text-align: center;
+    }
+    /* Bold text in diagram */
+    .mermaid .label {
+      font-weight: bold !important;
+      font-size: 18px !important;
+    }
+    /* Thicker lines */
+    .mermaid .flowchart-link {
+      stroke-width: 3px !important;
+    }
+    .mermaid g.node rect, 
+    .mermaid g.node circle, 
+    .mermaid g.node ellipse, 
+    .mermaid g.node polygon {
+      stroke-width: 3px !important;
+    }
+    .mermaid .cluster rect {
+      stroke-width: 3px !important;
+    }
+  </style>
+</head>
+<body>
+  <div id="diagram" class="mermaid">
+    flowchart TB
+      subgraph "Human Monitoring"
+        BMS[Biometric Sensors]
+        CAL[Chronobiological Analyzer]
+        PM[Physiological Monitoring]
+      end
+      
+      subgraph "Resonance Core"
+        QFH[Quantum Field Harmonizer]
+        BSA[Bio-Signal Amplifier]
+        MSO[Molecular Structure Optimizer]
+      end
+      
+      subgraph "Environmental Systems"
+        CLS[Chronobiological Lighting System]
+        QAM[Quantum Air Modulator]
+        ATS[Acoustic Tuning System]
+        TRS[Thermal Regulation System]
+      end
+      
+      BMS -->|Biometric Data| QFH
+      CAL -->|Circadian Rhythms| CLS
+      PM -->|Physiological Needs| QAM
+      
+      QFH -->|Field Instructions| BSA
+      BSA -->|Amplified Signals| MSO
+      
+      MSO -->|Structural Parameters| ATS
+      MSO -->|Structural Parameters| TRS
+      QFH -->|Harmonized Fields| CLS
+      QFH -->|Harmonized Fields| QAM
+      
+      style QFH fill:#f9a,stroke:#333,stroke-width:3px
+      style CLS fill:#af9,stroke:#333,stroke-width:3px
+      style QAM fill:#9df,stroke:#333,stroke-width:3px
+      style BMS fill:#fd9,stroke:#333,stroke-width:3px
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      mermaid.initialize({
+        startOnLoad: true,
+        theme: 'neutral',
+        flowchart: {
+          htmlLabels: true,
+          curve: 'basis',
+          nodeSpacing: 50,
+          rankSpacing: 100,
+        },
+        securityLevel: 'loose'
+      });
+    });
+  </script>
+</body>
+</html> 

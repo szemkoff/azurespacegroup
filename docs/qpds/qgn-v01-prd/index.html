@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-qpds/qgn-v01-prd" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.7.0">
+<title data-rh="true">QGN v0.1 Product Requirements Document | Azure Space Group</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://szemkoff.github.io/azurespacegroup/img/azure_corp_mark_black.png"><meta data-rh="true" name="twitter:image" content="https://szemkoff.github.io/azurespacegroup/img/azure_corp_mark_black.png"><meta data-rh="true" property="og:url" content="https://szemkoff.github.io/azurespacegroup/docs/qpds/qgn-v01-prd/"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="QGN v0.1 Product Requirements Document | Azure Space Group"><meta data-rh="true" name="description" content="Executable specifications for Quantum Geophysical Navigation v0.1 prototype"><meta data-rh="true" property="og:description" content="Executable specifications for Quantum Geophysical Navigation v0.1 prototype"><link data-rh="true" rel="icon" href="/azurespacegroup/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://szemkoff.github.io/azurespacegroup/docs/qpds/qgn-v01-prd/"><link data-rh="true" rel="alternate" href="https://szemkoff.github.io/azurespacegroup/docs/qpds/qgn-v01-prd/" hreflang="en"><link data-rh="true" rel="alternate" href="https://szemkoff.github.io/azurespacegroup/docs/qpds/qgn-v01-prd/" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/azurespacegroup/blog/rss.xml" title="Azure Space Group RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/azurespacegroup/blog/atom.xml" title="Azure Space Group Atom Feed"><link rel="stylesheet" href="/azurespacegroup/assets/css/styles.a2e57a9b.css">
+<script src="/azurespacegroup/assets/js/runtime~main.df5a66dd.js" defer="defer"></script>
+<script src="/azurespacegroup/assets/js/main.94ee44ba.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbarLogoLink_XXc9" aria-label="Azure Space Group home page" href="/azurespacegroup/"><div class="navbarLogoContainer_kdvK"><img src="/azurespacegroup/img/logo.svg" alt="Azure Space Group Logo" class="navbarLogo_aghy themedComponent_mlkZ themedComponent--light_NVdE"><img src="/azurespacegroup/img/logo.svg" alt="Azure Space Group Logo" class="navbarLogo_aghy themedComponent_mlkZ themedComponent--dark_xIcU"><span class="navbarTitle_WxSV">Azure Space Group</span></div></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/azurespacegroup/docs/intro/">Documentation</a><a class="navbar__item navbar__link" href="/azurespacegroup/docs/investment/">Investment</a><a class="navbar__item navbar__link" href="/azurespacegroup/blog/">Blog</a><a class="navbar__item navbar__link" href="/azurespacegroup/project-status/">Project Status</a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/szemkoff/azurespacegroup" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite" aria-pressed="false"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/azurespacegroup/docs/intro/">Project Overview</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/azurespacegroup/docs/about/">About Us</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/azurespacegroup/docs/core-documentation/core-technology/">Core Systems</a></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/azurespacegroup/docs/core-documentation/core-technology/">Core Technology and Components</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/azurespacegroup/docs/core-documentation/system-dissection/">System Dissection and Developmental Strategy</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/azurespacegroup/docs/core-documentation/energy-systems/">Energy and Power Systems</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/azurespacegroup/docs/core-documentation/propulsion-navigation/">Propulsion and Navigation</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" tabindex="0" href="/azurespacegroup/docs/qpds/">Quantum Position Determination (QPDS)</a><button aria-label="Collapse sidebar category &#x27;Quantum Position Determination (QPDS)&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/azurespacegroup/docs/qpds/qgn-v01-prd/">QGN v0.1 Product Requirements Document</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/azurespacegroup/docs/qpds/map-pipeline-prd/">Geophysical Map Pipeline PRD</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/azurespacegroup/docs/qpds/field-test-protocol/">QGN v0.1 Field Test Protocol</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/azurespacegroup/docs/qpds/partner-deck-outline/">QGN v0.1 Partner Deck Outline</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/azurespacegroup/docs/qpds/funding-alignment/">QGN v0.1 Funding Alignment &amp; Grant Strategy</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/azurespacegroup/docs/qpds/release-milestone-v02/">QGN v0.2 Release Milestone Criteria</a></li></ul></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/azurespacegroup/docs/core-documentation/communication-systems/">Communication Systems</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/azurespacegroup/docs/infrastructure-documentation/support-systems/">Infrastructure &amp; Human Factors</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/azurespacegroup/docs/materials/quasicrystal-aluminum/">Materials &amp; Manufacturing</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/azurespacegroup/docs/research-documentation/research-development/">Research &amp; Compliance</a></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/azurespacegroup/docs/diagrams/">Technical Schematics &amp; Diagrams</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/azurespacegroup/docs/development-roadmap/">Development Roadmap</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/azurespacegroup/docs/investment/">Investment Opportunities</a></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/azurespacegroup/docs/contributing/">Contributing Guidelines</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/azurespacegroup/docs/careers/">Careers</a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/azurespacegroup/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Core Systems</span><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="item" href="/azurespacegroup/docs/qpds/"><span itemprop="name">Quantum Position Determination (QPDS)</span></a><meta itemprop="position" content="2"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">QGN v0.1 Product Requirements Document</span><meta itemprop="position" content="3"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>QGN v0.1 Product Requirements Document</h1></header>
+<p><strong>Product</strong>: Quantum Geophysical Navigation (QGN) System v0.1<br>
+<strong>Status</strong>: Prototype Development (TRL 3-4 → 5)<br>
+<strong>Target Delivery</strong>: Q2 2025 (90-180 days from kickoff)<br>
+<strong>Owner</strong>: Azure Space Group<br>
+<strong>Document Version</strong>: 0.3<br>
+<strong>Last Updated</strong>: October 2025</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="executive-product-summary">Executive Product Summary<a href="#executive-product-summary" class="hash-link" aria-label="Direct link to Executive Product Summary" title="Direct link to Executive Product Summary">​</a></h2>
+<p>QGN v0.1 is a <strong>passive GPS-denied navigation kit</strong> providing absolute position fixes in environments where GPS is jammed, denied, or unavailable. The system fuses quantum magnetometry (SQUID), gravitational gradiometry, and inertial sensing with geophysical map-matching to deliver continuous 10 Hz position updates without RF emissions.</p>
+<p><strong>Form Factor</strong>: ≤30 × 30 × 15 cm (target: 35 × 35 × 20 cm with margin)<br>
+<strong>Power</strong>: ≤100W peak (target: 70-80W operational)<br>
+<strong>Mass</strong>: ≤10 kg (target: 8-9 kg)<br>
+<strong>Environments</strong>: Surface/port, open water (≤50m depth), tunnel/culvert, underground</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="value-proposition">Value Proposition<a href="#value-proposition" class="hash-link" aria-label="Direct link to Value Proposition" title="Direct link to Value Proposition">​</a></h3>
+<ul>
+<li><strong>Passive</strong>: Zero RF emissions → undetectable, OPSEC-friendly</li>
+<li><strong>Jam-Proof</strong>: Immune to GPS jamming/spoofing/denial</li>
+<li><strong>Infrastructure-Free</strong>: No satellites, beacons, or external references</li>
+<li><strong>Continuous</strong>: 10 Hz updates without signal outages</li>
+<li><strong>Multi-Domain</strong>: Underground, underwater, urban, industrial</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="acceptance-criteria--kpis">Acceptance Criteria &amp; KPIs<a href="#acceptance-criteria--kpis" class="hash-link" aria-label="Direct link to Acceptance Criteria &amp; KPIs" title="Direct link to Acceptance Criteria &amp; KPIs">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="1-position-accuracy-circular-error-probable">1. Position Accuracy (Circular Error Probable)<a href="#1-position-accuracy-circular-error-probable" class="hash-link" aria-label="Direct link to 1. Position Accuracy (Circular Error Probable)" title="Direct link to 1. Position Accuracy (Circular Error Probable)">​</a></h3>
+<table><thead><tr><th>Environment</th><th>P50 (CEP)</th><th>P95</th><th>Test Conditions</th></tr></thead><tbody><tr><td><strong>Urban Canyon</strong></td><td>≤10 m</td><td>≤20 m</td><td>Building density &gt;50%; GNSS C/N₀ &lt;25 dB-Hz</td></tr><tr><td><strong>Industrial Zone</strong></td><td>≤15 m</td><td>≤30 m</td><td>Ferrous clutter; EM interference &gt;10 V/m @ 1 kHz</td></tr><tr><td><strong>Subsea (Open Water)</strong></td><td>≤25 m</td><td>≤50 m</td><td>Depth 10-50m; weak geo-signatures</td></tr><tr><td><strong>Subsea (Harbor)</strong></td><td>≤10 m</td><td>≤20 m</td><td>Magnetic anomalies from piers/infrastructure</td></tr><tr><td><strong>Tunnel/Culvert</strong></td><td>≤10 m</td><td>≤15 m</td><td>Confined space; strong mag/grav gradients</td></tr><tr><td><strong>Cave/Underground</strong></td><td>≤20 m</td><td>≤40 m</td><td>Variable signatures; no DVL available</td></tr></tbody></table>
+<p><strong>Acceptance Threshold</strong>: P50 CEP achieved in ≥4 of 6 environments during field validation</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="2-drift-performance">2. Drift Performance<a href="#2-drift-performance" class="hash-link" aria-label="Direct link to 2. Drift Performance" title="Direct link to 2. Drift Performance">​</a></h3>
+<table><thead><tr><th>Configuration</th><th>Drift Rate</th><th>Test Duration</th><th>Acceptance</th></tr></thead><tbody><tr><td><strong>QGN-only</strong> (no DVL)</td><td>≤2.0 m/min</td><td>30 min continuous</td><td>P95 ≤2.5 m/min</td></tr><tr><td><strong>QGN + DVL fusion</strong></td><td>≤0.5 m/min</td><td>30 min continuous</td><td>P95 ≤0.8 m/min</td></tr><tr><td><strong>INS-only</strong> (baseline)</td><td>10-50 m/min</td><td>30 min</td><td>Reference only</td></tr></tbody></table>
+<p><strong>Test Protocol</strong>: Static position hold + slow-speed transit (≤2 m/s)</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="3-reacquisition-performance">3. Reacquisition Performance<a href="#3-reacquisition-performance" class="hash-link" aria-label="Direct link to 3. Reacquisition Performance" title="Direct link to 3. Reacquisition Performance">​</a></h3>
+<ul>
+<li><strong>Cold Start</strong> (no prior position): ≤90 sec to CEP ≤15m</li>
+<li><strong>Warm Start</strong> (prior &lt;1 hr old): ≤30 sec to CEP ≤10m</li>
+<li><strong>Outage Recovery</strong>: ≤30 sec after geo-signature dropout</li>
+</ul>
+<p><strong>Measurement</strong>: Time from system power-on (or outage end) to first valid position fix with confidence &gt;0.7</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="4-power-budget--thermal-limits">4. Power Budget &amp; Thermal Limits<a href="#4-power-budget--thermal-limits" class="hash-link" aria-label="Direct link to 4. Power Budget &amp; Thermal Limits" title="Direct link to 4. Power Budget &amp; Thermal Limits">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="power-consumption-by-mode">Power Consumption by Mode<a href="#power-consumption-by-mode" class="hash-link" aria-label="Direct link to Power Consumption by Mode" title="Direct link to Power Consumption by Mode">​</a></h4>
+<table><thead><tr><th>Operating Mode</th><th>Power (W)</th><th>Thermal Constraint</th><th>Test Condition</th></tr></thead><tbody><tr><td><strong>Idle/Standby</strong></td><td>≤20W</td><td>SQUID temp ±2°C</td><td>Sensors off; compute sleep</td></tr><tr><td><strong>Sense</strong></td><td>50-60W</td><td>SQUID ΔT ≤±0.01°C over 30 min</td><td>Sensors active; no fusion</td></tr><tr><td><strong>Sense + Fuse</strong></td><td>70-80W</td><td>Orin ≤60W sustained; Tjunc ≤85°C</td><td>Full ops @ 10 Hz</td></tr><tr><td><strong>Peak (DVL)</strong></td><td>≤100W</td><td>Ambient 0-40°C; forced air</td><td>All sensors + logging</td></tr></tbody></table>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="thermal-budget-breakdown">Thermal Budget Breakdown<a href="#thermal-budget-breakdown" class="hash-link" aria-label="Direct link to Thermal Budget Breakdown" title="Direct link to Thermal Budget Breakdown">​</a></h4>
+<table><thead><tr><th>Component</th><th>Power (W)</th><th>Thermal Management</th></tr></thead><tbody><tr><td><strong>SQUID + Cryocooler</strong></td><td>20-25W</td><td>Closed-cycle; ΔT ≤±0.01°C over 30 min</td></tr><tr><td><strong>Gradiometer</strong></td><td>10-15W</td><td>Passive thermal mass; ΔT ≤±0.05°C</td></tr><tr><td><strong>IMU</strong></td><td>15-20W</td><td>Heatsink + forced convection</td></tr><tr><td><strong>Compute (Orin)</strong></td><td>15-60W</td><td>Heatsink + fan; Tjunc ≤85°C @ 25°C ambient</td></tr><tr><td><strong>Power Management</strong></td><td>5-10W (loss)</td><td>DC-DC efficiency &gt;85%</td></tr><tr><td><strong>Total</strong></td><td><strong>70-80W typical</strong>; <strong>100W peak</strong></td><td>IP67 enclosure with thermal vents</td></tr></tbody></table>
+<p><strong>Acceptance</strong>: System operates continuously for 2 hours at ≤100W peak without thermal shutdown</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="5-emiemc-performance">5. EMI/EMC Performance<a href="#5-emiemc-performance" class="hash-link" aria-label="Direct link to 5. EMI/EMC Performance" title="Direct link to 5. EMI/EMC Performance">​</a></h3>
+<table><thead><tr><th>Parameter</th><th>Specification</th><th>Test Standard</th></tr></thead><tbody><tr><td><strong>Magnetic Shielding</strong></td><td>≥60 dB @ 50/60 Hz; ≥40 dB @ 1 kHz</td><td>Custom test; 3-5 layer mu-metal</td></tr><tr><td><strong>Conducted Emissions</strong></td><td>MIL-STD-461G CE102 limits</td><td>Bench test (engineering level)</td></tr><tr><td><strong>Radiated Emissions</strong></td><td>MIL-STD-461G RE102 limits</td><td>Bench test (engineering level)</td></tr><tr><td><strong>Radiated Susceptibility</strong></td><td>10 V/m, 10 kHz - 18 GHz</td><td>MIL-STD-461G RS103 (spot check)</td></tr><tr><td><strong>ESD Protection</strong></td><td>±4 kV contact; ±8 kV air</td><td>IEC 61000-4-2 (Level 2)</td></tr></tbody></table>
+<p><strong>Note</strong>: Full MIL-STD-461G certification deferred to production; prototype to demonstrate engineering-level compliance</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="6-availability--reliability">6. Availability &amp; Reliability<a href="#6-availability--reliability" class="hash-link" aria-label="Direct link to 6. Availability &amp; Reliability" title="Direct link to 6. Availability &amp; Reliability">​</a></h3>
+<ul>
+<li><strong>Mission Availability</strong>: ≥99% over 2-hour continuous mission</li>
+<li><strong>Mean Time Between Failures (MTBF)</strong>: TBD from field data (target &gt;1000 hrs)</li>
+<li><strong>Sensor Health Monitoring</strong>: Real-time fault detection; &lt;1 sec latency</li>
+<li><strong>Graceful Degradation</strong>: System continues with reduced accuracy if 1 sensor fails</li>
+</ul>
+<p><strong>Test</strong>: 10 × 2-hour missions with &lt;1% downtime (excluding planned maintenance)</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="sensor-bill-of-materials--procurement">Sensor Bill of Materials &amp; Procurement<a href="#sensor-bill-of-materials--procurement" class="hash-link" aria-label="Direct link to Sensor Bill of Materials &amp; Procurement" title="Direct link to Sensor Bill of Materials &amp; Procurement">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="squid-magnetometer-3-axis-vector">SQUID Magnetometer (3-Axis Vector)<a href="#squid-magnetometer-3-axis-vector" class="hash-link" aria-label="Direct link to SQUID Magnetometer (3-Axis Vector)" title="Direct link to SQUID Magnetometer (3-Axis Vector)">​</a></h3>
+<table><thead><tr><th>Vendor</th><th>Model</th><th>Type</th><th>Sensitivity</th><th>Temp</th><th>Power</th><th>Lead</th><th>Cost</th></tr></thead><tbody><tr><td><strong>QuSpin</strong> ⭐</td><td>QZFM Gen-2</td><td>OPM</td><td>15 fT/√Hz</td><td>Ambient</td><td>15W</td><td>8-12 wk</td><td>$50-80K</td></tr><tr><td>Tristan Tech</td><td>tSQUID</td><td>Low-Tc</td><td>5 fT/√Hz</td><td>4.2K</td><td>25W+cryo</td><td>12-16 wk</td><td>$120-150K</td></tr><tr><td>STAR Cryo</td><td>STARcryomag</td><td>High-Tc</td><td>20 fT/√Hz</td><td>77K</td><td>20W+cryo</td><td>10-14 wk</td><td>$80-100K</td></tr></tbody></table>
+<p><strong>Recommendation</strong>: QuSpin QZFM Gen-2<br>
+<strong>Rationale</strong>: No cryogen → lower SWaP, faster field deployment, reduced logistics<br>
+<strong>Second Source</strong>: STAR High-Tc as backup</p>
+<p><strong>Procurement</strong>: Order immediately (longest lead item)</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="gravitational-gradiometer">Gravitational Gradiometer<a href="#gravitational-gradiometer" class="hash-link" aria-label="Direct link to Gravitational Gradiometer" title="Direct link to Gravitational Gradiometer">​</a></h3>
+<table><thead><tr><th>Vendor</th><th>Model</th><th>Type</th><th>Sensitivity</th><th>Stability</th><th>Power</th><th>Lead</th><th>Cost</th></tr></thead><tbody><tr><td><strong>Scintrex</strong> ⭐</td><td>CG-6 Autograv</td><td>Spring</td><td>5 µGal</td><td>±0.01°C</td><td>12W</td><td>6-8 wk</td><td>$80-100K</td></tr><tr><td>iMAR Nav</td><td>RQH-1003</td><td>MEMS</td><td>10 µGal</td><td>±0.05°C</td><td>8W</td><td>8-10 wk</td><td>$40-60K</td></tr><tr><td>Lockheed Martin</td><td>FTG</td><td>Rotating</td><td>1 Eötvös</td><td>Custom</td><td>50W</td><td>20-24 wk</td><td>$500K+</td></tr></tbody></table>
+<p><strong>Recommendation</strong>: Scintrex CG-6<br>
+<strong>Rationale</strong>: Proven commercial support; meets accuracy target; reasonable lead time<br>
+<strong>Second Source</strong>: iMAR RQH-1003 for cost-down in Phase 2</p>
+<p><strong>Procurement</strong>: Order after SQUID confirmed (6-8 week lead acceptable)</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="inertial-measurement-unit-imu">Inertial Measurement Unit (IMU)<a href="#inertial-measurement-unit-imu" class="hash-link" aria-label="Direct link to Inertial Measurement Unit (IMU)" title="Direct link to Inertial Measurement Unit (IMU)">​</a></h3>
+<table><thead><tr><th>Vendor</th><th>Model</th><th>Type</th><th>Bias Stability</th><th>ARW</th><th>Power</th><th>Lead</th><th>Cost</th></tr></thead><tbody><tr><td><strong>KVH Industries</strong> ⭐</td><td>1775 IMU</td><td>FOG</td><td>0.5°/hr</td><td>0.07°/√hr</td><td>18W</td><td>6-8 wk</td><td>$30-40K</td></tr><tr><td>Northrop Grumman</td><td>LN-200S</td><td>FOG tactical</td><td>1.0°/hr</td><td>0.15°/√hr</td><td>10W</td><td>8-10 wk</td><td>$20-30K</td></tr><tr><td>Honeywell</td><td>HG1700</td><td>RLG</td><td>0.01°/hr</td><td>0.005°/√hr</td><td>25W</td><td>10-12 wk</td><td>$80-100K</td></tr></tbody></table>
+<p><strong>Recommendation</strong>: KVH 1775<br>
+<strong>Rationale</strong>: Good performance/cost/availability balance; proven in maritime applications<br>
+<strong>Second Source</strong>: Northrop LN-200S for cost-constrained prototype</p>
+<p><strong>Procurement</strong>: Standard lead time; parallel with gradiometer</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="edge-compute-platform">Edge Compute Platform<a href="#edge-compute-platform" class="hash-link" aria-label="Direct link to Edge Compute Platform" title="Direct link to Edge Compute Platform">​</a></h3>
+<table><thead><tr><th>Vendor</th><th>Model</th><th>Compute</th><th>Power</th><th>Rugged</th><th>Lead</th><th>Cost</th></tr></thead><tbody><tr><td><strong>NVIDIA</strong> ⭐</td><td>Jetson AGX Orin</td><td>275 TOPS AI</td><td>15-60W</td><td>IP65</td><td>4-6 wk</td><td>$2-5K</td></tr><tr><td>Intel</td><td>Movidius Myriad X</td><td>4 TOPS</td><td>2.5W</td><td>Module only</td><td>6-8 wk</td><td>$500-1K</td></tr><tr><td>Xilinx/AMD</td><td>Kria KV260</td><td>FPGA+ARM</td><td>10-25W</td><td>IP67 avail</td><td>6-8 wk</td><td>$3-5K</td></tr></tbody></table>
+<p><strong>Recommendation</strong>: NVIDIA Jetson AGX Orin<br>
+<strong>Rationale</strong>: Best ML performance for map-matching; mature ecosystem (ROS2, CUDA)<br>
+<strong>Power Profile</strong>: 15W idle → 45-60W typical (ML inference @ 10 Hz)</p>
+<p><strong>Procurement</strong>: Off-the-shelf; 4-6 week delivery</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="integration-components">Integration Components<a href="#integration-components" class="hash-link" aria-label="Direct link to Integration Components" title="Direct link to Integration Components">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="power-management">Power Management<a href="#power-management" class="hash-link" aria-label="Direct link to Power Management" title="Direct link to Power Management">​</a></h4>
+<ul>
+<li><strong>Input</strong>: 28V DC ±20% (military standard) or 12V DC (commercial)</li>
+<li><strong>Outputs</strong>: 12V (SQUID), 5V (IMU, periph), 3.3V (logic)</li>
+<li><strong>Efficiency</strong>: &gt;85% across load range</li>
+<li><strong>Protection</strong>: Overvoltage, reverse polarity, soft-start</li>
+<li><strong>Part</strong>: Vicor DCM series or equivalent; $500-1K</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="data-acquisition">Data Acquisition<a href="#data-acquisition" class="hash-link" aria-label="Direct link to Data Acquisition" title="Direct link to Data Acquisition">​</a></h4>
+<ul>
+<li><strong>ADC</strong>: 24-bit, 4-8 channels, 1-10 kSPS</li>
+<li><strong>Part</strong>: Texas Instruments ADS1256 or Analog Devices AD7124; $50-100/ch</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="enclosure">Enclosure<a href="#enclosure" class="hash-link" aria-label="Direct link to Enclosure" title="Direct link to Enclosure">​</a></h4>
+<ul>
+<li><strong>Material</strong>: Aluminum 6061-T6 with anodized finish</li>
+<li><strong>Rating</strong>: IP67 (dust-tight; water immersion ≤1m for 30 min)</li>
+<li><strong>Dimensions</strong>: 35 × 35 × 20 cm (allows margin vs. 30×30×15 target)</li>
+<li><strong>Weight Budget</strong>: 3-4 kg (enclosure + structure)</li>
+<li><strong>Thermal</strong>: Passive heatsinks + 5W forced-air fan; thermostatic control</li>
+<li><strong>Cost</strong>: $2-3K (custom fab)</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="connectors--cables">Connectors &amp; Cables<a href="#connectors--cables" class="hash-link" aria-label="Direct link to Connectors &amp; Cables" title="Direct link to Connectors &amp; Cables">​</a></h4>
+<ul>
+<li><strong>External I/O</strong>: MIL-STD-38999 Series III circular connectors</li>
+<li><strong>Internal</strong>: CAN bus (sensors) + Gigabit Ethernet (compute to storage)</li>
+<li><strong>GPS/GNSS Input</strong>: SMA coax for external antenna (when available)</li>
+<li><strong>Cost</strong>: $500-1K</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="total-bill-of-materials">Total Bill of Materials<a href="#total-bill-of-materials" class="hash-link" aria-label="Direct link to Total Bill of Materials" title="Direct link to Total Bill of Materials">​</a></h3>
+<table><thead><tr><th>Category</th><th>Cost Range</th></tr></thead><tbody><tr><td><strong>SQUID Magnetometer</strong></td><td>$50-80K</td></tr><tr><td><strong>Gravitational Gradiometer</strong></td><td>$80-100K</td></tr><tr><td><strong>IMU</strong></td><td>$30-40K</td></tr><tr><td><strong>Edge Compute</strong></td><td>$2-5K</td></tr><tr><td><strong>Power, DAQ, Enclosure, Integration</strong></td><td>$10-15K</td></tr><tr><td><strong>Contingency (15%)</strong></td><td>$25-35K</td></tr><tr><td><strong>TOTAL</strong></td><td><strong>$200-280K</strong></td></tr></tbody></table>
+<p><strong>Procurement Strategy</strong>:</p>
+<ol>
+<li><strong>Week 0</strong>: Place SQUID order (longest lead: 8-12 weeks)</li>
+<li><strong>Week 2</strong>: Order gradiometer, IMU (6-10 week leads)</li>
+<li><strong>Week 4</strong>: Order compute, integration parts (4-6 weeks)</li>
+<li><strong>Week 8-12</strong>: Sensors arrive; begin integration</li>
+<li><strong>Week 12-16</strong>: System integration &amp; bench testing</li>
+<li><strong>Week 16-24</strong>: Field validation</li>
+</ol>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="interfaces--data-formats">Interfaces &amp; Data Formats<a href="#interfaces--data-formats" class="hash-link" aria-label="Direct link to Interfaces &amp; Data Formats" title="Direct link to Interfaces &amp; Data Formats">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="external-interfaces">External Interfaces<a href="#external-interfaces" class="hash-link" aria-label="Direct link to External Interfaces" title="Direct link to External Interfaces">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="ros2-topics-primary">ROS2 Topics (Primary)<a href="#ros2-topics-primary" class="hash-link" aria-label="Direct link to ROS2 Topics (Primary)" title="Direct link to ROS2 Topics (Primary)">​</a></h4>
+<ul>
+<li>
+<p><strong>Input</strong>:</p>
+<ul>
+<li><code>/gps/fix</code> (sensor_msgs/NavSatFix) - GPS when available</li>
+<li><code>/imu/data</code> (sensor_msgs/Imu) - IMU data @ 100 Hz</li>
+<li><code>/dvl/velocity</code> (geometry_msgs/TwistWithCovarianceStamped) - DVL when available</li>
+<li><code>/depth</code> (sensor_msgs/FluidPressure) - Depth sounder for underwater</li>
+</ul>
+</li>
+<li>
+<p><strong>Output</strong>:</p>
+<ul>
+<li><code>/qgn/position</code> (sensor_msgs/NavSatFix) - QGN position fix @ 10 Hz</li>
+<li><code>/qgn/odometry</code> (nav_msgs/Odometry) - Full state (pos, vel, cov) @ 10 Hz</li>
+<li><code>/qgn/diagnostics</code> (diagnostic_msgs/DiagnosticArray) - Health status @ 1 Hz</li>
+<li><code>/qgn/confidence</code> (std_msgs/Float32) - Position confidence [0-1] @ 10 Hz</li>
+</ul>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="nmea-0183-output-secondary">NMEA-0183 Output (Secondary)<a href="#nmea-0183-output-secondary" class="hash-link" aria-label="Direct link to NMEA-0183 Output (Secondary)" title="Direct link to NMEA-0183 Output (Secondary)">​</a></h4>
+<ul>
+<li><strong>Sentences</strong>:<!-- -->
+<ul>
+<li><code>$GPGGA</code> - Global Positioning System Fix Data</li>
+<li><code>$GPRMC</code> - Recommended Minimum Specific GNSS Data</li>
+<li><code>$GPGSA</code> - GNSS DOP and Active Satellites (simulated)</li>
+</ul>
+</li>
+<li><strong>Serial</strong>: RS-232, 4800/9600 baud, 8N1</li>
+<li><strong>Update Rate</strong>: 1 Hz (compatible with legacy systems)</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="grpc-api-management--control">gRPC API (Management &amp; Control)<a href="#grpc-api-management--control" class="hash-link" aria-label="Direct link to gRPC API (Management &amp; Control)" title="Direct link to gRPC API (Management &amp; Control)">​</a></h4>
+<ul>
+<li>
+<p><strong>Service</strong>: <code>QGNService</code></p>
+<ul>
+<li><code>GetStatus()</code> → System health, sensor states, power consumption</li>
+<li><code>GetWeights()</code> → Current QPIM sensor weights (mag, grav, INS)</li>
+<li><code>SetMode(mode)</code> → Change operating mode (idle, sense, fuse)</li>
+<li><code>UpdateMap(map_data)</code> → Push differential map updates</li>
+<li><code>GetFaults()</code> → Active fault flags with timestamps</li>
+</ul>
+</li>
+<li>
+<p><strong>Protocol</strong>: gRPC over TCP/IP (Ethernet or WiFi)</p>
+</li>
+<li>
+<p><strong>Security</strong>: TLS 1.3; client cert authentication (production)</p>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="timing">Timing<a href="#timing" class="hash-link" aria-label="Direct link to Timing" title="Direct link to Timing">​</a></h4>
+<ul>
+<li><strong>PPS Input</strong>: 1 PPS signal for time synchronization (GPS, IRIG-B, or PTP)</li>
+<li><strong>10 MHz Reference</strong>: Optional 10 MHz clock input for high-precision timing</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="data-logging">Data Logging<a href="#data-logging" class="hash-link" aria-label="Direct link to Data Logging" title="Direct link to Data Logging">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="on-device-storage">On-Device Storage<a href="#on-device-storage" class="hash-link" aria-label="Direct link to On-Device Storage" title="Direct link to On-Device Storage">​</a></h4>
+<ul>
+<li><strong>Format</strong>: ROS2 bag files (MCAP or SQLite3 backend)</li>
+<li><strong>Capacity</strong>: 128 GB SSD (≈8-12 hours @ 10 Hz with all sensors)</li>
+<li><strong>Logged Topics</strong>: All ROS2 input/output + raw sensor data</li>
+<li><strong>Filename</strong>: <code>qgn_YYYYMMDD_HHMMSS_&lt;mission_id&gt;.mcap</code></li>
+<li><strong>Metadata</strong>: Git commit hash, sensor serial numbers, map version</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="off-device-export">Off-Device Export<a href="#off-device-export" class="hash-link" aria-label="Direct link to Off-Device Export" title="Direct link to Off-Device Export">​</a></h4>
+<ul>
+<li><strong>Method</strong>: Ethernet file transfer (scp/rsync) or USB 3.0</li>
+<li><strong>Format</strong>: MCAP bag + JSON manifest with checksums (SHA-256)</li>
+<li><strong>Post-Processing</strong>: Python scripts for CEP analysis, drift curves, trajectory plots</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="compliance--standards">Compliance &amp; Standards<a href="#compliance--standards" class="hash-link" aria-label="Direct link to Compliance &amp; Standards" title="Direct link to Compliance &amp; Standards">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="environmental-testing-mil-std-810h">Environmental Testing (MIL-STD-810H)<a href="#environmental-testing-mil-std-810h" class="hash-link" aria-label="Direct link to Environmental Testing (MIL-STD-810H)" title="Direct link to Environmental Testing (MIL-STD-810H)">​</a></h3>
+<table><thead><tr><th>Method</th><th>Condition</th><th>Status</th></tr></thead><tbody><tr><td><strong>500.6 (Low Pressure)</strong></td><td>4,572 m altitude</td><td>Deferred to Phase 2</td></tr><tr><td><strong>501.7 (High Temp)</strong></td><td>+40°C operational</td><td>Prototype target</td></tr><tr><td><strong>502.7 (Low Temp)</strong></td><td>0°C operational</td><td>Prototype target</td></tr><tr><td><strong>506.6 (Rain)</strong></td><td>IP67 → 1m immersion</td><td>Bench test</td></tr><tr><td><strong>514.8 (Vibration)</strong></td><td>Category 14 (naval)</td><td>Spot check (1 axis)</td></tr></tbody></table>
+<p><strong>Prototype Level</strong>: Engineering validation; full certification in production</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="emiemc-mil-std-461g">EMI/EMC (MIL-STD-461G)<a href="#emiemc-mil-std-461g" class="hash-link" aria-label="Direct link to EMI/EMC (MIL-STD-461G)" title="Direct link to EMI/EMC (MIL-STD-461G)">​</a></h3>
+<table><thead><tr><th>Test</th><th>Requirement</th><th>Prototype Status</th></tr></thead><tbody><tr><td><strong>CE102</strong> (Conducted Emissions)</td><td>Limits per 461G</td><td>Bench measurement</td></tr><tr><td><strong>RE102</strong> (Radiated Emissions)</td><td>Limits per 461G</td><td>Preliminary scan</td></tr><tr><td><strong>RS103</strong> (Radiated Susceptibility)**</td><td>10 V/m, 10 kHz - 18 GHz</td><td>Spot check @ 1 GHz</td></tr></tbody></table>
+<p><strong>Prototype Level</strong>: Demonstrate engineering-level compliance; full test house validation in Phase 2</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="enclosure-rating">Enclosure Rating<a href="#enclosure-rating" class="hash-link" aria-label="Direct link to Enclosure Rating" title="Direct link to Enclosure Rating">​</a></h3>
+<ul>
+<li><strong>IP67</strong>: Dust-tight; water immersion ≤1m for 30 min (tested)</li>
+<li><strong>IP68</strong> (stretch goal): Continuous immersion ≤10m for 1 hour (deferred to Phase 2)</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="software-bill-of-materials-sbom">Software Bill of Materials (SBOM)<a href="#software-bill-of-materials-sbom" class="hash-link" aria-label="Direct link to Software Bill of Materials (SBOM)" title="Direct link to Software Bill of Materials (SBOM)">​</a></h3>
+<ul>
+<li><strong>Format</strong>: CycloneDX JSON or SPDX 2.3</li>
+<li><strong>Contents</strong>: All dependencies (ROS2, CUDA, Python libs) with versions and licenses</li>
+<li><strong>Purpose</strong>: Security audits, export control, supply chain risk management</li>
+<li><strong>Delivery</strong>: SBOM included with each software release</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="export-control--compliance">Export Control &amp; Compliance<a href="#export-control--compliance" class="hash-link" aria-label="Direct link to Export Control &amp; Compliance" title="Direct link to Export Control &amp; Compliance">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="current-assessment">Current Assessment<a href="#current-assessment" class="hash-link" aria-label="Direct link to Current Assessment" title="Direct link to Current Assessment">​</a></h3>
+<ul>
+<li>
+<p><strong>SQUID Magnetometers</strong>: Potentially controlled under USML Category XI(a)(3) or ECCN 6A006.a.1</p>
+<ul>
+<li><strong>Mitigation</strong>: Use commercial-grade sensors (QuSpin QZFM) with public specifications</li>
+</ul>
+</li>
+<li>
+<p><strong>Gravitational Gradiometers</strong>: ECCN 6A006.b or 6A006.c (depending on sensitivity)</p>
+<ul>
+<li><strong>Mitigation</strong>: Scintrex CG-6 is commercial; &lt;1 mGal → EAR99 likely</li>
+</ul>
+</li>
+<li>
+<p><strong>Overall System</strong>: Likely ECCN 7A003 (navigation equipment) or EAR99</p>
+<ul>
+<li><strong>Intended Use</strong>: Commercial/defense dual-use for GPS-denied navigation</li>
+<li><strong>End-User Screening</strong>: Required for non-US customers</li>
+</ul>
+</li>
+</ul>
+<p><strong>Action</strong>: Engage export counsel for Commodity Classification (CCATS) determination before foreign sales</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="development-timeline">Development Timeline<a href="#development-timeline" class="hash-link" aria-label="Direct link to Development Timeline" title="Direct link to Development Timeline">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="phase-1-specification--architecture-days-1-30">Phase 1: Specification &amp; Architecture (Days 1-30)<a href="#phase-1-specification--architecture-days-1-30" class="hash-link" aria-label="Direct link to Phase 1: Specification &amp; Architecture (Days 1-30)" title="Direct link to Phase 1: Specification &amp; Architecture (Days 1-30)">​</a></h3>
+<p><strong>Deliverables</strong>:</p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li>✅ QGN v0.1 SRD (this document)</li>
+<li>✅ Sensor BoM with vendor quotes</li>
+<li>✅ QPIM fusion architecture design</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Procurement orders placed</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="phase-2-geophysical-map-development-days-15-60">Phase 2: Geophysical Map Development (Days 15-60)<a href="#phase-2-geophysical-map-development-days-15-60" class="hash-link" aria-label="Direct link to Phase 2: Geophysical Map Development (Days 15-60)" title="Direct link to Phase 2: Geophysical Map Development (Days 15-60)">​</a></h3>
+<p><strong>Deliverables</strong>:</p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->3 pilot area maps (urban, harbor, tunnel)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Map resolution: 5-10m grid, 1-5 nT magnetic, 0.1 mGal gravity</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Map update pipeline architecture</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="phase-3-prototype-integration-days-30-90">Phase 3: Prototype Integration (Days 30-90)<a href="#phase-3-prototype-integration-days-30-90" class="hash-link" aria-label="Direct link to Phase 3: Prototype Integration (Days 30-90)" title="Direct link to Phase 3: Prototype Integration (Days 30-90)">​</a></h3>
+<p><strong>Deliverables</strong>:</p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Integrated hardware (sensors + compute + enclosure)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->QPIM fusion software (Bayesian filter + map-matching)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->ROS2 interfaces operational</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Bench tests: sensor PSDs, shielding, thermal soak</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="phase-4-field-validation-days-60-180">Phase 4: Field Validation (Days 60-180)<a href="#phase-4-field-validation-days-60-180" class="hash-link" aria-label="Direct link to Phase 4: Field Validation (Days 60-180)" title="Direct link to Phase 4: Field Validation (Days 60-180)">​</a></h3>
+<p><strong>Deliverables</strong>:</p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Harbor-to-tunnel demo (3 runs × 3 days)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->CEP &amp; drift curves published</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Test report with error budgets by environment</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="risk-register">Risk Register<a href="#risk-register" class="hash-link" aria-label="Direct link to Risk Register" title="Direct link to Risk Register">​</a></h2>
+<table><thead><tr><th>Risk</th><th>Probability</th><th>Impact</th><th>Mitigation</th></tr></thead><tbody><tr><td><strong>SQUID lead time &gt;12 weeks</strong></td><td>Medium</td><td>High</td><td>Order immediately; QuSpin has shortest lead</td></tr><tr><td><strong>Map quality insufficient</strong></td><td>Medium</td><td>High</td><td>Higher-res surveys; ML feature extraction</td></tr><tr><td><strong>Fusion convergence issues</strong></td><td>High</td><td>Medium</td><td>Extensive HITL testing; fallback algorithms</td></tr><tr><td><strong>Power budget exceeded</strong></td><td>Medium</td><td>Medium</td><td>Duty-cycling; sensor down-select; optimize compute</td></tr><tr><td><strong>Thermal stability failure</strong></td><td>Low</td><td>High</td><td>Closed-cycle cryo; thermal mass for gradiometer</td></tr><tr><td><strong>EMI/EMC non-compliance</strong></td><td>Low</td><td>Medium</td><td>Early screening; mu-metal stack; grounding plan</td></tr></tbody></table>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="acceptance-gate-criteria">Acceptance Gate Criteria<a href="#acceptance-gate-criteria" class="hash-link" aria-label="Direct link to Acceptance Gate Criteria" title="Direct link to Acceptance Gate Criteria">​</a></h2>
+<p><strong>Go/No-Go Decision Points</strong>:</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="phase-1-gate-day-30">Phase 1 Gate (Day 30)<a href="#phase-1-gate-day-30" class="hash-link" aria-label="Direct link to Phase 1 Gate (Day 30)" title="Direct link to Phase 1 Gate (Day 30)">​</a></h3>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->All sensors ordered with confirmed lead times</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Fusion architecture peer-reviewed</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Budget approved ($200-280K BoM + labor)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="phase-2-gate-day-60">Phase 2 Gate (Day 60)<a href="#phase-2-gate-day-60" class="hash-link" aria-label="Direct link to Phase 2 Gate (Day 60)" title="Direct link to Phase 2 Gate (Day 60)">​</a></h3>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->≥2 pilot area maps completed</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Map-matching algorithm validated in simulation</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="phase-3-gate-day-90">Phase 3 Gate (Day 90)<a href="#phase-3-gate-day-90" class="hash-link" aria-label="Direct link to Phase 3 Gate (Day 90)" title="Direct link to Phase 3 Gate (Day 90)">​</a></h3>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Integrated prototype operational</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Bench test CEP &lt;20m in HITL simulation</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Power draw ≤100W measured</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="phase-4-gate-day-180">Phase 4 Gate (Day 180)<a href="#phase-4-gate-day-180" class="hash-link" aria-label="Direct link to Phase 4 Gate (Day 180)" title="Direct link to Phase 4 Gate (Day 180)">​</a></h3>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Field test CEP ≤15m in ≥2 environments</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Drift ≤2 m/min (QGN-only) demonstrated</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Availability ≥99% over 10 × 2-hour missions</li>
+</ul>
+<p><strong>Final Acceptance</strong>: Phase 4 gate + test report published → Proceed to production engineering</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="document-control">Document Control<a href="#document-control" class="hash-link" aria-label="Direct link to Document Control" title="Direct link to Document Control">​</a></h2>
+<p><strong>Version History</strong>:</p>
+<ul>
+<li>v0.1 (2025-10-15): Initial draft</li>
+<li>v0.2 (2025-10-20): Added thermal budgets, FMEA, standards</li>
+<li>v0.3 (2025-10-22): Added interfaces, timeline, acceptance gates</li>
+</ul>
+<p><strong>Approvals</strong>:</p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Technical Lead: _______________</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Program Manager: _______________</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Finance: _______________</li>
+</ul>
+<p><strong>Next Review</strong>: 2025-11-01 (or upon Phase 1 gate)</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/szemkoff/azurespacegroup/tree/main/docs/qpds/qgn-v01-prd.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/azurespacegroup/docs/qpds/"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Quantum Position Determination System (QPDS)</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/azurespacegroup/docs/qpds/map-pipeline-prd/"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Geophysical Map Pipeline PRD</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#executive-product-summary" class="table-of-contents__link toc-highlight">Executive Product Summary</a><ul><li><a href="#value-proposition" class="table-of-contents__link toc-highlight">Value Proposition</a></li></ul></li><li><a href="#acceptance-criteria--kpis" class="table-of-contents__link toc-highlight">Acceptance Criteria &amp; KPIs</a><ul><li><a href="#1-position-accuracy-circular-error-probable" class="table-of-contents__link toc-highlight">1. Position Accuracy (Circular Error Probable)</a></li><li><a href="#2-drift-performance" class="table-of-contents__link toc-highlight">2. Drift Performance</a></li><li><a href="#3-reacquisition-performance" class="table-of-contents__link toc-highlight">3. Reacquisition Performance</a></li><li><a href="#4-power-budget--thermal-limits" class="table-of-contents__link toc-highlight">4. Power Budget &amp; Thermal Limits</a></li><li><a href="#5-emiemc-performance" class="table-of-contents__link toc-highlight">5. EMI/EMC Performance</a></li><li><a href="#6-availability--reliability" class="table-of-contents__link toc-highlight">6. Availability &amp; Reliability</a></li></ul></li><li><a href="#sensor-bill-of-materials--procurement" class="table-of-contents__link toc-highlight">Sensor Bill of Materials &amp; Procurement</a><ul><li><a href="#squid-magnetometer-3-axis-vector" class="table-of-contents__link toc-highlight">SQUID Magnetometer (3-Axis Vector)</a></li><li><a href="#gravitational-gradiometer" class="table-of-contents__link toc-highlight">Gravitational Gradiometer</a></li><li><a href="#inertial-measurement-unit-imu" class="table-of-contents__link toc-highlight">Inertial Measurement Unit (IMU)</a></li><li><a href="#edge-compute-platform" class="table-of-contents__link toc-highlight">Edge Compute Platform</a></li><li><a href="#integration-components" class="table-of-contents__link toc-highlight">Integration Components</a></li><li><a href="#total-bill-of-materials" class="table-of-contents__link toc-highlight">Total Bill of Materials</a></li></ul></li><li><a href="#interfaces--data-formats" class="table-of-contents__link toc-highlight">Interfaces &amp; Data Formats</a><ul><li><a href="#external-interfaces" class="table-of-contents__link toc-highlight">External Interfaces</a></li><li><a href="#data-logging" class="table-of-contents__link toc-highlight">Data Logging</a></li></ul></li><li><a href="#compliance--standards" class="table-of-contents__link toc-highlight">Compliance &amp; Standards</a><ul><li><a href="#environmental-testing-mil-std-810h" class="table-of-contents__link toc-highlight">Environmental Testing (MIL-STD-810H)</a></li><li><a href="#emiemc-mil-std-461g" class="table-of-contents__link toc-highlight">EMI/EMC (MIL-STD-461G)</a></li><li><a href="#enclosure-rating" class="table-of-contents__link toc-highlight">Enclosure Rating</a></li><li><a href="#software-bill-of-materials-sbom" class="table-of-contents__link toc-highlight">Software Bill of Materials (SBOM)</a></li></ul></li><li><a href="#export-control--compliance" class="table-of-contents__link toc-highlight">Export Control &amp; Compliance</a><ul><li><a href="#current-assessment" class="table-of-contents__link toc-highlight">Current Assessment</a></li></ul></li><li><a href="#development-timeline" class="table-of-contents__link toc-highlight">Development Timeline</a><ul><li><a href="#phase-1-specification--architecture-days-1-30" class="table-of-contents__link toc-highlight">Phase 1: Specification &amp; Architecture (Days 1-30)</a></li><li><a href="#phase-2-geophysical-map-development-days-15-60" class="table-of-contents__link toc-highlight">Phase 2: Geophysical Map Development (Days 15-60)</a></li><li><a href="#phase-3-prototype-integration-days-30-90" class="table-of-contents__link toc-highlight">Phase 3: Prototype Integration (Days 30-90)</a></li><li><a href="#phase-4-field-validation-days-60-180" class="table-of-contents__link toc-highlight">Phase 4: Field Validation (Days 60-180)</a></li></ul></li><li><a href="#risk-register" class="table-of-contents__link toc-highlight">Risk Register</a></li><li><a href="#acceptance-gate-criteria" class="table-of-contents__link toc-highlight">Acceptance Gate Criteria</a><ul><li><a href="#phase-1-gate-day-30" class="table-of-contents__link toc-highlight">Phase 1 Gate (Day 30)</a></li><li><a href="#phase-2-gate-day-60" class="table-of-contents__link toc-highlight">Phase 2 Gate (Day 60)</a></li><li><a href="#phase-3-gate-day-90" class="table-of-contents__link toc-highlight">Phase 3 Gate (Day 90)</a></li><li><a href="#phase-4-gate-day-180" class="table-of-contents__link toc-highlight">Phase 4 Gate (Day 180)</a></li></ul></li><li><a href="#document-control" class="table-of-contents__link toc-highlight">Document Control</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Documentation</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/azurespacegroup/docs/core-documentation/core-technology/">Core Technology</a></li><li class="footer__item"><a class="footer__link-item" href="/azurespacegroup/docs/core-documentation/energy-systems/">Energy Systems</a></li><li class="footer__item"><a class="footer__link-item" href="/azurespacegroup/docs/core-documentation/propulsion-navigation/">Propulsion &amp; Navigation</a></li><li class="footer__item"><a class="footer__link-item" href="/azurespacegroup/docs/core-documentation/communication-systems/">Communication Systems</a></li></ul></div><div class="col footer__col"><div class="footer__title">More Documentation</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/azurespacegroup/docs/infrastructure-documentation/support-systems/">Support Systems</a></li><li class="footer__item"><a class="footer__link-item" href="/azurespacegroup/docs/infrastructure-documentation/human-centric-design/">Human-Centric Design</a></li><li class="footer__item"><a class="footer__link-item" href="/azurespacegroup/docs/research-documentation/research-development/">R&amp;D Infrastructure</a></li><li class="footer__item"><a class="footer__link-item" href="/azurespacegroup/docs/research-documentation/legal-regulatory/">Legal Framework</a></li></ul></div><div class="col footer__col"><div class="footer__title">Community &amp; Funding</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/azurespacegroup/docs/contributing/">Contributing</a></li><li class="footer__item"><a class="footer__link-item" href="/azurespacegroup/docs/tokenization-strategy/">Tokenization Strategy</a></li><li class="footer__item"><a class="footer__link-item" href="/azurespacegroup/docs/research-documentation/game-based-research-platform/">Game-Based Research</a></li><li class="footer__item"><a class="footer__link-item" href="/azurespacegroup/docs/investment/">Investment</a></li></ul></div><div class="col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/azurespacegroup/docs/contributing/">Contributing</a></li><li class="footer__item"><a href="https://github.com/szemkoff/azurespacegroup" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="mailto:irnbrue@gmail.com" target="_blank" rel="noopener noreferrer" class="footer__link-item">Contact Us<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 Azure Space Group. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

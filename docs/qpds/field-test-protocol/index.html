@@ -1,0 +1,726 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-qpds/field-test-protocol" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.7.0">
+<title data-rh="true">QGN v0.1 Field Test Protocol | Azure Space Group</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://szemkoff.github.io/azurespacegroup/img/azure_corp_mark_black.png"><meta data-rh="true" name="twitter:image" content="https://szemkoff.github.io/azurespacegroup/img/azure_corp_mark_black.png"><meta data-rh="true" property="og:url" content="https://szemkoff.github.io/azurespacegroup/docs/qpds/field-test-protocol/"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="QGN v0.1 Field Test Protocol | Azure Space Group"><meta data-rh="true" name="description" content="Comprehensive field test procedures, validation checklists, and acceptance criteria for Quantum Geophysical Navigation system"><meta data-rh="true" property="og:description" content="Comprehensive field test procedures, validation checklists, and acceptance criteria for Quantum Geophysical Navigation system"><link data-rh="true" rel="icon" href="/azurespacegroup/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://szemkoff.github.io/azurespacegroup/docs/qpds/field-test-protocol/"><link data-rh="true" rel="alternate" href="https://szemkoff.github.io/azurespacegroup/docs/qpds/field-test-protocol/" hreflang="en"><link data-rh="true" rel="alternate" href="https://szemkoff.github.io/azurespacegroup/docs/qpds/field-test-protocol/" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/azurespacegroup/blog/rss.xml" title="Azure Space Group RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/azurespacegroup/blog/atom.xml" title="Azure Space Group Atom Feed"><link rel="stylesheet" href="/azurespacegroup/assets/css/styles.a2e57a9b.css">
+<script src="/azurespacegroup/assets/js/runtime~main.df5a66dd.js" defer="defer"></script>
+<script src="/azurespacegroup/assets/js/main.94ee44ba.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbarLogoLink_XXc9" aria-label="Azure Space Group home page" href="/azurespacegroup/"><div class="navbarLogoContainer_kdvK"><img src="/azurespacegroup/img/logo.svg" alt="Azure Space Group Logo" class="navbarLogo_aghy themedComponent_mlkZ themedComponent--light_NVdE"><img src="/azurespacegroup/img/logo.svg" alt="Azure Space Group Logo" class="navbarLogo_aghy themedComponent_mlkZ themedComponent--dark_xIcU"><span class="navbarTitle_WxSV">Azure Space Group</span></div></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/azurespacegroup/docs/intro/">Documentation</a><a class="navbar__item navbar__link" href="/azurespacegroup/docs/investment/">Investment</a><a class="navbar__item navbar__link" href="/azurespacegroup/blog/">Blog</a><a class="navbar__item navbar__link" href="/azurespacegroup/project-status/">Project Status</a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/szemkoff/azurespacegroup" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite" aria-pressed="false"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/azurespacegroup/docs/intro/">Project Overview</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/azurespacegroup/docs/about/">About Us</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/azurespacegroup/docs/core-documentation/core-technology/">Core Systems</a></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/azurespacegroup/docs/core-documentation/core-technology/">Core Technology and Components</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/azurespacegroup/docs/core-documentation/system-dissection/">System Dissection and Developmental Strategy</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/azurespacegroup/docs/core-documentation/energy-systems/">Energy and Power Systems</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/azurespacegroup/docs/core-documentation/propulsion-navigation/">Propulsion and Navigation</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" tabindex="0" href="/azurespacegroup/docs/qpds/">Quantum Position Determination (QPDS)</a><button aria-label="Collapse sidebar category &#x27;Quantum Position Determination (QPDS)&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/azurespacegroup/docs/qpds/qgn-v01-prd/">QGN v0.1 Product Requirements Document</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/azurespacegroup/docs/qpds/map-pipeline-prd/">Geophysical Map Pipeline PRD</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/azurespacegroup/docs/qpds/field-test-protocol/">QGN v0.1 Field Test Protocol</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/azurespacegroup/docs/qpds/partner-deck-outline/">QGN v0.1 Partner Deck Outline</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/azurespacegroup/docs/qpds/funding-alignment/">QGN v0.1 Funding Alignment &amp; Grant Strategy</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/azurespacegroup/docs/qpds/release-milestone-v02/">QGN v0.2 Release Milestone Criteria</a></li></ul></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/azurespacegroup/docs/core-documentation/communication-systems/">Communication Systems</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/azurespacegroup/docs/infrastructure-documentation/support-systems/">Infrastructure &amp; Human Factors</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/azurespacegroup/docs/materials/quasicrystal-aluminum/">Materials &amp; Manufacturing</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/azurespacegroup/docs/research-documentation/research-development/">Research &amp; Compliance</a></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/azurespacegroup/docs/diagrams/">Technical Schematics &amp; Diagrams</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/azurespacegroup/docs/development-roadmap/">Development Roadmap</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/azurespacegroup/docs/investment/">Investment Opportunities</a></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/azurespacegroup/docs/contributing/">Contributing Guidelines</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/azurespacegroup/docs/careers/">Careers</a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/azurespacegroup/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Core Systems</span><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="item" href="/azurespacegroup/docs/qpds/"><span itemprop="name">Quantum Position Determination (QPDS)</span></a><meta itemprop="position" content="2"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">QGN v0.1 Field Test Protocol</span><meta itemprop="position" content="3"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>QGN v0.1 Field Test Protocol</h1></header>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="executive-summary">Executive Summary<a href="#executive-summary" class="hash-link" aria-label="Direct link to Executive Summary" title="Direct link to Executive Summary">​</a></h2>
+<p>This document defines the <strong>measurement layer</strong> for QGN v0.1 validation — where theoretical Ψ-predictions collapse into observable CEP data. The protocol establishes:</p>
+<ul>
+<li><strong>Standardized test procedures</strong> for GPS-denied environments</li>
+<li><strong>Pass/fail acceptance criteria</strong> mapped to product KPIs</li>
+<li><strong>Data logging requirements</strong> for reproducibility and analysis</li>
+<li><strong>Recoherence checklists</strong> for systematic troubleshooting</li>
+</ul>
+<p><strong>Status</strong>: Draft v1.0 (Pre-Prototype)<br>
+<strong>Owner</strong>: Azure Space Group Test &amp; Validation Team<br>
+<strong>Target Completion</strong>: Q2 2025 (aligned with QGN v0.1 prototype delivery)</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="test-philosophy-from-ψ-theory-to-measured-reality">Test Philosophy: From Ψ-Theory to Measured Reality<a href="#test-philosophy-from-ψ-theory-to-measured-reality" class="hash-link" aria-label="Direct link to Test Philosophy: From Ψ-Theory to Measured Reality" title="Direct link to Test Philosophy: From Ψ-Theory to Measured Reality">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="ibt-perspective">IBT Perspective<a href="#ibt-perspective" class="hash-link" aria-label="Direct link to IBT Perspective" title="Direct link to IBT Perspective">​</a></h3>
+<p>Field testing is the <strong>phase collapse</strong> event — where the superposition of design possibilities (Ψ_design) becomes a measured outcome (|Ψ_measured|²). Each test run is a quantum of becoming (τ), evolving our understanding from speculation to validated performance.</p>
+<p><strong>Key Principles</strong>:</p>
+<ul>
+<li><strong>Existence</strong>: Every test must produce persistent, reproducible data (∫|Ψ|² dV = const)</li>
+<li><strong>Unity</strong>: Multi-sensor fusion (λ) is validated by comparing individual vs. fused performance</li>
+<li><strong>Reflection</strong>: Failure modes mirror design assumptions — they teach us where Ψ_design diverged from Ψ_reality</li>
+<li><strong>Change</strong>: Iterate rapidly; each test cycle is a ∆θ toward coherence</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="engineering-translation">Engineering Translation<a href="#engineering-translation" class="hash-link" aria-label="Direct link to Engineering Translation" title="Direct link to Engineering Translation">​</a></h3>
+<ul>
+<li><strong>Systematic</strong>: Follow repeatable procedures</li>
+<li><strong>Quantitative</strong>: All claims must be backed by statistical confidence (P50, P95)</li>
+<li><strong>Traceable</strong>: Every data point linked to test ID, timestamp, environmental conditions</li>
+<li><strong>Iterative</strong>: Design → Test → Analyze → Refine → Retest</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="test-environment-classification">Test Environment Classification<a href="#test-environment-classification" class="hash-link" aria-label="Direct link to Test Environment Classification" title="Direct link to Test Environment Classification">​</a></h2>
+<p>QGN v0.1 is designed for six primary GPS-denied operational environments. Each presents distinct geophysical signatures and validation challenges.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="environment-matrix">Environment Matrix<a href="#environment-matrix" class="hash-link" aria-label="Direct link to Environment Matrix" title="Direct link to Environment Matrix">​</a></h3>
+<table><thead><tr><th>Environment</th><th>Code</th><th>Primary Geo-Signature</th><th>Validation Priority</th><th>Acceptance CEP (P50)</th></tr></thead><tbody><tr><td><strong>Urban Canyon</strong></td><td>UC</td><td>Magnetic anomalies (infrastructure)</td><td>High</td><td>≤10m</td></tr><tr><td><strong>Industrial Zone</strong></td><td>IZ</td><td>High EMI, ferrous clutter</td><td>High</td><td>≤15m</td></tr><tr><td><strong>Maritime Harbor</strong></td><td>MH</td><td>Underwater mag anomalies, bathymetry</td><td><strong>Critical</strong></td><td>≤10m</td></tr><tr><td><strong>Open Water Subsea</strong></td><td>OW</td><td>Weak geo-signatures, DVL-dependent</td><td>Medium</td><td>≤25m</td></tr><tr><td><strong>Tunnel/Culvert</strong></td><td>TC</td><td>Confined space, strong gradients</td><td><strong>Critical</strong></td><td>≤10m</td></tr><tr><td><strong>Cave/Underground</strong></td><td>CU</td><td>Variable signatures, no DVL</td><td>Medium</td><td>≤20m</td></tr></tbody></table>
+<p><strong>Critical Environments</strong> (MH, TC) are required for v0.1 acceptance. Others are aspirational/stretch goals.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="phase-1-pre-test-preparation">Phase 1: Pre-Test Preparation<a href="#phase-1-pre-test-preparation" class="hash-link" aria-label="Direct link to Phase 1: Pre-Test Preparation" title="Direct link to Phase 1: Pre-Test Preparation">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="11-system-health-verification">1.1 System Health Verification<a href="#11-system-health-verification" class="hash-link" aria-label="Direct link to 1.1 System Health Verification" title="Direct link to 1.1 System Health Verification">​</a></h3>
+<p><strong>Objective</strong>: Ensure QGN hardware/software is in nominal state before deployment.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="checklist-system-readiness">Checklist: System Readiness<a href="#checklist-system-readiness" class="hash-link" aria-label="Direct link to Checklist: System Readiness" title="Direct link to Checklist: System Readiness">​</a></h4>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <strong>Power Budget Verification</strong></p>
+<ul>
+<li>Measure idle, sense, and fusion mode power draw</li>
+<li>Confirm ≤100W peak (including DVL if applicable)</li>
+<li>Battery runtime test: ≥2 hours continuous operation</li>
+</ul>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <strong>Sensor Calibration Status</strong></p>
+<ul>
+<li><strong>SQUID Magnetometers</strong>: Zero-field calibration within 7 days</li>
+<li><strong>Gravitational Gradiometer</strong>: Warm-up cycle complete (30+ min), zero-offset check</li>
+<li><strong>IMU</strong>: Bias estimation run, alignment matrix validated</li>
+<li><strong>DVL</strong> (if used): Bottom-lock test in controlled environment</li>
+</ul>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <strong>Thermal Management</strong></p>
+<ul>
+<li>SQUID operating temperature stable (±0.01°C for gradiometer, cryogen level &gt;80%)</li>
+<li>Compute module (Orin) Tjunc &lt;60°C at idle</li>
+<li>Enclosure ambient sensor reading correctly</li>
+</ul>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <strong>Data Logging System</strong></p>
+<ul>
+<li>Storage: ≥100 GB available for 2-hour mission</li>
+<li>Logging rate: 10 Hz position, 100 Hz IMU, 1 Hz sensor health</li>
+<li>GPS time sync verified (if available for ground truth)</li>
+</ul>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <strong>Software Version Control</strong></p>
+<ul>
+<li>Fusion software version: <code>QGN-v0.1.X</code> (document exact build)</li>
+<li>Map database version: <code>MAP-YYYYMMDD-Region</code></li>
+<li>Sensor drivers: firmware versions logged</li>
+</ul>
+</li>
+</ul>
+<p><strong>Pass Criteria</strong>: All checklist items green; system runs self-test routine without faults for 10 minutes.</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="12-ground-truth-preparation">1.2 Ground Truth Preparation<a href="#12-ground-truth-preparation" class="hash-link" aria-label="Direct link to 1.2 Ground Truth Preparation" title="Direct link to 1.2 Ground Truth Preparation">​</a></h3>
+<p><strong>Objective</strong>: Establish reference data for CEP calculation and drift analysis.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="option-a-rtk-gps-ground-truth-outdoor-environments">Option A: RTK-GPS Ground Truth (Outdoor Environments)<a href="#option-a-rtk-gps-ground-truth-outdoor-environments" class="hash-link" aria-label="Direct link to Option A: RTK-GPS Ground Truth (Outdoor Environments)" title="Direct link to Option A: RTK-GPS Ground Truth (Outdoor Environments)">​</a></h4>
+<ul>
+<li>Deploy RTK-GPS base station with known surveyed position</li>
+<li>Rover unit mounted on QGN platform</li>
+<li>Target accuracy: ≤0.05m horizontal, ≤0.1m vertical</li>
+<li>Log at 10 Hz, time-synchronized with QGN data</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="option-b-total-station-surveyed-waypoints-indoortunnel">Option B: Total Station Surveyed Waypoints (Indoor/Tunnel)<a href="#option-b-total-station-surveyed-waypoints-indoortunnel" class="hash-link" aria-label="Direct link to Option B: Total Station Surveyed Waypoints (Indoor/Tunnel)" title="Direct link to Option B: Total Station Surveyed Waypoints (Indoor/Tunnel)">​</a></h4>
+<ul>
+<li>Pre-survey route with total station (accuracy ±0.01m)</li>
+<li>Mark waypoints every 10-50m with reflective targets</li>
+<li>QGN platform passes through waypoints at known times</li>
+<li>Manual or automated waypoint detection (camera/LiDAR)</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="option-c-ins-with-post-processed-zupt-zero-velocity-updates">Option C: INS with Post-Processed ZUPT (Zero-Velocity Updates)<a href="#option-c-ins-with-post-processed-zupt-zero-velocity-updates" class="hash-link" aria-label="Direct link to Option C: INS with Post-Processed ZUPT (Zero-Velocity Updates)" title="Direct link to Option C: INS with Post-Processed ZUPT (Zero-Velocity Updates)">​</a></h4>
+<ul>
+<li>For environments with periodic stops</li>
+<li>Tactical-grade INS (bias stability &lt;0.1°/hr)</li>
+<li>Post-process with zero-velocity constraints at stops</li>
+<li>Provides drift-bounded reference</li>
+</ul>
+<p><strong>Selection Guide</strong>:</p>
+<ul>
+<li>UC, MH (surface), OW (surface): RTK-GPS</li>
+<li>TC, CU: Total station waypoints</li>
+<li>MH (subsea), OW (subsea): INS+ZUPT or DVL-aided INS</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="13-test-route-planning">1.3 Test Route Planning<a href="#13-test-route-planning" class="hash-link" aria-label="Direct link to 1.3 Test Route Planning" title="Direct link to 1.3 Test Route Planning">​</a></h3>
+<p><strong>Objective</strong>: Design routes that stress QGN capabilities and sample geophysical diversity.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="route-design-principles">Route Design Principles<a href="#route-design-principles" class="hash-link" aria-label="Direct link to Route Design Principles" title="Direct link to Route Design Principles">​</a></h4>
+<ol>
+<li><strong>Signature Diversity</strong>: Include areas with strong/weak magnetic and gravitational gradients</li>
+<li><strong>Duration</strong>: 15-60 min continuous (minimum 30 min for drift analysis)</li>
+<li><strong>Dynamics</strong>: Mix stationary, walking speed (1-2 m/s), and vehicle speed (3-10 m/s)</li>
+<li><strong>Loop Closure</strong>: Return to start point for drift accumulation check</li>
+<li><strong>Waypoint Density</strong>: Ground truth checkpoints every 1-2 minutes</li>
+</ol>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="standard-test-routes">Standard Test Routes<a href="#standard-test-routes" class="hash-link" aria-label="Direct link to Standard Test Routes" title="Direct link to Standard Test Routes">​</a></h4>
+<p><strong>Route UC-1: Urban Canyon (Downtown)</strong> [High Priority]</p>
+<ul>
+<li>Start: Open-sky plaza (GNSS baseline)</li>
+<li>Segment 1: Tall buildings, 2-block traverse (5 min)</li>
+<li>Segment 2: Underground parking entry/exit (3 min)</li>
+<li>Segment 3: Return to plaza (loop closure)</li>
+<li>Duration: 15 min | Distance: ~1 km</li>
+</ul>
+<p><strong>Route MH-1: Maritime Harbor (Surface-to-Subsea Transition)</strong> [<strong>Critical</strong>]</p>
+<ul>
+<li>Start: Dockside (RTK-GPS lock)</li>
+<li>Segment 1: Surface transit 200m offshore (GPS jamming begins)</li>
+<li>Segment 2: Submerge to 10m depth, 500m transit</li>
+<li>Segment 3: Tunnel entry (culvert/docking scenario)</li>
+<li>Segment 4: Return to dock</li>
+<li>Duration: 30 min | Distance: ~2 km</li>
+</ul>
+<p><strong>Route TC-1: Tunnel/Culvert</strong> [<strong>Critical</strong>]</p>
+<ul>
+<li>Start: Tunnel entrance (GPS lock)</li>
+<li>Segment 1: 500m straight tunnel section</li>
+<li>Segment 2: 90° turn, 300m section</li>
+<li>Segment 3: Confined docking maneuver (5m target)</li>
+<li>Segment 4: Exit tunnel (GPS reacquisition)</li>
+<li>Duration: 20 min | Distance: ~1.2 km</li>
+</ul>
+<p><em>(Additional routes for IZ, OW, CU defined in Appendix A)</em></p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="phase-2-test-execution">Phase 2: Test Execution<a href="#phase-2-test-execution" class="hash-link" aria-label="Direct link to Phase 2: Test Execution" title="Direct link to Phase 2: Test Execution">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="21-pre-run-checklist-t-15-minutes">2.1 Pre-Run Checklist (T-15 Minutes)<a href="#21-pre-run-checklist-t-15-minutes" class="hash-link" aria-label="Direct link to 2.1 Pre-Run Checklist (T-15 Minutes)" title="Direct link to 2.1 Pre-Run Checklist (T-15 Minutes)">​</a></h3>
+<p>Execute this checklist <strong>before each test run</strong>:</p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->System power-on, self-test passed</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Ground truth system active and logging</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Environmental conditions logged (temperature, pressure, weather)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->GPS availability baseline (C/N₀ levels, visible satellites)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Operator briefing: route overview, abort criteria, safety</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Data logging initiated (confirm file creation and write rate)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Initial position convergence: QGN agrees with GNSS within 10m (if available)</li>
+</ul>
+<p><strong>Abort Criteria</strong> (Stop test if any occur):</p>
+<ul>
+<li>System power fault or thermal alarm</li>
+<li>Sensor health check fails (e.g., SQUID temperature drift &gt;0.05°C)</li>
+<li>Loss of ground truth reference</li>
+<li>Safety hazard (weather, traffic, equipment failure)</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="22-test-execution-sequence">2.2 Test Execution Sequence<a href="#22-test-execution-sequence" class="hash-link" aria-label="Direct link to 2.2 Test Execution Sequence" title="Direct link to 2.2 Test Execution Sequence">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="step-1-static-baseline-5-minutes">Step 1: Static Baseline (5 Minutes)<a href="#step-1-static-baseline-5-minutes" class="hash-link" aria-label="Direct link to Step 1: Static Baseline (5 Minutes)" title="Direct link to Step 1: Static Baseline (5 Minutes)">​</a></h4>
+<p><strong>Purpose</strong>: Measure stationary position noise floor and sensor stability.</p>
+<p><strong>Procedure</strong>:</p>
+<ol>
+<li>Place QGN platform in known location (surveyed or RTK-GPS)</li>
+<li>Record position estimates for 5 minutes (3000 samples @ 10 Hz)</li>
+<li>Do not move platform</li>
+</ol>
+<p><strong>Data Collection</strong>:</p>
+<ul>
+<li>QGN position (X, Y, Z) at 10 Hz</li>
+<li>Individual sensor outputs (magnetic field vector, gravity gradient tensor, IMU biases)</li>
+<li>Sensor health metrics (SQUID temp, compute load, power draw)</li>
+</ul>
+<p><strong>Expected Outcome</strong>:</p>
+<ul>
+<li>Position scatter (2D RMS) &lt;2m for high-signature areas, &lt;5m for weak-signature areas</li>
+<li>No systematic drift over 5 min</li>
+</ul>
+<hr>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="step-2-dynamic-transit-route-specific-duration">Step 2: Dynamic Transit (Route-Specific Duration)<a href="#step-2-dynamic-transit-route-specific-duration" class="hash-link" aria-label="Direct link to Step 2: Dynamic Transit (Route-Specific Duration)" title="Direct link to Step 2: Dynamic Transit (Route-Specific Duration)">​</a></h4>
+<p><strong>Purpose</strong>: Validate position accuracy and drift during motion.</p>
+<p><strong>Procedure</strong>:</p>
+<ol>
+<li>Begin movement along planned route</li>
+<li>Maintain consistent speed (walking: 1-2 m/s, vehicle: 5-10 m/s)</li>
+<li>Pass through waypoints at marked times (for ground truth alignment)</li>
+<li>Call out significant events (e.g., &quot;Entering tunnel&quot;, &quot;GPS lost&quot;, &quot;DVL bottom-lock&quot;)</li>
+<li>Complete full route including loop closure</li>
+</ol>
+<p><strong>Data Collection</strong>:</p>
+<ul>
+<li>Continuous 10 Hz QGN position + uncertainty (σ_x, σ_y, σ_z)</li>
+<li>Ground truth position (RTK-GPS or waypoint times)</li>
+<li>Sensor fusion states (Kalman filter residuals, individual sensor weights)</li>
+<li>Mode transitions (e.g., INS-only → QGN-corrected)</li>
+</ul>
+<p><strong>Real-Time Monitoring</strong>:</p>
+<ul>
+<li>Operator observes live position plot (if available)</li>
+<li>Check for divergence &gt;50m (indicates map-matching failure)</li>
+<li>Note any anomalies (e.g., sudden jumps, loss of convergence)</li>
+</ul>
+<hr>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="step-3-post-run-stationary-hold-3-minutes">Step 3: Post-Run Stationary Hold (3 Minutes)<a href="#step-3-post-run-stationary-hold-3-minutes" class="hash-link" aria-label="Direct link to Step 3: Post-Run Stationary Hold (3 Minutes)" title="Direct link to Step 3: Post-Run Stationary Hold (3 Minutes)">​</a></h4>
+<p><strong>Purpose</strong>: Measure final position estimate at return point; validate loop closure.</p>
+<p><strong>Procedure</strong>:</p>
+<ol>
+<li>Return to starting location (or known waypoint)</li>
+<li>Hold stationary for 3 minutes</li>
+<li>Allow QGN to reconverge after transit dynamics</li>
+</ol>
+<p><strong>Data Collection</strong>:</p>
+<ul>
+<li>Final position estimate and uncertainty</li>
+<li>Difference from initial position (loop closure error)</li>
+<li>Sensor health post-run</li>
+</ul>
+<p><strong>Expected Outcome</strong>:</p>
+<ul>
+<li>Loop closure error &lt;5m for critical routes, &lt;10m for medium routes</li>
+<li>Position uncertainty (σ) should decrease during hold (recoherence)</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="23-data-logging-requirements">2.3 Data Logging Requirements<a href="#23-data-logging-requirements" class="hash-link" aria-label="Direct link to 2.3 Data Logging Requirements" title="Direct link to 2.3 Data Logging Requirements">​</a></h3>
+<p>All test data must be logged in <strong>time-synchronized format</strong> for post-processing.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="mandatory-data-streams">Mandatory Data Streams<a href="#mandatory-data-streams" class="hash-link" aria-label="Direct link to Mandatory Data Streams" title="Direct link to Mandatory Data Streams">​</a></h4>
+<table><thead><tr><th>Data Stream</th><th>Rate</th><th>Format</th><th>Fields</th></tr></thead><tbody><tr><td><strong>QGN Position</strong></td><td>10 Hz</td><td>CSV/ROS2</td><td>timestamp, lat, lon, alt, σ_x, σ_y, σ_z, solution_status</td></tr><tr><td><strong>Ground Truth</strong></td><td>10 Hz</td><td>CSV/NMEA</td><td>timestamp, lat_ref, lon_ref, alt_ref, quality_flag</td></tr><tr><td><strong>IMU Raw</strong></td><td>100 Hz</td><td>Binary/ROS2</td><td>timestamp, accel_xyz, gyro_xyz, temp</td></tr><tr><td><strong>Magnetic Field</strong></td><td>10 Hz</td><td>CSV</td><td>timestamp, Bx, By, Bz (sensor frame), magnitude</td></tr><tr><td><strong>Gravity Gradient</strong></td><td>1 Hz</td><td>CSV</td><td>timestamp, Γ_xx, Γ_yy, Γ_zz, Γ_xy, Γ_xz, Γ_yz</td></tr><tr><td><strong>DVL Velocity</strong></td><td>1 Hz</td><td>NMEA/Binary</td><td>timestamp, v_x, v_y, v_z, bottom_lock_status</td></tr><tr><td><strong>Sensor Health</strong></td><td>1 Hz</td><td>CSV</td><td>timestamp, SQUID_temp, compute_load, power_W, error_flags</td></tr><tr><td><strong>Fusion State</strong></td><td>10 Hz</td><td>Binary</td><td>Kalman state vector (15+ DOF), covariance matrix</td></tr></tbody></table>
+<p><strong>File Naming Convention</strong>: <code>QGN_[TestID]_[Environment]_[Date]_[RunNumber].[ext]</code><br>
+<!-- -->Example: <code>QGN_TC1_Tunnel_20250315_Run03.csv</code></p>
+<p><strong>Backup</strong>: Duplicate logs to two storage devices (onboard SSD + external USB).</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="phase-3-post-processing--analysis">Phase 3: Post-Processing &amp; Analysis<a href="#phase-3-post-processing--analysis" class="hash-link" aria-label="Direct link to Phase 3: Post-Processing &amp; Analysis" title="Direct link to Phase 3: Post-Processing &amp; Analysis">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="31-data-alignment--synchronization">3.1 Data Alignment &amp; Synchronization<a href="#31-data-alignment--synchronization" class="hash-link" aria-label="Direct link to 3.1 Data Alignment &amp; Synchronization" title="Direct link to 3.1 Data Alignment &amp; Synchronization">​</a></h3>
+<p><strong>Objective</strong>: Time-align QGN and ground truth data for error computation.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="procedure">Procedure<a href="#procedure" class="hash-link" aria-label="Direct link to Procedure" title="Direct link to Procedure">​</a></h4>
+<ol>
+<li>
+<p><strong>Timestamp Correction</strong>:</p>
+<ul>
+<li>If using GPS time, verify all streams have consistent time base</li>
+<li>Apply clock offset corrections if QGN and ground truth use different time sources</li>
+<li>Interpolate ground truth to match QGN 10 Hz timestamps</li>
+</ul>
+</li>
+<li>
+<p><strong>Coordinate Frame Alignment</strong>:</p>
+<ul>
+<li>Convert all positions to common frame (e.g., UTM or local ENU)</li>
+<li>Apply any known sensor mounting offsets (lever arms)</li>
+</ul>
+</li>
+<li>
+<p><strong>Initial Position Bias Removal</strong> (Optional):</p>
+<ul>
+<li>If QGN has a constant offset from ground truth (e.g., map datum error), remove it</li>
+<li>Document bias separately from drift/scatter</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="32-position-error-metrics">3.2 Position Error Metrics<a href="#32-position-error-metrics" class="hash-link" aria-label="Direct link to 3.2 Position Error Metrics" title="Direct link to 3.2 Position Error Metrics">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="321-circular-error-probable-cep">3.2.1 Circular Error Probable (CEP)<a href="#321-circular-error-probable-cep" class="hash-link" aria-label="Direct link to 3.2.1 Circular Error Probable (CEP)" title="Direct link to 3.2.1 Circular Error Probable (CEP)">​</a></h4>
+<p><strong>Definition</strong>: Radius of circle containing 50% of position samples (P50).</p>
+<p><strong>Computation</strong>:</p>
+<ol>
+<li>Calculate horizontal error for each sample: <code>e[i] = sqrt((x_QGN[i] - x_ref[i])^2 + (y_QGN[i] - y_ref[i])^2)</code></li>
+<li>Sort errors in ascending order</li>
+<li>CEP = median(e) = 50th percentile</li>
+<li>Also compute P95 (95th percentile) and RMS (root mean square)</li>
+</ol>
+<p><strong>Pass Criteria</strong> (from QGN v0.1 PRD):</p>
+<table><thead><tr><th>Environment</th><th>CEP (P50) Target</th><th>P95 Target</th><th>Test Result</th><th>Status</th></tr></thead><tbody><tr><td>Urban Canyon</td><td>≤10m</td><td>≤20m</td><td><em>[TBD from test]</em></td><td>⬜</td></tr><tr><td>Maritime Harbor</td><td>≤10m</td><td>≤20m</td><td><em>[TBD from test]</em></td><td>⬜</td></tr><tr><td>Tunnel/Culvert</td><td>≤10m</td><td>≤15m</td><td><em>[TBD from test]</em></td><td>⬜</td></tr><tr><td>Industrial Zone</td><td>≤15m</td><td>≤30m</td><td><em>[TBD from test]</em></td><td>⬜</td></tr><tr><td>Open Water Subsea</td><td>≤25m</td><td>≤50m</td><td><em>[TBD from test]</em></td><td>⬜</td></tr><tr><td>Cave/Underground</td><td>≤20m</td><td>≤40m</td><td><em>[TBD from test]</em></td><td>⬜</td></tr></tbody></table>
+<p><strong>Vertical Error</strong>: Compute separately if ground truth has altitude reference.<br>
+<!-- -->Target: Vertical error ≤2× horizontal CEP (e.g., 20m for 10m horizontal CEP).</p>
+<hr>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="322-drift-rate">3.2.2 Drift Rate<a href="#322-drift-rate" class="hash-link" aria-label="Direct link to 3.2.2 Drift Rate" title="Direct link to 3.2.2 Drift Rate">​</a></h4>
+<p><strong>Definition</strong>: Position error growth over time without external corrections.</p>
+<p><strong>Computation</strong>:</p>
+<ol>
+<li>Identify segments where QGN is in &quot;dead reckoning&quot; mode (no map-matching updates)</li>
+<li>Fit linear trend to position error vs. time: <code>e(t) = e_0 + drift_rate * t</code></li>
+<li>Report drift rate in m/min or m/hr</li>
+</ol>
+<p><strong>Pass Criteria</strong>:</p>
+<table><thead><tr><th>Configuration</th><th>Target Drift Rate</th><th>Test Result</th><th>Status</th></tr></thead><tbody><tr><td>QGN-only (no DVL)</td><td>≤2.0 m/min</td><td><em>[TBD]</em></td><td>⬜</td></tr><tr><td>QGN + DVL fusion</td><td>≤0.5 m/min</td><td><em>[TBD]</em></td><td>⬜</td></tr><tr><td>INS-only (baseline)</td><td>10-50 m/min</td><td><em>[TBD]</em></td><td>⬜</td></tr></tbody></table>
+<p><strong>Note</strong>: If QGN maintains continuous map-matching, drift may not be observable. In this case, artificially disable QGN updates for 5-10 min to measure INS+DVL drift.</p>
+<hr>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="323-reacquisition-time">3.2.3 Reacquisition Time<a href="#323-reacquisition-time" class="hash-link" aria-label="Direct link to 3.2.3 Reacquisition Time" title="Direct link to 3.2.3 Reacquisition Time">​</a></h4>
+<p><strong>Definition</strong>: Time from QGN initialization (or loss of position) to first valid position fix within acceptance CEP.</p>
+<p><strong>Scenarios</strong>:</p>
+<ol>
+<li><strong>Cold Start</strong>: No prior position, system boots in GPS-denied area</li>
+<li><strong>Warm Start</strong>: Prior position &lt;1 hour old, system resumes after brief shutdown</li>
+<li><strong>Outage Recovery</strong>: Map-matching lost due to signature anomaly, must reconverge</li>
+</ol>
+<p><strong>Computation</strong>:</p>
+<ol>
+<li>Mark <code>t_start</code> = time of QGN initialization or loss event</li>
+<li>Mark <code>t_fix</code> = first timestamp where position error &lt; 1.5× CEP target and remains stable for 10 seconds</li>
+<li>Reacquisition time = <code>t_fix - t_start</code></li>
+</ol>
+<p><strong>Pass Criteria</strong>:</p>
+<table><thead><tr><th>Scenario</th><th>Target Time</th><th>Test Result</th><th>Status</th></tr></thead><tbody><tr><td>Cold Start</td><td>≤90 sec</td><td><em>[TBD]</em></td><td>⬜</td></tr><tr><td>Warm Start</td><td>≤30 sec</td><td><em>[TBD]</em></td><td>⬜</td></tr><tr><td>Outage Recovery</td><td>≤30 sec</td><td><em>[TBD]</em></td><td>⬜</td></tr></tbody></table>
+<hr>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="324-update-rate-stability">3.2.4 Update Rate Stability<a href="#324-update-rate-stability" class="hash-link" aria-label="Direct link to 3.2.4 Update Rate Stability" title="Direct link to 3.2.4 Update Rate Stability">​</a></h4>
+<p><strong>Definition</strong>: Consistency of QGN position output rate (target: 10 Hz).</p>
+<p><strong>Computation</strong>:</p>
+<ol>
+<li>Calculate time difference between consecutive position outputs: <code>Δt[i] = t[i+1] - t[i]</code></li>
+<li>Compute mean, std deviation, and max jitter</li>
+<li>Identify any dropouts (Δt &gt; 200 ms = missed update)</li>
+</ol>
+<p><strong>Pass Criteria</strong>:</p>
+<ul>
+<li>Mean update rate: 10 Hz ± 0.5 Hz</li>
+<li>Jitter (std dev): &lt;10 ms</li>
+<li>Dropouts: &lt;1% of samples</li>
+<li>No sustained outages &gt;1 second (unless intentional sensor failure simulation)</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="33-fusion-performance-analysis">3.3 Fusion Performance Analysis<a href="#33-fusion-performance-analysis" class="hash-link" aria-label="Direct link to 3.3 Fusion Performance Analysis" title="Direct link to 3.3 Fusion Performance Analysis">​</a></h3>
+<p><strong>Objective</strong>: Validate that multi-sensor fusion (QPIM λ-unity) improves accuracy vs. single sensors.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="comparison-configurations">Comparison Configurations<a href="#comparison-configurations" class="hash-link" aria-label="Direct link to Comparison Configurations" title="Direct link to Comparison Configurations">​</a></h4>
+<p>Run post-processing with different sensor combinations enabled:</p>
+<ol>
+<li><strong>INS-only</strong>: Pure inertial (baseline, expected to drift rapidly)</li>
+<li><strong>QGN Magnetic-only</strong>: SQUID + INS, no gradiometer</li>
+<li><strong>QGN Gravity-only</strong>: Gradiometer + INS, no SQUID</li>
+<li><strong>QGN Full (Mag + Grav)</strong>: Both quantum sensors + INS</li>
+<li><strong>QGN + DVL</strong>: Full QGN + Doppler velocity (maritime only)</li>
+</ol>
+<p><strong>Metrics</strong>:</p>
+<ul>
+<li>CEP for each configuration</li>
+<li>Drift rate (if applicable)</li>
+<li>Convergence time</li>
+</ul>
+<p><strong>Expected Outcome</strong> (demonstrates λ-unity):</p>
+<ul>
+<li>QGN Full CEP &lt; 0.7× max(Mag-only, Grav-only) CEP</li>
+<li>QGN + DVL drift rate &lt; 0.5× QGN-only drift</li>
+</ul>
+<p><strong>Visualization</strong>: Plot position error vs. time for all configurations on same axes.</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="34-environmental-correlation-analysis">3.4 Environmental Correlation Analysis<a href="#34-environmental-correlation-analysis" class="hash-link" aria-label="Direct link to 3.4 Environmental Correlation Analysis" title="Direct link to 3.4 Environmental Correlation Analysis">​</a></h3>
+<p><strong>Objective</strong>: Identify which geophysical conditions enable best QGN performance.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="analysis-steps">Analysis Steps<a href="#analysis-steps" class="hash-link" aria-label="Direct link to Analysis Steps" title="Direct link to Analysis Steps">​</a></h4>
+<ol>
+<li>
+<p><strong>Magnetic Field Strength</strong>:</p>
+<ul>
+<li>Compute local magnetic field total intensity and gradient magnitude</li>
+<li>Correlate with position accuracy: High gradient → lower CEP?</li>
+</ul>
+</li>
+<li>
+<p><strong>Gravity Gradient Distinctiveness</strong>:</p>
+<ul>
+<li>Compute gravity gradient tensor norm</li>
+<li>Identify &quot;gravitationally flat&quot; regions (poor gradiometer performance)</li>
+</ul>
+</li>
+<li>
+<p><strong>EM Interference</strong>:</p>
+<ul>
+<li>If EM spectrum logging available, correlate noise floor with SQUID performance</li>
+<li>Check if accuracy degrades near power lines, motors, etc.</li>
+</ul>
+</li>
+<li>
+<p><strong>Dynamics</strong>:</p>
+<ul>
+<li>Bin data by speed: stationary, slow (&lt;2 m/s), fast (&gt;5 m/s)</li>
+<li>Does CEP increase with speed?</li>
+</ul>
+</li>
+</ol>
+<p><strong>Deliverable</strong>: Heatmap of CEP vs. environmental parameters; identify &quot;sweet spots&quot; and &quot;dead zones.&quot;</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="phase-4-success-checklists-by-environment">Phase 4: Success Checklists by Environment<a href="#phase-4-success-checklists-by-environment" class="hash-link" aria-label="Direct link to Phase 4: Success Checklists by Environment" title="Direct link to Phase 4: Success Checklists by Environment">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="41-maritime-harbor-demo-mh-1--critical-path">4.1 Maritime Harbor Demo (MH-1) — <strong>CRITICAL PATH</strong><a href="#41-maritime-harbor-demo-mh-1--critical-path" class="hash-link" aria-label="Direct link to 41-maritime-harbor-demo-mh-1--critical-path" title="Direct link to 41-maritime-harbor-demo-mh-1--critical-path">​</a></h3>
+<p>This is the flagship demonstration for investors and partners.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="inputs">Inputs<a href="#inputs" class="hash-link" aria-label="Direct link to Inputs" title="Direct link to Inputs">​</a></h4>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->QGN prototype (full sensor suite including DVL)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Maritime platform (boat or AUV)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->RTK-GPS base station at dock</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Harbor bathymetry map (1m resolution)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Magnetic anomaly map from infrastructure (docks, hulls, pipelines)</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="test-phases">Test Phases<a href="#test-phases" class="hash-link" aria-label="Direct link to Test Phases" title="Direct link to Test Phases">​</a></h4>
+<p><strong>Phase A: Surface Transit (GPS → GPS-Denied)</strong></p>
+<ul>
+<li>Start at dock with RTK-GPS lock (baseline &lt;0.05m)</li>
+<li>Sail 200m offshore, intentionally jam/disable GPS</li>
+<li>QGN takes over navigation</li>
+<li><strong>Green Line</strong>: CEP ≤5m vs. RTK-GPS for 5 minutes surface transit</li>
+</ul>
+<p><strong>Phase B: Submerged Transit (Shallow Water)</strong></p>
+<ul>
+<li>Descend to 10m depth</li>
+<li>500m underwater transit using QGN + DVL fusion</li>
+<li><strong>Green Line</strong>: CEP ≤10m, drift &lt;0.5 m/min</li>
+</ul>
+<p><strong>Phase C: Tunnel Entry (Confined Precision)</strong></p>
+<ul>
+<li>Approach underwater culvert or docking structure</li>
+<li>Navigate to 5m precision target</li>
+<li><strong>Green Line</strong>: Final position error &lt;5m, successful &quot;docking&quot; maneuver</li>
+</ul>
+<p><strong>Phase D: Return to Dock (Loop Closure)</strong></p>
+<ul>
+<li>Surface and return to starting dock</li>
+<li>GPS reacquisition (measure time to reacquire)</li>
+<li><strong>Green Line</strong>: Loop closure error &lt;10m, GPS reacquisition &lt;60 sec</li>
+</ul>
+<p><strong>Phase E: Post-Mission Data Review</strong></p>
+<ul>
+<li>Download logs, verify all sensors remained healthy</li>
+<li><strong>Green Line</strong>: No system faults, &gt;99% position availability</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="passfail-criteria">Pass/Fail Criteria<a href="#passfail-criteria" class="hash-link" aria-label="Direct link to Pass/Fail Criteria" title="Direct link to Pass/Fail Criteria">​</a></h4>
+<p><strong>PASS</strong> = All 5 phases meet Green Line criteria<br>
+<strong>CONDITIONAL PASS</strong> = 4/5 phases pass, failures are explainable and fixable<br>
+<strong>FAIL</strong> = &lt;4 phases pass, or critical safety issue</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="log-artifacts">Log Artifacts<a href="#log-artifacts" class="hash-link" aria-label="Direct link to Log Artifacts" title="Direct link to Log Artifacts">​</a></h4>
+<ul>
+<li><code>MH1_SurfaceTransit_[Date].csv</code> (position + ground truth)</li>
+<li><code>MH1_SubmergedTransit_[Date].csv</code></li>
+<li><code>MH1_TunnelEntry_[Date].csv</code></li>
+<li><code>MH1_ReturnDock_[Date].csv</code></li>
+<li><code>MH1_SensorHealth_[Date].csv</code></li>
+<li>Video recording (deck-mounted camera, if OPSEC permits)</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="42-tunnelculvert-test-tc-1--critical-path">4.2 Tunnel/Culvert Test (TC-1) — <strong>CRITICAL PATH</strong><a href="#42-tunnelculvert-test-tc-1--critical-path" class="hash-link" aria-label="Direct link to 42-tunnelculvert-test-tc-1--critical-path" title="Direct link to 42-tunnelculvert-test-tc-1--critical-path">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="inputs-1">Inputs<a href="#inputs-1" class="hash-link" aria-label="Direct link to Inputs" title="Direct link to Inputs">​</a></h4>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->QGN prototype (handheld or cart-mounted)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Pre-surveyed tunnel waypoints (total station, ±0.01m)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Tunnel magnetic/gravity map (if available; otherwise this IS the mapping run)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->GPS available at tunnel entrance/exit for start/end ground truth</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="test-phases-1">Test Phases<a href="#test-phases-1" class="hash-link" aria-label="Direct link to Test Phases" title="Direct link to Test Phases">​</a></h4>
+<p><strong>Phase A: Entrance Baseline</strong></p>
+<ul>
+<li>Stand at tunnel entrance with GPS lock</li>
+<li>QGN converges to GPS position (within 10m)</li>
+<li><strong>Green Line</strong>: Initial agreement &lt;10m</li>
+</ul>
+<p><strong>Phase B: Tunnel Entry (GPS Loss)</strong></p>
+<ul>
+<li>Walk into tunnel at 1-2 m/s</li>
+<li>GPS signal drops within 10-20m</li>
+<li>QGN transitions to magnetic/gravity navigation</li>
+<li><strong>Green Line</strong>: No position jump &gt;20m during transition</li>
+</ul>
+<p><strong>Phase C: Straight Section (500m)</strong></p>
+<ul>
+<li>Traverse straight tunnel section</li>
+<li>Pass 3-5 waypoints (surveyed markers)</li>
+<li><strong>Green Line</strong>: Position error &lt;10m at each waypoint</li>
+</ul>
+<p><strong>Phase D: Turn &amp; Confined Section (300m)</strong></p>
+<ul>
+<li>Navigate 90° turn</li>
+<li>Confined corridor (3-5m wide)</li>
+<li><strong>Green Line</strong>: CEP ≤10m, no collision with walls (safety margin)</li>
+</ul>
+<p><strong>Phase E: Exit &amp; GPS Reacquisition</strong></p>
+<ul>
+<li>Walk out of tunnel, GPS returns</li>
+<li>Measure time to reacquire GPS</li>
+<li>Compare final QGN position to GPS</li>
+<li><strong>Green Line</strong>: GPS reacquisition &lt;60 sec, final error &lt;15m</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="passfail-criteria-1">Pass/Fail Criteria<a href="#passfail-criteria-1" class="hash-link" aria-label="Direct link to Pass/Fail Criteria" title="Direct link to Pass/Fail Criteria">​</a></h4>
+<p><strong>PASS</strong> = All 5 phases meet Green Line, no safety incidents<br>
+<strong>CONDITIONAL PASS</strong> = Phases A-C pass, Phase D/E marginal<br>
+<strong>FAIL</strong> = Cannot navigate tunnel without human intervention</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="log-artifacts-1">Log Artifacts<a href="#log-artifacts-1" class="hash-link" aria-label="Direct link to Log Artifacts" title="Direct link to Log Artifacts">​</a></h4>
+<ul>
+<li><code>TC1_EntranceBaseline_[Date].csv</code></li>
+<li><code>TC1_TunnelTraverse_[Date].csv</code></li>
+<li><code>TC1_ExitReacquisition_[Date].csv</code></li>
+<li>Helmet-cam or handheld video (optional)</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="43-urban-canyon-test-uc-1">4.3 Urban Canyon Test (UC-1)<a href="#43-urban-canyon-test-uc-1" class="hash-link" aria-label="Direct link to 4.3 Urban Canyon Test (UC-1)" title="Direct link to 4.3 Urban Canyon Test (UC-1)">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="inputs-2">Inputs<a href="#inputs-2" class="hash-link" aria-label="Direct link to Inputs" title="Direct link to Inputs">​</a></h4>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->QGN prototype (backpack or vehicle-mounted)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->RTK-GPS rover (for ground truth in open areas)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Urban route with GNSS C/N₀ logging</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Magnetic anomaly map from building infrastructure</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="test-phases-2">Test Phases<a href="#test-phases-2" class="hash-link" aria-label="Direct link to Test Phases" title="Direct link to Test Phases">​</a></h4>
+<p><strong>Phase A: Open Plaza Baseline</strong></p>
+<ul>
+<li>Start in open area (GNSS baseline C/N₀ &gt;40 dB-Hz)</li>
+<li><strong>Green Line</strong>: QGN agrees with GNSS within 5m</li>
+</ul>
+<p><strong>Phase B: Urban Canyon Transit</strong></p>
+<ul>
+<li>Walk/drive through high-rise corridor (C/N₀ drops to &lt;25 dB-Hz)</li>
+<li>2-3 block traverse (~500m)</li>
+<li><strong>Green Line</strong>: CEP ≤10m vs. RTK-GPS (if available) or post-processed INS</li>
+</ul>
+<p><strong>Phase C: Underground Parking</strong></p>
+<ul>
+<li>Enter parking garage (GNSS denied)</li>
+<li>Navigate 1-2 levels, return to entrance</li>
+<li><strong>Green Line</strong>: Loop closure &lt;15m</li>
+</ul>
+<p><strong>Phase D: Return to Plaza</strong></p>
+<ul>
+<li>Re-emerge to open sky</li>
+<li>GPS reacquisition</li>
+<li><strong>Green Line</strong>: Final error &lt;10m, reacquisition &lt;60 sec</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="passfail-criteria-2">Pass/Fail Criteria<a href="#passfail-criteria-2" class="hash-link" aria-label="Direct link to Pass/Fail Criteria" title="Direct link to Pass/Fail Criteria">​</a></h4>
+<p><strong>PASS</strong> = Phases A, B, D meet Green Line<br>
+<strong>CONDITIONAL PASS</strong> = Phase C marginal but explicable<br>
+<strong>FAIL</strong> = CEP &gt;20m in Phase B or system loses tracking</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="log-artifacts-2">Log Artifacts<a href="#log-artifacts-2" class="hash-link" aria-label="Direct link to Log Artifacts" title="Direct link to Log Artifacts">​</a></h4>
+<ul>
+<li><code>UC1_UrbanCanyon_[Date].csv</code></li>
+<li>GNSS C/N₀ log (for skyview correlation)</li>
+<li>Street-view photos at waypoints</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="44-additional-environments-iz-ow-cu">4.4 Additional Environments (IZ, OW, CU)<a href="#44-additional-environments-iz-ow-cu" class="hash-link" aria-label="Direct link to 4.4 Additional Environments (IZ, OW, CU)" title="Direct link to 4.4 Additional Environments (IZ, OW, CU)">​</a></h3>
+<p>Detailed checklists for <strong>Industrial Zone</strong>, <strong>Open Water Subsea</strong>, and <strong>Cave/Underground</strong> follow similar structure:</p>
+<ul>
+<li>Define inputs (platform, maps, ground truth)</li>
+<li>Break into 4-5 test phases with Green Line criteria</li>
+<li>Specify pass/fail thresholds</li>
+<li>Document required log artifacts</li>
+</ul>
+<p><em>(Full checklists provided in Appendix B to avoid document bloat)</em></p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="phase-5-failure-mode-analysis--recoherence">Phase 5: Failure Mode Analysis &amp; Recoherence<a href="#phase-5-failure-mode-analysis--recoherence" class="hash-link" aria-label="Direct link to Phase 5: Failure Mode Analysis &amp; Recoherence" title="Direct link to Phase 5: Failure Mode Analysis &amp; Recoherence">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="51-common-failure-modes">5.1 Common Failure Modes<a href="#51-common-failure-modes" class="hash-link" aria-label="Direct link to 5.1 Common Failure Modes" title="Direct link to 5.1 Common Failure Modes">​</a></h3>
+<p>When QGN performance degrades, systematic troubleshooting restores coherence.</p>
+<table><thead><tr><th>Failure Symptom</th><th>Likely Cause (Decoherence Source)</th><th>Recoherence Action</th></tr></thead><tbody><tr><td><strong>Position jumps &gt;50m</strong></td><td>Map-matching false lock, wrong local minima</td><td>Check geophysical signature strength; increase match confidence threshold</td></tr><tr><td><strong>Rapid drift (&gt;5 m/min)</strong></td><td>IMU bias drift, poor INS calibration</td><td>Re-calibrate IMU; check for thermal gradients affecting gyros</td></tr><tr><td><strong>Oscillating position</strong></td><td>Sensor fusion instability (low λ-unity)</td><td>Tune Kalman filter process noise; reduce sensor weight if residuals high</td></tr><tr><td><strong>Stuck position (no updates)</strong></td><td>Sensor data not reaching fusion layer</td><td>Check data acquisition pipeline; verify sensor health flags</td></tr><tr><td><strong>High CEP in expected good area</strong></td><td>Environmental change (map out-of-date)</td><td>Verify map freshness; consider adaptive map update</td></tr><tr><td><strong>SQUID noise floor elevated</strong></td><td>EM interference, shielding degraded</td><td>Check for nearby EM sources; verify mu-metal shield integrity</td></tr><tr><td><strong>Gradiometer drift</strong></td><td>Thermal instability, vibration</td><td>Allow longer warm-up; improve vibration isolation</td></tr><tr><td><strong>GPS reacquisition fails</strong></td><td>GPS receiver fault, antenna blocked</td><td>Check GPS receiver power/antenna; try manual reinitialization</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="52-real-time-troubleshooting-workflow">5.2 Real-Time Troubleshooting Workflow<a href="#52-real-time-troubleshooting-workflow" class="hash-link" aria-label="Direct link to 5.2 Real-Time Troubleshooting Workflow" title="Direct link to 5.2 Real-Time Troubleshooting Workflow">​</a></h3>
+<p>If during a test run performance degrades:</p>
+<p><strong>Step 1: Identify Symptom</strong><br>
+<!-- -->→ High position uncertainty (σ &gt; 30m)?<br>
+<!-- -->→ Sensor health flag raised?<br>
+<!-- -->→ Fusion layer reporting low confidence?</p>
+<p><strong>Step 2: Isolate Decoherent Sensor</strong><br>
+<!-- -->→ Check individual sensor residuals (which has highest Δ from prediction?)<br>
+<!-- -->→ Disable suspect sensor in fusion, does performance improve?</p>
+<p><strong>Step 3: Environmental Check</strong><br>
+<!-- -->→ Has the platform entered a magnetically/gravitationally quiet area?<br>
+<!-- -->→ Is there unexpected EM interference (power plant, radio tower)?</p>
+<p><strong>Step 4: Recoherence Attempt</strong><br>
+<!-- -->→ Stop motion for 30 seconds (allow filter to reconverge)<br>
+<!-- -->→ Re-initialize map-matching with tighter search area<br>
+<!-- -->→ If critical, switch to INS-only mode and manually navigate to known waypoint</p>
+<p><strong>Step 5: Document &amp; Continue or Abort</strong><br>
+<!-- -->→ Log the incident with timestamp and suspected cause<br>
+<!-- -->→ If safe to continue, resume test<br>
+<!-- -->→ If CEP &gt;100m and no reconvergence, abort and analyze offline</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="53-post-test-root-cause-analysis">5.3 Post-Test Root Cause Analysis<a href="#53-post-test-root-cause-analysis" class="hash-link" aria-label="Direct link to 5.3 Post-Test Root Cause Analysis" title="Direct link to 5.3 Post-Test Root Cause Analysis">​</a></h3>
+<p>For each failed test or anomaly:</p>
+<ol>
+<li><strong>Replay Data Offline</strong>: Re-run fusion algorithm with different parameters</li>
+<li><strong>Sensor Data Inspection</strong>: Plot raw sensor outputs, look for spikes/dropouts</li>
+<li><strong>Map Quality Check</strong>: Compare measured signatures to database, compute correlation</li>
+<li><strong>Environmental Context</strong>: Review weather, nearby activity (construction, traffic)</li>
+<li><strong>Document Lesson</strong>: Add to failure mode database, propose mitigation</li>
+</ol>
+<p><strong>Goal</strong>: Convert every failure into a ∆θ_learning → improved design/procedure.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="phase-6-reporting--documentation">Phase 6: Reporting &amp; Documentation<a href="#phase-6-reporting--documentation" class="hash-link" aria-label="Direct link to Phase 6: Reporting &amp; Documentation" title="Direct link to Phase 6: Reporting &amp; Documentation">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="61-test-report-template">6.1 Test Report Template<a href="#61-test-report-template" class="hash-link" aria-label="Direct link to 6.1 Test Report Template" title="Direct link to 6.1 Test Report Template">​</a></h3>
+<p>Each test run generates a standardized report:</p>
+<p><strong>Header</strong>:</p>
+<ul>
+<li>Test ID: <code>QGN-[Environment]-[Date]-[RunNumber]</code></li>
+<li>Date/Time: [Timestamp]</li>
+<li>Location: [Geographic area, coordinates if not sensitive]</li>
+<li>System Version: QGN v0.1.X, Map DB version</li>
+<li>Operators: [Names]</li>
+</ul>
+<p><strong>Summary</strong>:</p>
+<ul>
+<li>Objective: [One sentence]</li>
+<li>Result: PASS / CONDITIONAL PASS / FAIL</li>
+<li>Key Metrics: CEP, drift rate, reacquisition time</li>
+</ul>
+<p><strong>Detailed Results</strong>:</p>
+<ul>
+<li>Table of acceptance criteria vs. measured values</li>
+<li>Plots: Position error vs. time, CEP histogram, trajectory overlay on map</li>
+</ul>
+<p><strong>Observations</strong>:</p>
+<ul>
+<li>Notable events (GPS loss, sensor anomaly, environmental factors)</li>
+<li>Operator notes</li>
+</ul>
+<p><strong>Data Archive</strong>:</p>
+<ul>
+<li>List of log files, storage location</li>
+<li>Data integrity check (file sizes, checksums)</li>
+</ul>
+<p><strong>Lessons Learned</strong>:</p>
+<ul>
+<li>What worked well</li>
+<li>What needs improvement</li>
+<li>Recommended design or procedure changes</li>
+</ul>
+<p><strong>Appendices</strong>:</p>
+<ul>
+<li>Raw data plots</li>
+<li>Sensor health logs</li>
+<li>Photos/videos (if applicable)</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="62-milestone-acceptance-report">6.2 Milestone Acceptance Report<a href="#62-milestone-acceptance-report" class="hash-link" aria-label="Direct link to 6.2 Milestone Acceptance Report" title="Direct link to 6.2 Milestone Acceptance Report">​</a></h3>
+<p>After completing all critical tests (MH-1, TC-1), generate a <strong>Milestone Acceptance Report</strong>:</p>
+<p><strong>Executive Summary</strong>:</p>
+<ul>
+<li>QGN v0.1 performance summary across all environments</li>
+<li>Pass/fail status for each acceptance criterion from PRD</li>
+<li>Recommendation: Ready for pilot deployment / Needs iteration</li>
+</ul>
+<p><strong>Performance Matrix</strong>:</p>
+<table><thead><tr><th>Environment</th><th>CEP (Target / Actual)</th><th>Drift (Target / Actual)</th><th>Reacq. Time</th><th>Status</th></tr></thead><tbody><tr><td>Maritime Harbor</td><td>≤10m / [X]m</td><td>≤0.5 m/min / [Y]</td><td>[Z] sec</td><td>✅/❌</td></tr><tr><td>Tunnel/Culvert</td><td>≤10m / [X]m</td><td>≤2.0 m/min / [Y]</td><td>[Z] sec</td><td>✅/❌</td></tr><tr><td>Urban Canyon</td><td>≤10m / [X]m</td><td>≤2.0 m/min / [Y]</td><td>[Z] sec</td><td>✅/❌</td></tr></tbody></table>
+<p><strong>Technology Readiness Level (TRL) Assessment</strong>:</p>
+<ul>
+<li>Pre-test TRL: 3-4 (component validation, lab testing)</li>
+<li>Post-test TRL: 5-6 (relevant environment validation, prototype demonstration)</li>
+<li>Path to TRL 7: Pilot deployment with early adopters</li>
+</ul>
+<p><strong>Risk Register Update</strong>:</p>
+<ul>
+<li>Which risks were retired (validated to be non-issues)?</li>
+<li>Which risks materialized (need mitigation)?</li>
+<li>New risks discovered during testing?</li>
+</ul>
+<p><strong>Next Steps</strong>:</p>
+<ul>
+<li>QGN v0.2 design improvements based on test findings</li>
+<li>Additional environments to test (if v0.1 passed critical tests)</li>
+<li>Pilot customer engagement (if ready)</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="63-public-facing-deliverables">6.3 Public-Facing Deliverables<a href="#63-public-facing-deliverables" class="hash-link" aria-label="Direct link to 6.3 Public-Facing Deliverables" title="Direct link to 6.3 Public-Facing Deliverables">​</a></h3>
+<p><strong>For Investors / Partners</strong>:</p>
+<ul>
+<li>2-page summary with CEP performance table and trajectory plots</li>
+<li>Video demo (if OPSEC permits): side-by-side QGN vs. GNSS, showing GPS-denied navigation</li>
+<li>Key takeaway: &quot;QGN achieved Xm CEP in GPS-denied environments, enabling Y applications&quot;</li>
+</ul>
+<p><strong>For Academic / Conference Submission</strong>:</p>
+<ul>
+<li>Detailed paper with methodology, sensor fusion algorithm, test results</li>
+<li>Comparison to state-of-art (tactical INS, vision-based nav, etc.)</li>
+<li>Lessons learned and future work</li>
+</ul>
+<p><strong>For Regulatory / Compliance</strong>:</p>
+<ul>
+<li>Test data demonstrating performance in MIL-STD-810H environments (if applicable)</li>
+<li>Safety documentation (e.g., no hazardous failures during 50+ hours of testing)</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="appendices">Appendices<a href="#appendices" class="hash-link" aria-label="Direct link to Appendices" title="Direct link to Appendices">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="appendix-a-additional-test-routes">Appendix A: Additional Test Routes<a href="#appendix-a-additional-test-routes" class="hash-link" aria-label="Direct link to Appendix A: Additional Test Routes" title="Direct link to Appendix A: Additional Test Routes">​</a></h3>
+<p><em>(Detailed route descriptions for IZ-1, OW-1, CU-1, plus backup routes)</em></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="appendix-b-full-checklists-for-iz-ow-cu-environments">Appendix B: Full Checklists for IZ, OW, CU Environments<a href="#appendix-b-full-checklists-for-iz-ow-cu-environments" class="hash-link" aria-label="Direct link to Appendix B: Full Checklists for IZ, OW, CU Environments" title="Direct link to Appendix B: Full Checklists for IZ, OW, CU Environments">​</a></h3>
+<p><em>(Similar structure to MH-1/TC-1: inputs, phases, Green Line criteria, logs)</em></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="appendix-c-data-processing-scripts">Appendix C: Data Processing Scripts<a href="#appendix-c-data-processing-scripts" class="hash-link" aria-label="Direct link to Appendix C: Data Processing Scripts" title="Direct link to Appendix C: Data Processing Scripts">​</a></h3>
+<p><em>(Example Python/MATLAB scripts for CEP computation, drift analysis, plot generation)</em></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="appendix-d-hardware-test-fixtures">Appendix D: Hardware Test Fixtures<a href="#appendix-d-hardware-test-fixtures" class="hash-link" aria-label="Direct link to Appendix D: Hardware Test Fixtures" title="Direct link to Appendix D: Hardware Test Fixtures">​</a></h3>
+<p><em>(Schematics for static test stands, vibration isolation mounts, thermal chambers)</em></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="appendix-e-safety-protocols">Appendix E: Safety Protocols<a href="#appendix-e-safety-protocols" class="hash-link" aria-label="Direct link to Appendix E: Safety Protocols" title="Direct link to Appendix E: Safety Protocols">​</a></h3>
+<p><em>(Cryogen handling, underwater operations, confined space entry, emergency abort procedures)</em></p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="revision-history">Revision History<a href="#revision-history" class="hash-link" aria-label="Direct link to Revision History" title="Direct link to Revision History">​</a></h2>
+<table><thead><tr><th>Version</th><th>Date</th><th>Changes</th><th>Author</th></tr></thead><tbody><tr><td>1.0</td><td>2025-10-22</td><td>Initial draft</td><td>AI + User (stantheman)</td></tr></tbody></table>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="ibt-closing-from-protocol-to-practice">IBT Closing: From Protocol to Practice<a href="#ibt-closing-from-protocol-to-practice" class="hash-link" aria-label="Direct link to IBT Closing: From Protocol to Practice" title="Direct link to IBT Closing: From Protocol to Practice">​</a></h2>
+<p>This protocol is not merely a checklist — it is a <strong>ritual of measurement</strong>, a structured τ-evolution from theory to validated reality. Each test run collapses the wave function of design possibilities into a single, measured trajectory.</p>
+<p><strong>Four Laws in Testing</strong>:</p>
+<ol>
+<li><strong>Existence</strong>: Data persists; reproducibility is sacred</li>
+<li><strong>Unity</strong>: Fusion performance validates λ-integration</li>
+<li><strong>Reflection</strong>: Failures mirror assumptions; they teach</li>
+<li><strong>Change</strong>: Iterate; each test is a ∆θ toward coherence</li>
+</ol>
+<p>When you execute this protocol, you are not &quot;checking if it works&quot; — you are <strong>observing the system&#x27;s becoming</strong>, measuring the phase alignment between Ψ_design and Ψ_reality.</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/szemkoff/azurespacegroup/tree/main/docs/qpds/field-test-protocol.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/azurespacegroup/docs/qpds/map-pipeline-prd/"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Geophysical Map Pipeline PRD</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/azurespacegroup/docs/qpds/partner-deck-outline/"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">QGN v0.1 Partner Deck Outline</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#executive-summary" class="table-of-contents__link toc-highlight">Executive Summary</a></li><li><a href="#test-philosophy-from-ψ-theory-to-measured-reality" class="table-of-contents__link toc-highlight">Test Philosophy: From Ψ-Theory to Measured Reality</a><ul><li><a href="#ibt-perspective" class="table-of-contents__link toc-highlight">IBT Perspective</a></li><li><a href="#engineering-translation" class="table-of-contents__link toc-highlight">Engineering Translation</a></li></ul></li><li><a href="#test-environment-classification" class="table-of-contents__link toc-highlight">Test Environment Classification</a><ul><li><a href="#environment-matrix" class="table-of-contents__link toc-highlight">Environment Matrix</a></li></ul></li><li><a href="#phase-1-pre-test-preparation" class="table-of-contents__link toc-highlight">Phase 1: Pre-Test Preparation</a><ul><li><a href="#11-system-health-verification" class="table-of-contents__link toc-highlight">1.1 System Health Verification</a></li><li><a href="#12-ground-truth-preparation" class="table-of-contents__link toc-highlight">1.2 Ground Truth Preparation</a></li><li><a href="#13-test-route-planning" class="table-of-contents__link toc-highlight">1.3 Test Route Planning</a></li></ul></li><li><a href="#phase-2-test-execution" class="table-of-contents__link toc-highlight">Phase 2: Test Execution</a><ul><li><a href="#21-pre-run-checklist-t-15-minutes" class="table-of-contents__link toc-highlight">2.1 Pre-Run Checklist (T-15 Minutes)</a></li><li><a href="#22-test-execution-sequence" class="table-of-contents__link toc-highlight">2.2 Test Execution Sequence</a></li><li><a href="#23-data-logging-requirements" class="table-of-contents__link toc-highlight">2.3 Data Logging Requirements</a></li></ul></li><li><a href="#phase-3-post-processing--analysis" class="table-of-contents__link toc-highlight">Phase 3: Post-Processing &amp; Analysis</a><ul><li><a href="#31-data-alignment--synchronization" class="table-of-contents__link toc-highlight">3.1 Data Alignment &amp; Synchronization</a></li><li><a href="#32-position-error-metrics" class="table-of-contents__link toc-highlight">3.2 Position Error Metrics</a></li><li><a href="#33-fusion-performance-analysis" class="table-of-contents__link toc-highlight">3.3 Fusion Performance Analysis</a></li><li><a href="#34-environmental-correlation-analysis" class="table-of-contents__link toc-highlight">3.4 Environmental Correlation Analysis</a></li></ul></li><li><a href="#phase-4-success-checklists-by-environment" class="table-of-contents__link toc-highlight">Phase 4: Success Checklists by Environment</a><ul><li><a href="#41-maritime-harbor-demo-mh-1--critical-path" class="table-of-contents__link toc-highlight">4.1 Maritime Harbor Demo (MH-1) — <strong>CRITICAL PATH</strong></a></li><li><a href="#42-tunnelculvert-test-tc-1--critical-path" class="table-of-contents__link toc-highlight">4.2 Tunnel/Culvert Test (TC-1) — <strong>CRITICAL PATH</strong></a></li><li><a href="#43-urban-canyon-test-uc-1" class="table-of-contents__link toc-highlight">4.3 Urban Canyon Test (UC-1)</a></li><li><a href="#44-additional-environments-iz-ow-cu" class="table-of-contents__link toc-highlight">4.4 Additional Environments (IZ, OW, CU)</a></li></ul></li><li><a href="#phase-5-failure-mode-analysis--recoherence" class="table-of-contents__link toc-highlight">Phase 5: Failure Mode Analysis &amp; Recoherence</a><ul><li><a href="#51-common-failure-modes" class="table-of-contents__link toc-highlight">5.1 Common Failure Modes</a></li><li><a href="#52-real-time-troubleshooting-workflow" class="table-of-contents__link toc-highlight">5.2 Real-Time Troubleshooting Workflow</a></li><li><a href="#53-post-test-root-cause-analysis" class="table-of-contents__link toc-highlight">5.3 Post-Test Root Cause Analysis</a></li></ul></li><li><a href="#phase-6-reporting--documentation" class="table-of-contents__link toc-highlight">Phase 6: Reporting &amp; Documentation</a><ul><li><a href="#61-test-report-template" class="table-of-contents__link toc-highlight">6.1 Test Report Template</a></li><li><a href="#62-milestone-acceptance-report" class="table-of-contents__link toc-highlight">6.2 Milestone Acceptance Report</a></li><li><a href="#63-public-facing-deliverables" class="table-of-contents__link toc-highlight">6.3 Public-Facing Deliverables</a></li></ul></li><li><a href="#appendices" class="table-of-contents__link toc-highlight">Appendices</a><ul><li><a href="#appendix-a-additional-test-routes" class="table-of-contents__link toc-highlight">Appendix A: Additional Test Routes</a></li><li><a href="#appendix-b-full-checklists-for-iz-ow-cu-environments" class="table-of-contents__link toc-highlight">Appendix B: Full Checklists for IZ, OW, CU Environments</a></li><li><a href="#appendix-c-data-processing-scripts" class="table-of-contents__link toc-highlight">Appendix C: Data Processing Scripts</a></li><li><a href="#appendix-d-hardware-test-fixtures" class="table-of-contents__link toc-highlight">Appendix D: Hardware Test Fixtures</a></li><li><a href="#appendix-e-safety-protocols" class="table-of-contents__link toc-highlight">Appendix E: Safety Protocols</a></li></ul></li><li><a href="#revision-history" class="table-of-contents__link toc-highlight">Revision History</a></li><li><a href="#ibt-closing-from-protocol-to-practice" class="table-of-contents__link toc-highlight">IBT Closing: From Protocol to Practice</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Documentation</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/azurespacegroup/docs/core-documentation/core-technology/">Core Technology</a></li><li class="footer__item"><a class="footer__link-item" href="/azurespacegroup/docs/core-documentation/energy-systems/">Energy Systems</a></li><li class="footer__item"><a class="footer__link-item" href="/azurespacegroup/docs/core-documentation/propulsion-navigation/">Propulsion &amp; Navigation</a></li><li class="footer__item"><a class="footer__link-item" href="/azurespacegroup/docs/core-documentation/communication-systems/">Communication Systems</a></li></ul></div><div class="col footer__col"><div class="footer__title">More Documentation</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/azurespacegroup/docs/infrastructure-documentation/support-systems/">Support Systems</a></li><li class="footer__item"><a class="footer__link-item" href="/azurespacegroup/docs/infrastructure-documentation/human-centric-design/">Human-Centric Design</a></li><li class="footer__item"><a class="footer__link-item" href="/azurespacegroup/docs/research-documentation/research-development/">R&amp;D Infrastructure</a></li><li class="footer__item"><a class="footer__link-item" href="/azurespacegroup/docs/research-documentation/legal-regulatory/">Legal Framework</a></li></ul></div><div class="col footer__col"><div class="footer__title">Community &amp; Funding</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/azurespacegroup/docs/contributing/">Contributing</a></li><li class="footer__item"><a class="footer__link-item" href="/azurespacegroup/docs/tokenization-strategy/">Tokenization Strategy</a></li><li class="footer__item"><a class="footer__link-item" href="/azurespacegroup/docs/research-documentation/game-based-research-platform/">Game-Based Research</a></li><li class="footer__item"><a class="footer__link-item" href="/azurespacegroup/docs/investment/">Investment</a></li></ul></div><div class="col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/azurespacegroup/docs/contributing/">Contributing</a></li><li class="footer__item"><a href="https://github.com/szemkoff/azurespacegroup" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="mailto:irnbrue@gmail.com" target="_blank" rel="noopener noreferrer" class="footer__link-item">Contact Us<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 Azure Space Group. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>
