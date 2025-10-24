@@ -103,8 +103,8 @@ stateDiagram-v2
 All tunneling experiments follow this rigorous protocol:
 
 **Force Measurement Rig**:
-- Torsion pendulum (sensitivity: 10^-12 N) with magnetic shielding (µ-metal, \>100 dB attenuation at 100 Hz)
-- Vibration isolation (active stage, \<0.1 Hz coupling at 1 Hz)
+- Torsion pendulum (sensitivity: 10^-12 N) with magnetic shielding (µ-metal, >100 dB attenuation at 100 Hz)
+- Vibration isolation (active stage, `<0.1 Hz` coupling at 1 Hz)
 - Temperature stability: ±0.1 K over 8-hour test window
 - Thermal gradient monitoring via embedded thermocouples (4-point measurement)
 
@@ -119,7 +119,7 @@ All tunneling experiments follow this rigorous protocol:
 3. **Magnetic Coupling Null**: Nearby unpowered ferromagnetic masses—if force persists, suspect magnetic coupling rather than tunneling
 4. **Thermal Creep Check**: Allow sample to equilibrate; measure drift over 2 hours (baseline motion without active drive)
 
-**Pass/Fail Gate**: Detect reproducible force >10 µN above sham baseline, with statistical significance p \< 0.01 over ≥10 independent trials, after subtracting thermal and magnetic artifacts.
+**Pass/Fail Gate**: Detect reproducible force `>10 µN` above sham baseline, with statistical significance `p < 0.01` over ≥10 independent trials, after subtracting thermal and magnetic artifacts.
 
 **Current Status**: Rig under construction; thermal isolation target Dec 2025.
 
@@ -150,9 +150,9 @@ The research explores tunneling control across multiple scales:
 
 | Component | Target | Assumption | TRL | Test Milestone |
 |-----------|--------|-----------|-----|----------------|
-| Superposition Coherence Time | 10^4 – 10^6 seconds (room-temperature goal) | Cryogenic isolation + quantum error correction | 1–2 | Demonstrate \>1 second coherence (any subsystem) |
-| Drive Coil Efficiency Gain | \>5% improvement vs. classical | Superposition + field resonance tuning | 2 | Thermal-loss measurement rig (±0.1% accuracy) |
-| Entanglement Fidelity (pairs) | \>99% | Quantum state transfer + preservation | 2 | Bell-parameter violation threshold |
+| Superposition Coherence Time | 10^4 – 10^6 seconds (room-temperature goal) | Cryogenic isolation + quantum error correction | 1–2 | Demonstrate `>1 second` coherence (any subsystem) |
+| Drive Coil Efficiency Gain | `>5%` improvement vs. classical | Superposition + field resonance tuning | 2 | Thermal-loss measurement rig (±0.1% accuracy) |
+| Entanglement Fidelity (pairs) | `>99%` | Quantum state transfer + preservation | 2 | Bell-parameter violation threshold |
 
 **Current Status**: Theoretical feasibility study; no hardware prototypes yet (TRL 1).
 
@@ -181,7 +181,7 @@ The no-communication theorem (Bell, 1964; Eberhard, 1978) proves that entangleme
 #### Implementation: Entanglement-Assisted Synchronization Loop
 
 ```
-[Node A] \<--entangled probe state--\> [Node B]
+[Node A] <--entangled probe state--> [Node B]
     |                                   |
     +-- measure local field state ------+
     |                                   |
@@ -197,7 +197,7 @@ Advantage over classical: Lower statistical noise in sensing, ~√N reduction fo
 
 ### Measurement & Validation
 
-**Testable Milestone**: Demonstrate phase synchronization error \<1 rad RMS across 3 distributed nodes, with entanglement-assisted method outperforming classical baseline by \>√2 factor.
+**Testable Milestone**: Demonstrate phase synchronization error `<1 rad` RMS across 3 distributed nodes, with entanglement-assisted method outperforming classical baseline by `>√2` factor.
 
 **Current Status**: Quantum sensing experiments in progress; classical baseline established (TRL 2-3).
 
@@ -267,7 +267,7 @@ We prototype field generator topologies aimed at:
 
 1. **Controlled Gradient Fields**: Electromagnetic and possibly pseudo-gravitational field patterns for tunneling control
 2. **Detunable Resonance**: Matching drive frequency to material response (target: sub-1% frequency stability over 1-hour window)
-3. **Burst Capability**: Brief high-power pulses for controlled testing (energy budget: \<10 J per shot, thermal dissipation \<5 W average)
+3. **Burst Capability**: Brief high-power pulses for controlled testing (energy budget: `<10 J` per shot, thermal dissipation `<5 W` average)
 
 **Pass/Fail Benchmark**: Field generator maintains target gradient ±5% for ≥60 seconds without thermal runaway.
 
@@ -281,7 +281,7 @@ We prototype field generator topologies aimed at:
 
 | Subsystem | Component | Near-Term Target | Speculative Horizon | TRL (Now) | TRL (2027) | Test Gate | Status |
 |-----------|-----------|-----------------|-------------------|-----------|-----------|-----------|--------|
-| **Tunneling** | Metamaterial channels | 10 × 10 mm active area, 100 channels | 1 meter × 1 meter panel | 1–2 | 2–3 | Force \>10 µN, p\<0.01 | Rig construction |
+| **Tunneling** | Metamaterial channels | 10 × 10 mm active area, 100 channels | 1 meter × 1 meter panel | 1–2 | 2–3 | Force `>10 µN`, `p<0.01` | Rig construction |
 | **Tunneling** | Drive field uniformity | ±5% field variation over active area | ±1% uniformity | 2 | 2–3 | Bench measurement Q1 2026 | Design phase |
 | **Superposition** | Coherence time | 10 μs (hybrid system) | 1 ms (cryogenic subsystem) | 1 | 2 | Spectroscopy validation | Theoretical |
 | **Entanglement** | Synchronization error | 1 rad RMS (3 nodes) | 0.1 rad RMS (10 nodes) | 2–3 | 3 | Bell-parameter test | In progress |
@@ -316,11 +316,11 @@ Every active experiment includes an identical **sham trial** with the critical c
 
 | # | Failure Mode | Root Cause | Detection | Mitigation | Test |
 |---|--------------|-----------|-----------|-----------|------|
-| 1 | Spurious electrostatic forces dominate signal | Unshielded electronics near force sensor | Rapid force increase with field-off | Mu-metal shielding; \<50 pV baseline noise | Faraday cage validation |
+| 1 | Spurious electrostatic forces dominate signal | Unshielded electronics near force sensor | Rapid force increase with field-off | Mu-metal shielding; `<50 pV` baseline noise | Faraday cage validation |
 | 2 | Thermal creep misinterpreted as thrust | Sample/mount thermal expansion | Force correlated with ±ΔT, not field state | Monitor embedded thermocouples; subtract thermal model | Dummy run (passive, T-sweep) |
-| 3 | Magnetic coupling from external sources | Nearby equipment (vacuum pump magnets, etc.) | Force synchronous with 50/60 Hz line | Relocate rig; measure stray field \<1 µT | Gaussmeter survey |
-| 4 | Quantum decoherence faster than predicted | Environmental noise underestimated | Measured coherence time T2 \<\< theory | Increase isolation; reduce vibrational coupling | Spectroscopy with decoupling |
-| 5 | Entanglement degradation in transport | Fiber/coil noise in classical links | Fidelity drops \>5% over 24 hours | Temperature-stabilized fiber runs; active feedback | Hourly Bell-parameter checks |
+| 3 | Magnetic coupling from external sources | Nearby equipment (vacuum pump magnets, etc.) | Force synchronous with 50/60 Hz line | Relocate rig; measure stray field `<1 µT` | Gaussmeter survey |
+| 4 | Quantum decoherence faster than predicted | Environmental noise underestimated | Measured coherence time T2 `<<` theory | Increase isolation; reduce vibrational coupling | Spectroscopy with decoupling |
+| 5 | Entanglement degradation in transport | Fiber/coil noise in classical links | Fidelity drops `>5%` over 24 hours | Temperature-stabilized fiber runs; active feedback | Hourly Bell-parameter checks |
 | 6 | Metamaterial resonance shift with temperature | Thermal expansion of lattice | Drive frequency no longer matched after warming | Tempco-matched materials; active tuning | Frequency calibration pre/post-experiment |
 | 7 | Field generator capacitor failure (energy release) | Over-voltage transient | Unexpected high-power pulse, thermal damage | Crowbar protection circuit; current limiting | Component stress testing |
 | 8 | Data-logging error (corrupted timestamps) | Clock drift or power glitch | Post-hoc analysis shows time gaps | Atomic clock reference + triple-redundant logging | Clock sync verification pre-experiment |
@@ -341,9 +341,9 @@ Every active experiment includes an identical **sham trial** with the critical c
 For detailed material properties supporting these quantum systems, see [Advanced Materials Research](../materials/advanced-materials-research).
 
 **Key Material Requirements**:
-- Metamaterials with tunable bandgaps and low-loss characteristics (target: Q \> 1000 @ 1–10 GHz)
-- Superconducting coils for field generation (critical temperature \>77 K preferred for logistics)
-- Precision diamond or sapphire mounts for dimensional stability (CTE \< 1 ppm/K)
+- Metamaterials with tunable bandgaps and low-loss characteristics (target: `Q > 1000` @ 1–10 GHz)
+- Superconducting coils for field generation (critical temperature `>77 K` preferred for logistics)
+- Precision diamond or sapphire mounts for dimensional stability (`CTE < 1 ppm/K`)
 
 ---
 
@@ -353,9 +353,9 @@ For detailed material properties supporting these quantum systems, see [Advanced
 
 This research does not currently trigger ITAR restrictions; however, the following subsystems *could* become export-controlled if successfully weaponized or integrated into propulsion systems:
 
-1. **Quantum field generators** (high-power RF generating \>10 kW @ 1–10 GHz)
+1. **Quantum field generators** (high-power RF generating `>10 kW` @ 1–10 GHz)
 2. **Entanglement distribution systems** (quantum sensing for inertial guidance)
-3. **Integrated propulsion prototypes** (if demonstrating \>1% thrust-to-weight in any configuration)
+3. **Integrated propulsion prototypes** (if demonstrating `>1%` thrust-to-weight in any configuration)
 
 **Mitigation**:
 - All publications undergo institutional export-control review
@@ -369,7 +369,7 @@ This research does not currently trigger ITAR restrictions; however, the followi
 ### Phase I: Foundational Validation (2025–2026, TRL 1–2)
 
 **Goals**:
-1. Demonstrate measurement rigs at target sensitivity (force \<10 µN, vacuum \<10^-6 Torr)
+1. Demonstrate measurement rigs at target sensitivity (force `<10 µN`, vacuum `<10^-6 Torr`)
 2. Establish sham-control baselines for all subsystems
 3. Complete vacuum null test (Casimir energy extraction should return "no net energy")
 4. Publish methods paper detailing protocols
@@ -383,8 +383,8 @@ This research does not currently trigger ITAR restrictions; however, the followi
 ### Phase II: Subsystem Optimization (2027–2028, TRL 2–3)
 
 **Goals** (contingent on Phase I success):
-1. If tunneling force \>10 µN validated: scale metamaterial to 100 × 100 mm
-2. If entanglement fidelity \>99%: add 5th and 10th nodes to sync network
+1. If tunneling force `>10 µN` validated: scale metamaterial to 100 × 100 mm
+2. If entanglement fidelity `>99%`: add 5th and 10th nodes to sync network
 3. Deploy hybrid classical/quantum engine control (cloud service integration)
 
 ### Phase III–V: Integration & Prototyping (2029+)
@@ -413,7 +413,7 @@ Deferred pending Phase I & II outcomes.
 |------------------|------------------|---------------------------|-----------|
 | Torsion pendulum (gravity nulled) | 10^-12 N | 10^-14 N (atom interferometer) | Schlipf et al., PRL 123 (2019) |
 | Magnetic force microscopy | 10^-15 N (atto-newton) | 10^-18 N (latest) | Rugar et al., Nature 430 (2004) |
-| Lorentz force sensor | 10^-11 N | \< achieved | Typical lab setup |
+| Lorentz force sensor | 10^-11 N | `< achieved` | Typical lab setup |
 | **Azure Space Group target** | 10^-12 N | — | This document |
 
 **Interpretation**: Our sensitivity target is conservative, achievable with tabletop equipment and well-characterized noise budgets.
