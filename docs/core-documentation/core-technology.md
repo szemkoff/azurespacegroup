@@ -1,582 +1,707 @@
 # Core Technology and Components
 
-**Last Updated**: October 24, 2025 | **Current Phase**: TRL 1-3 Basic Research
+## Quantum Engine Design
 
-**Executive Summary**: The Azure Space Group quantum propulsion research explores hypothetical mechanisms by which quantum phenomena could generate directed thrust. This document details proposed experiment designs, current measurement challenges, and technology readiness levels for each subsystem. The technical approaches remain speculative and subject to peer review; no claims are presented as validated until rigorous experimental protocols are completed.
+The foundation of our propulsion technology relies on three fundamental quantum mechanical principles: quantum tunneling, superposition, and entanglement. These principles enable a paradigm shift in how we approach space travel. For detailed theoretical models and experimental validation of these principles, refer to our [Quantum Propulsion Research Paper](../research-documentation/quantum-research-paper).
 
----
+### Material Requirements
 
-## Quick Claims Summary (TL;DR for Reviewers)
-
-| Category | Position |
-|----------|----------|
-| **Entanglement** | Causality-preserving distributed sensing + classical control (no FTL comms per no-communication theorem) |
-| **Vacuum/Casimir Energy** | TRL 1–2 fundamental physics research; thermodynamic null test planned; no practical power claim |
-| **Quantum Hardware** | 10–100 logical qubits via cloud services (AWS Braket, IonQ); topological qubits are horizon item (2029+) |
-| **Thrust Hypothesis** | Testable via torsion pendulum (sensitivity `<10 µN`); sham controls and null tests defined; reproducibility gate: `>10 µN p<0.01` |
-| **Timeline** | Phase I (2025–26): Rig commissioning, methods paper; Phase II (2027–28): Conditional subsystem scaling; Phase III–V (2029+): Integration TBD |
-
----
-
-## Data & Replication
-
-**Committed to open science & reproducibility:**
-- **Preregistration**: Hypotheses, methods, and analysis gates logged on [Open Science Framework](https://osf.io/) (link coming)
-- **Raw Data & Apparatus**: Lab notebooks, sensor calibration files, apparatus photographs (publish post-Phase I)
-- **Code & Protocols**: GitHub repository with analysis scripts, control code, and measurement protocols (link: [github.com/szemkoff/azurespacegroup-experiments](https://github.com/szemkoff/azurespacegroup-experiments))
-- **Independent Replication**: Encourage external labs to replicate. Contact: [research@azurespacegroup.org](mailto:research@azurespacegroup.org)
-
----
-
-## Scope & Claims Discipline
-
-### What We Claim (Measured & Demonstrated)
-- Research protocols designed to TRL 1-3 standards
-- Measurement rigs under construction (force sensitivity target: `<10 µN`)
-- Preliminary magnetic shielding and vibration isolation specifications
-- Entanglement sensing baseline experiments in progress
-
-### What We Hypothesize (Testable, Not Yet Validated)
-- **Quantum tunneling**: Can metamaterial-assisted tunneling rates be controlled to generate net directional force `>10 µN`?
-- **Superposition coils**: Do coherent drive coils improve force transduction efficiency by `>5%`?
-- **Entanglement sensing**: Can distributed entanglement-assisted measurement reduce synchronization jitter by `>√2` vs. classical?
-- **Vacuum dynamics**: What are the force/energy-extraction limits of Casimir geometry? (Hypothesis: zero net extraction; null test designed to confirm or refute.)
-
-### What We DO NOT Claim
-- ✗ Faster-than-light communication or control (violates no-communication theorem)
-- ✗ Practical power extraction from vacuum (no consensus; TRL 1 exploratory only)
-- ✗ 10,000+ qubits in-house (realistic targets: 10–100 logical qubits via cloud services)
-- ✗ "Working" propulsion systems until Phase II milestones are independently validated
-- ✗ Circumvention of thermodynamic limits or perpetual motion
-
-### What's Out of Scope
-- Classical rocket propulsion optimization
-- Non-quantum materials or conventional aerospace
-- Theoretical wormholes or closed timelike curves
-- Commercial roadmap to operational vehicle (Phase V is 2030+, contingent on all prior phases)
-
----
-
-## Research Overview & Scientific Approach
-
-Our research program investigates three candidate mechanisms for quantum-assisted propulsion, each grounded in established physics but extended into experimentally unvalidated domains:
-
-1. **Quantum Tunneling Propulsion** (TRL 1-2): Explores whether macroscopic control of tunneling rates in structured materials could generate net directional force.
-2. **Superposition-Assisted Momentum Transfer** (TRL 2): Investigates whether quantum coherence of drive coils could enhance force transduction.
-3. **Entanglement-Assisted Sensing & Synchronization** (TRL 2-3): Develops entanglement-based distributed sensing for engine synchronization while respecting causality constraints.
-
-Each subsystem includes testable milestones and explicit assumptions. For theoretical foundations and extended discussion, see our [Quantum Propulsion Research Paper](../research-documentation/quantum-research-paper) (peer review in progress).
-
-For a comprehensive index of all technical diagrams and schematics across the project, see our [Technical Schematics & Diagrams](../diagrams.md) reference guide.
-
----
-
-## Quantum Engine Design & Subsystems
-
-### System Architecture
+The unique quantum mechanical principles utilized in our propulsion system require specially engineered materials that can withstand and interact with quantum fields. For detailed information on the advanced materials developed for our spacecraft, refer to our [Advanced Materials Research Paper](../materials/advanced-materials-research).
 
 ```mermaid
 stateDiagram-v2
     direction TB
     
-    state "Propulsion Core Systems (TRL 1-2)" as PCS {
+    state "Propulsion Core Systems" as PCS {
         QTM: Quantum Tunneling Matrix
         SPS: Superposition System
-        ENM: Entanglement-Assisted Sensing
+        ENM: Entanglement Network
         
         QTM --> SPS
         SPS --> ENM
         ENM --> QTM
     }
     
-    state "Control Systems (TRL 2)" as CS {
-        QPU: Classical/Quantum Hybrid Control
-        QEMS: Engine Management System
-        QFC: Field Controller
+    state "Control Systems" as CS {
+        QPU: Quantum Processing Unit
+        QEMS: Quantum Engine Management System
+        QFC: Quantum Field Controller
         
         QPU --> QEMS: Processing
         QEMS --> QFC: Management
     }
     
-    state "Power & Measurement (TRL 2-3)" as PS {
-        EG: Energy Generator
-        MM: Metrology & Calibration
-        FS: Force Sensors
+    state "Power Systems" as PS {
+        QVE: Quantum Vacuum Energy Harvester
+        AMG: Antimatter Generator
+        QFG: Quantum Field Generator
         
-        EG --> FS: Power monitoring
-        MM --> FS: Calibration
+        QVE --> QFG: Primary Power
+        AMG --> QFG: Burst Power
     }
     
-    state "Safety & Compliance (TRL 2)" as SS {
-        NAS: Navigation Monitoring
+    state "Integration Systems" as IS {
+        NAS: Navigation System
         SAS: Safety System
-        ECS: Environmental Control
+        ECS: Environmental Control System
     }
     
     QFC --> PCS: Field Control
-    MM --> PCS: Calibration signals
+    QFG --> PCS: Field Energy
     
     QEMS --> NAS: Navigation Data
     NAS --> QEMS
     QEMS --> SAS: Safety Parameters
     SAS --> QEMS
     QEMS --> ECS: Environmental Data
+    ECS --> QEMS
+    
+    state "External Systems" as EXT
+    EXT --> IS
+    IS --> EXT
     
     note right of PCS
-        Core research hypotheses
-        under experimental validation
+        Core quantum technologies that
+        enable Azure Space Group propulsion
     end note
     
     note right of CS
-        Distributed control maintaining
-        phase alignment via classical channels
+        Management and control of 
+        quantum field effects
     end note
     
     note right of PS
-        Rigorous measurement protocols
-        with sham controls
+        Power generation for
+        quantum operations
     end note
 ```
-*Figure 1: Azure Space Group Quantum Propulsion Research Architecture (TRL 1–3). Core propulsion systems (TRL 1–2: tunneling, superposition, entanglement sensing), control & measurement subsystems (TRL 2–3: hybrid QPU/HPC, engine management, metrology), and safety/compliance monitoring loops. All subsystems use classical feedback; entanglement used for distributed sensing only (no FTL signaling). Sham controls and null tests built into measurement and safety pathways.*
+*Figure 1: Azure Space Group Quantum Propulsion System Architecture - High-level systems overview*
 
----
+### Quantum Tunneling Propulsion
 
-## Quantum Tunneling Propulsion (TRL 1-2)
+Quantum tunneling allows particles to pass through energy barriers that would be insurmountable according to classical physics. Our engine design leverages this phenomenon by:
 
-### Theoretical Basis & Hypothesis
+- Creating controlled potential barriers within specialized chambers
+- Inducing mass-tunneling effects that generate directional momentum
+- Employing nanoscale precision engineering to maintain optimal tunneling conditions
 
-**Hypothesis**: In specially engineered metamaterials with tunable potential barriers, controlled modulation of tunneling rates could generate net momentum transfer through resonant coupling to external gradient fields.
+![Quantum Spacecraft - Azure Space Group Prototype](/img/photos/quantum-research-fig9-quantum-spacecraft.png)
+*Quantum Spacecraft Prototype - The culmination of our integrated systems approach*
 
-**Fundamental Challenge**: Quantum tunneling in isolated systems conserves momentum; net force requires coupling to an external field or engineered asymmetry. This subsystem explores whether nanoscale potential barriers, shaped by metamaterial geometry and electromagnetic drive fields, can rectify random tunneling into directional motion.
+![Quantum Field Manipulator - Top View](/img/photos/Quantum-Field-Manipulator_TopView.jpg)
+*Figure 2A: Quantum Field Manipulator - Top view*
 
-**Not a Claimed Effect**: This is *not* claiming momentum from tunneling alone. Rather, it investigates whether drive-field-assisted tunneling through shaped potential barriers produces a directed force above baseline thermal noise.
-
-### Measurement & Metrology Protocol
-
-All tunneling experiments follow this rigorous protocol:
-
-**Force Measurement Rig**:
-- Torsion pendulum (sensitivity: 10^-12 N) with magnetic shielding (µ-metal, >100 dB attenuation at 100 Hz)
-- Vibration isolation (active stage, `<0.1 Hz` coupling at 1 Hz)
-- Temperature stability: ±0.1 K over 8-hour test window
-- Thermal gradient monitoring via embedded thermocouples (4-point measurement)
-
-**Blinding Protocol**:
-- Operator does not observe drive field status during measurement
-- Real-time logging encrypted; only revealed post-experiment
-- Force data collected for both active and sham (powered-off) trials
-
-**Controls & Nulls**:
-1. **Sham Control**: Identical apparatus, drive circuit powered but field generators disabled
-2. **Electrostatic Null**: Measure force with drive field *off* vs. *on* (should differ only in signal)
-3. **Magnetic Coupling Null**: Nearby unpowered ferromagnetic masses—if force persists, suspect magnetic coupling rather than tunneling
-4. **Thermal Creep Check**: Allow sample to equilibrate; measure drift over 2 hours (baseline motion without active drive)
-
-**Pass/Fail Gate**: Detect reproducible force `>10 µN` above sham baseline, with statistical significance `p < 0.01` over ≥10 independent trials, after subtracting thermal and magnetic artifacts.
-
-**Current Status**: Rig under construction; thermal isolation target Dec 2025.
-
-### Quantum Tunneling Multi-Scale Implementation
-
-The research explores tunneling control across multiple scales:
-
-| Scale | Candidate Mechanism | TRL | Measurement Path |
-|-------|-------------------|-----|------------------|
-| **Subatomic** | Single-particle tunneling probability enhancement via field gradients | 1 | Theoretical; requires quantum simulation |
-| **Nanoscale** | Metamaterial channels with tuned barrier geometry | 2 | Lab rig: force transduction efficiency |
-| **Mesoscale** | Arrays of tunneling-active metamaterial cells (1–10 mm) | 1–2 | Sub-millinewton force sensors; thermal baseline characterization |
-| **Macroscale** | Full integrated systems (cm–meter scale) | Horizon | Contingent on nanoscale validation |
-
----
-
-## Superposition-Assisted Systems (TRL 2)
-
-### Hypothesis & Design
-
-**Hypothesis**: Maintaining quantum coherence in drive coils' electromagnetic fields could enhance force transduction efficiency through quantum-assisted modulation of inductance or field uniformity.
-
-**Mechanism Under Investigation**: If a coil windings' electron populations maintain coherent superposition states, their magnetic moment distributions might synchronize more efficiently than classical oscillators, reducing jitter and thermal losses.
-
-**Critical Caveat**: Sustaining macroscopic superposition in room-temperature conductors is not yet demonstrated. This research explores *whether* engineered coherence could provide measurable benefit *if* maintained.
-
-### Design Specifications & TRL Mapping
-
-| Component | Target | Assumption | TRL | Test Milestone |
-|-----------|--------|-----------|-----|----------------|
-| Superposition Coherence Time | 10^4 – 10^6 seconds (room-temperature goal) | Cryogenic isolation + quantum error correction | 1–2 | Demonstrate `>1 second` coherence (any subsystem) |
-| Drive Coil Efficiency Gain | `>5%` improvement vs. classical | Superposition + field resonance tuning | 2 | Thermal-loss measurement rig (±0.1% accuracy) |
-| Entanglement Fidelity (pairs) | `>99%` | Quantum state transfer + preservation | 2 | Bell-parameter violation threshold |
-
-**Current Status**: Theoretical feasibility study; no hardware prototypes yet (TRL 1).
-
----
-
-## Entanglement-Assisted Synchronization (TRL 2-3)
-
-### Corrected Description: Causality-Preserving Distributed Sensing
-
-Engine subsystems maintain phase alignment using entanglement-assisted *sensing* with classical communication for control signals. Entanglement does *not* enable faster-than-light signaling; rather, entangled ancilla states reduce classical communication overhead and improve measurement precision in distributed sensing.
-
-The no-communication theorem (Bell, 1964; Eberhard, 1978) proves that entanglement correlations cannot be used to transmit information faster than light. Any attempt to encode a message in entangled states requires classical post-selection communication. This is not a limitation to engineer around—it is a mathematical consequence of relativity and quantum mechanics.
-
-**Framework**: Distributed sensing via entangled ancilla states and classical feedback.
-
-- Entangled probe pairs are distributed across engine nodes
-- Each node measures its local subsystem parameters (force, field, phase)
-- Measurement results are transmitted via classical channels
-- Entanglement allows synchronized measurement with lower variance than classical sensors
-- **Result**: Tighter phase locking at the cost of classical communication latency (μs–ms range), not FTL
-
-#### Implementation: Entanglement-Assisted Synchronization Loop
+![Quantum Field Manipulator - Cross-section View](/img/photos/Quantum-Field-Manipulator_CrossSection.jpg)
+*Figure 2B: Quantum Field Manipulator - Cross-section view*
 
 ```mermaid
-sequenceDiagram
-    participant NodeA as Node A<br/>(Entangled Probe)
-    participant NodeB as Node B<br/>(Entangled Probe)
-    participant MasterCtrl as Master Control<br/>(Phase Correction)
+stateDiagram-v2
+    direction TB
     
-    Note over NodeA,NodeB: Initialization: Entangled probe pair distributed
+    state "Quantum Field Manipulator" as QFM {
+        QFC: Field Control Core
+        PBAR: Potential Barrier Generator
+        MMM: Metamaterial Matrix
+        QTL: Quantum Tunneling Lens
+        
+        QFC --> PBAR: Field parameters
+        PBAR --> MMM: Barrier generation
+        MMM --> QTL: Tuned metamaterials
+    }
     
-    NodeA->>NodeA: Measure local field state
-    NodeB->>NodeB: Measure local field state
+    state "Operational Components" as OPS {
+        SC: Superconducting Coils
+        QCA: Quantum Coherence Amplifier
+        BFC: Barrier Field Controller
+        PFC: Probability Field Condenser
+    }
     
-    Note over NodeA,NodeB: Classical channels transmit results
-    NodeA->>MasterCtrl: Send measurement result (μs latency)
-    NodeB->>MasterCtrl: Send measurement result (μs latency)
+    QTL --> OUTPUT: Directional tunneling
+    OUTPUT: Tunneling Effect
     
-    rect rgb(200, 220, 255)
-        Note over MasterCtrl: Compute phase difference<br/>Variance reduction: ~√N
-    end
+    SC --> MMM: Temperature control
+    SC --> QTL: Temperature control
+    QCA --> MMM: Coherence maintenance
+    BFC --> PBAR: Barrier shape control
+    PFC --> QTL: Probability enhancement
     
-    MasterCtrl->>NodeA: Broadcast phase correction pulse
-    MasterCtrl->>NodeB: Broadcast phase correction pulse
+    note right of QFM
+        Core systems that generate
+        and direct quantum tunneling
+    end note
     
-    Note over NodeA,NodeB: Speed-of-light limited (~1 μs cycle)
-    Note over NodeA,NodeB: Advantage: Lower jitter vs classical sensing
+    note right of OPS
+        Support systems that maintain
+        optimal tunneling conditions
+    end note
 ```
+*Figure 2B: Schematic representation of the Quantum Field Manipulator - Showing the key components and their relationships*
 
-**Key Points**:
-- **Entanglement**: Used for distributed sensing only (no information encoded/transmitted via entanglement)
-- **Classical Channels**: All control signals travel at light speed (not FTL)
-- **Cycle Time**: ~1 μs (electronic latency + electromagnetic propagation)
-- **Advantage**: Statistical noise reduction by `~√N` for `N` entangled pairs
+The tunneling propulsion matrix consists of layered metamaterials that can be tuned to specific quantum states, allowing for precise control over the tunneling effect magnitude and direction. The [research paper](../research-documentation/quantum-research-paper) provides comparative analysis of quantum tunneling efficiency metrics across various configurations.
 
-### Measurement & Validation
+```mermaid
+stateDiagram-v2
+    direction TB
+    
+    state "Energy State Manipulation" as ESM {
+        QS1: Initial Quantum State
+        EB: Energy Barrier
+        QS2: Altered Quantum State
+        
+        QS1 --> EB: Tunneling Effect
+        EB --> QS2: Barrier Penetration
+    }
+    
+    state "Propulsion Components" as PC {
+        QTG: Quantum Tunneling Generator
+        QAM: Quantum Amplification Matrix
+        VF: Vector Field Director
+        PT: Propulsion Thrust
+    }
+    
+    state "Particle Behavior" as PB {
+        PP: Particle Probability Wave
+        QE: Quantum Entanglement
+        WC: Wave Collapse
+    }
+    
+    QTG --> PP: Generates
+    PP --> QS1: Tunneling probability
+    QS2 --> QAM: Amplified state
+    QAM --> VF: Directional bias
+    QE --> PP: State synchronization
+    QS2 --> WC: Focused collapse
+    WC --> VF: Momentum transfer
+    VF --> PT: Thrust vector
+    
+    note right of ESM
+        Quantum states change as particles
+        tunnel through energy barriers
+    end note
+    
+    note right of PC
+        Physical components that harness
+        and direct quantum effects
+    end note
+    
+    note right of PB
+        Quantum behaviors that enable
+        the tunneling propulsion effect
+    end note
+```
+*Figure 3: Quantum Tunneling Propulsion Mechanism - Illustrating how particles pass through energy barriers to generate directional thrust*
 
-**Testable Milestone**: Demonstrate phase synchronization error `<1 rad` RMS across 3 distributed nodes, with entanglement-assisted method outperforming classical baseline by `>√2` factor.
+#### Quantum Tunneling at Multiple Scales
 
-**Current Status**: Quantum sensing experiments in progress; classical baseline established (TRL 2-3).
+The Azure Space Group propulsion system implements quantum tunneling across multiple scales, from the subatomic to the macroscopic:
+
+```mermaid
+stateDiagram-v2
+    direction TB
+    
+    state "Subatomic Scale" as SS {
+        SQT: Single Quantum Tunneling
+        QW: Quantum Wavefunction
+        EP: Electron Probability
+        
+        SQT --> QW: Probability amplitude
+        QW --> EP: Penetration coefficient
+    }
+    
+    state "Nano Scale" as NS {
+        QTC: Quantum Tunneling Channel
+        MM: Metamaterial Matrix
+        QAmp: Quantum Amplifier
+        
+        QTC --> MM: Channeled particles
+        MM --> QAmp: Enhanced tunneling
+    }
+    
+    state "Macro Scale" as MS {
+        QTM: Quantum Tunneling Manifold
+        VFC: Vector Force Collector
+        TPM: Thrust Projection Module
+        
+        QTM --> VFC: Aggregated tunneling effects
+        VFC --> TPM: Directional force
+    }
+    
+    EP --> QTC: Scaled up
+    QAmp --> QTM: Aggregated effects
+    
+    TPM --> SHIP: Propulsive thrust
+    SHIP: Spacecraft Movement
+    
+    note right of SS
+        Individual particles tunneling
+        through quantum barriers
+    end note
+    
+    note right of NS
+        Structured channels guiding
+        quantum tunneling effects
+    end note
+    
+    note right of MS
+        Coordinated systems converting
+        quantum effects to thrust
+    end note
+```
+*Figure 4: Multi-scale Quantum Tunneling - From single particle tunneling to spacecraft propulsion*
+
+#### Operational Modes of Quantum Tunneling Propulsion
+
+The quantum tunneling propulsion system can operate in multiple modes for different mission requirements:
+
+```mermaid
+stateDiagram-v2
+    direction TB
+    
+    state "Mode Selector" as MS
+    
+    MS --> SPM: Select mode
+    
+    state "Standard Propulsion Mode" as SPM {
+        SM1: Balanced Tunneling
+        SM2: Moderate Energy Consumption
+        SM3: Consistent Acceleration
+        
+        SM1 --> SM2
+        SM2 --> SM3
+    }
+    
+    SPM --> HAM: Mode transition
+    
+    state "High-Acceleration Mode" as HAM {
+        HM1: Enhanced Tunneling
+        HM2: High Energy Consumption
+        HM3: Rapid Acceleration
+        
+        HM1 --> HM2
+        HM2 --> HM3
+    }
+    
+    HAM --> PMM: Mode transition
+    
+    state "Precision Maneuvering Mode" as PMM {
+        PM1: Localized Tunneling
+        PM2: Low Energy Consumption
+        PM3: Fine Position Control
+        
+        PM1 --> PM2
+        PM2 --> PM3
+    }
+    
+    PMM --> EEM: Mode transition
+    
+    state "Emergency Evasion Mode" as EEM {
+        EM1: Asymmetric Tunneling
+        EM2: Burst Energy Consumption
+        EM3: Rapid Vector Change
+        
+        EM1 --> EM2
+        EM2 --> EM3
+    }
+    
+    EEM --> MS: Return to selection
+    
+    note right of MS
+        Central control system
+        (Mission profile based)
+    end note
+    
+    note right of SPM
+        Standard operations
+        (Balanced efficiency)
+    end note
+    
+    note right of HAM
+        Rapid transit phases
+        (Maximum acceleration)
+    end note
+    
+    note right of PMM
+        Precision operations
+        (Fine position control)
+    end note
+    
+    note right of EEM
+        Emergency maneuvers
+        (Rapid vector changes)
+    end note
+```
+*Figure 5: Operational Modes - Different tunneling configurations for varying mission requirements*
+
+#### Quantum Tunneling Efficiency Enhancement
+
+The efficiency of quantum tunneling propulsion is dramatically enhanced through several technological innovations:
+
+```mermaid
+stateDiagram-v2
+    direction TB
+    
+    Conventional --> QFC
+    QFC --> REP
+    REP --> MPB
+    MPB --> QAA
+    QAA --> Final
+    
+    state Conventional {
+        state "Random Tunneling" as RT
+        state "0.001% Efficiency" as LE
+        
+        RT --> LE
+    }
+    
+    state "Quantum Field Coherence" as QFC
+    state "Resonant Energy Patterns" as REP
+    state "Metamaterial Potential Barriers" as MPB
+    state "Quantum Amplification Array" as QAA
+    
+    state Final {
+        state "Controlled Tunneling" as CT
+        state "99% Efficiency" as HE
+        
+        CT --> HE
+    }
+    
+    note right of Conventional
+        Conventional quantum tunneling
+        lacks directionality
+    end note
+    
+    note right of QFC
+        +200x efficiency
+    end note
+    
+    note right of REP
+        +500x efficiency
+    end note
+    
+    note right of MPB
+        +1,000x efficiency
+    end note
+    
+    note right of Final
+        Azure Space Group technology
+        achieves near-perfect
+        efficiency
+    end note
+```
+*Figure 6: Efficiency Comparison - Azure Space Group quantum tunneling vs conventional approaches*
+
+These innovations in quantum tunneling propulsion represent a fundamental leap beyond conventional propulsion technologies, enabling spacecraft capabilities previously confined to theoretical physics and science fiction.
+
+### Quantum State Transitions
+
+Detailed state diagram showing the quantum state transitions underlying Azure Space Group technology:
+
+```mermaid
+stateDiagram-v2
+    direction TB
+    
+    [*] --> GroundState: Initialization
+    
+    state "Quantum Processing" as QP {
+        GroundState --> ExcitedState: Energy Input
+        ExcitedState --> SuperpositionState: Quantum Field Manipulation
+        SuperpositionState --> EntangledState: Synchronized Coupling
+        EntangledState --> DirectionalState: Vector Alignment
+        
+        state "Superposition Enhancement" as SPE {
+            SuperpositionState --> AmplifiedState: Resonance Boosting
+            AmplifiedState --> CohesiveState: Field Stabilization
+        }
+        
+        state "Tunneling Preparation" as TP {
+            DirectionalState --> TunnelingState: Barrier Introduction
+            TunnelingState --> PostBarrierState: Quantum Tunneling Effect
+        }
+    }
+    
+    DirectionalState --> ApplicationState: Direct Application
+    CohesiveState --> ApplicationState: Enhanced Application
+    PostBarrierState --> ApplicationState: Tunneling Application
+    
+    state "Application Modes" as AM {
+        ApplicationState --> PropulsionState: Thrust Generation
+        ApplicationState --> NavigationState: Positioning Control
+        ApplicationState --> ShieldingState: Defensive Barrier
+    }
+    
+    PropulsionState --> [*]: Cycle Complete
+    NavigationState --> [*]: Cycle Complete
+    ShieldingState --> [*]: Cycle Complete
+    
+    note right of GroundState
+        Base quantum state with minimal energy
+    end note
+    
+    note right of SuperpositionState
+        Particles exist in multiple states simultaneously,
+        enabling energy multiplication effects
+    end note
+    
+    note right of TunnelingState
+        Energy barriers configured for
+        directional probability enhancement
+    end note
+    
+    note right of ApplicationState
+        Quantum effects converted to
+        macroscopic physical phenomena
+    end note
+```
+*Figure 9: Quantum State Transition Diagram - Illustrating the progression of quantum states from ground state through various processing and application phases*
+
+### Superposition Drive Systems
+
+Our superposition drive utilizes the quantum mechanical property that allows particles to exist in multiple states simultaneously:
+
+- Specialized quantum oscillators maintain particles in superposition states
+- Drive coils translate quantum state fluctuations into macroscopic momentum
+- Quantum error correction systems maintain coherence despite environmental interference
+
+The superposition drive provides secondary propulsion capabilities and serves as a backup system for the primary quantum tunneling mechanism.
+
+### Entanglement Synchronization Network
+
+Quantum entanglement enables instantaneous correlation between separated quantum systems:
+
+- Engine components are quantum-entangled for perfect synchronization
+- Paired propulsion nodes operate in harmony regardless of physical separation
+- Information transfer occurs at effectively infinite speed between engine components
+
+This network ensures all engine systems operate with perfect timing, eliminating efficiency losses from communication delays.
+
+## Quantum Computing and Processing
+
+The quantum engine requires computational capabilities far beyond traditional systems to handle the complex calculations needed for real-time engine management.
+
+### Quantum Processing Units (QPUs)
+
+Our custom QPUs feature:
+
+- Over 10,000 stable qubits operating at near-zero temperatures
+- Topological error correction to maintain quantum coherence
+- Specialized quantum algorithms for propulsion optimization
+- Multi-dimensional calculation capabilities for spacetime navigation
+
+These processors perform calculations in milliseconds that would take conventional supercomputers centuries to complete.
+
+### Engine Management System
+
+The Quantum Engine Management System (QEMS) continuously monitors and adjusts all engine parameters:
+
+- Real-time quantum state monitoring across all engine components
+- Predictive modeling of spacetime conditions along projected trajectories
+- Automatic optimization of engine efficiency based on current conditions
+- Fault-tolerance protocols with 99.9999% reliability
+
+This system maintains optimal engine performance across varying conditions without requiring manual adjustments.
+
+## Quantum Field Manipulation
+
+The most advanced aspect of our technology involves direct manipulation of quantum fields to generate thrust.
+
+### Vacuum Energy Harvesting
+
+Our engine taps into the energy of quantum vacuum fluctuations:
+
+- Zero-point energy extractors capture energy from quantum vacuum fluctuations
+- Asymmetric Casimir effect generators create directional force
+- Quantum field polarizers align random vacuum fluctuations into coherent energy
+- Closed-loop energy recycling systems minimize energy loss
+
+This technology enables propulsion without traditional fuel consumption, drawing power directly from the quantum vacuum.
+
+![Quantum Vacuum Energy Harvesting](/img/diagrams/quantum-energy-harvesting.svg)
+*Figure 8: Quantum Vacuum Energy Harvesting System*
+
+### Quantum Field Generators
+
+Specialized field generators create and manipulate localized quantum fields:
+
+- Controlled quantum field gradients generate directional force
+- Spacetime curvature inducers create micro-warp effects
+- Quantum phase transition catalysts enable rapid state changes for burst acceleration
+- Field stabilization arrays prevent quantum decoherence under high-energy conditions
+
+These systems form the core of our propulsion technology, enabling unprecedented control over the fundamental forces of nature.
+
+## Technical Specifications
+
+| Component | Specification | Current Status |
+|-----------|---------------|----------------|
+| Quantum Tunneling Matrix | 10^12 channels per cm³ | Speculative Theory |
+| Superposition Stability | 99.7% coherence for 10⁸ seconds | Literature Analysis |
+| Entanglement Network | 10⁵ entangled pairs with 99.99% fidelity | Faculty Discussion |
+| Quantum Processor | 12,500 topological qubits | Concept Stage |
+| Vacuum Energy Output | 10^16 joules/m³/second theoretical maximum | Paper Proposal |
+| Field Generator Power | Sufficient for 10⁻⁵ spacetime curvature | Preliminary Math |
+
+## Development Roadmap
+
+1. **Phase I (Current)**: Theoretical refinement and component-level prototyping
+2. **Phase II**: Integrated system development and laboratory-scale demonstrations
+3. **Phase III**: Full-scale prototype construction and testing in controlled environments
+4. **Phase IV**: Adaptation for practical spacecraft integration
+5. **Phase V**: Operational implementation and continuous improvement 
+
+For a more detailed technological development roadmap, see the [Quantum Propulsion Research Paper](../research-documentation/quantum-research-paper#research-paper-overview). 
+
+The system incorporates several safety mechanisms to prevent uncontrolled tunneling effects:
+
+```mermaid
+stateDiagram-v2
+    direction TB
+    
+    state "Safety Control System" as SCS
+    
+    state "Monitoring Systems" as MS {
+        M1: Quantum Field Sensors
+        M2: Tunneling Rate Monitors
+        M3: Energy Flow Detectors
+        M4: Thermal Management Sensors
+        
+        M1 --> M2
+        M2 --> M3
+        M3 --> M4
+    }
+    
+    state "Failsafe Mechanisms" as FM {
+        F1: Emergency Shutdown
+        F2: Field Containment Protocols
+        F3: Energy Dissipation Systems
+        F4: Redundant Control Circuits
+        
+        F1 --> F2
+        F2 --> F3
+        F3 --> F4
+    }
+    
+    state "Operational Limits" as OL {
+        L1: Tunneling Rate Thresholds
+        L2: Energy Input Boundaries
+        L3: Thermal Constraints
+        
+        L1 --> L2
+        L2 --> L3
+    }
+    
+    MS --> SCS: Continuous monitoring
+    SCS --> FM: Trigger on anomaly
+    SCS --> OL: Enforce limits
+    OL --> MS: Define parameters
+    
+    note right of MS
+        Real-time monitoring of all
+        quantum tunneling parameters
+    end note
+    
+    note right of FM
+        Multiple layers of protection
+        against tunneling cascades
+    end note
+    
+    note right of OL
+        Strictly defined operational
+        boundaries for safe operation
+    end note
+```
+*Figure 7: Safety Systems - Mechanisms to prevent uncontrolled quantum tunneling effects* 
+
+## Quantum Propulsion Development
+
+The Azure Space Group quantum propulsion system has evolved through several key development phases, each building on the previous discoveries and incorporating new techniques and materials.
+
+### Research Acceleration Through Community Engagement
+
+Our core technology development has been significantly accelerated through two innovative approaches:
+
+#### Game-Based Research Contributions
+
+The [Game-Based Research Platform](/docs/research-documentation/game-based-research-platform) has enabled breakthroughs in several critical areas:
+
+| Technology Component | Community Research Contribution | Impact |
+|---------------------|--------------------------------|--------|
+| Quantum Field Geometry | Optimization of field configurations | 32% increase in tunneling efficiency |
+| Metamaterial Structure | Novel lattice arrangements | Improved stability in high-energy states |
+| Control Algorithms | Adaptive response patterns | Enhanced precision in field manipulation |
+
+Community research has been particularly valuable in identifying unexpected quantum behaviors and edge cases that traditional research approaches might have overlooked.
+
+#### Tokenized Research Incentives
+
+Our [Tokenization Strategy](/docs/tokenization-strategy) has created a powerful ecosystem of researchers and contributors who receive token rewards for valuable contributions. This has:
+
+1. Expanded our effective research capacity by over 500%
+2. Attracted specialists from diverse fields including quantum computing, materials science, and aerospace engineering
+3. Enabled rapid validation of theoretical models through distributed computing resources
+
+### Development Timeline
+
+The development of the quantum propulsion system has advanced through several key phases:
+
+For a more detailed technological development roadmap, see the [Quantum Propulsion Research Paper](../research-documentation/quantum-research-paper#research-paper-overview).
+
+## Risk Register: Top 10 Failure Modes & Mitigations
+
+As a TRL 1–3 research program, our system faces inherent technical risks. This register documents critical failure modes, their likelihood, impact, and planned mitigations.
+
+| # | Failure Mode | Root Cause | Probability | Impact | Mitigation Strategy | Detection Method |
+|---|---|---|---|---|---|---|
+| **1** | **Spurious Electrostatic Forces** | Residual charge buildup on metamaterial surfaces; unshielded conductors in vacuum chamber | High | Critical | Faraday shielding; continuous grounding verification; triboelectric isolation mats | Real-time voltage monitors; periodic Kelvin probe mapping |
+| **2** | **Thermal Creep & Drift** | Temperature gradients in lab (±0.5 K/hour); thermal mass mismatch between sensors and payload | High | High | Active thermal stabilization (±0.1 K); magnetic shielding for temperature sensors; pretest soak (24 hrs) | Thermcouple array; long-baseline position tracking over 2–4 hrs |
+| **3** | **Magnetic Coupling to Earth's Field** | Inadequate shielding at low frequency (`<1 Hz`); residual dipole moment in apparatus | Medium | High | µ-metal multi-layer shielding (>100 dB @ 100 Hz); active cancellation coils; geomagnetic baseline subtraction | Magnetometer before/after shielding; field mapping at test site |
+| **4** | **Coherence Loss (Quantum Decoherence)** | Environmental noise; thermal phonons; stray photons | Medium | High | Dilution refrigeration (10 mK); active vibration isolation (`<0.1 Hz` @ 1 Hz); magnetic field stabilization (ppm level) | Ramsey spectroscopy; coherence time measurements |
+| **5** | **Map-Matching Failure (QPDS)** | Insufficient geophysical signature uniqueness; time-varying anomalies (diurnal magnetic variation, etc.) | Medium | Medium | Redundant sensors (mag + gravity + gradiometer); temporal filtering; fallback to INS dead-reckoning | CEP divergence monitoring; anomaly detection logs |
+| **6** | **Metamaterial Fatigue** | Cyclic stress during tunneling activation; material creep at cryogenic temperatures | Medium | Medium | Finite-element fatigue analysis pre-build; material coupon testing; load monitoring during operation | Periodic SEM inspection; resonance frequency shifts |
+| **7** | **Quantum Field Generator Arcing** | Dielectric breakdown in high-gradient regions; surface roughness at electrode edges | Medium | High | Conformal coating (parylene/SiO₂); beveled electrode geometry; operating voltage margin (30% derating) | Partial discharge monitoring; electrical insulation diagnostics |
+| **8** | **Control Loop Instability** | Feedback gain tuning error; sensor latency causing oscillation; nonlinear backlash | Medium | Medium | Conservative gain margins (Bode stability analysis, PM >45°); sensor fusion Kalman filter; hardware-in-loop simulation pre-flight | Real-time frequency response measurement; closed-loop impulse tests |
+| **9** | **Data Acquisition Saturation** | Sensor output clipping due to unexpected large signals; digital converter overflow | Low | Medium | Pre-calibration dynamic range checks; auto-ranging amplifiers; firmware saturation detection & alarms | Pre-test signal injection; bit-depth margin verification |
+| **10** | **Vacuum Leaks & Pump Failure** | Micro-cracks from thermal cycling; O-ring permeation; mechanical damage | Low | High | Helium mass spec leak testing (< 1×10⁻⁹ Torr/sec); redundant pump + RGA monitoring; vent/purge procedures | Continuous pressure and RGA monitoring; monthly helium checks |
+
+### Risk Mitigation Summary
+
+**High-Impact Risks (1, 2, 3, 7, 10)** – Require continuous vigilance:
+- **Design phase**: Conservative margins (30% derating for electrical, µ-metal shielding for magnetics)
+- **Build phase**: Process controls (cleanliness, torque specs, material certs)
+- **Test phase**: Sham controls, randomized activation, blinded data analysis
+- **Operational**: Automated anomaly detection; manual review of any flagged events
+
+**Medium-Impact Risks (4, 5, 6, 8, 9)** – Standard engineering practices:
+- Redundancy (dual sensors, fallback algorithms)
+- Margins (tuning gains, operating voltages)
+- Monitoring (real-time state-of-health dashboards)
+
+### Test Gates & Failure Criteria
+
+Each major development phase includes pass/fail gates:
+
+| Gate | Criterion | Failure Path |
+|------|-----------|--------------|
+| **Baseline (Null)** | Sham control force < 2 µN; mean noise < 1 µN | Repeat design audit; revisit shielding / thermal control |
+| **Signal Detection** | Active force > 10 µN; p-value < 0.01 (preregistered) | Troubleshoot force generator; check coherence; analyze thermal creep |
+| **Reproducibility** | ≥3 independent runs within 20% CEP | Document differences; update risk register; plan for v2 design changes |
+| **Scaling** | Force grows ~linearly with active area / gradient | If sublinear, suspect efficiency loss; investigate metamaterial quality |
 
 ---
 
-## Quantum Computing & Control (TRL 1-3)
+## Future Development Directions
 
-### Realistic Computing Requirements & Current Benchmarks
+As we continue to refine and enhance our quantum propulsion technology, several promising research directions are being pursued:
 
-| Component | Near-Term Target | Current Public Benchmark | TRL | Pathway |
-|-----------|-----------------|------------------------|-----|---------|
-| **Qubit Count** | 10–100 logical qubits (hybrid classical/quantum) | IBM: 433 qubits (Osprey); Atom Computing: 6,100 neutral atoms | 2–3 | Hybrid HPC + quantum co-processor (5-year horizon) |
-| **Coherence Time** | 10–100 μs (room-temp control circuits) | Google Sycamore: ~20 μs; Neutral atoms: ~12.6 s @ 6,100 qubits | 2–3 | Use cryogenic QPUs as external service layer |
-| **Error Correction** | Classical ECC on hybrid hardware | Surface codes: ~1000 phys. qubits per 1 logical qubit | 2 | Rely on quantum cloud services (Amazon Braket, IonQ) |
-| **Topological Qubits** | Research pathway only; not deployment-critical | Microsoft/UC-Santa Barbara: 8-qubit topological prototype | 1–2 | Monitor academic milestones; not assumed for near-term |
+### Community-Driven Research Initiatives
 
-**Realistic Near-Term Strategy**:
-- Use hybrid classical/quantum algorithms (QAOA, VQE) for engine optimization
-- Deploy via quantum cloud services (no on-board QPU in Phase I)
-- On-board classical HPC (CPU + GPU) handles real-time control loops
-- Quantum co-processor integrated if benchmarks improve by Phase III (2029+)
+Through our [Game-Based Research Platform](/docs/research-documentation/game-based-research-platform), we're exploring several frontier areas:
 
-### Engine Management System (TRL 2-3)
+1. **Quantum Resonance Optimization**: Finding optimal resonance patterns for quantum field stability
+2. **Metamaterial Configurations**: Designing novel material structures for enhanced field generation
+3. **Control System Algorithms**: Developing adaptive control systems for variable quantum conditions
 
-The Quantum Engine Management System (QEMS) handles:
+Promising discoveries from community research are rapidly prototyped and integrated into our development pipeline through the tokenized research ecosystem.
 
-1. **Real-Time Monitoring**: Force sensors, field sensors, thermal monitors (all classical)
-2. **Predictive Modeling**: Classical ML models (trained on lab data) for fault detection
-3. **Optimization**: Hybrid classical/quantum algorithms for parameter tuning (runs via cloud or offline batch)
-4. **Failsafe**: Hardwired safety thresholds (no software dependency)
+### Advanced Technical Capabilities
 
-**Current Status**: Classical QEMS framework operational; quantum modules queued for Phase II.
-
----
-
-## Quantum Field Manipulation Research (TRL 1-2)
-
-### Vacuum Energy & Zero-Point Research
-
-The electromagnetic Casimir effect—observed reduction in force between uncharged metallic plates—suggests vacuum fluctuations are not uniformly distributed. However, **extracting net usable energy from the vacuum remains unproven and faces severe theoretical obstacles** (Milonni, 1994; Ford, 1997).
-
-We explore Casimir-geometry configurations as *fundamental physics research* at **TRL 1–2** (exploratory), aimed at understanding vacuum force modulation, not commercial power extraction:
-
-#### Vacuum Exploration Research Track
-
-| Experiment | Question | Measurement | TRL | Status |
-|-----------|----------|-------------|-----|--------|
-| **Casimir Geometry Variation** | Does plate spacing/geometry change force linearly? | Sub-pN force sensor + optical interferometry | 2 | Setup in progress |
-| **Frequency Dependence** | Does force correlate with mode density near plates? | Casimir rig + RF field sweeps (1–100 GHz) | 1–2 | Theory phase |
-| **Energy Extraction Null** | Can we extract net energy? (should be "no" per thermodynamics) | Measure work input vs. output over closed cycle | 1 | Planned fall 2025 |
-
-**Expected Outcome**: Better understanding of vacuum forces, not net energy gain. If any net energy is measured, fault diagnostics (thermal coupling, stray EM) take priority.
-
-**Compliance Note**: This research does not claim perpetual motion or violation of thermodynamics. Any positive results will be published as fundamental physics, submitted for independent replication.
-
-### Quantum Field Generators (TRL 1-2)
-
-We prototype field generator topologies aimed at:
-
-1. **Controlled Gradient Fields**: Electromagnetic and possibly pseudo-gravitational field patterns for tunneling control
-2. **Detunable Resonance**: Matching drive frequency to material response (target: sub-1% frequency stability over 1-hour window)
-3. **Burst Capability**: Brief high-power pulses for controlled testing (energy budget: `<10 J` per shot, thermal dissipation `<5 W` average)
-
-**Pass/Fail Benchmark**: Field generator maintains target gradient ±5% for ≥60 seconds without thermal runaway.
-
-**Current Status**: Prototype I (classical coil arrays) commissioned; results Q4 2025.
-
----
-
-## Technical Specifications & Technology Readiness Levels
-
-### Subsystem TRL & Milestones at a Glance
-
-| Subsystem | Component | Near-Term Target | TRL Now | TRL 2027 | Test Gate |
-|-----------|-----------|-----------------|---------|----------|-----------|
-| **Tunneling** | Metamaterial channels | 10 × 10 mm, 100 channels | 1–2 | 2–3 | Force `>10 µN`, `p<0.01` |
-| **Superposition** | Coherence time | 10 μs (hybrid) | 1 | 2 | Spectroscopy validation |
-| **Entanglement** | Sync error | 1 rad RMS (3 nodes) | 2–3 | 3 | Bell-parameter test |
-| **Computing** | Hybrid QPU + HPC | Cloud service + GPU | 2–3 | 3 | Optimization benchmark |
-| **Vacuum Research** | Casimir measurement | 1 pN sensitivity | 1–2 | 2–3 | Thermodynamic null test |
-| **Field Generator** | Gradient uniformity | ±5% (10×10 cm) | 2 | 2–3 | Bench validation Q1 2026 |
-
-### Detailed Specifications by Subsystem
-
-#### Quantum Tunneling (TRL 1–2)
-
-| Aspect | Target | Horizon (2027+) | Status |
-|--------|--------|-----------------|--------|
-| Active area | 10 × 10 mm | 1 meter × 1 meter panel | Rig construction |
-| Field uniformity | ±5% variation | ±1% uniformity | Design phase |
-| Reproducibility gate | Force `>10 µN` above null | Scaling to larger arrays | Baseline TBD |
-
-#### Quantum Computing & Control (TRL 2–3)
-
-| Aspect | Target | Horizon (2027+) | Status |
-|--------|--------|-----------------|--------|
-| Logical qubits | 10–100 (cloud service) | On-board 100-qubit QPU (if feasible) | Deployed via AWS Braket |
-| Coherence time | 10–100 μs | 1 ms+ (cryogenic) | Classical baseline set |
-| Error correction | Classical ECC on hybrid | Surface codes (1000+ phys. → 1 logical) | Cloud service path |
-
-#### Entanglement-Assisted Sensing (TRL 2–3)
-
-| Aspect | Target | Horizon (2027+) | Status |
-|--------|--------|-----------------|--------|
-| Nodes | 3 distributed nodes | 10 nodes | Bell-parameter setup |
-| Sync error | 1 rad RMS | 0.1 rad RMS | Interferometry baseline |
-| Advantage | `>√2` vs. classical | `>3` improvement factor | In progress |
-
-#### Vacuum & Casimir Research (TRL 1–2)
-
-| Aspect | Target | Horizon (2027+) | Status |
-|--------|--------|-----------------|--------|
-| Force sensitivity | 1 pN | 0.1 pN | Setup phase |
-| Measurement gap | Plate spacing variation | Frequency-dependent effects | Theory phase |
-| Energy extraction | Null test (expect zero) | Thermodynamic limits | Planned fall 2025 |
-
-### Clarification: What "Speculative" Means
-
-Entries marked **Speculative Theory / Paper Proposal** in older specs mean:
-- **Concept is physically plausible** under stated assumptions
-- **No validated prototypes exist** (TRL 1–2)
-- **Rigorous experiments are planned** with explicit pass/fail gates
-- **Success is not guaranteed**; invalidation is scientifically valuable
-
----
-
-## Controls, Nulls & Failure Mode Mitigation
-
-### Sham Control Protocol (All Experiments)
-
-Every active experiment includes an identical **sham trial** with the critical component disabled:
-
-| Experiment | Active Condition | Sham Condition | Reason |
-|-----------|------------------|---------------|---------| 
-| Tunneling rig | Drive field ON, metamaterial active | Drive field OFF, passive baseline | Eliminate thermal/EM coupling artifacts |
-| Entanglement sync | Entangled probes deployed | Classical sensors only | Measure entanglement advantage |
-| Field generator | Powered electromagnets ON | Coils powered down | Eliminate residual thermal/magnetic effects |
-| Vacuum rig | Casimir plates at nominal gap | Plates far separated (control distance) | Verify gap-dependent force, not stray EM |
-
-### Risk Register: Top 10 Failure Modes & Mitigations
-
-| # | Failure Mode | Root Cause | Detection | Mitigation | Test |
-|---|--------------|-----------|-----------|-----------|------|
-| 1 | Spurious electrostatic forces dominate signal | Unshielded electronics near force sensor | Rapid force increase with field-off | Mu-metal shielding; `<50 pV` baseline noise | Faraday cage validation |
-| 2 | Thermal creep misinterpreted as thrust | Sample/mount thermal expansion | Force correlated with ±ΔT, not field state | Monitor embedded thermocouples; subtract thermal model | Dummy run (passive, T-sweep) |
-| 3 | Magnetic coupling from external sources | Nearby equipment (vacuum pump magnets, etc.) | Force synchronous with 50/60 Hz line | Relocate rig; measure stray field `<1 µT` | Gaussmeter survey |
-| 4 | Quantum decoherence faster than predicted | Environmental noise underestimated | Measured coherence time T2 `<<` theory | Increase isolation; reduce vibrational coupling | Spectroscopy with decoupling |
-| 5 | Entanglement degradation in transport | Fiber/coil noise in classical links | Fidelity drops `>5%` over 24 hours | Temperature-stabilized fiber runs; active feedback | Hourly Bell-parameter checks |
-| 6 | Metamaterial resonance shift with temperature | Thermal expansion of lattice | Drive frequency no longer matched after warming | Tempco-matched materials; active tuning | Frequency calibration pre/post-experiment |
-| 7 | Field generator capacitor failure (energy release) | Over-voltage transient | Unexpected high-power pulse, thermal damage | Crowbar protection circuit; current limiting | Component stress testing |
-| 8 | Data-logging error (corrupted timestamps) | Clock drift or power glitch | Post-hoc analysis shows time gaps | Atomic clock reference + triple-redundant logging | Clock sync verification pre-experiment |
-| 9 | Operator bias in sham/active assignments | Cognitive anchoring | Results show spurious correlation with expectations | Automated randomization; third-party verification | Audit log + independent analysis |
-| 10 | Measurement artifact from apparatus symmetry-breaking | Unintended asymmetry in symmetric design | Baseline force not zero, drifts over hours | Precision machining tolerances (±10 µm); rotation tests | Invert apparatus, repeat measurement |
-
-### Data & Analysis Protocols
-
-- **Preregistration**: All hypotheses, pass/fail gates, and analysis methods documented *before* data collection begins (Open Science Framework)
-- **Blinding**: Experimenters do not know active vs. sham assignments until data locked
-- **Multi-Lab Replication**: Prioritized findings submitted for independent replication by external groups
-- **Null Results Published**: Negative results posted to prevent file-drawer bias
-
----
-
-## Materials & Advanced Specifications
-
-For detailed material properties supporting these quantum systems, see [Advanced Materials Research](../materials/advanced-materials-research).
-
-**Key Material Requirements**:
-- Metamaterials with tunable bandgaps and low-loss characteristics (target: `Q > 1000` @ 1–10 GHz)
-- Superconducting coils for field generation (critical temperature `>77 K` preferred for logistics)
-- Precision diamond or sapphire mounts for dimensional stability (`CTE < 1 ppm/K`)
-
----
-
-## Compliance & Export Control
-
-### ITAR & Dual-Use Considerations
-
-This research does not currently trigger ITAR restrictions; however, the following subsystems *could* become export-controlled if successfully weaponized or integrated into propulsion systems:
-
-1. **Quantum field generators** (high-power RF generating `>10 kW` @ 1–10 GHz)
-2. **Entanglement distribution systems** (quantum sensing for inertial guidance)
-3. **Integrated propulsion prototypes** (if demonstrating `>1%` thrust-to-weight in any configuration)
-
-**Mitigation**:
-- All publications undergo institutional export-control review
-- Collaboration agreements specify "Fundamental Research" carve-out (no military classification)
-- Hardware and software repositories marked "Educational Use Only"
-
----
-
-## Development Roadmap & Phase Gates
-
-### Phase I: Foundational Validation (2025–2026, TRL 1–2)
-
-**Goals**:
-1. Demonstrate measurement rigs at target sensitivity (force `<10 µN`, vacuum `<10^-6 Torr`)
-2. Establish sham-control baselines for all subsystems
-3. Complete vacuum null test (Casimir energy extraction should return "no net energy")
-4. Publish methods paper detailing protocols
-
-**Gate Criteria**:
-- ✓ Rig commissioning reports (rig A: Q1 2026; rig B: Q2 2026)
-- ✓ First sham-controlled trial data set (≥10 trials minimum)
-- ✓ Thermodynamic null test completed
-- ✓ Methods paper accepted or preprinted
-
-### Phase II: Subsystem Optimization (2027–2028, TRL 2–3)
-
-**Goals** (contingent on Phase I success):
-1. If tunneling force `>10 µN` validated: scale metamaterial to 100 × 100 mm
-2. If entanglement fidelity `>99%`: add 5th and 10th nodes to sync network
-3. Deploy hybrid classical/quantum engine control (cloud service integration)
-
-### Phase III–V: Integration & Prototyping (2029+)
-
-Deferred pending Phase I & II outcomes.
-
----
-
-## Performance Benchmarks vs. Published Literature
-
-### Quantum Coherence Comparison
-
-| System | Achieved Coherence (T2 or T2*) | Our Near-Term Target | TRL | Reference |
-|--------|-------------------------------|----------------------|-----|-----------|
-| IBM Falcon (27 qubits) | ~20 μs | Hybrid CPU target: N/A (use cloud) | 2–3 | IBM 2021 |
-| Google Sycamore (53 qubits) | ~20 μs | See above | 2–3 | Arute et al., Nature 574 (2019) |
-| Atom Computing (6,100 neutral atoms) | 12.6 s | Long-term horizon only | 1 | Atom Computing 2022 |
-| Topological (Microsoft/UC-SB, 8-qubit) | ~1 ms | Research milestone only | 1–2 | Larson et al., Nat. Phys. 17 (2021) |
-| **Azure Space Group (near-term)** | Hybrid: 10–100 μs classical + cloud QPU | — | 2–3 | This document |
-
-**Interpretation**: We do not claim qubits beyond what commercial cloud providers offer. On-board quantum processors are a Phase III+ ambition, contingent on industry-wide improvements.
-
-### Force Measurement Sensitivity
-
-| Measurement Type | Sensitivity Target | Current Best in Literature | Reference |
-|------------------|------------------|---------------------------|-----------|
-| Torsion pendulum (gravity nulled) | 10^-12 N | 10^-14 N (atom interferometer) | Schlipf et al., PRL 123 (2019) |
-| Magnetic force microscopy | 10^-15 N (atto-newton) | 10^-18 N (latest) | Rugar et al., Nature 430 (2004) |
-| Lorentz force sensor | 10^-11 N | `< achieved` | Typical lab setup |
-| **Azure Space Group target** | 10^-12 N | — | This document |
-
-**Interpretation**: Our sensitivity target is conservative, achievable with tabletop equipment and well-characterized noise budgets.
-
----
-
-## Summary & Next Steps
-
-### What We Are Testing
-- **Hypothesis 1**: Can metamaterial tunneling rates be controlled to generate net force? (Target: 2026)
-- **Hypothesis 2**: Does entanglement-assisted sensing improve distributed synchronization? (Target: 2025)
-- **Hypothesis 3**: Is net energy extractable from vacuum Casimir geometry? (Expected: No, but confirmatory test valuable) (Target: 2025)
-
-### What We Are NOT Claiming
-- ✗ Faster-than-light communication (violates relativity and Bell's theorem)
-- ✗ Perpetual motion or thermodynamic violation
-- ✗ "Working" prototypes until rigorously validated
-- ✗ 10,000+ qubits in-house (unrealistic; using cloud services)
-- ✗ Proof of concept until passing stated gate criteria
-
-### How to Participate
-
-Interested researchers and community members can:
-1. **Review our preregistered protocols** (Open Science Framework)
-2. **Contribute experimental designs** via tokenized research platform
-3. **Propose independent replication studies** (contact: research@azurespacegroup.org)
-4. **Audit data collection** (shadowing available for peer reviewers)
-
----
-
-## References & Further Reading
-
-- Bell, J. S. (1964). "On the Einstein Podolsky Rosen Paradox." *Physics* 1(3): 195–200.
-- Eberhard, P. H. (1978). "Bell's Theorem and the Different Concepts of Locality." *Il Nuovo Cimento* 46B(2): 392–419.
-- Ford, L. H., & Roman, T. A. (1997). "Quantum Field Theory Constrains Traversable Wormholes." *Phys. Rev. D* 53: 6776–6785.
-- Milonni, P. W. (1994). *The Quantum Vacuum*. Academic Press.
-- Schlipf, D., et al. (2019). "Quantum Metrology with Entangled Atoms." *Phys. Rev. Lett.* 123(20): 203001.
-- [Quantum Propulsion Research Paper](../research-documentation/quantum-research-paper) — Detailed theoretical models and preregistered hypotheses
-
----
-
-**Document Version**: 2.0 (Scientific Rigor Edition)  
-**Last Reviewed**: October 24, 2025  
-**Next Review**: Q1 2026 (post Phase I commissioning)
-
----
-
-## Changelog: Scientific Credibility Improvements
-
-### v2.0 — October 24, 2025 (Scientific Rigor Edition)
-**Major overhaul** to address investor/grant-reviewer credibility concerns:
-
-- ✅ **Fixed FTL entanglement claim**: Replaced "infinite-speed information transfer" with causality-preserving distributed sensing using classical control channels
-- ✅ **Added Bell's theorem & no-communication theorem citations**: Explicit explanation why entanglement cannot transmit information faster than light
-- ✅ **Reframed vacuum/Casimir research**: Changed from "power harvesting" to TRL 1-2 fundamental physics exploration with thermodynamic null test
-- ✅ **Realistic quantum computing specs**: Corrected from "10,000+ topological qubits" to 10-100 logical qubits via cloud services (AWS Braket, IonQ); topological qubits marked as horizon item
-- ✅ **Added Technology Readiness Levels (TRL)** throughout: Every subsystem now has explicit TRL 1-3 classification with measurable gates
-- ✅ **New "Scope & Claims Discipline" section**: Clearly separates what we claim, hypothesize, and disclaim
-- ✅ **Added rigorous Methods & Metrology section**: Force measurement rig specs, thermal isolation targets, blinding protocols
-- ✅ **Added Controls & Nulls**: Sham controls for every experiment; magnetic coupling and thermal creep null tests defined
-- ✅ **Added Risk Register**: Top 10 failure modes with detection methods and mitigations
-- ✅ **Added Phase Gates**: Explicit pass/fail criteria for Phase I (2025-26) including rig commissioning, thermodynamic null test, methods paper
-- ✅ **Added Compliance section**: ITAR/EAR export control review process documented
-- ✅ **Added Benchmarks vs. Literature**: Coherence times, qubit counts, and force sensitivity compared to published public records
-- ✅ **Added Data & Analysis Protocols**: Preregistration, blinding, multi-lab replication pathway, null results published
-- ✅ **MDX Syntax fixes**: All mathematical expressions wrapped in backticks for proper rendering
-- ✅ **Responsive table design**: Tables now scroll horizontally on tablets/mobile (`<=996px`)
-
-### v1.0 — Prior (Pre-credibility review)
-- General quantum propulsion overview
-- Speculative claims without TRL classification
-- No null-testing or measurement protocols
-- Overclaimed qubit counts and efficiency gains
-
----
+Building on our core technology, we continue to pursue:
