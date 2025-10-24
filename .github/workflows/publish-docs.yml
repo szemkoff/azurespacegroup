@@ -83,4 +83,5 @@ jobs:
           force_orphan: true
           user_name: 'github-actions[bot]'
           user_email: 'github-actions[bot]@users.noreply.github.com'
-          commit_message: 'Deploy Docusaurus site with QPDS menu and Grant Programs'
+          publish_branch: pages
+          commit_message: 'Deploy Docusaurus site to pages branch'
