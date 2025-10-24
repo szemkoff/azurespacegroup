@@ -21,16 +21,6 @@ function HomepageHeader() {
             to="/docs/intro">
             Documentation
           </Link>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/tokenization-strategy">
-            Tokenization Strategy
-          </Link>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/research-documentation/game-based-research-platform">
-            Game-Based Research
-          </Link>
         </div>
       </div>
     </header>

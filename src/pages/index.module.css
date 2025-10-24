@@ -25,6 +25,10 @@
   margin-top: 2rem;
 }
 
+.buttons .button {
+  color: white !important;
+}
+
 .leadParagraph {
   font-size: 1.2rem;
   line-height: 1.7;
