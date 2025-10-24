@@ -215,15 +215,11 @@ The research explores tunneling control across multiple scales:
 
 ### Corrected Description: Causality-Preserving Distributed Sensing
 
-**Original Claim (INCORRECT)**: "Information transfer occurs at effectively infinite speed between entangled engine nodes."
-
-**Corrected Claim**: Engine subsystems maintain phase alignment using entanglement-assisted *sensing* with classical communication for control signals. Entanglement does *not* enable faster-than-light signaling; rather, entangled ancilla states reduce classical communication overhead and improve measurement precision in distributed sensing.
-
-#### Why the Original Claim Violated Physics
+Engine subsystems maintain phase alignment using entanglement-assisted *sensing* with classical communication for control signals. Entanglement does *not* enable faster-than-light signaling; rather, entangled ancilla states reduce classical communication overhead and improve measurement precision in distributed sensing.
 
 The no-communication theorem (Bell, 1964; Eberhard, 1978) proves that entanglement correlations cannot be used to transmit information faster than light. Any attempt to encode a message in entangled states requires classical post-selection communication. This is not a limitation to engineer around—it is a mathematical consequence of relativity and quantum mechanics.
 
-**Correct Framework**: Distributed sensing via entangled ancilla states and classical feedback.
+**Framework**: Distributed sensing via entangled ancilla states and classical feedback.
 
 - Entangled probe pairs are distributed across engine nodes
 - Each node measures its local subsystem parameters (force, field, phase)
@@ -277,10 +273,6 @@ sequenceDiagram
 
 ### Realistic Computing Requirements & Current Benchmarks
 
-**Original Specification (OVERCLAIMED)**: "Over 10,000 stable topological qubits"
-
-**Corrected Specification**:
-
 | Component | Near-Term Target | Current Public Benchmark | TRL | Pathway |
 |-----------|-----------------|------------------------|-----|---------|
 | **Qubit Count** | 10–100 logical qubits (hybrid classical/quantum) | IBM: 433 qubits (Osprey); Atom Computing: 6,100 neutral atoms | 2–3 | Hybrid HPC + quantum co-processor (5-year horizon) |
@@ -310,10 +302,6 @@ The Quantum Engine Management System (QEMS) handles:
 ## Quantum Field Manipulation Research (TRL 1-2)
 
 ### Vacuum Energy & Zero-Point Research
-
-**Original Claim (SPECULATIVE & CAUTIONED)**: "Zero-point energy extractors capture energy from quantum vacuum fluctuations."
-
-**Corrected Framing**:
 
 The electromagnetic Casimir effect—observed reduction in force between uncharged metallic plates—suggests vacuum fluctuations are not uniformly distributed. However, **extracting net usable energy from the vacuum remains unproven and faces severe theoretical obstacles** (Milonni, 1994; Ford, 1997).
 
