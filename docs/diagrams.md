@@ -8,9 +8,11 @@ This section provides a centralized reference for all technical schematics, diag
 
 ## Core Technology Diagrams
 
-- [System Architecture](core-documentation/core-technology#quantum-engine-design) - Figure 1: High-level systems overview
-- [Quantum Tunneling Propulsion](core-documentation/core-technology#quantum-tunneling-propulsion) - Figure 2: Particles passing through energy barriers
-- [Quantum State Transitions](core-documentation/core-technology#quantum-state-transitions) - Figure 3: Progression of quantum states
+- [System Architecture](core-documentation/core-technology#quantum-engine-design) - Figure 1: Research system architecture with TRL 1–3 classification; includes measurement, control, safety, and compliance subsystems
+- [Quantum Tunneling Propulsion](core-documentation/core-technology#quantum-tunneling-propulsion) - Figure 2: Multi-scale tunneling mechanism with testable force measurement gates and sham controls
+- [Quantum State Transitions](core-documentation/core-technology#quantum-state-transitions) - Figure 3: State progression from ground state through applications; includes null-test pathways
+
+**Note**: Core Technology page (v2.0, Oct 2025) now integrates comprehensive measurement protocols, risk registers, Technology Readiness Levels, and compliance frameworks directly alongside diagrams for reviewer accessibility.
 
 ## Propulsion & Navigation
 

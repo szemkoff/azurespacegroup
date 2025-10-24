@@ -67,6 +67,8 @@ Our research program investigates three candidate mechanisms for quantum-assiste
 
 Each subsystem includes testable milestones and explicit assumptions. For theoretical foundations and extended discussion, see our [Quantum Propulsion Research Paper](../research-documentation/quantum-research-paper) (peer review in progress).
 
+For a comprehensive index of all technical diagrams and schematics across the project, see our [Technical Schematics & Diagrams](../diagrams.md) reference guide.
+
 ---
 
 ## Quantum Engine Design & Subsystems
