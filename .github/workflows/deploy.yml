@@ -47,6 +47,31 @@ jobs:
           echo "Listing available pages in build:"
           find build -name "*.html" | grep -i investment
           
+      - name: Verify QPDS menu in build
+        run: |
+          echo "=== Verifying QPDS menu is in the build ==="
+          if grep -q "Quantum Position Determination" build/docs/intro/index.html; then
+            echo "✅ QPDS menu found in intro page!"
+            echo "Checking for submenu items..."
+            grep -c "QGN v0.1" build/docs/intro/index.html && echo "✅ QGN v0.1 submenu item found"
+            grep -c "Map Pipeline" build/docs/intro/index.html && echo "✅ Map Pipeline submenu item found"
+            grep -c "Field Test Protocol" build/docs/intro/index.html && echo "✅ Field Test Protocol submenu item found"
+          else
+            echo "❌ ERROR: QPDS menu NOT found in intro page!"
+            echo "This will cause the menu to be missing on the live site."
+            exit 1
+          fi
+          
+          echo ""
+          echo "Checking QPDS index page..."
+          if [ -f "build/docs/qpds/index.html" ]; then
+            echo "✅ QPDS index page exists"
+            ls -lh build/docs/qpds/*.html | wc -l && echo "QPDS HTML files found: ^"
+          else
+            echo "❌ ERROR: QPDS index page NOT found!"
+            exit 1
+          fi
+          
       - name: Ensure correct investment pages structure
         run: |
           echo "Ensuring investment pages have correct directory structure..."
