@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import styles from './QPDSSimulator.module.css';
 
 export default function QPDSSimulator() {
-  const [environment, setEnvironment] = useState('TUNNEL');
+  const [environment, setEnvironment] = useState('UNDERGROUND');
   const [duration, setDuration] = useState(60);
   const [sensorNoise, setSensorNoise] = useState(10);
   const [updateRate, setUpdateRate] = useState(10);
