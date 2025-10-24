@@ -28,6 +28,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Core Systems',
+      collapsed: false,
       items: [
         'core-documentation/core-technology',
         'core-documentation/system-dissection',
@@ -36,6 +37,7 @@ const sidebars = {
         {
           type: 'category',
           label: 'Quantum Position Determination (QPDS)',
+          collapsed: false,
           link: {
             type: 'doc',
             id: 'qpds/index',
