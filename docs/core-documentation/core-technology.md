@@ -6,6 +6,35 @@
 
 ---
 
+## Scope & Claims Discipline
+
+### What We Claim (Measured & Demonstrated)
+- Research protocols designed to TRL 1-3 standards
+- Measurement rigs under construction (force sensitivity target: `<10 µN`)
+- Preliminary magnetic shielding and vibration isolation specifications
+- Entanglement sensing baseline experiments in progress
+
+### What We Hypothesize (Testable, Not Yet Validated)
+- **Quantum tunneling**: Can metamaterial-assisted tunneling rates be controlled to generate net directional force `>10 µN`?
+- **Superposition coils**: Do coherent drive coils improve force transduction efficiency by `>5%`?
+- **Entanglement sensing**: Can distributed entanglement-assisted measurement reduce synchronization jitter by `>√2` vs. classical?
+- **Vacuum dynamics**: What are the force/energy-extraction limits of Casimir geometry? (Hypothesis: zero net extraction; null test designed to confirm or refute.)
+
+### What We DO NOT Claim
+- ✗ Faster-than-light communication or control (violates no-communication theorem)
+- ✗ Practical power extraction from vacuum (no consensus; TRL 1 exploratory only)
+- ✗ 10,000+ qubits in-house (realistic targets: 10–100 logical qubits via cloud services)
+- ✗ "Working" propulsion systems until Phase II milestones are independently validated
+- ✗ Circumvention of thermodynamic limits or perpetual motion
+
+### What's Out of Scope
+- Classical rocket propulsion optimization
+- Non-quantum materials or conventional aerospace
+- Theoretical wormholes or closed timelike curves
+- Commercial roadmap to operational vehicle (Phase V is 2030+, contingent on all prior phases)
+
+---
+
 ## Research Overview & Scientific Approach
 
 Our research program investigates three candidate mechanisms for quantum-assisted propulsion, each grounded in established physics but extended into experimentally unvalidated domains:
@@ -458,3 +487,34 @@ Interested researchers and community members can:
 **Document Version**: 2.0 (Scientific Rigor Edition)  
 **Last Reviewed**: October 24, 2025  
 **Next Review**: Q1 2026 (post Phase I commissioning)
+
+---
+
+## Changelog: Scientific Credibility Improvements
+
+### v2.0 — October 24, 2025 (Scientific Rigor Edition)
+**Major overhaul** to address investor/grant-reviewer credibility concerns:
+
+- ✅ **Fixed FTL entanglement claim**: Replaced "infinite-speed information transfer" with causality-preserving distributed sensing using classical control channels
+- ✅ **Added Bell's theorem & no-communication theorem citations**: Explicit explanation why entanglement cannot transmit information faster than light
+- ✅ **Reframed vacuum/Casimir research**: Changed from "power harvesting" to TRL 1-2 fundamental physics exploration with thermodynamic null test
+- ✅ **Realistic quantum computing specs**: Corrected from "10,000+ topological qubits" to 10-100 logical qubits via cloud services (AWS Braket, IonQ); topological qubits marked as horizon item
+- ✅ **Added Technology Readiness Levels (TRL)** throughout: Every subsystem now has explicit TRL 1-3 classification with measurable gates
+- ✅ **New "Scope & Claims Discipline" section**: Clearly separates what we claim, hypothesize, and disclaim
+- ✅ **Added rigorous Methods & Metrology section**: Force measurement rig specs, thermal isolation targets, blinding protocols
+- ✅ **Added Controls & Nulls**: Sham controls for every experiment; magnetic coupling and thermal creep null tests defined
+- ✅ **Added Risk Register**: Top 10 failure modes with detection methods and mitigations
+- ✅ **Added Phase Gates**: Explicit pass/fail criteria for Phase I (2025-26) including rig commissioning, thermodynamic null test, methods paper
+- ✅ **Added Compliance section**: ITAR/EAR export control review process documented
+- ✅ **Added Benchmarks vs. Literature**: Coherence times, qubit counts, and force sensitivity compared to published public records
+- ✅ **Added Data & Analysis Protocols**: Preregistration, blinding, multi-lab replication pathway, null results published
+- ✅ **MDX Syntax fixes**: All mathematical expressions wrapped in backticks for proper rendering
+- ✅ **Responsive table design**: Tables now scroll horizontally on tablets/mobile (`<=996px`)
+
+### v1.0 — Prior (Pre-credibility review)
+- General quantum propulsion overview
+- Speculative claims without TRL classification
+- No null-testing or measurement protocols
+- Overclaimed qubit counts and efficiency gains
+
+---
