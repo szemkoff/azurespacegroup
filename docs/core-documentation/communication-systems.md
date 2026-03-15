@@ -1,6 +1,6 @@
 # Communication Systems
 
-The Quantum Engine Project incorporates revolutionary communication technologies that transcend traditional electromagnetic signal limitations, enabling instantaneous, secure, and reliable communication across any distance. For detailed research on quantum entanglement communication technology, refer to our [Quantum Communications Research Paper](../research-documentation/quantum-communications).
+The Quantum Engine Project incorporates revolutionary communication technologies that transcend traditional electromagnetic signal limitations, enabling instantaneous, secure, and reliable communication across any distance. For detailed research on quantum entanglement communication technology, refer to our [Quantum Communications Research Paper](../research-documentation/quantum-communications). For exploratory research on gravity-based instantaneous communication, see our [Gravitational Communication Hypothesis](../research-documentation/gravitational-communication-hypothesis).
 
 ## Quantum Communication Networks
 
@@ -154,11 +154,25 @@ Emergency backup systems utilizing theoretical faster-than-light particles:
 
 Though experimental, this system provides a redundant communication method if quantum entanglement is temporarily unavailable.
 
+### Gravitational Communication Channel (Exploratory)
+
+Frontier research exploring a dual-mode gravity hypothesis for non-local communication:
+
+- **Gravity A**: Hypothetical instantaneous, atomic-scale gravitational layer; non-local propagation across the universe
+- **Gravity B**: Classical gravitational field (planetary orbits, macroscopic dynamics); propagates at c
+- **"Gravity Phone" concept**: Device architecture coupling to Gravity A for instantaneous interstellar signaling
+- **Theoretical frameworks**: Non-local quantum gravity, higher-dimensional models, vacuum field structures, entanglement–gravity connection
+- **Experimental strategies**: Coherent matter-wave interferometry, large-baseline correlation experiments, gravitational wave anomaly search, quantum gravity probes
+- **Integration**: Potential for initial contact without pre-positioned entanglement; backup channel when Q-Comm unavailable
+
+This hypothesis is explored without validation or dismissal based on current mainstream physics. For full analysis—physical models, detection strategies, device design, risks, and potential breakthroughs—see the [Gravitational Communication Hypothesis](../research-documentation/gravitational-communication-hypothesis).
+
 ## Technical Specifications
 
 | System | Capability | Current Status |
 |--------|------------|----------------|
 | Quantum Entanglement Communicator | Unlimited distance, 10^18 bits/second | Research Proposal |
+| Gravitational Communication (Gravity A) | Hypothetical instantaneous, unlimited range | Exploratory Hypothesis |
 | Neural Interface | 99.97% thought recognition accuracy | Concept Paper |
 | Quantum Beacon | Effective range of 100 light-years | Theoretical Model |
 | Holographic Environment | Full sensory resolution at 10^12 voxels | Early Research |
@@ -174,8 +188,9 @@ Though experimental, this system provides a redundant communication method if qu
 
 ## Research Priorities
 
-1. Room-temperature quantum repeaters for entanglement maintenance
-2. Non-invasive neural interface technologies with improved signal clarity
-3. Extended range quantum beacons for interstellar communication
-4. Stable subspace field generation for alternative communication channels
-5. Energy-efficient quantum communication systems for deployment on smaller vessels 
+1. Gravity A detection experiments and coupling transducer development (exploratory)
+2. Room-temperature quantum repeaters for entanglement maintenance
+3. Non-invasive neural interface technologies with improved signal clarity
+4. Extended range quantum beacons for interstellar communication
+5. Stable subspace field generation for alternative communication channels
+6. Energy-efficient quantum communication systems for deployment on smaller vessels 

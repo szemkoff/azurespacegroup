@@ -16,7 +16,7 @@ Traditional communication methods are fundamentally limited by the speed of ligh
 
 These limitations make real-time communication impossible beyond the near-Earth environment, severely constraining both manned and unmanned space exploration. Quantum entanglement offers a solution that transcends these physical limitations.
 
-This research paper details the principles and implementation of our quantum communication technology. For technical specifications about the deployed communication systems in our spacecraft, see the [Communication Systems documentation](../core-documentation/communication-systems).
+This research paper details the principles and implementation of our quantum communication technology. For technical specifications about the deployed communication systems in our spacecraft, see the [Communication Systems documentation](../core-documentation/communication-systems). For exploratory research on an alternative gravity-based instantaneous communication hypothesis (Gravity A/B dual-mode model), see the [Gravitational Communication Hypothesis](./gravitational-communication-hypothesis).
 
 ## Quantum Entanglement Principles
 

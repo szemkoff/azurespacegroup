@@ -51,6 +51,7 @@ This repository contains comprehensive documentation for the Azure Space Group P
 - [Quantum Propulsion Research Paper](research-documentation/quantum-research-paper)
 - [Advanced Materials Research](materials/advanced-materials-research)
 - [Quantum Communications](research-documentation/quantum-communications)
+- [Gravitational Communication Hypothesis](research-documentation/gravitational-communication-hypothesis) - Exploratory Gravity A/B dual-mode model for instantaneous communication
 - [Legal and Regulatory Framework](research-documentation/legal-regulatory)
 
 ### Business & Investment
