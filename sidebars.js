@@ -52,7 +52,18 @@ const sidebars = {
             'qpds/simulator',
           ],
         },
-        'core-documentation/communication-systems',
+        {
+          type: 'category',
+          label: 'Communication Systems',
+          collapsed: false,
+          link: {
+            type: 'doc',
+            id: 'core-documentation/communication-systems',
+          },
+          items: [
+            'research-documentation/gravitational-communication-hypothesis',
+          ],
+        },
       ],
     },
     {
