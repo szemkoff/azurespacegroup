@@ -1,0 +1,24 @@
+{
+  "id": "core-documentation/core-technology",
+  "title": "Core Technology and Components",
+  "description": "Quantum Engine Design",
+  "source": "@site/docs/core-documentation/core-technology.md",
+  "sourceDirName": "core-documentation",
+  "slug": "/core-documentation/core-technology",
+  "permalink": "/azurespacegroup/docs/core-documentation/core-technology",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/szemkoff/azurespacegroup/tree/main/docs/core-documentation/core-technology.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "About Us",
+    "permalink": "/azurespacegroup/docs/about"
+  },
+  "next": {
+    "title": "System Dissection and Developmental Strategy",
+    "permalink": "/azurespacegroup/docs/core-documentation/system-dissection"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "investment-opportunities/arpae-open",
+  "title": "ARPA-E OPEN Grant Program",
+  "description": "Details and strategy for the DOE ARPA-E OPEN grant.",
+  "source": "@site/docs/investment-opportunities/arpae-open.md",
+  "sourceDirName": "investment-opportunities",
+  "slug": "/investment-opportunities/arpae-open",
+  "permalink": "/azurespacegroup/docs/investment-opportunities/arpae-open",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/szemkoff/azurespacegroup/tree/main/docs/investment-opportunities/arpae-open.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "ARPA-E OPEN Grant Program",
+    "sidebar_position": 4,
+    "description": "Details and strategy for the DOE ARPA-E OPEN grant."
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "NSF Expand Grant Program",
+    "permalink": "/azurespacegroup/docs/investment-opportunities/nsf-expand"
+  },
+  "next": {
+    "title": "DOE Quantum Grant Program",
+    "permalink": "/azurespacegroup/docs/investment-opportunities/doe-quantum"
+  }
+}

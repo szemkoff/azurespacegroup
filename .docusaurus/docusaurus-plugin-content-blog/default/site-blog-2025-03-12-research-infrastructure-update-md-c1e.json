@@ -1,0 +1,60 @@
+{
+  "permalink": "/azurespacegroup/blog/research-infrastructure-update",
+  "editUrl": "https://github.com/szemkoff/azurespacegroup/tree/main/blog/2025-03-12-research-infrastructure-update.md",
+  "source": "@site/blog/2025-03-12-research-infrastructure-update.md",
+  "title": "Research Infrastructure Documentation Updates",
+  "description": "We're pleased to announce significant improvements to our research infrastructure documentation. These updates provide better clarity on our R&D workflow and testing facilities, which are critical components of our quantum propulsion development process.",
+  "date": "2025-03-12T00:00:00.000Z",
+  "tags": [
+    {
+      "inline": true,
+      "label": "documentation",
+      "permalink": "/azurespacegroup/blog/tags/documentation"
+    },
+    {
+      "inline": true,
+      "label": "research",
+      "permalink": "/azurespacegroup/blog/tags/research"
+    },
+    {
+      "inline": true,
+      "label": "infrastructure",
+      "permalink": "/azurespacegroup/blog/tags/infrastructure"
+    },
+    {
+      "inline": true,
+      "label": "diagrams",
+      "permalink": "/azurespacegroup/blog/tags/diagrams"
+    }
+  ],
+  "readingTime": 2.225,
+  "hasTruncateMarker": true,
+  "authors": [
+    {
+      "name": "Stanley Zemskoff",
+      "title": "Azure Space Group Lead Researcher",
+      "url": "https://www.linkedin.com/in/stan-zemskoff-55a55221/",
+      "imageURL": "https://github.com/szemkoff.png",
+      "key": "stanley",
+      "page": null
+    }
+  ],
+  "frontMatter": {
+    "slug": "research-infrastructure-update",
+    "title": "Research Infrastructure Documentation Updates",
+    "authors": [
+      "stanley"
+    ],
+    "tags": [
+      "documentation",
+      "research",
+      "infrastructure",
+      "diagrams"
+    ]
+  },
+  "unlisted": false,
+  "prevItem": {
+    "title": "Website Design Enhancement and Documentation Updates",
+    "permalink": "/azurespacegroup/blog/website-design-enhancement"
+  }
+}

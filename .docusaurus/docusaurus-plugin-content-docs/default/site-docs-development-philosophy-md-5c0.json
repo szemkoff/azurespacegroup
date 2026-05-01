@@ -1,0 +1,20 @@
+{
+  "id": "DEVELOPMENT_PHILOSOPHY",
+  "title": "Development Philosophy - Invariant Becoming Theory (IBT) Integration",
+  "description": "Core philosophical framework guiding Azure Space Group's development approach",
+  "source": "@site/docs/DEVELOPMENT_PHILOSOPHY.md",
+  "sourceDirName": ".",
+  "slug": "/DEVELOPMENT_PHILOSOPHY",
+  "permalink": "/azurespacegroup/docs/DEVELOPMENT_PHILOSOPHY",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/szemkoff/azurespacegroup/tree/main/docs/DEVELOPMENT_PHILOSOPHY.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Development Philosophy - Invariant Becoming Theory (IBT) Integration",
+    "sidebar_position": 1,
+    "description": "Core philosophical framework guiding Azure Space Group's development approach"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "diagrams",
+  "title": "Technical Schematics & Diagrams",
+  "description": "This section provides a centralized reference for all technical schematics, diagrams, and logical flow charts related to the Azure Space Group Project. Each diagram is now integrated into its relevant documentation section for better context, but this page serves as a convenient index.",
+  "source": "@site/docs/diagrams.md",
+  "sourceDirName": ".",
+  "slug": "/diagrams",
+  "permalink": "/azurespacegroup/docs/diagrams",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/szemkoff/azurespacegroup/tree/main/docs/diagrams.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 9,
+  "frontMatter": {
+    "sidebar_position": 9
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Quantum Research Paper",
+    "permalink": "/azurespacegroup/docs/research-documentation/quantum-research-paper"
+  },
+  "next": {
+    "title": "Development Roadmap",
+    "permalink": "/azurespacegroup/docs/development-roadmap"
+  }
+}

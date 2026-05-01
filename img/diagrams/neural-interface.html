@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Neural Interface Command Center</title>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: transparent;
+    }
+    #diagram {
+      width: 100%;
+      text-align: center;
+    }
+    /* Bold text in diagram */
+    .mermaid .label {
+      font-weight: bold !important;
+      font-size: 18px !important;
+    }
+    /* Thicker lines */
+    .mermaid .flowchart-link {
+      stroke-width: 3px !important;
+    }
+    .mermaid g.node rect, 
+    .mermaid g.node circle, 
+    .mermaid g.node ellipse, 
+    .mermaid g.node polygon {
+      stroke-width: 3px !important;
+    }
+    .mermaid .cluster rect {
+      stroke-width: 3px !important;
+    }
+  </style>
+</head>
+<body>
+  <div id="diagram" class="mermaid">
+    flowchart TB
+      subgraph "Neural Acquisition"
+        QNS[Quantum Neural Sensors]
+        BPM[Brain Pattern Mapping]
+        IC[Intent Classification]
+      end
+      
+      subgraph "Processing Core"
+        QSP[Quantum Signal Processing]
+        TI[Thought Interpretation]
+        VC[Verification & Confirmation]
+      end
+      
+      subgraph "System Control"
+        CC[Command Conversion]
+        SC[System Control]
+        FB[Neural Feedback]
+      end
+      
+      QNS -->|Neural Signals| BPM
+      BPM -->|Brain Patterns| IC
+      IC -->|Command Intent| QSP
+      
+      QSP -->|Processed Signals| TI
+      TI -->|Interpreted Commands| VC
+      VC -->|Verification Request| FB
+      
+      VC -->|Verified Commands| CC
+      CC -->|System Instructions| SC
+      SC -->|Status Information| FB
+      FB -->|Sensory Feedback| QNS
+      
+      style QNS fill:#f9a,stroke:#333,stroke-width:3px
+      style TI fill:#af9,stroke:#333,stroke-width:3px
+      style SC fill:#9df,stroke:#333,stroke-width:3px
+      style FB fill:#fd9,stroke:#333,stroke-width:3px
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      mermaid.initialize({
+        startOnLoad: true,
+        theme: 'neutral',
+        flowchart: {
+          htmlLabels: true,
+          curve: 'basis',
+          nodeSpacing: 50,
+          rankSpacing: 100,
+        },
+        securityLevel: 'loose'
+      });
+    });
+  </script>
+</body>
+</html> 

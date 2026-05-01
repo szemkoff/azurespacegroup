@@ -1,0 +1,24 @@
+{
+  "id": "research-documentation/research-development",
+  "title": "Research and Development Infrastructure",
+  "description": "The Quantum Engine Project requires specialized research facilities, equipment, and collaborative frameworks to advance from theoretical concepts to practical implementation. This infrastructure forms the backbone of our development efforts. The complete research findings and experimental results can be found in our Quantum Propulsion Research Paper.",
+  "source": "@site/docs/research-documentation/research-development.md",
+  "sourceDirName": "research-documentation",
+  "slug": "/research-documentation/research-development",
+  "permalink": "/azurespacegroup/docs/research-documentation/research-development",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/szemkoff/azurespacegroup/tree/main/docs/research-documentation/research-development.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Advanced Materials Research",
+    "permalink": "/azurespacegroup/docs/materials/advanced-materials-research"
+  },
+  "next": {
+    "title": "Prototype Designs",
+    "permalink": "/azurespacegroup/docs/research-documentation/prototype-designs"
+  }
+}

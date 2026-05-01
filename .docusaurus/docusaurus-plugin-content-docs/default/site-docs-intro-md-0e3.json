@@ -1,0 +1,23 @@
+{
+  "id": "intro",
+  "title": "Azure Space Group Project Overview",
+  "description": "The Azure Space Group Project represents a revolutionary approach to space propulsion technology, leveraging quantum mechanics principles to enable advanced space travel capabilities that surpass conventional propulsion methods. This project aims to harness quantum phenomena such as tunneling, superposition, and entanglement to create a propulsion system that could potentially enable faster-than-light travel and drastically reduce resource consumption.",
+  "source": "@site/docs/intro.md",
+  "sourceDirName": ".",
+  "slug": "/intro",
+  "permalink": "/azurespacegroup/docs/intro",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/szemkoff/azurespacegroup/tree/main/docs/intro.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "next": {
+    "title": "About Us",
+    "permalink": "/azurespacegroup/docs/about"
+  }
+}

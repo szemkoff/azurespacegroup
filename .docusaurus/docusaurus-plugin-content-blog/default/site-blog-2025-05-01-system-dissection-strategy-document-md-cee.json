@@ -1,0 +1,70 @@
+{
+  "permalink": "/azurespacegroup/blog/system-dissection-strategy-document",
+  "editUrl": "https://github.com/szemkoff/azurespacegroup/tree/main/blog/2025-05-01-system-dissection-strategy-document.md",
+  "source": "@site/blog/2025-05-01-system-dissection-strategy-document.md",
+  "title": "Comprehensive System Dissection and Development Strategy Now Available",
+  "description": "We're excited to announce the addition of a comprehensive System Dissection and Developmental Strategy document to our technical documentation. This critical new resource provides a systematic approach to understanding, analyzing, and implementing our quantum propulsion technology.",
+  "date": "2025-05-01T00:00:00.000Z",
+  "tags": [
+    {
+      "inline": true,
+      "label": "system dissection",
+      "permalink": "/azurespacegroup/blog/tags/system-dissection"
+    },
+    {
+      "inline": true,
+      "label": "vulnerability assessment",
+      "permalink": "/azurespacegroup/blog/tags/vulnerability-assessment"
+    },
+    {
+      "inline": true,
+      "label": "development strategy",
+      "permalink": "/azurespacegroup/blog/tags/development-strategy"
+    },
+    {
+      "inline": true,
+      "label": "quantum motor",
+      "permalink": "/azurespacegroup/blog/tags/quantum-motor"
+    },
+    {
+      "inline": true,
+      "label": "implementation",
+      "permalink": "/azurespacegroup/blog/tags/implementation"
+    }
+  ],
+  "readingTime": 2.18,
+  "hasTruncateMarker": true,
+  "authors": [
+    {
+      "name": "Stanley Zemskoff",
+      "title": "Azure Space Group Lead Researcher",
+      "url": "https://www.linkedin.com/in/stan-zemskoff-55a55221/",
+      "imageURL": "https://github.com/szemkoff.png",
+      "key": "stanley",
+      "page": null
+    }
+  ],
+  "frontMatter": {
+    "slug": "system-dissection-strategy-document",
+    "title": "Comprehensive System Dissection and Development Strategy Now Available",
+    "authors": [
+      "stanley"
+    ],
+    "tags": [
+      "system dissection",
+      "vulnerability assessment",
+      "development strategy",
+      "quantum motor",
+      "implementation"
+    ]
+  },
+  "unlisted": false,
+  "prevItem": {
+    "title": "Major Updates: Grant Program Pages, Investment Plan, and Roadmap",
+    "permalink": "/azurespacegroup/blog/grant-investment-roadmap-updates"
+  },
+  "nextItem": {
+    "title": "Theoretical Breakthrough in Quantum Propulsion Models",
+    "permalink": "/azurespacegroup/blog/quantum-propulsion-theoretical-breakthrough"
+  }
+}

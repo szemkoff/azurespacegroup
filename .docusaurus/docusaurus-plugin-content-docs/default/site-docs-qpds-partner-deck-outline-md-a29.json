@@ -1,0 +1,29 @@
+{
+  "id": "qpds/partner-deck-outline",
+  "title": "QGN v0.1 Partner Deck Outline",
+  "description": "Investor and partner presentation structure for Quantum Geophysical Navigation system",
+  "source": "@site/docs/qpds/partner-deck-outline.md",
+  "sourceDirName": "qpds",
+  "slug": "/qpds/partner-deck-outline",
+  "permalink": "/azurespacegroup/docs/qpds/partner-deck-outline",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/szemkoff/azurespacegroup/tree/main/docs/qpds/partner-deck-outline.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "QGN v0.1 Partner Deck Outline",
+    "sidebar_position": 4,
+    "description": "Investor and partner presentation structure for Quantum Geophysical Navigation system"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "QGN v0.1 Field Test Protocol",
+    "permalink": "/azurespacegroup/docs/qpds/field-test-protocol"
+  },
+  "next": {
+    "title": "QGN v0.1 Funding Alignment & Grant Strategy",
+    "permalink": "/azurespacegroup/docs/qpds/funding-alignment"
+  }
+}

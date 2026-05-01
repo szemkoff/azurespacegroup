@@ -1,0 +1,24 @@
+{
+  "id": "research-documentation/time-tacking",
+  "title": "Time Tacking: A Novel Theoretical Approach to Interstellar Travel",
+  "description": "This research paper explores the theoretical possibility of using quantum field manipulation for a novel approach to interstellar travel: Time Tacking. For a comprehensive overview of our quantum propulsion technology, please refer to our Executive Summary PDF.",
+  "source": "@site/docs/research-documentation/time-tacking.md",
+  "sourceDirName": "research-documentation",
+  "slug": "/research-documentation/time-tacking",
+  "permalink": "/azurespacegroup/docs/research-documentation/time-tacking",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/szemkoff/azurespacegroup/tree/main/docs/research-documentation/time-tacking.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Game-Based Research Platform",
+    "permalink": "/azurespacegroup/docs/research-documentation/game-based-research-platform"
+  },
+  "next": {
+    "title": "Theoretical Revisions to Quantum Propulsion Models",
+    "permalink": "/azurespacegroup/docs/research-documentation/quantum-propulsion-theoretical-revision"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "development-roadmap",
+  "title": "Development Roadmap",
+  "description": "Strategic development pathways for Azure Space Group technologies",
+  "source": "@site/docs/development-roadmap.md",
+  "sourceDirName": ".",
+  "slug": "/development-roadmap",
+  "permalink": "/azurespacegroup/docs/development-roadmap",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/szemkoff/azurespacegroup/tree/main/docs/development-roadmap.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 8,
+  "frontMatter": {
+    "sidebar_position": 8,
+    "title": "Development Roadmap",
+    "description": "Strategic development pathways for Azure Space Group technologies"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Technical Schematics & Diagrams",
+    "permalink": "/azurespacegroup/docs/diagrams"
+  },
+  "next": {
+    "title": "Investment Summary | Azure Space Group Technologies",
+    "permalink": "/azurespacegroup/docs/investment"
+  }
+}

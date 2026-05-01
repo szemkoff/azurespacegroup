@@ -1,0 +1,29 @@
+{
+  "id": "qpds/release-milestone-v02",
+  "title": "QGN v0.2 Release Milestone Criteria",
+  "description": "Success criteria and evolution roadmap from v0.1 prototype to v0.2 pilot-ready system",
+  "source": "@site/docs/qpds/release-milestone-v02.md",
+  "sourceDirName": "qpds",
+  "slug": "/qpds/release-milestone-v02",
+  "permalink": "/azurespacegroup/docs/qpds/release-milestone-v02",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/szemkoff/azurespacegroup/tree/main/docs/qpds/release-milestone-v02.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "title": "QGN v0.2 Release Milestone Criteria",
+    "sidebar_position": 6,
+    "description": "Success criteria and evolution roadmap from v0.1 prototype to v0.2 pilot-ready system"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "QGN v0.1 Funding Alignment & Grant Strategy",
+    "permalink": "/azurespacegroup/docs/qpds/funding-alignment"
+  },
+  "next": {
+    "title": "Simulator & Testing",
+    "permalink": "/azurespacegroup/docs/qpds/simulator"
+  }
+}

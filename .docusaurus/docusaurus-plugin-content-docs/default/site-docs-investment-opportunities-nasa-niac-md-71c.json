@@ -1,0 +1,29 @@
+{
+  "id": "investment-opportunities/nasa-niac",
+  "title": "NASA NIAC Grant Program",
+  "description": "Details and strategy for the NASA NIAC grant.",
+  "source": "@site/docs/investment-opportunities/nasa-niac.md",
+  "sourceDirName": "investment-opportunities",
+  "slug": "/investment-opportunities/nasa-niac",
+  "permalink": "/azurespacegroup/docs/investment-opportunities/nasa-niac",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/szemkoff/azurespacegroup/tree/main/docs/investment-opportunities/nasa-niac.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "title": "NASA NIAC Grant Program",
+    "sidebar_position": 6,
+    "description": "Details and strategy for the NASA NIAC grant."
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "DOE Quantum Grant Program",
+    "permalink": "/azurespacegroup/docs/investment-opportunities/doe-quantum"
+  },
+  "next": {
+    "title": "AFOSR Basic Grant Program",
+    "permalink": "/azurespacegroup/docs/investment-opportunities/afosr-basic"
+  }
+}

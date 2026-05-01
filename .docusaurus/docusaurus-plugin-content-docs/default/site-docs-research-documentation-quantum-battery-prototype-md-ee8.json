@@ -1,0 +1,24 @@
+{
+  "id": "research-documentation/quantum-battery-prototype",
+  "title": "Quantum Battery Prototype - Revised Design",
+  "description": "Overview",
+  "source": "@site/docs/research-documentation/quantum-battery-prototype.md",
+  "sourceDirName": "research-documentation",
+  "slug": "/research-documentation/quantum-battery-prototype",
+  "permalink": "/azurespacegroup/docs/research-documentation/quantum-battery-prototype",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/szemkoff/azurespacegroup/tree/main/docs/research-documentation/quantum-battery-prototype.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Prototype Designs",
+    "permalink": "/azurespacegroup/docs/research-documentation/prototype-designs"
+  },
+  "next": {
+    "title": "Game-Based Research Platform",
+    "permalink": "/azurespacegroup/docs/research-documentation/game-based-research-platform"
+  }
+}

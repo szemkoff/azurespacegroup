@@ -1,0 +1,24 @@
+{
+  "id": "core-documentation/communication-systems",
+  "title": "Communication Systems",
+  "description": "The Quantum Engine Project incorporates revolutionary communication technologies that transcend traditional electromagnetic signal limitations, enabling instantaneous, secure, and reliable communication across any distance. For detailed research on quantum entanglement communication technology, refer to our Quantum Communications Research Paper. For exploratory research on gravity-based instantaneous communication, see our Gravitational Communication Hypothesis.",
+  "source": "@site/docs/core-documentation/communication-systems.md",
+  "sourceDirName": "core-documentation",
+  "slug": "/core-documentation/communication-systems",
+  "permalink": "/azurespacegroup/docs/core-documentation/communication-systems",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/szemkoff/azurespacegroup/tree/main/docs/core-documentation/communication-systems.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Simulator & Testing",
+    "permalink": "/azurespacegroup/docs/qpds/simulator"
+  },
+  "next": {
+    "title": "Gravitational Communication Hypothesis",
+    "permalink": "/azurespacegroup/docs/research-documentation/gravitational-communication-hypothesis"
+  }
+}

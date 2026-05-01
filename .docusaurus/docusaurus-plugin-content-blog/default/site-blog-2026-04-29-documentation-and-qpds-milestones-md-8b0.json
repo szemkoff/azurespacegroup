@@ -1,0 +1,67 @@
+{
+  "permalink": "/azurespacegroup/blog/documentation-and-qpds-milestones",
+  "editUrl": "https://github.com/szemkoff/azurespacegroup/tree/main/blog/2026-04-29-documentation-and-qpds-milestones.md",
+  "source": "@site/blog/2026-04-29-documentation-and-qpds-milestones.md",
+  "title": "Documentation and QPDS Milestones: Communications Research and Engineering Updates",
+  "description": "We have shipped a coordinated set of updates across research documentation, communication systems, and the Quantum Position Determination System (QPDS). This post summarizes what is new and where to find it.",
+  "date": "2026-04-29T00:00:00.000Z",
+  "tags": [
+    {
+      "inline": true,
+      "label": "updates",
+      "permalink": "/azurespacegroup/blog/tags/updates"
+    },
+    {
+      "inline": true,
+      "label": "qpds",
+      "permalink": "/azurespacegroup/blog/tags/qpds"
+    },
+    {
+      "inline": true,
+      "label": "quantum",
+      "permalink": "/azurespacegroup/blog/tags/quantum"
+    },
+    {
+      "inline": true,
+      "label": "communications",
+      "permalink": "/azurespacegroup/blog/tags/communications"
+    },
+    {
+      "inline": true,
+      "label": "documentation",
+      "permalink": "/azurespacegroup/blog/tags/documentation"
+    }
+  ],
+  "readingTime": 1.495,
+  "hasTruncateMarker": false,
+  "authors": [
+    {
+      "name": "Stan Zemskoff",
+      "title": "Principal Quantum Engineer",
+      "url": "https://github.com/szemkoff",
+      "imageURL": "https://github.com/szemkoff.png",
+      "key": "szemkoff",
+      "page": null
+    }
+  ],
+  "frontMatter": {
+    "slug": "documentation-and-qpds-milestones",
+    "title": "Documentation and QPDS Milestones: Communications Research and Engineering Updates",
+    "authors": [
+      "szemkoff"
+    ],
+    "tags": [
+      "updates",
+      "qpds",
+      "quantum",
+      "communications",
+      "documentation"
+    ],
+    "date": "2026-04-29"
+  },
+  "unlisted": false,
+  "nextItem": {
+    "title": "Major Updates: Grant Program Pages, Investment Plan, and Roadmap",
+    "permalink": "/azurespacegroup/blog/grant-investment-roadmap-updates"
+  }
+}

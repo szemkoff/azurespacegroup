@@ -1,0 +1,29 @@
+{
+  "id": "qpds/field-test-protocol",
+  "title": "QGN v0.1 Field Test Protocol",
+  "description": "Comprehensive field test procedures, validation checklists, and acceptance criteria for Quantum Geophysical Navigation system",
+  "source": "@site/docs/qpds/field-test-protocol.md",
+  "sourceDirName": "qpds",
+  "slug": "/qpds/field-test-protocol",
+  "permalink": "/azurespacegroup/docs/qpds/field-test-protocol",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/szemkoff/azurespacegroup/tree/main/docs/qpds/field-test-protocol.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "QGN v0.1 Field Test Protocol",
+    "sidebar_position": 3,
+    "description": "Comprehensive field test procedures, validation checklists, and acceptance criteria for Quantum Geophysical Navigation system"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Geophysical Map Pipeline PRD",
+    "permalink": "/azurespacegroup/docs/qpds/map-pipeline-prd"
+  },
+  "next": {
+    "title": "QGN v0.1 Partner Deck Outline",
+    "permalink": "/azurespacegroup/docs/qpds/partner-deck-outline"
+  }
+}

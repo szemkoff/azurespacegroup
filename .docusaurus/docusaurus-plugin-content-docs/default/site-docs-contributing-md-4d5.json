@@ -1,0 +1,24 @@
+{
+  "id": "contributing",
+  "title": "Contributing to the Quantum Engine Project",
+  "description": "Thank you for your interest in contributing to the Quantum Engine Project. This revolutionary initiative requires collaboration across multiple disciplines, and your expertise is valuable to our mission of developing quantum propulsion technology.",
+  "source": "@site/docs/contributing.md",
+  "sourceDirName": ".",
+  "slug": "/contributing",
+  "permalink": "/azurespacegroup/docs/contributing",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/szemkoff/azurespacegroup/tree/main/docs/contributing.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "AFOSR Basic Grant Program",
+    "permalink": "/azurespacegroup/docs/investment-opportunities/afosr-basic"
+  },
+  "next": {
+    "title": "Careers",
+    "permalink": "/azurespacegroup/docs/careers"
+  }
+}

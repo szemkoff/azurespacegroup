@@ -1,0 +1,29 @@
+{
+  "id": "investment-opportunities/quantum-sci",
+  "title": "Quantum Sci Grant Program",
+  "description": "Details and strategy for the Stanford University Quantum Sci grant.",
+  "source": "@site/docs/investment-opportunities/quantum-sci.md",
+  "sourceDirName": "investment-opportunities",
+  "slug": "/investment-opportunities/quantum-sci",
+  "permalink": "/azurespacegroup/docs/investment-opportunities/quantum-sci",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/szemkoff/azurespacegroup/tree/main/docs/investment-opportunities/quantum-sci.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Quantum Sci Grant Program",
+    "sidebar_position": 1,
+    "description": "Details and strategy for the Stanford University Quantum Sci grant."
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Grant Programs",
+    "permalink": "/azurespacegroup/docs/investment-opportunities/"
+  },
+  "next": {
+    "title": "UConn Quantum Grant Program",
+    "permalink": "/azurespacegroup/docs/investment-opportunities/uconn-quantum"
+  }
+}

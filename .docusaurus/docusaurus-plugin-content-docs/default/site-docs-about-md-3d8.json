@@ -1,0 +1,29 @@
+{
+  "id": "about",
+  "title": "About Azure Space Group",
+  "description": "Learn about Azure Space Group's mission, vision, core values, and the team driving quantum innovation",
+  "source": "@site/docs/about.md",
+  "sourceDirName": ".",
+  "slug": "/about",
+  "permalink": "/azurespacegroup/docs/about",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/szemkoff/azurespacegroup/tree/main/docs/about.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "about",
+    "title": "About Azure Space Group",
+    "sidebar_label": "About Us",
+    "description": "Learn about Azure Space Group's mission, vision, core values, and the team driving quantum innovation"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Project Overview",
+    "permalink": "/azurespacegroup/docs/intro"
+  },
+  "next": {
+    "title": "Core Technology and Components",
+    "permalink": "/azurespacegroup/docs/core-documentation/core-technology"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "research-documentation/prototype-designs",
+  "title": "Prototype Designs & Concept Improvements",
+  "description": "Practical prototypes and concept enhancements for Azure Space Group technologies",
+  "source": "@site/docs/research-documentation/prototype-designs.md",
+  "sourceDirName": "research-documentation",
+  "slug": "/research-documentation/prototype-designs",
+  "permalink": "/azurespacegroup/docs/research-documentation/prototype-designs",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/szemkoff/azurespacegroup/tree/main/docs/research-documentation/prototype-designs.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "prototype-designs",
+    "title": "Prototype Designs & Concept Improvements",
+    "sidebar_label": "Prototype Designs",
+    "description": "Practical prototypes and concept enhancements for Azure Space Group technologies"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Research and Development Infrastructure",
+    "permalink": "/azurespacegroup/docs/research-documentation/research-development"
+  },
+  "next": {
+    "title": "Quantum Battery Prototype - Revised Design",
+    "permalink": "/azurespacegroup/docs/research-documentation/quantum-battery-prototype"
+  }
+}

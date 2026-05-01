@@ -1,0 +1,29 @@
+{
+  "id": "qpds/map-pipeline-prd",
+  "title": "Geophysical Map Pipeline PRD",
+  "description": "Map acquisition, storage, updates, and distribution for QGN v0.1",
+  "source": "@site/docs/qpds/map-pipeline-prd.md",
+  "sourceDirName": "qpds",
+  "slug": "/qpds/map-pipeline-prd",
+  "permalink": "/azurespacegroup/docs/qpds/map-pipeline-prd",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/szemkoff/azurespacegroup/tree/main/docs/qpds/map-pipeline-prd.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Geophysical Map Pipeline PRD",
+    "sidebar_position": 3,
+    "description": "Map acquisition, storage, updates, and distribution for QGN v0.1"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "QGN v0.1 Product Requirements Document",
+    "permalink": "/azurespacegroup/docs/qpds/qgn-v01-prd"
+  },
+  "next": {
+    "title": "QGN v0.1 Field Test Protocol",
+    "permalink": "/azurespacegroup/docs/qpds/field-test-protocol"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "research-documentation/quantum-research-paper",
+  "title": "Quantum Propulsion Technologies Ltd",
+  "description": "Research Paper Overview",
+  "source": "@site/docs/research-documentation/quantum-research-paper.mdx",
+  "sourceDirName": "research-documentation",
+  "slug": "/research-documentation/quantum-research-paper",
+  "permalink": "/azurespacegroup/docs/research-documentation/quantum-research-paper",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/szemkoff/azurespacegroup/tree/main/docs/research-documentation/quantum-research-paper.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "quantum-research-paper",
+    "title": "Quantum Propulsion Technologies Ltd",
+    "sidebar_label": "Quantum Research Paper"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Legal and Regulatory Framework",
+    "permalink": "/azurespacegroup/docs/research-documentation/legal-regulatory"
+  },
+  "next": {
+    "title": "Technical Schematics & Diagrams",
+    "permalink": "/azurespacegroup/docs/diagrams"
+  }
+}

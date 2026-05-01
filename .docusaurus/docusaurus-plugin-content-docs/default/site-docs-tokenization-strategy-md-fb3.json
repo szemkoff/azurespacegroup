@@ -1,0 +1,27 @@
+{
+  "id": "tokenization-strategy",
+  "title": "Azure Space Group Tokenization Strategy",
+  "description": "Executive Summary",
+  "source": "@site/docs/tokenization-strategy.md",
+  "sourceDirName": ".",
+  "slug": "/tokenization-strategy",
+  "permalink": "/azurespacegroup/docs/tokenization-strategy",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/szemkoff/azurespacegroup/tree/main/docs/tokenization-strategy.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Azure Space Group Technologies | Investor Pitch Deck",
+    "permalink": "/azurespacegroup/docs/pitch-deck"
+  },
+  "next": {
+    "title": "Grant Programs",
+    "permalink": "/azurespacegroup/docs/investment-opportunities/"
+  }
+}

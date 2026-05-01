@@ -1,0 +1,27 @@
+{
+  "id": "pitch-deck",
+  "title": "Azure Space Group Technologies | Investor Pitch Deck",
+  "description": "Azure Space Group Technologies",
+  "source": "@site/docs/pitch-deck.md",
+  "sourceDirName": ".",
+  "slug": "/pitch-deck",
+  "permalink": "/azurespacegroup/docs/pitch-deck",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/szemkoff/azurespacegroup/tree/main/docs/pitch-deck.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 11,
+  "frontMatter": {
+    "sidebar_position": 11
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Investment Summary | Azure Space Group Technologies",
+    "permalink": "/azurespacegroup/docs/investment"
+  },
+  "next": {
+    "title": "Azure Space Group Tokenization Strategy",
+    "permalink": "/azurespacegroup/docs/tokenization-strategy"
+  }
+}

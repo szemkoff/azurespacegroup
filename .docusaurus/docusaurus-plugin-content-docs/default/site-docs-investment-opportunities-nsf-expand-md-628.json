@@ -1,0 +1,29 @@
+{
+  "id": "investment-opportunities/nsf-expand",
+  "title": "NSF Expand Grant Program",
+  "description": "Details and strategy for the National Science Foundation Expand grant.",
+  "source": "@site/docs/investment-opportunities/nsf-expand.md",
+  "sourceDirName": "investment-opportunities",
+  "slug": "/investment-opportunities/nsf-expand",
+  "permalink": "/azurespacegroup/docs/investment-opportunities/nsf-expand",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/szemkoff/azurespacegroup/tree/main/docs/investment-opportunities/nsf-expand.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "NSF Expand Grant Program",
+    "sidebar_position": 3,
+    "description": "Details and strategy for the National Science Foundation Expand grant."
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "UConn Quantum Grant Program",
+    "permalink": "/azurespacegroup/docs/investment-opportunities/uconn-quantum"
+  },
+  "next": {
+    "title": "ARPA-E OPEN Grant Program",
+    "permalink": "/azurespacegroup/docs/investment-opportunities/arpae-open"
+  }
+}

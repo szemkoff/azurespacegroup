@@ -1,0 +1,24 @@
+{
+  "id": "materials/advanced-materials-research",
+  "title": "Advanced Materials Research",
+  "description": "Development of quantum-responsive materials for spacecraft construction",
+  "source": "@site/docs/materials/advanced-materials-research.md",
+  "sourceDirName": "materials",
+  "slug": "/materials/advanced-materials-research",
+  "permalink": "/azurespacegroup/docs/materials/advanced-materials-research",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/szemkoff/azurespacegroup/tree/main/docs/materials/advanced-materials-research.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Quasicrystal‑Reinforced Aluminum",
+    "permalink": "/azurespacegroup/docs/materials/quasicrystal-aluminum"
+  },
+  "next": {
+    "title": "Research and Development Infrastructure",
+    "permalink": "/azurespacegroup/docs/research-documentation/research-development"
+  }
+}

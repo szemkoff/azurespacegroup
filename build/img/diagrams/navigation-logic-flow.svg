@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#fafafa" />
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle">Quantum Navigation System - Logical Flow</text>
+  
+  <!-- Flow Chart Start -->
+  <g id="start">
+    <rect x="300" y="70" width="200" height="60" rx="30" ry="30" fill="#8BC34A" stroke="#333" stroke-width="1.5" />
+    <text x="400" y="105" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="white">Initialize Navigation System</text>
+  </g>
+  
+  <!-- Process 1: Quantum Position Sensing -->
+  <g id="position-sensing">
+    <rect x="300" y="160" width="200" height="60" fill="#2196F3" stroke="#333" stroke-width="1.5" />
+    <text x="400" y="180" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="white">Quantum Position Sensing</text>
+    <text x="400" y="200" font-family="Arial" font-size="12" text-anchor="middle" fill="white">Entanglement-based</text>
+  </g>
+  
+  <!-- Process 2: Spacetime Mapping -->
+  <g id="spacetime-mapping">
+    <rect x="300" y="250" width="200" height="60" fill="#2196F3" stroke="#333" stroke-width="1.5" />
+    <text x="400" y="270" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="white">Spacetime Mapping</text>
+    <text x="400" y="290" font-family="Arial" font-size="12" text-anchor="middle" fill="white">Planck-scale precision</text>
+  </g>
+  
+  <!-- Decision Node -->
+  <g id="decision">
+    <polygon points="400,340 450,380 400,420 350,380" fill="#FF9800" stroke="#333" stroke-width="1.5" />
+    <text x="400" y="385" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle">Obstacle or Anomaly?</text>
+  </g>
+  
+  <!-- Yes Path -->
+  <g id="yes-path">
+    <rect x="500" y="350" width="180" height="60" fill="#2196F3" stroke="#333" stroke-width="1.5" />
+    <text x="590" y="370" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="white">Quantum Probability</text>
+    <text x="590" y="390" font-family="Arial" font-size="12" text-anchor="middle" fill="white">Forecasting</text>
+  </g>
+  
+  <!-- No Path (or after probability forecasting) -->
+  <g id="trajectory-calculation">
+    <rect x="300" y="450" width="200" height="60" fill="#2196F3" stroke="#333" stroke-width="1.5" />
+    <text x="400" y="470" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="white">Trajectory Calculation</text>
+    <text x="400" y="490" font-family="Arial" font-size="12" text-anchor="middle" fill="white">10^15 simulaneous paths</text>
+  </g>
+  
+  <!-- Final Output -->
+  <g id="output">
+    <rect x="300" y="540" width="200" height="60" rx="30" ry="30" fill="#9C27B0" stroke="#333" stroke-width="1.5" />
+    <text x="400" y="575" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="white">Navigation Commands to Propulsion</text>
+  </g>
+  
+  <!-- Connecting Arrows -->
+  <!-- Start to Position Sensing -->
+  <line x1="400" y1="130" x2="400" y2="160" stroke="#333" stroke-width="2" />
+  <polygon points="400,160 395,150 405,150" fill="#333" />
+  
+  <!-- Position Sensing to Spacetime Mapping -->
+  <line x1="400" y1="220" x2="400" y2="250" stroke="#333" stroke-width="2" />
+  <polygon points="400,250 395,240 405,240" fill="#333" />
+  
+  <!-- Spacetime Mapping to Decision -->
+  <line x1="400" y1="310" x2="400" y2="340" stroke="#333" stroke-width="2" />
+  <polygon points="400,340 395,330 405,330" fill="#333" />
+  
+  <!-- Decision to Yes Path -->
+  <line x1="450" y1="380" x2="500" y2="380" stroke="#333" stroke-width="2" />
+  <polygon points="500,380 490,375 490,385" fill="#333" />
+  <text x="470" y="370" font-family="Arial" font-size="12" text-anchor="middle">Yes</text>
+  
+  <!-- Decision to No Path -->
+  <line x1="400" y1="420" x2="400" y2="450" stroke="#333" stroke-width="2" />
+  <polygon points="400,450 395,440 405,440" fill="#333" />
+  <text x="420" y="435" font-family="Arial" font-size="12" text-anchor="start">No</text>
+  
+  <!-- Yes Path back to Trajectory -->
+  <path d="M590,410 Q590,430 500,430 Q450,430 400,450" stroke="#333" stroke-width="2" fill="none" />
+  <polygon points="400,450 407,443 410,453" fill="#333" />
+  
+  <!-- Trajectory to Output -->
+  <line x1="400" y1="510" x2="400" y2="540" stroke="#333" stroke-width="2" />
+  <polygon points="400,540 395,530 405,530" fill="#333" />
+  
+  <!-- Side Components -->
+  <!-- Quantum Sensor Array -->
+  <g id="sensor-array">
+    <rect x="50" y="160" width="150" height="60" fill="#9E9E9E" stroke="#333" stroke-width="1" />
+    <text x="125" y="180" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle">Quantum Field Sensors</text>
+    <text x="125" y="200" font-family="Arial" font-size="10" text-anchor="middle">10^-35 meter precision</text>
+    <line x1="200" y1="190" x2="300" y2="190" stroke="#333" stroke-width="1" stroke-dasharray="5,3" />
+  </g>
+  
+  <!-- Reference Database -->
+  <g id="reference">
+    <rect x="600" y="250" width="150" height="60" fill="#9E9E9E" stroke="#333" stroke-width="1" />
+    <text x="675" y="270" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle">Quantum Reference</text>
+    <text x="675" y="290" font-family="Arial" font-size="10" text-anchor="middle">Spacetime Baseline</text>
+    <line x1="600" y1="280" x2="500" y2="280" stroke="#333" stroke-width="1" stroke-dasharray="5,3" />
+  </g>
+  
+  <!-- Propulsion System Feedback -->
+  <g id="propulsion-feedback">
+    <rect x="600" y="540" width="150" height="60" fill="#9E9E9E" stroke="#333" stroke-width="1" />
+    <text x="675" y="560" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle">Propulsion System</text>
+    <text x="675" y="580" font-family="Arial" font-size="10" text-anchor="middle">Execution Feedback</text>
+    <line x1="600" y1="570" x2="500" y2="570" stroke="#333" stroke-width="1" stroke-dasharray="5,3" />
+  </g>
+  
+  <!-- Legend -->
+  <g id="legend">
+    <rect x="600" y="70" width="150" height="140" fill="#FFFFFF" stroke="#333" stroke-width="1" />
+    <text x="675" y="90" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle">Legend</text>
+    
+    <rect x="610" y="100" width="20" height="20" rx="10" ry="10" fill="#8BC34A" />
+    <text x="640" y="115" font-family="Arial" font-size="10" text-anchor="start">Start/End</text>
+    
+    <rect x="610" y="130" width="20" height="20" fill="#2196F3" />
+    <text x="640" y="145" font-family="Arial" font-size="10" text-anchor="start">Process</text>
+    
+    <polygon points="620,160 630,170 620,180 610,170" fill="#FF9800" />
+    <text x="640" y="175" font-family="Arial" font-size="10" text-anchor="start">Decision</text>
+    
+    <rect x="610" y="190" width="20" height="20" fill="#9E9E9E" />
+    <text x="640" y="205" font-family="Arial" font-size="10" text-anchor="start">External System</text>
+  </g>
+</svg> 

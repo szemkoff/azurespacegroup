@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Quantum Vacuum Energy Harvesting</title>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: transparent;
+    }
+    #diagram {
+      width: 100%;
+      text-align: center;
+    }
+    /* Bold text in diagram */
+    .mermaid .label {
+      font-weight: bold !important;
+      font-size: 18px !important;
+    }
+    /* Thicker lines */
+    .mermaid .flowchart-link {
+      stroke-width: 3px !important;
+    }
+    .mermaid g.node rect, 
+    .mermaid g.node circle, 
+    .mermaid g.node ellipse, 
+    .mermaid g.node polygon {
+      stroke-width: 3px !important;
+    }
+    .mermaid .cluster rect {
+      stroke-width: 3px !important;
+    }
+  </style>
+</head>
+<body>
+  <div id="diagram" class="mermaid">
+    flowchart TB
+      subgraph "Casimir Structure"
+          CP1[Casimir Plate 1]
+          CP2[Casimir Plate 2]
+          QVF[Quantum Vacuum Field]
+      end
+      
+      subgraph "Energy Extraction"
+          QFO[Quantum Field Oscillator]
+          VPM[Virtual Particle Manipulator]
+          EH[Energy Harvester]
+      end
+      
+      subgraph "Power Management"
+          QC[Quantum Capacitor]
+          EDR[Energy Distribution Regulator]
+          PS[Power Storage]
+      end
+      
+      CP1 -.->|Negative Pressure| QVF
+      QVF -.->|Negative Pressure| CP1
+      
+      CP2 -.->|Negative Pressure| QVF
+      QVF -.->|Negative Pressure| CP2
+      
+      QVF -->|Virtual Particles| QFO
+      QFO -->|Oscillation Energy| VPM
+      VPM -->|Manipulated Field| EH
+      
+      EH -->|Harvested Energy| QC
+      QC -->|Stabilized Energy| EDR
+      EDR -->|Distributed Power| PS
+      
+      style QVF fill:#f8f,stroke:#333,stroke-width:3px
+      style CP1 fill:#888,stroke:#333,stroke-width:3px
+      style CP2 fill:#888,stroke:#333,stroke-width:3px
+      style EH fill:#9f9,stroke:#333,stroke-width:3px
+      style PS fill:#9cf,stroke:#333,stroke-width:3px
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      mermaid.initialize({
+        startOnLoad: true,
+        theme: 'neutral',
+        flowchart: {
+          htmlLabels: true,
+          curve: 'basis',
+          nodeSpacing: 50,
+          rankSpacing: 100,
+        },
+        securityLevel: 'loose'
+      });
+    });
+  </script>
+</body>
+</html> 

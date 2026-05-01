@@ -1,0 +1,29 @@
+{
+  "id": "investment-opportunities/afosr-basic",
+  "title": "AFOSR Basic Grant Program",
+  "description": "Details and strategy for the Air Force Office of Scientific Research Basic grant.",
+  "source": "@site/docs/investment-opportunities/afosr-basic.md",
+  "sourceDirName": "investment-opportunities",
+  "slug": "/investment-opportunities/afosr-basic",
+  "permalink": "/azurespacegroup/docs/investment-opportunities/afosr-basic",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/szemkoff/azurespacegroup/tree/main/docs/investment-opportunities/afosr-basic.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "title": "AFOSR Basic Grant Program",
+    "sidebar_position": 7,
+    "description": "Details and strategy for the Air Force Office of Scientific Research Basic grant."
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "NASA NIAC Grant Program",
+    "permalink": "/azurespacegroup/docs/investment-opportunities/nasa-niac"
+  },
+  "next": {
+    "title": "Contributing Guidelines",
+    "permalink": "/azurespacegroup/docs/contributing"
+  }
+}

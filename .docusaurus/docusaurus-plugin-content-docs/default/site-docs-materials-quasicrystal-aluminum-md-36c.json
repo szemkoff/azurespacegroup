@@ -1,0 +1,28 @@
+{
+  "id": "materials/quasicrystal-aluminum",
+  "title": "Quasicrystal‑Reinforced Aluminum (Additive Manufacturing)",
+  "description": "Overview, mechanisms, process guidance, and risks for quasicrystal-strengthened aluminum alloys produced via additive manufacturing.",
+  "source": "@site/docs/materials/quasicrystal-aluminum.md",
+  "sourceDirName": "materials",
+  "slug": "/materials/quasicrystal-aluminum",
+  "permalink": "/azurespacegroup/docs/materials/quasicrystal-aluminum",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/szemkoff/azurespacegroup/tree/main/docs/materials/quasicrystal-aluminum.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Quasicrystal‑Reinforced Aluminum (Additive Manufacturing)",
+    "description": "Overview, mechanisms, process guidance, and risks for quasicrystal-strengthened aluminum alloys produced via additive manufacturing.",
+    "sidebar_label": "Quasicrystal‑Reinforced Aluminum"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Bio-Resonance Habitat",
+    "permalink": "/azurespacegroup/docs/infrastructure-documentation/bio-resonance-habitat"
+  },
+  "next": {
+    "title": "Advanced Materials Research",
+    "permalink": "/azurespacegroup/docs/materials/advanced-materials-research"
+  }
+}

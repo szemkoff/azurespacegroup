@@ -1,0 +1,27 @@
+{
+  "id": "investment",
+  "title": "Investment Summary | Azure Space Group Technologies",
+  "description": "Executive Summary",
+  "source": "@site/docs/investment.md",
+  "sourceDirName": ".",
+  "slug": "/investment",
+  "permalink": "/azurespacegroup/docs/investment",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/szemkoff/azurespacegroup/tree/main/docs/investment.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 10,
+  "frontMatter": {
+    "sidebar_position": 10
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Development Roadmap",
+    "permalink": "/azurespacegroup/docs/development-roadmap"
+  },
+  "next": {
+    "title": "Azure Space Group Technologies | Investor Pitch Deck",
+    "permalink": "/azurespacegroup/docs/pitch-deck"
+  }
+}

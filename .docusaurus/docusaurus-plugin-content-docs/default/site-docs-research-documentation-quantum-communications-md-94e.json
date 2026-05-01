@@ -1,0 +1,24 @@
+{
+  "id": "research-documentation/quantum-communications",
+  "title": "Quantum Communications",
+  "description": "Utilizing quantum entanglement for instantaneous communication across vast distances",
+  "source": "@site/docs/research-documentation/quantum-communications.md",
+  "sourceDirName": "research-documentation",
+  "slug": "/research-documentation/quantum-communications",
+  "permalink": "/azurespacegroup/docs/research-documentation/quantum-communications",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/szemkoff/azurespacegroup/tree/main/docs/research-documentation/quantum-communications.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Theoretical Revisions to Quantum Propulsion Models",
+    "permalink": "/azurespacegroup/docs/research-documentation/quantum-propulsion-theoretical-revision"
+  },
+  "next": {
+    "title": "Legal and Regulatory Framework",
+    "permalink": "/azurespacegroup/docs/research-documentation/legal-regulatory"
+  }
+}

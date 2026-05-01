@@ -1,0 +1,24 @@
+{
+  "id": "research-documentation/legal-regulatory",
+  "title": "Legal and Regulatory Framework",
+  "description": "The development and deployment of quantum propulsion technology presents unprecedented legal, ethical, and regulatory challenges that must be addressed proactively to ensure responsible advancement of the Quantum Engine Project.",
+  "source": "@site/docs/research-documentation/legal-regulatory.md",
+  "sourceDirName": "research-documentation",
+  "slug": "/research-documentation/legal-regulatory",
+  "permalink": "/azurespacegroup/docs/research-documentation/legal-regulatory",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/szemkoff/azurespacegroup/tree/main/docs/research-documentation/legal-regulatory.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Quantum Communications",
+    "permalink": "/azurespacegroup/docs/research-documentation/quantum-communications"
+  },
+  "next": {
+    "title": "Quantum Research Paper",
+    "permalink": "/azurespacegroup/docs/research-documentation/quantum-research-paper"
+  }
+}

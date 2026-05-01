@@ -1,0 +1,29 @@
+{
+  "id": "investment-opportunities/uconn-quantum",
+  "title": "UConn Quantum Grant Program",
+  "description": "Details and strategy for the University of Connecticut Quantum grant.",
+  "source": "@site/docs/investment-opportunities/uconn-quantum.md",
+  "sourceDirName": "investment-opportunities",
+  "slug": "/investment-opportunities/uconn-quantum",
+  "permalink": "/azurespacegroup/docs/investment-opportunities/uconn-quantum",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/szemkoff/azurespacegroup/tree/main/docs/investment-opportunities/uconn-quantum.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "UConn Quantum Grant Program",
+    "sidebar_position": 2,
+    "description": "Details and strategy for the University of Connecticut Quantum grant."
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Quantum Sci Grant Program",
+    "permalink": "/azurespacegroup/docs/investment-opportunities/quantum-sci"
+  },
+  "next": {
+    "title": "NSF Expand Grant Program",
+    "permalink": "/azurespacegroup/docs/investment-opportunities/nsf-expand"
+  }
+}

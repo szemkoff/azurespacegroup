@@ -1,0 +1,29 @@
+{
+  "id": "investment-opportunities/doe-quantum",
+  "title": "DOE Quantum Grant Program",
+  "description": "Details and strategy for the Department of Energy Quantum grant.",
+  "source": "@site/docs/investment-opportunities/doe-quantum.md",
+  "sourceDirName": "investment-opportunities",
+  "slug": "/investment-opportunities/doe-quantum",
+  "permalink": "/azurespacegroup/docs/investment-opportunities/doe-quantum",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/szemkoff/azurespacegroup/tree/main/docs/investment-opportunities/doe-quantum.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "title": "DOE Quantum Grant Program",
+    "sidebar_position": 5,
+    "description": "Details and strategy for the Department of Energy Quantum grant."
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "ARPA-E OPEN Grant Program",
+    "permalink": "/azurespacegroup/docs/investment-opportunities/arpae-open"
+  },
+  "next": {
+    "title": "NASA NIAC Grant Program",
+    "permalink": "/azurespacegroup/docs/investment-opportunities/nasa-niac"
+  }
+}

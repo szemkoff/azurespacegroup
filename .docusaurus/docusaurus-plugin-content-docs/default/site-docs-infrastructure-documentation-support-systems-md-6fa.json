@@ -1,0 +1,24 @@
+{
+  "id": "infrastructure-documentation/support-systems",
+  "title": "Infrastructure Support Systems",
+  "description": "The Quantum Engine Project requires advanced support systems that enhance the reliability, safety, and operational efficiency of the quantum propulsion technology. These systems serve as the foundation upon which the entire project operates.",
+  "source": "@site/docs/infrastructure-documentation/support-systems.md",
+  "sourceDirName": "infrastructure-documentation",
+  "slug": "/infrastructure-documentation/support-systems",
+  "permalink": "/azurespacegroup/docs/infrastructure-documentation/support-systems",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/szemkoff/azurespacegroup/tree/main/docs/infrastructure-documentation/support-systems.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Gravitational Communication Hypothesis",
+    "permalink": "/azurespacegroup/docs/research-documentation/gravitational-communication-hypothesis"
+  },
+  "next": {
+    "title": "Human-Centric Design",
+    "permalink": "/azurespacegroup/docs/infrastructure-documentation/human-centric-design"
+  }
+}

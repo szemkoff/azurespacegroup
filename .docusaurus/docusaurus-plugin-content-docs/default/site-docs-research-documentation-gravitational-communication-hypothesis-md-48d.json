@@ -1,0 +1,24 @@
+{
+  "id": "research-documentation/gravitational-communication-hypothesis",
+  "title": "Gravitational Communication Hypothesis",
+  "description": "Exploratory research on dual-mode gravity and non-local communication architectures",
+  "source": "@site/docs/research-documentation/gravitational-communication-hypothesis.md",
+  "sourceDirName": "research-documentation",
+  "slug": "/research-documentation/gravitational-communication-hypothesis",
+  "permalink": "/azurespacegroup/docs/research-documentation/gravitational-communication-hypothesis",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/szemkoff/azurespacegroup/tree/main/docs/research-documentation/gravitational-communication-hypothesis.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Communication Systems",
+    "permalink": "/azurespacegroup/docs/core-documentation/communication-systems"
+  },
+  "next": {
+    "title": "Infrastructure Support Systems",
+    "permalink": "/azurespacegroup/docs/infrastructure-documentation/support-systems"
+  }
+}

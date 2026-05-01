@@ -1,0 +1,29 @@
+{
+  "id": "qpds/index",
+  "title": "Quantum Position Determination System (QPDS)",
+  "description": "Advanced positioning technology for GPS-denied navigation",
+  "source": "@site/docs/qpds/index.md",
+  "sourceDirName": "qpds",
+  "slug": "/qpds/",
+  "permalink": "/azurespacegroup/docs/qpds/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/szemkoff/azurespacegroup/tree/main/docs/qpds/index.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "Quantum Position Determination System (QPDS)",
+    "sidebar_position": 4,
+    "description": "Advanced positioning technology for GPS-denied navigation"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Propulsion and Navigation",
+    "permalink": "/azurespacegroup/docs/core-documentation/propulsion-navigation"
+  },
+  "next": {
+    "title": "QGN v0.1 Product Requirements Document",
+    "permalink": "/azurespacegroup/docs/qpds/qgn-v01-prd"
+  }
+}

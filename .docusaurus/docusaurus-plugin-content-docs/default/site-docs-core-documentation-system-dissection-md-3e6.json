@@ -1,0 +1,24 @@
+{
+  "id": "core-documentation/system-dissection",
+  "title": "System Dissection and Developmental Strategy",
+  "description": "System Architecture Overview",
+  "source": "@site/docs/core-documentation/system-dissection.md",
+  "sourceDirName": "core-documentation",
+  "slug": "/core-documentation/system-dissection",
+  "permalink": "/azurespacegroup/docs/core-documentation/system-dissection",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/szemkoff/azurespacegroup/tree/main/docs/core-documentation/system-dissection.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Core Technology and Components",
+    "permalink": "/azurespacegroup/docs/core-documentation/core-technology"
+  },
+  "next": {
+    "title": "Energy and Power Systems",
+    "permalink": "/azurespacegroup/docs/core-documentation/energy-systems"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "infrastructure-documentation/bio-resonance-habitat",
+  "title": "Bio-Resonance Habitat Systems",
+  "description": "While quantum propulsion technology offers transformative capabilities for space travel, our research has expanded to include advanced habitat designs utilizing similar quantum principles. Bio-resonance habitat systems represent a breakthrough in sustainable, self-contained living environments for extraterrestrial colonization.",
+  "source": "@site/docs/infrastructure-documentation/bio-resonance-habitat.mdx",
+  "sourceDirName": "infrastructure-documentation",
+  "slug": "/infrastructure-documentation/bio-resonance-habitat",
+  "permalink": "/azurespacegroup/docs/infrastructure-documentation/bio-resonance-habitat",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/szemkoff/azurespacegroup/tree/main/docs/infrastructure-documentation/bio-resonance-habitat.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "bio-resonance-habitat",
+    "title": "Bio-Resonance Habitat Systems",
+    "sidebar_label": "Bio-Resonance Habitat"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Human-Centric Design",
+    "permalink": "/azurespacegroup/docs/infrastructure-documentation/human-centric-design"
+  },
+  "next": {
+    "title": "Quasicrystal‑Reinforced Aluminum",
+    "permalink": "/azurespacegroup/docs/materials/quasicrystal-aluminum"
+  }
+}

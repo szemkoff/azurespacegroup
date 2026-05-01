@@ -1,0 +1,27 @@
+{
+  "id": "research-documentation/game-based-research-platform",
+  "title": "Game-Based Research Platform",
+  "description": "Executive Summary",
+  "source": "@site/docs/research-documentation/game-based-research-platform.md",
+  "sourceDirName": "research-documentation",
+  "slug": "/research-documentation/game-based-research-platform",
+  "permalink": "/azurespacegroup/docs/research-documentation/game-based-research-platform",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/szemkoff/azurespacegroup/tree/main/docs/research-documentation/game-based-research-platform.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "sidebar_position": 6
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Quantum Battery Prototype - Revised Design",
+    "permalink": "/azurespacegroup/docs/research-documentation/quantum-battery-prototype"
+  },
+  "next": {
+    "title": "Time Tacking: A Novel Theoretical Approach to Interstellar Travel",
+    "permalink": "/azurespacegroup/docs/research-documentation/time-tacking"
+  }
+}

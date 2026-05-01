@@ -1,0 +1,65 @@
+{
+  "permalink": "/azurespacegroup/blog/grant-investment-roadmap-updates",
+  "editUrl": "https://github.com/szemkoff/azurespacegroup/tree/main/blog/2025-05-07-grant-investment-roadmap-updates.md",
+  "source": "@site/blog/2025-05-07-grant-investment-roadmap-updates.md",
+  "title": "Major Updates: Grant Program Pages, Investment Plan, and Roadmap",
+  "description": "We are excited to announce several major additions to the Azure Space Group documentation and project resources!",
+  "date": "2025-05-07T00:00:00.000Z",
+  "tags": [
+    {
+      "inline": true,
+      "label": "updates",
+      "permalink": "/azurespacegroup/blog/tags/updates"
+    },
+    {
+      "inline": true,
+      "label": "investment",
+      "permalink": "/azurespacegroup/blog/tags/investment"
+    },
+    {
+      "inline": true,
+      "label": "grants",
+      "permalink": "/azurespacegroup/blog/tags/grants"
+    },
+    {
+      "inline": true,
+      "label": "roadmap",
+      "permalink": "/azurespacegroup/blog/tags/roadmap"
+    }
+  ],
+  "readingTime": 1.025,
+  "hasTruncateMarker": false,
+  "authors": [
+    {
+      "name": "Stan Zemskoff",
+      "title": "Principal Quantum Engineer",
+      "url": "https://github.com/szemkoff",
+      "imageURL": "https://github.com/szemkoff.png",
+      "key": "szemkoff",
+      "page": null
+    }
+  ],
+  "frontMatter": {
+    "slug": "grant-investment-roadmap-updates",
+    "title": "Major Updates: Grant Program Pages, Investment Plan, and Roadmap",
+    "authors": [
+      "szemkoff"
+    ],
+    "tags": [
+      "updates",
+      "investment",
+      "grants",
+      "roadmap"
+    ],
+    "date": "2025-05-07"
+  },
+  "unlisted": false,
+  "prevItem": {
+    "title": "Documentation and QPDS Milestones: Communications Research and Engineering Updates",
+    "permalink": "/azurespacegroup/blog/documentation-and-qpds-milestones"
+  },
+  "nextItem": {
+    "title": "Comprehensive System Dissection and Development Strategy Now Available",
+    "permalink": "/azurespacegroup/blog/system-dissection-strategy-document"
+  }
+}

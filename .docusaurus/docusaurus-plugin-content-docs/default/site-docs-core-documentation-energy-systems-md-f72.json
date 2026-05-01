@@ -1,0 +1,24 @@
+{
+  "id": "core-documentation/energy-systems",
+  "title": "Energy and Power Systems",
+  "description": "The Quantum Engine requires revolutionary power generation and management systems to supply the enormous energy demands of quantum propulsion while maintaining sustainability and safety.",
+  "source": "@site/docs/core-documentation/energy-systems.md",
+  "sourceDirName": "core-documentation",
+  "slug": "/core-documentation/energy-systems",
+  "permalink": "/azurespacegroup/docs/core-documentation/energy-systems",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/szemkoff/azurespacegroup/tree/main/docs/core-documentation/energy-systems.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "System Dissection and Developmental Strategy",
+    "permalink": "/azurespacegroup/docs/core-documentation/system-dissection"
+  },
+  "next": {
+    "title": "Propulsion and Navigation",
+    "permalink": "/azurespacegroup/docs/core-documentation/propulsion-navigation"
+  }
+}

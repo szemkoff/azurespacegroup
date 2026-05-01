@@ -1,0 +1,257 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/azurespacegroup/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/azurespacegroup/docs",
+          "mainDocId": "intro",
+          "docs": [
+            {
+              "id": "about",
+              "path": "/azurespacegroup/docs/about",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "careers",
+              "path": "/azurespacegroup/docs/careers",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "contributing",
+              "path": "/azurespacegroup/docs/contributing",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "core-documentation/communication-systems",
+              "path": "/azurespacegroup/docs/core-documentation/communication-systems",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "core-documentation/core-technology",
+              "path": "/azurespacegroup/docs/core-documentation/core-technology",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "core-documentation/energy-systems",
+              "path": "/azurespacegroup/docs/core-documentation/energy-systems",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "core-documentation/propulsion-navigation",
+              "path": "/azurespacegroup/docs/core-documentation/propulsion-navigation",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "core-documentation/system-dissection",
+              "path": "/azurespacegroup/docs/core-documentation/system-dissection",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "DEVELOPMENT_PHILOSOPHY",
+              "path": "/azurespacegroup/docs/DEVELOPMENT_PHILOSOPHY"
+            },
+            {
+              "id": "development-roadmap",
+              "path": "/azurespacegroup/docs/development-roadmap",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "diagrams",
+              "path": "/azurespacegroup/docs/diagrams",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "infrastructure-documentation/bio-resonance-habitat",
+              "path": "/azurespacegroup/docs/infrastructure-documentation/bio-resonance-habitat",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "infrastructure-documentation/human-centric-design",
+              "path": "/azurespacegroup/docs/infrastructure-documentation/human-centric-design",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "infrastructure-documentation/support-systems",
+              "path": "/azurespacegroup/docs/infrastructure-documentation/support-systems",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "intro",
+              "path": "/azurespacegroup/docs/intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "investment",
+              "path": "/azurespacegroup/docs/investment",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "investment-opportunities/afosr-basic",
+              "path": "/azurespacegroup/docs/investment-opportunities/afosr-basic",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "investment-opportunities/arpae-open",
+              "path": "/azurespacegroup/docs/investment-opportunities/arpae-open",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "investment-opportunities/doe-quantum",
+              "path": "/azurespacegroup/docs/investment-opportunities/doe-quantum",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "investment-opportunities/index",
+              "path": "/azurespacegroup/docs/investment-opportunities/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "investment-opportunities/nasa-niac",
+              "path": "/azurespacegroup/docs/investment-opportunities/nasa-niac",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "investment-opportunities/nsf-expand",
+              "path": "/azurespacegroup/docs/investment-opportunities/nsf-expand",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "investment-opportunities/quantum-sci",
+              "path": "/azurespacegroup/docs/investment-opportunities/quantum-sci",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "investment-opportunities/uconn-quantum",
+              "path": "/azurespacegroup/docs/investment-opportunities/uconn-quantum",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "materials/advanced-materials-research",
+              "path": "/azurespacegroup/docs/materials/advanced-materials-research",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "materials/quasicrystal-aluminum",
+              "path": "/azurespacegroup/docs/materials/quasicrystal-aluminum",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "pitch-deck",
+              "path": "/azurespacegroup/docs/pitch-deck",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "qpds/field-test-protocol",
+              "path": "/azurespacegroup/docs/qpds/field-test-protocol",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "qpds/funding-alignment",
+              "path": "/azurespacegroup/docs/qpds/funding-alignment",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "qpds/index",
+              "path": "/azurespacegroup/docs/qpds/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "qpds/map-pipeline-prd",
+              "path": "/azurespacegroup/docs/qpds/map-pipeline-prd",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "qpds/partner-deck-outline",
+              "path": "/azurespacegroup/docs/qpds/partner-deck-outline",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "qpds/qgn-v01-prd",
+              "path": "/azurespacegroup/docs/qpds/qgn-v01-prd",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "qpds/release-milestone-v02",
+              "path": "/azurespacegroup/docs/qpds/release-milestone-v02",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "qpds/simulator",
+              "path": "/azurespacegroup/docs/qpds/simulator",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "research-documentation/game-based-research-platform",
+              "path": "/azurespacegroup/docs/research-documentation/game-based-research-platform",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "research-documentation/gravitational-communication-hypothesis",
+              "path": "/azurespacegroup/docs/research-documentation/gravitational-communication-hypothesis",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "research-documentation/legal-regulatory",
+              "path": "/azurespacegroup/docs/research-documentation/legal-regulatory",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "research-documentation/prototype-designs",
+              "path": "/azurespacegroup/docs/research-documentation/prototype-designs",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "research-documentation/quantum-battery-prototype",
+              "path": "/azurespacegroup/docs/research-documentation/quantum-battery-prototype",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "research-documentation/quantum-communications",
+              "path": "/azurespacegroup/docs/research-documentation/quantum-communications",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "research-documentation/quantum-propulsion-theoretical-revision",
+              "path": "/azurespacegroup/docs/research-documentation/quantum-propulsion-theoretical-revision",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "research-documentation/quantum-research-paper",
+              "path": "/azurespacegroup/docs/research-documentation/quantum-research-paper",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "research-documentation/research-development",
+              "path": "/azurespacegroup/docs/research-documentation/research-development",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "research-documentation/time-tacking",
+              "path": "/azurespacegroup/docs/research-documentation/time-tacking",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tokenization-strategy",
+              "path": "/azurespacegroup/docs/tokenization-strategy",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/azurespacegroup/docs/intro",
+                "label": "Project Overview"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

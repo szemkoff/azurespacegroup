@@ -1,0 +1,25 @@
+{
+  "id": "careers",
+  "title": "Careers at Azure Space Group",
+  "description": "Join our team and help develop breakthrough quantum propulsion and navigation technologies",
+  "source": "@site/docs/careers.md",
+  "sourceDirName": ".",
+  "slug": "/careers",
+  "permalink": "/azurespacegroup/docs/careers",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/szemkoff/azurespacegroup/tree/main/docs/careers.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "careers",
+    "title": "Careers at Azure Space Group",
+    "sidebar_label": "Careers",
+    "description": "Join our team and help develop breakthrough quantum propulsion and navigation technologies"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Contributing Guidelines",
+    "permalink": "/azurespacegroup/docs/contributing"
+  }
+}

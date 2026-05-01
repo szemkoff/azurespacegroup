@@ -1,0 +1,29 @@
+{
+  "id": "qpds/simulator",
+  "title": "QPDS Simulator & Testing Framework",
+  "description": "Python-based simulation framework for testing QPDS in GPS-denied environments",
+  "source": "@site/docs/qpds/simulator.md",
+  "sourceDirName": "qpds",
+  "slug": "/qpds/simulator",
+  "permalink": "/azurespacegroup/docs/qpds/simulator",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/szemkoff/azurespacegroup/tree/main/docs/qpds/simulator.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "simulator",
+    "title": "QPDS Simulator & Testing Framework",
+    "sidebar_label": "Simulator & Testing",
+    "description": "Python-based simulation framework for testing QPDS in GPS-denied environments"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "QGN v0.2 Release Milestone Criteria",
+    "permalink": "/azurespacegroup/docs/qpds/release-milestone-v02"
+  },
+  "next": {
+    "title": "Communication Systems",
+    "permalink": "/azurespacegroup/docs/core-documentation/communication-systems"
+  }
+}

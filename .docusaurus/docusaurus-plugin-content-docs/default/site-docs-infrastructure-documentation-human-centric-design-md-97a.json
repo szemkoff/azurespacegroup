@@ -1,0 +1,24 @@
+{
+  "id": "infrastructure-documentation/human-centric-design",
+  "title": "Human-Centric Design",
+  "description": "The Quantum Engine Project integrates advanced human factors engineering to ensure optimal crew performance, well-being, and integration with quantum technologies. While the technical aspects of quantum propulsion are revolutionary, the human-system interface remains paramount to successful operation.",
+  "source": "@site/docs/infrastructure-documentation/human-centric-design.md",
+  "sourceDirName": "infrastructure-documentation",
+  "slug": "/infrastructure-documentation/human-centric-design",
+  "permalink": "/azurespacegroup/docs/infrastructure-documentation/human-centric-design",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/szemkoff/azurespacegroup/tree/main/docs/infrastructure-documentation/human-centric-design.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Infrastructure Support Systems",
+    "permalink": "/azurespacegroup/docs/infrastructure-documentation/support-systems"
+  },
+  "next": {
+    "title": "Bio-Resonance Habitat",
+    "permalink": "/azurespacegroup/docs/infrastructure-documentation/bio-resonance-habitat"
+  }
+}

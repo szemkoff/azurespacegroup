@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <rect width="600" height="400" fill="#f0f0f0" />
+  
+  <!-- Quantum cocoon/bubble -->
+  <circle cx="300" cy="200" r="150" fill="none" stroke="#d5e5f9" stroke-width="2" opacity="0.6" />
+  <circle cx="300" cy="200" r="140" fill="none" stroke="#d5e5f9" stroke-width="1.5" opacity="0.5" />
+  <circle cx="300" cy="200" r="130" fill="none" stroke="#d5e5f9" stroke-width="1" opacity="0.4" />
+  
+  <!-- Spacecraft body -->
+  <path d="M260,130 L340,130 L360,200 L340,270 L260,270 L240,200 Z" fill="#f5f5f5" stroke="#333" stroke-width="2" />
+  
+  <!-- Cockpit -->
+  <ellipse cx="300" cy="160" rx="30" ry="20" fill="#aaffaa" stroke="#333" />
+  
+  <!-- Q-Force generator -->
+  <circle cx="300" cy="210" r="25" fill="#f9d5e5" stroke="#333" stroke-width="2" />
+  <circle cx="300" cy="210" r="15" fill="#d5e5f9" stroke="#333" />
+  
+  <!-- Energy flow lines -->
+  <g stroke="#aaffaa" fill="none" opacity="0.6">
+    <path d="M300,210 L230,160" stroke-width="1" />
+    <path d="M300,210 L230,240" stroke-width="1" />
+    <path d="M300,210 L370,160" stroke-width="1" />
+    <path d="M300,210 L370,240" stroke-width="1" />
+    <path d="M300,210 L300,130" stroke-width="1" />
+    <path d="M300,210 L300,270" stroke-width="1" />
+  </g>
+  
+  <!-- Quantum field effects -->
+  <g stroke="#d5e5f9" stroke-dasharray="3,2" opacity="0.7">
+    <circle cx="300" cy="200" r="165" fill="none" />
+    <circle cx="300" cy="200" r="175" fill="none" />
+    <circle cx="300" cy="200" r="185" fill="none" />
+  </g>
+  
+  <!-- Electric pulses -->
+  <g fill="#aaffaa" opacity="0.8">
+    <circle cx="200" cy="200" r="3" />
+    <circle cx="210" cy="180" r="2" />
+    <circle cx="220" cy="220" r="2" />
+    <circle cx="190" cy="160" r="2" />
+    <circle cx="180" cy="240" r="3" />
+    <circle cx="400" cy="200" r="3" />
+    <circle cx="390" cy="180" r="2" />
+    <circle cx="410" cy="160" r="2" />
+    <circle cx="380" cy="220" r="2" />
+    <circle cx="420" cy="240" r="3" />
+  </g>
+  
+  <!-- Title -->
+  <text x="300" y="380" text-anchor="middle" font-family="Arial" font-size="16" fill="#333">Quantum Spacecraft with Q-Force Generator</text>
+  
+  <!-- Quantum distortion waves -->
+  <path d="M160,80 C180,90 200,70 220,80 C240,90 260,70 280,80 C300,90 320,70 340,80 C360,90 380,70 400,80 C420,90 440,70 460,80" stroke="#d5e5f9" fill="none" opacity="0.5" />
+  <path d="M140,100 C160,110 180,90 200,100 C220,110 240,90 260,100 C280,110 300,90 320,100 C340,110 360,90 380,100 C400,110 420,90 440,100 C460,110 480,90 500,100" stroke="#d5e5f9" fill="none" opacity="0.5" />
+</svg> 

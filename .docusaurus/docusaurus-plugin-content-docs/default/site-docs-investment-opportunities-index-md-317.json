@@ -1,0 +1,28 @@
+{
+  "id": "investment-opportunities/index",
+  "title": "Grant Programs",
+  "description": "This section provides detailed information about various grant programs that align with our quantum technology initiatives.",
+  "source": "@site/docs/investment-opportunities/index.md",
+  "sourceDirName": "investment-opportunities",
+  "slug": "/investment-opportunities/",
+  "permalink": "/azurespacegroup/docs/investment-opportunities/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/szemkoff/azurespacegroup/tree/main/docs/investment-opportunities/index.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Grant Programs",
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Azure Space Group Tokenization Strategy",
+    "permalink": "/azurespacegroup/docs/tokenization-strategy"
+  },
+  "next": {
+    "title": "Quantum Sci Grant Program",
+    "permalink": "/azurespacegroup/docs/investment-opportunities/quantum-sci"
+  }
+}

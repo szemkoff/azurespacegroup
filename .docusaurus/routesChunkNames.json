@@ -1,0 +1,736 @@
+{
+  "/azurespacegroup/blog/-e1e": {
+    "__comp": "a6aa9e1f",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "d3b10703"
+      },
+      {
+        "content": "606b301a"
+      },
+      {
+        "content": "32e7b57a"
+      },
+      {
+        "content": "4f3ddb7b"
+      },
+      {
+        "content": "0f85af29"
+      },
+      {
+        "content": "ae590d97"
+      },
+      {
+        "content": "d9167417"
+      },
+      {
+        "content": "be987224"
+      }
+    ],
+    "__props": "b9379027"
+  },
+  "/azurespacegroup/blog/archive/-5fa": {
+    "__comp": "9e4087bc",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "__props": "6810c9e7"
+  },
+  "/azurespacegroup/blog/authors/-988": {
+    "__comp": "621db11d",
+    "__context": {
+      "data": {
+        "blogMetadata": "acecf23e"
+      },
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "__props": "68377b33"
+  },
+  "/azurespacegroup/blog/documentation-and-qpds-milestones/-e17": {
+    "__comp": "ccc49370",
+    "__context": {
+      "data": {
+        "blogMetadata": "acecf23e"
+      },
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "content": "8b01df8c"
+  },
+  "/azurespacegroup/blog/grant-investment-roadmap-updates/-c84": {
+    "__comp": "ccc49370",
+    "__context": {
+      "data": {
+        "blogMetadata": "acecf23e"
+      },
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "content": "6d57c939"
+  },
+  "/azurespacegroup/blog/prototype-designs-implementation-path/-d1c": {
+    "__comp": "ccc49370",
+    "__context": {
+      "data": {
+        "blogMetadata": "acecf23e"
+      },
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "content": "8dbcab68"
+  },
+  "/azurespacegroup/blog/quantum-propulsion-theoretical-breakthrough/-197": {
+    "__comp": "ccc49370",
+    "__context": {
+      "data": {
+        "blogMetadata": "acecf23e"
+      },
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "content": "2ae77fb1"
+  },
+  "/azurespacegroup/blog/research-infrastructure-update/-2c8": {
+    "__comp": "ccc49370",
+    "__context": {
+      "data": {
+        "blogMetadata": "acecf23e"
+      },
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "content": "c1e09688"
+  },
+  "/azurespacegroup/blog/system-dissection-strategy-document/-e29": {
+    "__comp": "ccc49370",
+    "__context": {
+      "data": {
+        "blogMetadata": "acecf23e"
+      },
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "content": "ceeb98db"
+  },
+  "/azurespacegroup/blog/tags/-e81": {
+    "__comp": "01a85c17",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "__props": "94bd581d"
+  },
+  "/azurespacegroup/blog/tags/blockchain/-8e3": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "ae590d97"
+      }
+    ],
+    "__props": "8f5239b2"
+  },
+  "/azurespacegroup/blog/tags/breakthrough/-f4f": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "4f3ddb7b"
+      }
+    ],
+    "__props": "cef87020"
+  },
+  "/azurespacegroup/blog/tags/communications/-ef4": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "d3b10703"
+      }
+    ],
+    "__props": "b26c9731"
+  },
+  "/azurespacegroup/blog/tags/community/-421": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "ae590d97"
+      }
+    ],
+    "__props": "3cf275ff"
+  },
+  "/azurespacegroup/blog/tags/design/-7ae": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "d9167417"
+      }
+    ],
+    "__props": "c715e37e"
+  },
+  "/azurespacegroup/blog/tags/development-strategy/-d5d": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "32e7b57a"
+      }
+    ],
+    "__props": "48370dc3"
+  },
+  "/azurespacegroup/blog/tags/development/-ef9": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "0f85af29"
+      }
+    ],
+    "__props": "a82c1670"
+  },
+  "/azurespacegroup/blog/tags/diagrams/-fb2": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "be987224"
+      }
+    ],
+    "__props": "4f3260ce"
+  },
+  "/azurespacegroup/blog/tags/documentation/-31e": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "d3b10703"
+      },
+      {
+        "content": "d9167417"
+      },
+      {
+        "content": "be987224"
+      }
+    ],
+    "__props": "9e59289d"
+  },
+  "/azurespacegroup/blog/tags/game-based-research/-1c2": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "ae590d97"
+      }
+    ],
+    "__props": "714742a6"
+  },
+  "/azurespacegroup/blog/tags/grants/-525": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "606b301a"
+      }
+    ],
+    "__props": "bd104dad"
+  },
+  "/azurespacegroup/blog/tags/implementation/-4c0": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "32e7b57a"
+      },
+      {
+        "content": "0f85af29"
+      }
+    ],
+    "__props": "407cd3cc"
+  },
+  "/azurespacegroup/blog/tags/infrastructure/-e87": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "be987224"
+      }
+    ],
+    "__props": "daf233bc"
+  },
+  "/azurespacegroup/blog/tags/investment/-d8b": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "606b301a"
+      }
+    ],
+    "__props": "3415ba0f"
+  },
+  "/azurespacegroup/blog/tags/propulsion/-b2a": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "4f3ddb7b"
+      }
+    ],
+    "__props": "9867fd27"
+  },
+  "/azurespacegroup/blog/tags/prototypes/-7d6": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "0f85af29"
+      }
+    ],
+    "__props": "62731cce"
+  },
+  "/azurespacegroup/blog/tags/qpds/-c68": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "d3b10703"
+      },
+      {
+        "content": "0f85af29"
+      }
+    ],
+    "__props": "0b5e84ba"
+  },
+  "/azurespacegroup/blog/tags/quantum-motor/-6ca": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "32e7b57a"
+      }
+    ],
+    "__props": "13ae44b5"
+  },
+  "/azurespacegroup/blog/tags/quantum-navigation/-769": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "0f85af29"
+      }
+    ],
+    "__props": "fe50f93c"
+  },
+  "/azurespacegroup/blog/tags/quantum/-cc6": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "d3b10703"
+      },
+      {
+        "content": "4f3ddb7b"
+      }
+    ],
+    "__props": "cebe4d94"
+  },
+  "/azurespacegroup/blog/tags/research/-e2b": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "4f3ddb7b"
+      },
+      {
+        "content": "be987224"
+      }
+    ],
+    "__props": "ffcba872"
+  },
+  "/azurespacegroup/blog/tags/roadmap/-8bd": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "606b301a"
+      }
+    ],
+    "__props": "7d94c34c"
+  },
+  "/azurespacegroup/blog/tags/system-dissection/-e6d": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "32e7b57a"
+      }
+    ],
+    "__props": "54b8d62e"
+  },
+  "/azurespacegroup/blog/tags/tokenization/-e91": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "ae590d97"
+      }
+    ],
+    "__props": "a68768cb"
+  },
+  "/azurespacegroup/blog/tags/updates/-0e7": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "d3b10703"
+      },
+      {
+        "content": "606b301a"
+      },
+      {
+        "content": "d9167417"
+      }
+    ],
+    "__props": "9c2009c1"
+  },
+  "/azurespacegroup/blog/tags/vulnerability-assessment/-515": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "32e7b57a"
+      }
+    ],
+    "__props": "9c44ac1e"
+  },
+  "/azurespacegroup/blog/tags/website/-989": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "d9167417"
+      }
+    ],
+    "__props": "16cddd3e"
+  },
+  "/azurespacegroup/blog/tokenization-and-game-research/-302": {
+    "__comp": "ccc49370",
+    "__context": {
+      "data": {
+        "blogMetadata": "acecf23e"
+      },
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "content": "5187bf5a"
+  },
+  "/azurespacegroup/blog/website-design-enhancement/-be0": {
+    "__comp": "ccc49370",
+    "__context": {
+      "data": {
+        "blogMetadata": "acecf23e"
+      },
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "content": "b07c2439"
+  },
+  "/azurespacegroup/project-status/-b5b": {
+    "__comp": "0d271eea",
+    "__context": {
+      "plugin": "a7456010"
+    },
+    "config": "5e9f5e1a"
+  },
+  "/azurespacegroup/docs/-935": {
+    "__comp": "5e95c892",
+    "__context": {
+      "plugin": "aba21aa0"
+    }
+  },
+  "/azurespacegroup/docs/-9aa": {
+    "__comp": "a7bd4aaa",
+    "__props": "c58917c6"
+  },
+  "/azurespacegroup/docs/-3ba": {
+    "__comp": "a94703ab"
+  },
+  "/azurespacegroup/docs/about/-580": {
+    "__comp": "17896441",
+    "content": "3d8d21df"
+  },
+  "/azurespacegroup/docs/careers/-301": {
+    "__comp": "17896441",
+    "content": "8a6a3abd"
+  },
+  "/azurespacegroup/docs/contributing/-0d5": {
+    "__comp": "17896441",
+    "content": "4d54d076"
+  },
+  "/azurespacegroup/docs/core-documentation/communication-systems/-21f": {
+    "__comp": "17896441",
+    "content": "f27e2fec"
+  },
+  "/azurespacegroup/docs/core-documentation/core-technology/-90c": {
+    "__comp": "17896441",
+    "content": "ffcd5b0a"
+  },
+  "/azurespacegroup/docs/core-documentation/energy-systems/-fd8": {
+    "__comp": "17896441",
+    "content": "f727a8e0"
+  },
+  "/azurespacegroup/docs/core-documentation/propulsion-navigation/-a9e": {
+    "__comp": "17896441",
+    "content": "7dbddcb8"
+  },
+  "/azurespacegroup/docs/core-documentation/system-dissection/-930": {
+    "__comp": "17896441",
+    "content": "3e60360a"
+  },
+  "/azurespacegroup/docs/DEVELOPMENT_PHILOSOPHY/-0f5": {
+    "__comp": "17896441",
+    "content": "5c02e3ae"
+  },
+  "/azurespacegroup/docs/development-roadmap/-0a6": {
+    "__comp": "17896441",
+    "content": "bc72ece2"
+  },
+  "/azurespacegroup/docs/diagrams/-e84": {
+    "__comp": "17896441",
+    "content": "d78ff9f4"
+  },
+  "/azurespacegroup/docs/infrastructure-documentation/bio-resonance-habitat/-b38": {
+    "__comp": "17896441",
+    "content": "9d1d7e14"
+  },
+  "/azurespacegroup/docs/infrastructure-documentation/human-centric-design/-593": {
+    "__comp": "17896441",
+    "content": "97a0306a"
+  },
+  "/azurespacegroup/docs/infrastructure-documentation/support-systems/-e03": {
+    "__comp": "17896441",
+    "content": "6fa5d5eb"
+  },
+  "/azurespacegroup/docs/intro/-001": {
+    "__comp": "17896441",
+    "content": "0e384e19"
+  },
+  "/azurespacegroup/docs/investment-opportunities/-f46": {
+    "__comp": "17896441",
+    "content": "31716638"
+  },
+  "/azurespacegroup/docs/investment-opportunities/afosr-basic/-5d0": {
+    "__comp": "17896441",
+    "content": "d7e23866"
+  },
+  "/azurespacegroup/docs/investment-opportunities/arpae-open/-f6e": {
+    "__comp": "17896441",
+    "content": "3a1a7e54"
+  },
+  "/azurespacegroup/docs/investment-opportunities/doe-quantum/-6a0": {
+    "__comp": "17896441",
+    "content": "9e0a5bea"
+  },
+  "/azurespacegroup/docs/investment-opportunities/nasa-niac/-290": {
+    "__comp": "17896441",
+    "content": "71c49ef3"
+  },
+  "/azurespacegroup/docs/investment-opportunities/nsf-expand/-348": {
+    "__comp": "17896441",
+    "content": "6281c9b0"
+  },
+  "/azurespacegroup/docs/investment-opportunities/quantum-sci/-1c9": {
+    "__comp": "17896441",
+    "content": "02a90258"
+  },
+  "/azurespacegroup/docs/investment-opportunities/uconn-quantum/-b2a": {
+    "__comp": "17896441",
+    "content": "20fb86ef"
+  },
+  "/azurespacegroup/docs/investment/-094": {
+    "__comp": "17896441",
+    "content": "5f16fdb0"
+  },
+  "/azurespacegroup/docs/materials/advanced-materials-research/-fcd": {
+    "__comp": "17896441",
+    "content": "c2a9dba4"
+  },
+  "/azurespacegroup/docs/materials/quasicrystal-aluminum/-694": {
+    "__comp": "17896441",
+    "content": "36c65760"
+  },
+  "/azurespacegroup/docs/pitch-deck/-adc": {
+    "__comp": "17896441",
+    "content": "1fabbd43"
+  },
+  "/azurespacegroup/docs/qpds/-06c": {
+    "__comp": "17896441",
+    "content": "d583fb20"
+  },
+  "/azurespacegroup/docs/qpds/field-test-protocol/-9a0": {
+    "__comp": "17896441",
+    "content": "0deb9926"
+  },
+  "/azurespacegroup/docs/qpds/funding-alignment/-b45": {
+    "__comp": "17896441",
+    "content": "96de7a7a"
+  },
+  "/azurespacegroup/docs/qpds/map-pipeline-prd/-ded": {
+    "__comp": "17896441",
+    "content": "817b2cf4"
+  },
+  "/azurespacegroup/docs/qpds/partner-deck-outline/-625": {
+    "__comp": "17896441",
+    "content": "a29187db"
+  },
+  "/azurespacegroup/docs/qpds/qgn-v01-prd/-d75": {
+    "__comp": "17896441",
+    "content": "684cc8cf"
+  },
+  "/azurespacegroup/docs/qpds/release-milestone-v02/-d02": {
+    "__comp": "17896441",
+    "content": "cc93ea30"
+  },
+  "/azurespacegroup/docs/qpds/simulator/-215": {
+    "__comp": "17896441",
+    "content": "a3a2705f"
+  },
+  "/azurespacegroup/docs/research-documentation/game-based-research-platform/-70c": {
+    "__comp": "17896441",
+    "content": "caa8d8e9"
+  },
+  "/azurespacegroup/docs/research-documentation/gravitational-communication-hypothesis/-347": {
+    "__comp": "17896441",
+    "content": "48d831fb"
+  },
+  "/azurespacegroup/docs/research-documentation/legal-regulatory/-84f": {
+    "__comp": "17896441",
+    "content": "06f7b6fc"
+  },
+  "/azurespacegroup/docs/research-documentation/prototype-designs/-ebd": {
+    "__comp": "17896441",
+    "content": "db342f0c"
+  },
+  "/azurespacegroup/docs/research-documentation/quantum-battery-prototype/-adf": {
+    "__comp": "17896441",
+    "content": "ee8afe25"
+  },
+  "/azurespacegroup/docs/research-documentation/quantum-communications/-bbd": {
+    "__comp": "17896441",
+    "content": "94e5342c"
+  },
+  "/azurespacegroup/docs/research-documentation/quantum-propulsion-theoretical-revision/-d7c": {
+    "__comp": "17896441",
+    "content": "2a7f5e90"
+  },
+  "/azurespacegroup/docs/research-documentation/quantum-research-paper/-d8f": {
+    "__comp": "17896441",
+    "content": "6d7a076b"
+  },
+  "/azurespacegroup/docs/research-documentation/research-development/-fc7": {
+    "__comp": "17896441",
+    "content": "151ba80d"
+  },
+  "/azurespacegroup/docs/research-documentation/time-tacking/-fb0": {
+    "__comp": "17896441",
+    "content": "9b8624ea"
+  },
+  "/azurespacegroup/docs/tokenization-strategy/-141": {
+    "__comp": "17896441",
+    "content": "fb3205f4"
+  },
+  "/azurespacegroup/-64e": {
+    "__comp": "c4f5d8e4",
+    "__context": {
+      "plugin": "a7456010"
+    },
+    "config": "5e9f5e1a"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "permalink": "/azurespacegroup/blog/prototype-designs-implementation-path",
+  "editUrl": "https://github.com/szemkoff/azurespacegroup/tree/main/blog/2025-03-25-prototype-designs-implementation-path.md",
+  "source": "@site/blog/2025-03-25-prototype-designs-implementation-path.md",
+  "title": "Introducing Prototype Designs and Practical Implementation Path for Quantum Navigation",
+  "description": "Today, we're excited to announce significant updates to the Azure Space Group documentation that transform our theoretical concepts into practical implementation plans. We've added comprehensive prototype designs and established clear development pathways for our revolutionary quantum navigation technology.",
+  "date": "2025-03-25T00:00:00.000Z",
+  "tags": [
+    {
+      "inline": true,
+      "label": "prototypes",
+      "permalink": "/azurespacegroup/blog/tags/prototypes"
+    },
+    {
+      "inline": true,
+      "label": "quantum navigation",
+      "permalink": "/azurespacegroup/blog/tags/quantum-navigation"
+    },
+    {
+      "inline": true,
+      "label": "implementation",
+      "permalink": "/azurespacegroup/blog/tags/implementation"
+    },
+    {
+      "inline": true,
+      "label": "QPDS",
+      "permalink": "/azurespacegroup/blog/tags/qpds"
+    },
+    {
+      "inline": true,
+      "label": "development",
+      "permalink": "/azurespacegroup/blog/tags/development"
+    }
+  ],
+  "readingTime": 4.205,
+  "hasTruncateMarker": true,
+  "authors": [
+    {
+      "name": "Stanley Zemskoff",
+      "title": "Azure Space Group Lead Researcher",
+      "url": "https://www.linkedin.com/in/stan-zemskoff-55a55221/",
+      "imageURL": "https://github.com/szemkoff.png",
+      "key": "stanley",
+      "page": null
+    }
+  ],
+  "frontMatter": {
+    "slug": "prototype-designs-implementation-path",
+    "title": "Introducing Prototype Designs and Practical Implementation Path for Quantum Navigation",
+    "authors": [
+      "stanley"
+    ],
+    "tags": [
+      "prototypes",
+      "quantum navigation",
+      "implementation",
+      "QPDS",
+      "development"
+    ]
+  },
+  "unlisted": false,
+  "prevItem": {
+    "title": "Theoretical Breakthrough in Quantum Propulsion Models",
+    "permalink": "/azurespacegroup/blog/quantum-propulsion-theoretical-breakthrough"
+  },
+  "nextItem": {
+    "title": "New Tokenization Strategy and Game-Based Research Platform Documentation",
+    "permalink": "/azurespacegroup/blog/tokenization-and-game-research"
+  }
+}

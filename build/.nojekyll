@@ -1,0 +1,2 @@
+# Disable Jekyll processing to ensure correct URL handling with trailing slashes
+# This file helps GitHub Pages serve files and directories starting with underscores 

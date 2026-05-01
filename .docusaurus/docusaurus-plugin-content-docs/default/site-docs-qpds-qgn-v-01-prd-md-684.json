@@ -1,0 +1,29 @@
+{
+  "id": "qpds/qgn-v01-prd",
+  "title": "QGN v0.1 Product Requirements Document",
+  "description": "Executable specifications for Quantum Geophysical Navigation v0.1 prototype",
+  "source": "@site/docs/qpds/qgn-v01-prd.md",
+  "sourceDirName": "qpds",
+  "slug": "/qpds/qgn-v01-prd",
+  "permalink": "/azurespacegroup/docs/qpds/qgn-v01-prd",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/szemkoff/azurespacegroup/tree/main/docs/qpds/qgn-v01-prd.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "QGN v0.1 Product Requirements Document",
+    "sidebar_position": 1,
+    "description": "Executable specifications for Quantum Geophysical Navigation v0.1 prototype"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Quantum Position Determination System (QPDS)",
+    "permalink": "/azurespacegroup/docs/qpds/"
+  },
+  "next": {
+    "title": "Geophysical Map Pipeline PRD",
+    "permalink": "/azurespacegroup/docs/qpds/map-pipeline-prd"
+  }
+}
